@@ -48,12 +48,10 @@ const elements = {
     totalForks: document.getElementById('total-forks'),
     totalRepos: document.getElementById('total-repos'),
     totalIssues: document.getElementById('total-issues'),
-    topReposContainer: document.getElementById('top-repos-container'),
     reposContainer: document.getElementById('repos-container'),
     activityTimeline: document.getElementById('activity-timeline'),
     sortSelect: document.getElementById('sort-select'),
-    navItems: document.querySelectorAll('.nav-item'),
-    viewSections: document.querySelectorAll('.view-section')
+    navItems: document.querySelectorAll('.nav-item')
 };
 
 // Initialize
@@ -71,14 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function setupEventListeners() {
-    // Navigation
-    elements.navItems.forEach(item => {
-        item.addEventListener('click', (e) => {
-            e.preventDefault();
-            switchTab(item.dataset.tab);
-        });
-    });
-
     // Refresh
     elements.refreshBtn.addEventListener('click', () => {
         initDashboard();
@@ -91,25 +81,11 @@ function setupEventListeners() {
     });
 }
 
-function switchTab(tabId) {
-    // Update nav
-    elements.navItems.forEach(item => {
-        item.classList.toggle('active', item.dataset.tab === tabId);
-    });
-
-    // Update view
-    elements.viewSections.forEach(section => {
-        section.classList.remove('active');
-    });
-    document.getElementById(`${tabId}-view`).classList.add('active');
-}
-
 async function initDashboard() {
     setLoading(true);
     try {
         await fetchAllData();
         updateStats();
-        renderOverview();
         renderRepositories();
         renderActivity();
         updateLastUpdated();
@@ -124,9 +100,17 @@ async function initDashboard() {
 function setLoading(isLoading) {
     state.loading = isLoading;
     const icon = elements.refreshBtn.querySelector('i');
+    
     if (isLoading) {
         icon.classList.add('fa-spin');
         elements.refreshBtn.disabled = true;
+        
+        // Show loading spinner in containers if they are empty
+        const spinner = '<div class="loading-spinner"><i class="fas fa-circle-notch"></i></div>';
+        if (!state.repos.length) {
+            elements.reposContainer.innerHTML = spinner;
+            elements.activityTimeline.innerHTML = spinner;
+        }
     } else {
         icon.classList.remove('fa-spin');
         elements.refreshBtn.disabled = false;
@@ -221,7 +205,20 @@ function updateStats() {
 function renderOverview() {
     // Top 3 repos by stars
     const topRepos = [...state.repos]
-        .filter(r => !r.error);
+        .filter(r => !r.error)
+        .sort((a, b) => (b.stargazers_count || 0) - (a.stargazers_count || 0))
+        .slice(0, 3);
+
+    if (topRepos.length === 0) {
+        elements.topReposContainer.innerHTML = '<div class="empty-state">No repositories found.</div>';
+        return;
+    }
+
+    elements.topReposContainer.innerHTML = topRepos.map(createRepoCard).join('');
+}
+
+function renderRepositories() {
+    let sortedRepos = [...state.repos];
     
     switch (state.sortBy) {
         case 'stars':
@@ -230,19 +227,9 @@ function renderOverview() {
         case 'forks':
             sortedRepos.sort((a, b) => (b.forks_count || 0) - (a.forks_count || 0));
             break;
-        case 'created':
-            sortedRepos.sort((a, b) => new Date(b.created_at || 0) - new Date(a.created_at || 0));
-            break;
-        case 'updated':
-        default:
-            sortedRepos.sort((a, b) => new Date(b.updated_at || 0) - new Date(a.updated_at || 0
-            sortedRepos.sort((a, b) => b.forks_count - a.forks_count);
-            break;
-        case 'created':
-            sortedRepos.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
-            break;
-        case 'updated':
-        default:
+        case 'c
+
+function createRepoCard(repo) {
     if (repo.error) {
         return `
             <div class="repo-card error-card">
@@ -258,14 +245,6 @@ function renderOverview() {
         `;
     }
 
-            sortedRepos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
-            break;
-    }
-
-    elements.reposContainer.innerHTML = sortedRepos.map(createRepoCard).join('');
-}
-
-function createRepoCard(repo) {
     const langColor = LANGUAGE_COLORS[repo.language] || '#ccc';
     const updatedDate = new Date(repo.updated_at).toLocaleDateString();
 
@@ -293,6 +272,11 @@ function createRepoCard(repo) {
                 <div class="repo-lang">
                     <span class="language-dot" style="background-color: ${langColor}"></span>
                     ${repo.language || 'Unknown'}
+    if (state.activity.length === 0) {
+        elements.activityTimeline.innerHTML = '<div class="empty-state">No recent activity found.</div>';
+        return;
+    }
+
                 </div>
                 <div class="repo-updated">
                     Updated ${updatedDate}
