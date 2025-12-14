@@ -32,289 +32,267 @@ const LANGUAGE_COLORS = {
     'Dart': '#00B4AB'
 };
 
-// Cache for API responses
-let repoCache = {};
+// State
+let state = {
+    repos: [],
+    activity: [],
+    sortBy: 'updated',
+    loading: false
+};
 
-// Format relative time
-function timeAgo(dateString) {
-    const date = new Date(dateString);
-    const now = new Date();
-    const seconds = Math.floor((now - date) / 1000);
+// DOM Elements
+const elements = {
+    lastUpdated: document.getElementById('last-updated'),
+    refreshBtn: document.getElementById('refresh-btn'),
+    totalStars: document.getElementById('total-stars'),
+    totalForks: document.getElementById('total-forks'),
+    totalRepos: document.getElementById('total-repos'),
+    totalIssues: document.getElementById('total-issues'),
+    topReposContainer: document.getElementById('top-repos-container'),
+    reposContainer: document.getElementById('repos-container'),
+    activityTimeline: document.getElementById('activity-timeline'),
+    sortSelect: document.getElementById('sort-select'),
+    navItems: document.querySelectorAll('.nav-item'),
+    viewSections: document.querySelectorAll('.view-section')
+};
 
-    const intervals = {
-        year: 31536000,
-        month: 2592000,
-        week: 604800,
-        day: 86400,
-        hour: 3600,
-        minute: 60
-    };
+// Initialize
+document.addEventListener('DOMContentLoaded', () => {
+    initDashboard();
+    setupEventListeners();
+});
 
-    for (const [unit, secondsInUnit] of Object.entries(intervals)) {
-        const interval = Math.floor(seconds / secondsInUnit);
-        if (interval >= 1) {
-            return `${interval} ${unit}${interval > 1 ? 's' : ''} ago`;
-        }
-    }
-    return 'just now';
-}
+function setupEventListeners() {
+    // Navigation
+    elements.navItems.forEach(item => {
+        item.addEventListener('click', (e) => {
+            e.preventDefault();
+            switchTab(item.dataset.tab);
+        });
+    });
 
-// Format date
-function formatDate(dateString) {
-    const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric'
+    // Refresh
+    elements.refreshBtn.addEventListener('click', () => {
+        initDashboard();
+    });
+
+    // Sort
+    elements.sortSelect.addEventListener('change', (e) => {
+        state.sortBy = e.target.value;
+        renderRepositories();
     });
 }
 
-// Get status icon class
-function getStatusIcon(status, conclusion) {
-    if (status === 'completed') {
-        switch (conclusion) {
-            case 'success': return { class: 'success', icon: '✓' };
-            case 'failure': return { class: 'failure', icon: '✗' };
-            case 'cancelled': return { class: 'cancelled', icon: '○' };
-            default: return { class: 'pending', icon: '?' };
-        }
-    }
-    return { class: 'pending', icon: '●' };
+function switchTab(tabId) {
+    // Update nav
+    elements.navItems.forEach(item => {
+        item.classList.toggle('active', item.dataset.tab === tabId);
+    });
+
+    // Update view
+    elements.viewSections.forEach(section => {
+        section.classList.remove('active');
+    });
+    document.getElementById(`${tabId}-view`).classList.add('active');
 }
 
-// Fetch repository data
+async function initDashboard() {
+    setLoading(true);
+    try {
+        await fetchAllData();
+        updateStats();
+        renderOverview();
+        renderRepositories();
+        renderActivity();
+        updateLastUpdated();
+    } catch (error) {
+        console.error('Error initializing dashboard:', error);
+        alert('Failed to load dashboard data. Check console for details.');
+    } finally {
+        setLoading(false);
+    }
+}
+
+function setLoading(isLoading) {
+    state.loading = isLoading;
+    const icon = elements.refreshBtn.querySelector('i');
+    if (isLoading) {
+        icon.classList.add('fa-spin');
+        elements.refreshBtn.disabled = true;
+    } else {
+        icon.classList.remove('fa-spin');
+        elements.refreshBtn.disabled = false;
+    }
+}
+
+async function fetchAllData() {
+    const repoPromises = REPOS.map(repo => fetchRepoData(repo));
+    const results = await Promise.all(repoPromises);
+    
+    state.repos = results.map(r => r.repo);
+    
+    // Collect activity from all repos
+    let allActivity = [];
+    results.forEach(r => {
+        if (r.commits && Array.isArray(r.commits)) {
+            allActivity.push(...r.commits.map(c => ({
+                type: 'commit',
+                repo: r.repo.name,
+                date: new Date(c.commit.author.date),
+                data: c
+            })));
+        }
+        if (r.releases && Array.isArray(r.releases)) {
+            allActivity.push(...r.releases.map(rel => ({
+                type: 'release',
+                repo: r.repo.name,
+                date: new Date(rel.published_at),
+                data: rel
+            })));
+        }
+    });
+
+    // Sort activity by date desc
+    state.activity = allActivity.sort((a, b) => b.date - a.date).slice(0, 20);
+}
+
 async function fetchRepoData(repoFullName) {
     const [owner, repo] = repoFullName.split('/');
-    
     try {
-        // Fetch all data in parallel
-        const [repoResponse, releasesResponse, commitsResponse, actionsResponse] = await Promise.all([
+        const [repoRes, commitsRes, releasesRes] = await Promise.all([
             fetch(`https://api.github.com/repos/${owner}/${repo}`),
-            fetch(`https://api.github.com/repos/${owner}/${repo}/releases?per_page=1`),
-            fetch(`https://api.github.com/repos/${owner}/${repo}/commits?per_page=1`),
-            fetch(`https://api.github.com/repos/${owner}/${repo}/actions/runs?per_page=3`)
+            fetch(`https://api.github.com/repos/${owner}/${repo}/commits?per_page=5`),
+            fetch(`https://api.github.com/repos/${owner}/${repo}/releases?per_page=3`)
         ]);
 
-        const repoData = await repoResponse.json();
-        const releases = await releasesResponse.json();
-        const commits = await commitsResponse.json();
-        const actions = actionsResponse.ok ? await actionsResponse.json() : { workflow_runs: [] };
+        const repoData = await repoRes.json();
+        const commitsData = await commitsRes.json();
+        const releasesData = await releasesRes.json();
 
         return {
             repo: repoData,
-            latestRelease: releases[0] || null,
-            latestCommit: commits[0] || null,
-            actions: actions.workflow_runs || []
+            commits: Array.isArray(commitsData) ? commitsData : [],
+            releases: Array.isArray(releasesData) ? releasesData : []
         };
     } catch (error) {
-        console.error(`Error fetching ${repoFullName}:`, error);
-        return null;
+        console.error(`Error fetching data for ${repoFullName}:`, error);
+        return { repo: { name: repo, full_name: repoFullName, error: true }, commits: [], releases: [] };
     }
 }
 
-// Create repository card HTML
-function createRepoCard(data) {
-    if (!data || !data.repo) {
-        return `<div class="repo-card error-message">Failed to load repository data</div>`;
+function updateStats() {
+    const stats = state.repos.reduce((acc, repo) => {
+        if (repo.error) return acc;
+        acc.stars += repo.stargazers_count || 0;
+        acc.forks += repo.forks_count || 0;
+        acc.issues += repo.open_issues_count || 0;
+        return acc;
+    }, { stars: 0, forks: 0, issues: 0 });
+
+    elements.totalStars.textContent = stats.stars;
+    elements.totalForks.textContent = stats.forks;
+    elements.totalIssues.textContent = stats.issues;
+    elements.totalRepos.textContent = state.repos.length;
+}
+
+function renderOverview() {
+    // Top 3 repos by stars
+    const topRepos = [...state.repos]
+        .filter(r => !r.error)
+        .sort((a, b) => b.stargazers_count - a.stargazers_count)
+        .slice(0, 3);
+
+    elements.topReposContainer.innerHTML = topRepos.map(createRepoCard).join('');
+}
+
+function renderRepositories() {
+    let sortedRepos = [...state.repos].filter(r => !r.error);
+    
+    switch (state.sortBy) {
+        case 'stars':
+            sortedRepos.sort((a, b) => b.stargazers_count - a.stargazers_count);
+            break;
+        case 'forks':
+            sortedRepos.sort((a, b) => b.forks_count - a.forks_count);
+            break;
+        case 'created':
+            sortedRepos.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+            break;
+        case 'updated':
+        default:
+            sortedRepos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+            break;
     }
 
-    const { repo, latestRelease, latestCommit, actions } = data;
+    elements.reposContainer.innerHTML = sortedRepos.map(createRepoCard).join('');
+}
 
-    // Topics
-    const topicsHtml = repo.topics && repo.topics.length > 0
-        ? `<div class="repo-topics">
-            ${repo.topics.slice(0, 5).map(topic => `<span class="topic-tag">${topic}</span>`).join('')}
-           </div>`
-        : '';
-
-    // Language
-    const languageHtml = repo.language
-        ? `<div class="repo-language">
-            <span class="language-dot" style="background-color: ${LANGUAGE_COLORS[repo.language] || '#8b949e'}"></span>
-            <span class="language-name">${repo.language}</span>
-           </div>`
-        : '';
-
-    // Release section
-    const releaseHtml = latestRelease
-        ? `<span class="release-tag">${latestRelease.tag_name}</span>
-           <span class="release-date">${timeAgo(latestRelease.published_at)}</span>`
-        : `<span class="release-tag no-release">No releases</span>`;
-
-    // Commit section
-    const commitHtml = latestCommit
-        ? `<div class="commit-message" title="${latestCommit.commit.message}">${latestCommit.commit.message.split('\n')[0]}</div>
-           <div class="commit-meta">
-               <span class="commit-author">
-                   ${latestCommit.author ? `<img src="${latestCommit.author.avatar_url}" alt="${latestCommit.commit.author.name}">` : ''}
-                   ${latestCommit.commit.author.name}
-               </span>
-               <span>•</span>
-               <span>${timeAgo(latestCommit.commit.author.date)}</span>
-           </div>`
-        : '<span class="text-secondary">No commits</span>';
-
-    // Actions section
-    const actionsHtml = actions.length > 0
-        ? actions.slice(0, 2).map(run => {
-            const status = getStatusIcon(run.status, run.conclusion);
-            return `
-                <div class="action-run">
-                    <div class="action-status">
-                        <span class="status-icon ${status.class}">${status.icon}</span>
-                        <span class="action-name">${run.name}</span>
-                    </div>
-                    <span class="action-time">${timeAgo(run.updated_at)}</span>
-                </div>
-            `;
-        }).join('')
-        : '<div class="action-run"><span class="action-name" style="color: var(--text-secondary);">No workflow runs</span></div>';
+function createRepoCard(repo) {
+    const langColor = LANGUAGE_COLORS[repo.language] || '#ccc';
+    const updatedDate = new Date(repo.updated_at).toLocaleDateString();
 
     return `
         <div class="repo-card">
             <div class="repo-header">
-                <div class="repo-name">
-                    <i class="fas fa-book" style="color: var(--text-secondary);"></i>
-                    <a href="${repo.html_url}" target="_blank">${repo.name}</a>
-                </div>
-                <span class="repo-visibility">${repo.private ? 'Private' : 'Public'}</span>
+                <a href="${repo.html_url}" target="_blank" class="repo-name">
+                    <i class="fas fa-book-bookmark"></i> ${repo.name}
+                </a>
+                <span class="repo-visibility">${repo.visibility || 'public'}</span>
             </div>
-            
-            <p class="repo-description">${repo.description || 'No description provided'}</p>
-            
-            ${topicsHtml}
-            ${languageHtml}
-            
+            <p class="repo-description">${repo.description || 'No description available'}</p>
             <div class="repo-stats">
-                <span class="repo-stat stars">
-                    <i class="fas fa-star"></i> ${repo.stargazers_count}
-                </span>
-                <span class="repo-stat forks">
-                    <i class="fas fa-code-fork"></i> ${repo.forks_count}
-                </span>
-                <span class="repo-stat watchers">
-                    <i class="fas fa-eye"></i> ${repo.watchers_count}
-                </span>
-                <span class="repo-stat issues">
-                    <i class="fas fa-circle-dot"></i> ${repo.open_issues_count}
-                </span>
-            </div>
-
-            <div class="repo-section">
-                <div class="section-title"><i class="fas fa-tag"></i> Latest Release</div>
-                <div class="release-info">
-                    ${releaseHtml}
+                <div class="repo-stat" title="Stars">
+                    <i class="far fa-star"></i> ${repo.stargazers_count}
+                </div>
+                <div class="repo-stat" title="Forks">
+                    <i class="fas fa-code-branch"></i> ${repo.forks_count}
+                </div>
+                <div class="repo-stat" title="Open Issues">
+                    <i class="far fa-circle-dot"></i> ${repo.open_issues_count}
                 </div>
             </div>
-
-            <div class="repo-section">
-                <div class="section-title"><i class="fas fa-code-commit"></i> Latest Commit</div>
-                <div class="commit-info">
-                    ${commitHtml}
+            <div class="repo-footer">
+                <div class="repo-lang">
+                    <span class="language-dot" style="background-color: ${langColor}"></span>
+                    ${repo.language || 'Unknown'}
                 </div>
-            </div>
-
-            <div class="repo-section">
-                <div class="section-title"><i class="fas fa-play"></i> GitHub Actions</div>
-                <div class="actions-info">
-                    ${actionsHtml}
+                <div class="repo-updated">
+                    Updated ${updatedDate}
                 </div>
-            </div>
-
-            <div style="margin-top: 12px; font-size: 0.75rem; color: var(--text-secondary);">
-                <i class="fas fa-clock"></i> Created: ${formatDate(repo.created_at)} | Updated: ${timeAgo(repo.updated_at)}
             </div>
         </div>
     `;
 }
 
-// Create loading skeleton
-function createLoadingSkeleton() {
-    return `
-        <div class="repo-card">
-            <div class="skeleton skeleton-title"></div>
-            <div class="skeleton skeleton-text" style="width: 80%;"></div>
-            <div class="skeleton skeleton-text" style="width: 60%;"></div>
-            <div style="height: 100px; margin-top: 20px;">
-                <div class="skeleton skeleton-text" style="width: 40%;"></div>
-                <div class="skeleton skeleton-text" style="width: 70%;"></div>
-            </div>
-        </div>
-    `;
-}
+function renderActivity() {
+    elements.activityTimeline.innerHTML = state.activity.map(item => {
+        const date = item.date.toLocaleDateString() + ' ' + item.date.toLocaleTimeString();
+        let content = '';
+        let icon = '';
 
-// Update statistics overview
-function updateStats(allData) {
-    let totalStars = 0;
-    let totalForks = 0;
-    let totalWatchers = 0;
-
-    allData.forEach(data => {
-        if (data && data.repo) {
-            totalStars += data.repo.stargazers_count || 0;
-            totalForks += data.repo.forks_count || 0;
-            totalWatchers += data.repo.watchers_count || 0;
+        if (item.type === 'commit') {
+            content = `Pushed commit: <a href="${item.data.html_url}" target="_blank" style="color: var(--accent-primary)">${item.data.commit.message}</a>`;
+            icon = '<i class="fas fa-code-commit"></i>';
+        } else if (item.type === 'release') {
+            content = `Published release: <a href="${item.data.html_url}" target="_blank" style="color: var(--accent-secondary)">${item.data.name || item.data.tag_name}</a>`;
+            icon = '<i class="fas fa-tag"></i>';
         }
-    });
 
-    document.getElementById('total-repos').textContent = REPOS.length;
-    document.getElementById('total-stars').textContent = totalStars;
-    document.getElementById('total-forks').textContent = totalForks;
-    document.getElementById('total-watchers').textContent = totalWatchers;
-}
-
-// Main function to load all repositories
-async function loadRepositories() {
-    const container = document.getElementById('repos-container');
-    const refreshBtn = document.getElementById('refresh-btn');
-
-    // Show loading state
-    container.innerHTML = REPOS.map(() => createLoadingSkeleton()).join('');
-    refreshBtn.classList.add('loading');
-
-    try {
-        // Fetch all repositories in parallel
-        const allData = await Promise.all(REPOS.map(repo => fetchRepoData(repo)));
-        
-        // Cache the results
-        repoCache = allData;
-
-        // Render all cards
-        container.innerHTML = allData.map(data => createRepoCard(data)).join('');
-
-        // Update statistics
-        updateStats(allData);
-
-        // Update last updated time
-        document.getElementById('last-updated').textContent = 
-            `Last updated: ${new Date().toLocaleTimeString()}`;
-    } catch (error) {
-        console.error('Error loading repositories:', error);
-        container.innerHTML = `
-            <div class="error-message">
-                <i class="fas fa-exclamation-triangle"></i>
-                Failed to load repositories. Please try again later.
+        return `
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span class="timeline-repo">${item.repo}</span>
+                    <span class="timeline-date">${date}</span>
+                </div>
+                <div class="timeline-content">
+                    ${icon} ${content}
+                </div>
             </div>
         `;
-    } finally {
-        refreshBtn.classList.remove('loading');
-    }
+    }).join('');
 }
 
-// Refresh all data
-function refreshAll() {
-    loadRepositories();
+function updateLastUpdated() {
+    const now = new Date();
+    elements.lastUpdated.textContent = `Updated: ${now.toLocaleTimeString()}`;
 }
-
-// Auto-refresh every 5 minutes
-function startAutoRefresh() {
-    setInterval(() => {
-        loadRepositories();
-    }, 5 * 60 * 1000);
-}
-
-// Initialize
-document.addEventListener('DOMContentLoaded', () => {
-    loadRepositories();
-    startAutoRefresh();
-});

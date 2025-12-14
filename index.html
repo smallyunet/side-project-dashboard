@@ -3,62 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Repositories Dashboard</title>
+    <title>Dev Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1><i class="fab fa-github"></i> GitHub Repositories Dashboard</h1>
-            <p class="subtitle">Real-time monitoring of my side projects</p>
-            <div class="header-info">
-                <span id="last-updated">Last updated: --</span>
-                <button id="refresh-btn" onclick="refreshAll()">
-                    <i class="fas fa-sync-alt"></i> Refresh
-                </button>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="brand">
+                <i class="fab fa-github-alt"></i>
+                <span>DevDash</span>
             </div>
-        </header>
+            
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active" data-tab="overview">
+                    <i class="fas fa-chart-pie"></i> Overview
+                </a>
+                <a href="#" class="nav-item" data-tab="repositories">
+                    <i class="fas fa-code"></i> Repositories
+                </a>
+                <a href="#" class="nav-item" data-tab="activity">
+                    <i class="fas fa-history"></i> Activity
+                </a>
+            </nav>
 
-        <div class="stats-overview">
-            <div class="stat-card">
-                <i class="fas fa-code-branch"></i>
-                <div class="stat-content">
-                    <span class="stat-value" id="total-repos">0</span>
-                    <span class="stat-label">Repositories</span>
+            <div class="filters-section">
+                <h3>Filters</h3>
+                <div class="filter-group">
+                    <label>Sort by</label>
+                    <select id="sort-select">
+                        <option value="updated">Last Updated</option>
+                        <option value="stars">Stars</option>
+                        <option value="forks">Forks</option>
+                        <option value="created">Created Date</option>
+                    </select>
                 </div>
             </div>
-            <div class="stat-card">
-                <i class="fas fa-star"></i>
-                <div class="stat-content">
-                    <span class="stat-value" id="total-stars">0</span>
-                    <span class="stat-label">Total Stars</span>
-                </div>
-            </div>
-            <div class="stat-card">
-                <i class="fas fa-code-fork"></i>
-                <div class="stat-content">
-                    <span class="stat-value" id="total-forks">0</span>
-                    <span class="stat-label">Total Forks</span>
-                </div>
-            </div>
-            <div class="stat-card">
-                <i class="fas fa-eye"></i>
-                <div class="stat-content">
-                    <span class="stat-value" id="total-watchers">0</span>
-                    <span class="stat-label">Total Watchers</span>
-                </div>
-            </div>
-        </div>
 
-        <div class="repos-grid" id="repos-container">
-            <!-- Repository cards will be inserted here -->
-        </div>
+            <div class="sidebar-footer">
+                <p>Built by smallyunet</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="header-title">
+                    <h2>Dashboard</h2>
+                    <span class="last-updated" id="last-updated">Updated: --</span>
+                </div>
+                <div class="header-actions">
+                    <button id="refresh-btn" class="btn-primary">
+                        <i class="fas fa-sync-alt"></i> Refresh
+                    </button>
+                </div>
+            </header>
+
+            <div id="overview-view" class="view-section active">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon stars">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Total Stars</h3>
+                            <span class="stat-value" id="total-stars">0</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon forks">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Total Forks</h3>
+                            <span class="stat-value" id="total-forks">0</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon repos">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Repositories</h3>
+                            <span class="stat-value" id="total-repos">0</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon issues">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Open Issues</h3>
+                            <span class="stat-value" id="total-issues">0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-header">
+                    <h3>Top Performing Repositories</h3>
+                </div>
+                <div class="top-repos-grid" id="top-repos-container">
+                    <!-- Top repos will be inserted here -->
+                </div>
+            </div>
+
+            <div id="repositories-view" class="view-section">
+                <div class="repos-grid" id="repos-container">
+                    <!-- All repos will be inserted here -->
+                </div>
+            </div>
+
+            <div id="activity-view" class="view-section">
+                <div class="timeline-container" id="activity-timeline">
+                    <!-- Activity timeline will be inserted here -->
+                </div>
+            </div>
+        </main>
     </div>
-
-    <footer>
-        <p>Built with <i class="fas fa-heart" style="color: #e25555;"></i> | Data from GitHub API</p>
-    </footer>
 
     <script src="app.js"></script>
 </body>
