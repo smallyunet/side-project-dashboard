@@ -60,6 +60,14 @@ const elements = {
 document.addEventListener('DOMContentLoaded', () => {
     initDashboard();
     setupEventListeners();
+
+    // Auto refresh every 10 minutes
+    setInterval(() => {
+        if (!state.loading) {
+            console.log('Auto-refreshing data...');
+            initDashboard();
+        }
+    }, 600000);
 });
 
 function setupEventListeners() {
@@ -165,9 +173,15 @@ async function fetchRepoData(repoFullName) {
             fetch(`https://api.github.com/repos/${owner}/${repo}/releases?per_page=3`)
         ]);
 
+        if (!repoRes.ok) {
+            throw new Error(`GitHub API returned ${repoRes.status}`);
+        }
+
         const repoData = await repoRes.json();
-        const commitsData = await commitsRes.json();
-        const releasesData = await releasesRes.json();
+        
+        // Handle optional data gracefully
+        const commitsData = commitsRes.ok ? await commitsRes.json() : [];
+        const releasesData = releasesRes.ok ? await releasesRes.json() : [];
 
         return {
             repo: repoData,
@@ -176,7 +190,16 @@ async function fetchRepoData(repoFullName) {
         };
     } catch (error) {
         console.error(`Error fetching data for ${repoFullName}:`, error);
-        return { repo: { name: repo, full_name: repoFullName, error: true }, commits: [], releases: [] };
+        return { 
+            repo: { 
+                name: repo, 
+                full_name: repoFullName, 
+                error: true,
+                error_message: error.message
+            }, 
+            commits: [], 
+            releases: [] 
+        };
     }
 }
 
@@ -198,21 +221,21 @@ function updateStats() {
 function renderOverview() {
     // Top 3 repos by stars
     const topRepos = [...state.repos]
-        .filter(r => !r.error)
-        .sort((a, b) => b.stargazers_count - a.stargazers_count)
-        .slice(0, 3);
-
-    elements.topReposContainer.innerHTML = topRepos.map(createRepoCard).join('');
-}
-
-function renderRepositories() {
-    let sortedRepos = [...state.repos].filter(r => !r.error);
+        .filter(r => !r.error);
     
     switch (state.sortBy) {
         case 'stars':
-            sortedRepos.sort((a, b) => b.stargazers_count - a.stargazers_count);
+            sortedRepos.sort((a, b) => (b.stargazers_count || 0) - (a.stargazers_count || 0));
             break;
         case 'forks':
+            sortedRepos.sort((a, b) => (b.forks_count || 0) - (a.forks_count || 0));
+            break;
+        case 'created':
+            sortedRepos.sort((a, b) => new Date(b.created_at || 0) - new Date(a.created_at || 0));
+            break;
+        case 'updated':
+        default:
+            sortedRepos.sort((a, b) => new Date(b.updated_at || 0) - new Date(a.updated_at || 0
             sortedRepos.sort((a, b) => b.forks_count - a.forks_count);
             break;
         case 'created':
@@ -220,6 +243,21 @@ function renderRepositories() {
             break;
         case 'updated':
         default:
+    if (repo.error) {
+        return `
+            <div class="repo-card error-card">
+                <div class="repo-header">
+                    <span class="repo-name">
+                        <i class="fas fa-exclamation-triangle"></i> ${repo.full_name}
+                    </span>
+                </div>
+                <p class="repo-description">
+                    Failed to load data. ${repo.error_message || 'Check your connection or API rate limits.'}
+                </p>
+            </div>
+        `;
+    }
+
             sortedRepos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
             break;
     }

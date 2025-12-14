@@ -49,6 +49,15 @@ body {
     flex-shrink: 0;
 }
 
+.error-card {
+    border: 1px solid var(--accent-danger);
+    opacity: 0.8;
+}
+
+.error-card .repo-name {
+    color: var(--accent-danger);
+}
+
 .brand {
     display: flex;
     align-items: center;
