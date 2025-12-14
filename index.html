@@ -40,11 +40,37 @@
                     <span class="last-updated" id="last-updated">Updated: --</span>
                 </div>
                 <div class="header-actions">
+                    <button id="settings-btn" class="btn-secondary">
+                        <i class="fas fa-cog"></i> Settings
+                    </button>
                     <button id="refresh-btn" class="btn-primary">
                         <i class="fas fa-sync-alt"></i> Refresh
                     </button>
                 </div>
             </header>
+
+            <div id="settings-modal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Settings</h3>
+                        <button class="close-modal"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="github-token">GitHub Personal Access Token</label>
+                            <input type="password" id="github-token" placeholder="ghp_...">
+                            <p class="help-text">
+                                Token is stored locally in your browser. 
+                                <a href="https://github.com/settings/tokens" target="_blank">Generate a token</a> 
+                                (classic or fine-grained) with <code>public_repo</code> scope to increase API rate limits.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="save-token-btn" class="btn-primary">Save Token</button>
+                    </div>
+                </div>
+            </div>
 
             <div id="stats" class="section-container">
                 <div class="stats-grid">

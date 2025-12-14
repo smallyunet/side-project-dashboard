@@ -40,10 +40,19 @@ let state = {
     loading: false
 };
 
+// Cache Config
+const CACHE_KEY = 'dashboard_data';
+const CACHE_DURATION = 10 * 60 * 1000; // 10 minutes
+
 // DOM Elements
 const elements = {
     lastUpdated: document.getElementById('last-updated'),
     refreshBtn: document.getElementById('refresh-btn'),
+    settingsBtn: document.getElementById('settings-btn'),
+    settingsModal: document.getElementById('settings-modal'),
+    closeModalBtn: document.querySelector('.close-modal'),
+    saveTokenBtn: document.getElementById('save-token-btn'),
+    githubTokenInput: document.getElementById('github-token'),
     totalStars: document.getElementById('total-stars'),
     totalForks: document.getElementById('total-forks'),
     totalRepos: document.getElementById('total-repos'),
@@ -56,6 +65,12 @@ const elements = {
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
+    // Load token if exists
+    const token = localStorage.getItem('github_token');
+    if (token) {
+        elements.githubTokenInput.value = token;
+    }
+
     initDashboard();
     setupEventListeners();
 
@@ -71,7 +86,34 @@ document.addEventListener('DOMContentLoaded', () => {
 function setupEventListeners() {
     // Refresh
     elements.refreshBtn.addEventListener('click', () => {
-        initDashboard();
+        initDashboard(true); // Force refresh
+    });
+
+    // Settings Modal
+    elements.settingsBtn.addEventListener('click', () => {
+        elements.settingsModal.classList.add('active');
+    });
+
+    elements.closeModalBtn.addEventListener('click', () => {
+        elements.settingsModal.classList.remove('active');
+    });
+
+    elements.saveTokenBtn.addEventListener('click', () => {
+        const token = elements.githubTokenInput.value.trim();
+        if (token) {
+            localStorage.setItem('github_token', token);
+        } else {
+            localStorage.removeItem('github_token');
+        }
+        elements.settingsModal.classList.remove('active');
+        initDashboard(true); // Refresh with new token
+    });
+
+    // Close modal on outside click
+    elements.settingsModal.addEventListener('click', (e) => {
+        if (e.target === elements.settingsModal) {
+            elements.settingsModal.classList.remove('active');
+        }
     });
 
     // Sort
@@ -81,20 +123,86 @@ function setupEventListeners() {
     });
 }
 
-async function initDashboard() {
+async function initDashboard(forceRefresh = false) {
     setLoading(true);
     try {
+        if (!forceRefresh) {
+            const cachedData = loadFromCache();
+            if (cachedData) {
+                console.log('Loading from cache...');
+                state.repos = cachedData.repos;
+                state.activity = cachedData.activity;
+                updateStats();
+                renderRepositories();
+                renderActivity();
+                updateLastUpdated(new Date(cachedData.timestamp));
+                setLoading(false);
+                return;
+            }
+        }
+
         await fetchAllData();
+        
+        // Save to cache
+        saveToCache({
+            repos: state.repos,
+            activity: state.activity
+        });
+
         updateStats();
         renderRepositories();
         renderActivity();
         updateLastUpdated();
     } catch (error) {
         console.error('Error initializing dashboard:', error);
-        alert('Failed to load dashboard data. Check console for details.');
+        if (error.message.includes('rate limit')) {
+            alert(error.message);
+            elements.settingsModal.classList.add('active');
+        } else {
+            alert('Failed to load dashboard data. Check console for details.');
+        }
     } finally {
         setLoading(false);
     }
+}
+
+function loadFromCache() {
+    const cached = localStorage.getItem(CACHE_KEY);
+    if (!cached) return null;
+    
+    try {
+        const { timestamp, data } = JSON.parse(cached);
+        if (Date.now() - timestamp > CACHE_DURATION) return null;
+        return { ...data, timestamp };
+    } catch (e) {
+        return null;
+    }
+}
+
+function saveToCache(data) {
+    localStorage.setItem(CACHE_KEY, JSON.stringify({
+        timestamp: Date.now(),
+        data
+    }));
+}
+
+function getAuthHeaders() {
+    const token = localStorage.getItem('github_token');
+    return token ? { 'Authorization': `Bearer ${token}` } : {};
+}
+
+async function fetchWithAuth(url) {
+    const headers = getAuthHeaders();
+    const response = await fetch(url, { headers });
+    
+    if (response.status === 403) {
+        const rateLimitRemaining = response.headers.get('x-ratelimit-remaining');
+        if (rateLimitRemaining === '0') {
+            throw new Error('API rate limit exceeded. Please add a GitHub token in settings.');
+        }
+    }
+    
+    return response;
 }
 
 function setLoading(isLoading) {
@@ -152,9 +260,9 @@ async function fetchRepoData(repoFullName) {
     const [owner, repo] = repoFullName.split('/');
     try {
         const [repoRes, commitsRes, releasesRes] = await Promise.all([
-            fetch(`https://api.github.com/repos/${owner}/${repo}`),
-            fetch(`https://api.github.com/repos/${owner}/${repo}/commits?per_page=5`),
-            fetch(`https://api.github.com/repos/${owner}/${repo}/releases?per_page=3`)
+            fetchWithAuth(`https://api.github.com/repos/${owner}/${repo}`),
+            fetchWithAuth(`https://api.github.com/repos/${owner}/${repo}/commits?per_page=5`),
+            fetchWithAuth(`https://api.github.com/repos/${owner}/${repo}/releases?per_page=3`)
         ]);
 
         if (!repoRes.ok) {
@@ -174,6 +282,10 @@ async function fetchRepoData(repoFullName) {
         };
     } catch (error) {
         console.error(`Error fetching data for ${repoFullName}:`, error);
+        // Propagate rate limit errors
+        if (error.message.includes('rate limit')) {
+            throw error;
+        }
         return { 
             repo: { 
                 name: repo, 
@@ -218,6 +330,7 @@ function renderOverview() {
 }
 
 function renderRepositories() {
+    console.log('Sorting by:', state.sortBy);
     let sortedRepos = [...state.repos];
     
     switch (state.sortBy) {
