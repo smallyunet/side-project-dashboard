@@ -227,7 +227,22 @@ function renderRepositories() {
         case 'forks':
             sortedRepos.sort((a, b) => (b.forks_count || 0) - (a.forks_count || 0));
             break;
-        case 'c
+        case 'created':
+            sortedRepos.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+            break;
+        case 'updated':
+        default:
+            sortedRepos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+            break;
+    }
+
+    if (sortedRepos.length === 0) {
+        elements.reposContainer.innerHTML = '<div class="empty-state">No repositories found.</div>';
+        return;
+    }
+
+    elements.reposContainer.innerHTML = sortedRepos.map(createRepoCard).join('');
+}
 
 function createRepoCard(repo) {
     if (repo.error) {
@@ -272,11 +287,6 @@ function createRepoCard(repo) {
                 <div class="repo-lang">
                     <span class="language-dot" style="background-color: ${langColor}"></span>
                     ${repo.language || 'Unknown'}
-    if (state.activity.length === 0) {
-        elements.activityTimeline.innerHTML = '<div class="empty-state">No recent activity found.</div>';
-        return;
-    }
-
                 </div>
                 <div class="repo-updated">
                     Updated ${updatedDate}
@@ -287,6 +297,11 @@ function createRepoCard(repo) {
 }
 
 function renderActivity() {
+    if (state.activity.length === 0) {
+        elements.activityTimeline.innerHTML = '<div class="empty-state">No recent activity found.</div>';
+        return;
+    }
+
     elements.activityTimeline.innerHTML = state.activity.map(item => {
         const date = item.date.toLocaleDateString() + ' ' + item.date.toLocaleTimeString();
         let content = '';
