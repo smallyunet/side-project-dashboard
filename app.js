@@ -187,6 +187,18 @@ class Dashboard {
             `;
         }
 
+        let packageHtml = '';
+        if (repo.package_info) {
+            const iconClass = repo.package_info.type === 'pypi' ? 'fab fa-python' : 'fab fa-npm';
+            const iconColor = repo.package_info.type === 'pypi' ? '#3775a9' : '#CB3837';
+            packageHtml = `
+                <div class="repo-package">
+                    <i class="${iconClass}" style="color: ${iconColor}; margin-right: 4px;"></i>
+                    <a href="${repo.package_info.url}" target="_blank" style="text-decoration: none; color: inherit;">${repo.package_info.version}</a>
+                </div>
+             `;
+        }
+
         return `
             <div class="repo-card">
                 <div class="repo-header">
@@ -214,6 +226,7 @@ class Dashboard {
                         ${repo.language || 'Unknown'}
                     </div>
                     ${tagHtml}
+                    ${packageHtml}
                     <div class="repo-updated">
                         Last commit: ${lastCommitDate}
                     </div>

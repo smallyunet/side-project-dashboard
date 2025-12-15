@@ -23,6 +23,46 @@ async function fetchWithAuth(url) {
     return response;
 }
 
+async function fetchPyPiData(packageName) {
+    try {
+        const res = await fetch(`https://pypi.org/pypi/${packageName}/json`);
+        if (res.status === 404) return null;
+        // if (!res.ok) return null; 
+        if (!res.ok) throw new Error(`PyPI status: ${res.status}`);
+
+        const data = await res.json();
+        return {
+            type: 'pypi',
+            name: packageName,
+            version: data.info.version,
+            url: data.info.package_url
+        };
+    } catch (e) {
+        return null;
+    }
+}
+
+async function fetchNpmData(packageName) {
+    try {
+        const res = await fetch(`https://registry.npmjs.org/${packageName}`);
+        if (res.status === 404) return null;
+        if (!res.ok) throw new Error(`NPM status: ${res.status}`);
+
+        const data = await res.json();
+        const latest = data['dist-tags']?.latest;
+        if (!latest) return null;
+
+        return {
+            type: 'npm',
+            name: packageName,
+            version: latest,
+            url: `https://www.npmjs.com/package/${packageName}`
+        };
+    } catch (e) {
+        return null;
+    }
+}
+
 async function fetchRepoData(repoFullName) {
     const [owner, repo] = repoFullName.split('/');
     try {
@@ -82,6 +122,23 @@ async function fetchRepoData(repoFullName) {
             };
         }
 
+        // Fetch Package Info (PyPI or NPM)
+        let packageInfo = null;
+        const lang = repoData.language;
+        try {
+            if (lang === 'Python') {
+                const pypi = await fetchPyPiData(repoData.name);
+                if (pypi) packageInfo = pypi;
+            } else if (lang === 'JavaScript' || lang === 'TypeScript') {
+                // Try repo name directly
+                let npm = await fetchNpmData(repoData.name);
+                // logic to try variants? For now, just repo name.
+                if (npm) packageInfo = npm;
+            }
+        } catch (pkgErr) {
+            console.warn(`Error checking package info for ${repoData.name}:`, pkgErr.message);
+        }
+
         // Construct Minified Repo Object
         return {
             name: repoData.name,
@@ -97,7 +154,8 @@ async function fetchRepoData(repoFullName) {
             created_at: repoData.created_at,
             last_commit_date: lastCommitDate,
             latest_tag: latestTag,
-            latest_workflow_runs: relevantRuns
+            latest_workflow_runs: relevantRuns,
+            package_info: packageInfo
         };
 
     } catch (error) {

@@ -431,3 +431,25 @@ select {
     padding-top: 12px;
     border-top-color: #f5f5f5;
 }
+
+/* Package Info */
+.repo-package {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-family: var(--font-family);
+    color: var(--text-secondary);
+}
+
+.repo-package i {
+    font-size: 12px;
+}
+
+.repo-package a {
+    color: var(--accent-primary);
+    text-decoration: none;
+}
+
+.repo-package a:hover {
+    text-decoration: underline;
+}
