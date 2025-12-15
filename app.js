@@ -35,7 +35,6 @@ let elements = {};
 document.addEventListener('DOMContentLoaded', () => {
     elements = {
         lastUpdated: document.getElementById('last-updated'),
-        refreshBtn: document.getElementById('refresh-btn'),
         totalStars: document.getElementById('total-stars'),
         totalForks: document.getElementById('total-forks'),
         totalRepos: document.getElementById('total-repos'),
@@ -50,11 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function setupEventListeners() {
-    // Refresh
-    elements.refreshBtn.addEventListener('click', () => {
-        initDashboard();
-    });
-
     // Sort
     elements.sortSelect.addEventListener('change', (e) => {
         state.sortBy = e.target.value;
@@ -87,22 +81,12 @@ async function initDashboard() {
 function setLoading(isLoading) {
     state.loading = isLoading;
     
-    if (!elements.refreshBtn) return;
-    
-    const icon = elements.refreshBtn.querySelector('i');
-    
     if (isLoading) {
-        if (icon) icon.classList.add('fa-spin');
-        elements.refreshBtn.disabled = true;
-        
         // Show loading spinner in containers if they are empty
         const spinner = '<div class="loading-spinner"><i class="fas fa-circle-notch"></i></div>';
         if (!state.repos.length && elements.reposContainer) {
             elements.reposContainer.innerHTML = spinner;
         }
-    } else {
-        if (icon) icon.classList.remove('fa-spin');
-        elements.refreshBtn.disabled = false;
     }
 }
 
