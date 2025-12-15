@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765812568985,
+  "timestamp": 1765814840050,
   "repos": [
     {
       "name": "echoevm",
@@ -26,7 +26,8 @@
           "head_sha": "4d676985c8e3f6756734300bb1099947c8d05212",
           "created_at": "2025-12-14T13:21:13Z"
         }
-      ]
+      ],
+      "package_info": null
     },
     {
       "name": "safe-kit",
@@ -69,43 +70,232 @@
           "head_sha": "648051aaeec99565c1006cd0e0d60fef6a15c03f",
           "created_at": "2025-12-14T08:22:31Z"
         }
-      ]
+      ],
+      "package_info": {
+        "type": "pypi",
+        "name": "safe-kit",
+        "version": "0.0.5",
+        "url": "https://pypi.org/project/safe-kit/"
+      }
     },
     {
       "name": "finder-sight",
       "full_name": "smallyunet/finder-sight",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/finder-sight/tags?per_page=1: 403 rate limit exceeded"
+      "html_url": "https://github.com/smallyunet/finder-sight",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2025-12-14T01:34:39Z",
+      "created_at": "2025-12-13T13:37:31Z",
+      "last_commit_date": "2025-12-14T01:34:33Z",
+      "latest_tag": {
+        "name": "v0.0.1"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20200775341",
+          "head_sha": "b6ccb3347423e770a5544245d5585a6e2c1cbafc",
+          "created_at": "2025-12-14T01:34:38Z"
+        },
+        {
+          "name": "Build macOS App",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20200775340",
+          "head_sha": "b6ccb3347423e770a5544245d5585a6e2c1cbafc",
+          "created_at": "2025-12-14T01:34:38Z"
+        },
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20200775163",
+          "head_sha": "b6ccb3347423e770a5544245d5585a6e2c1cbafc",
+          "created_at": "2025-12-14T01:34:37Z"
+        }
+      ],
+      "package_info": null
     },
     {
       "name": "privy-wallet-kit",
       "full_name": "smallyunet/privy-wallet-kit",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/privy-wallet-kit: 403 rate limit exceeded"
+      "html_url": "https://github.com/smallyunet/privy-wallet-kit",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2025-12-13T15:41:56Z",
+      "created_at": "2025-12-12T17:04:53Z",
+      "last_commit_date": "2025-12-13T15:41:50Z",
+      "latest_tag": {
+        "name": "v0.0.2"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Publish to NPM",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/privy-wallet-kit/actions/runs/20194259728",
+          "head_sha": "2038502bd508ae0ff6e1a7fb0d775db118efe339",
+          "created_at": "2025-12-13T15:42:09Z"
+        },
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/privy-wallet-kit/actions/runs/20194255934",
+          "head_sha": "2038502bd508ae0ff6e1a7fb0d775db118efe339",
+          "created_at": "2025-12-13T15:41:55Z"
+        },
+        {
+          "name": "Deploy Storybook to GitHub Pages",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/privy-wallet-kit/actions/runs/20194255929",
+          "head_sha": "2038502bd508ae0ff6e1a7fb0d775db118efe339",
+          "created_at": "2025-12-13T15:41:55Z"
+        }
+      ],
+      "package_info": {
+        "type": "npm",
+        "name": "privy-wallet-kit",
+        "version": "0.0.2",
+        "url": "https://www.npmjs.com/package/privy-wallet-kit"
+      }
     },
     {
       "name": "userop-validator",
       "full_name": "smallyunet/userop-validator",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/userop-validator/actions/runs?per_page=5: 403 rate limit exceeded"
+      "html_url": "https://github.com/smallyunet/userop-validator",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2025-12-13T11:16:18Z",
+      "created_at": "2025-12-13T10:17:00Z",
+      "last_commit_date": "2025-12-13T11:16:11Z",
+      "latest_tag": {
+        "name": "v0.0.1"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20191283288",
+          "head_sha": "84a681dec51926e01c43c924d71a36e055c85a52",
+          "created_at": "2025-12-13T11:16:16Z"
+        },
+        {
+          "name": "Deploy Docs",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20191283281",
+          "head_sha": "84a681dec51926e01c43c924d71a36e055c85a52",
+          "created_at": "2025-12-13T11:16:16Z"
+        },
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20191283168",
+          "head_sha": "84a681dec51926e01c43c924d71a36e055c85a52",
+          "created_at": "2025-12-13T11:16:15Z"
+        }
+      ],
+      "package_info": null
     },
     {
       "name": "etherflow",
       "full_name": "smallyunet/etherflow",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/etherflow/tags?per_page=1: 403 rate limit exceeded"
+      "html_url": "https://github.com/smallyunet/etherflow",
+      "description": null,
+      "language": "Go",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2025-12-15T15:21:12Z",
+      "created_at": "2025-12-13T10:06:19Z",
+      "last_commit_date": "2025-12-15T15:21:05Z",
+      "latest_tag": {
+        "name": "v0.0.1"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/etherflow/actions/runs/20237480753",
+          "head_sha": "ba6c9f018ec538660901752b4810ad15552ad90f",
+          "created_at": "2025-12-15T15:21:10Z"
+        }
+      ],
+      "package_info": null
     },
     {
       "name": "go-cggmp-tss",
       "full_name": "smallyunet/go-cggmp-tss",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/go-cggmp-tss/releases?per_page=1: 403 rate limit exceeded"
+      "html_url": "https://github.com/smallyunet/go-cggmp-tss",
+      "description": null,
+      "language": "Go",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2025-12-13T06:46:29Z",
+      "created_at": "2025-12-13T03:39:51Z",
+      "last_commit_date": "2025-12-13T06:46:14Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/20188368476",
+          "head_sha": "e924cb6013c0ffb658db5f07bf2cf36dff7d2c4e",
+          "created_at": "2025-12-13T06:46:28Z"
+        }
+      ],
+      "package_info": null
     },
     {
       "name": "ethbft",
       "full_name": "smallyunet/ethbft",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/ethbft/commits?per_page=1: 403 rate limit exceeded"
+      "html_url": "https://github.com/smallyunet/ethbft",
+      "description": "Ethereum to CometBFT Bridge",
+      "language": "Go",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2025-12-15T14:18:55Z",
+      "created_at": "2025-08-31T16:31:07Z",
+      "last_commit_date": "2025-12-15T14:18:47Z",
+      "latest_tag": {
+        "name": "v0.0.3"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/ethbft/actions/runs/20235441285",
+          "head_sha": "2424fa372aeef659dbd8b437fedc2be0a1eda62c",
+          "created_at": "2025-12-15T14:18:52Z"
+        }
+      ],
+      "package_info": null
     }
   ]
 }
