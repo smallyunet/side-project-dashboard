@@ -9,11 +9,6 @@ try {
     process.exit(1);
 }
 
-// Add current repo if not exists
-const currentRepo = 'smallyunet/side-project-dashboard';
-if (!REPOS.includes(currentRepo)) {
-    REPOS.push(currentRepo);
-}
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 
@@ -23,21 +18,21 @@ async function fetchWithAuth(url) {
         ...(GITHUB_TOKEN ? { 'Authorization': `Bearer ${GITHUB_TOKEN}` } : {})
     };
     const response = await fetch(url, { headers });
-    
+
     // Check for rate limit
     if (response.status === 403 || response.status === 429) {
         const resetTime = response.headers.get('x-ratelimit-reset');
         const limit = response.headers.get('x-ratelimit-limit');
         const remaining = response.headers.get('x-ratelimit-remaining');
-        
+
         console.error('GitHub API Rate Limit Hit!');
         console.error(`Limit: ${limit}, Remaining: ${remaining}`);
-        
+
         if (resetTime) {
             const resetDate = new Date(resetTime * 1000);
             console.error(`Rate limit resets at: ${resetDate.toISOString()}`);
         }
-        
+
         // Fail the action
         process.exit(1);
     }

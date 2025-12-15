@@ -40,8 +40,8 @@ body {
     font-family: var(--font-sans);
     background-color: var(--bg-body);
     color: var(--text-primary);
-    font-size: 14px;
-    line-height: 1.5;
+    font-size: 13px; /* Reduced from 14px */
+    line-height: 1.4; /* Tighter line height */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     transition: background-color 0.3s, color 0.3s;
@@ -55,7 +55,7 @@ body {
 }
 
 .main-content {
-    padding: 40px 0;
+    padding: 20px 0; /* Reduced from 40px */
     width: 100%;
 }
 
@@ -64,13 +64,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 32px;
-    padding-bottom: 20px;
+    margin-bottom: 20px; /* Reduced from 32px */
+    padding-bottom: 12px; /* Reduced from 20px */
     border-bottom: 1px solid var(--border-color);
 }
 
 .header-title h2 {
-    font-size: 24px;
+    font-size: 20px; /* Reduced from 24px */
     font-weight: 700;
     color: var(--text-primary);
     display: inline-block;
@@ -101,7 +101,7 @@ body {
 
 /* Sections */
 .section-container {
-    margin-bottom: 40px;
+    margin-bottom: 24px; /* Reduced from 40px */
 }
 
 .section-header {
@@ -114,7 +114,7 @@ body {
 }
 
 .section-header h3 {
-    font-size: 16px;
+    font-size: 14px; /* Reduced from 16px */
     font-weight: 600;
     color: var(--text-primary);
     letter-spacing: -0.01em;
@@ -123,18 +123,18 @@ body {
 /* Stats Grid */
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Reduced min-width */
+    gap: 12px; /* Reduced from 16px */
     background-color: transparent;
     border: none;
 }
 
 .stat-card {
     background-color: var(--bg-panel);
-    padding: 20px;
+    padding: 16px; /* Reduced from 20px */
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 12px; /* Reduced from 16px */
     border-radius: 12px;
     box-shadow: var(--shadow-sm);
     border: 1px solid var(--border-color);
@@ -147,15 +147,15 @@ body {
 }
 
 .stat-icon {
-    width: 48px;
-    height: 48px;
+    width: 40px; /* Reduced from 48px */
+    height: 40px; /* Reduced from 48px */
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 8px; /* Slightly tighter radius */
     background-color: var(--bg-body);
     color: var(--accent-primary);
-    font-size: 20px;
+    font-size: 18px; /* Reduced from 20px */
 }
 
 .stat-info h3 {
@@ -168,7 +168,7 @@ body {
 }
 
 .stat-value {
-    font-size: 24px;
+    font-size: 20px; /* Reduced from 24px */
     font-weight: 700;
     color: var(--text-primary);
     letter-spacing: -0.025em;
@@ -177,15 +177,15 @@ body {
 /* Repositories Grid */
 .repos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Reduced from 320px */
+    gap: 12px; /* Reduced from 16px */
 }
 
 /* Repo Card */
 .repo-card {
     border: 1px solid var(--border-color);
     background-color: var(--bg-panel);
-    padding: 20px;
+    padding: 16px; /* Reduced from 20px */
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -208,7 +208,7 @@ body {
 }
 
 .repo-name {
-    font-size: 16px;
+    font-size: 14px; /* Reduced from 16px */
     font-weight: 600;
     color: var(--accent-primary);
     text-decoration: none;
@@ -232,9 +232,9 @@ body {
 }
 
 .repo-description {
-    font-size: 13px;
+    font-size: 12px; /* Reduced from 13px */
     color: var(--text-secondary);
-    margin-bottom: 20px;
+    margin-bottom: 12px; /* Reduced from 20px */
     /* Increased margin */
     flex-grow: 1;
     display: -webkit-box;
@@ -251,8 +251,8 @@ body {
     font-size: 12px;
     color: var(--text-secondary);
     margin-top: auto;
-    margin-bottom: 16px;
-    padding-bottom: 16px;
+    margin-bottom: 12px; /* Reduced from 16px */
+    padding-bottom: 12px; /* Reduced from 16px */
     border-bottom: 1px solid var(--border-color);
 }
 
