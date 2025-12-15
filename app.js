@@ -460,6 +460,7 @@ function renderActivity() {
 function getWorkflowStatusIcon(status) {
     switch (status) {
         case 'success':
+        case 'completed':
             return '<i class="fas fa-check-circle" style="color: #22c55e"></i>';
         case 'failure':
             return '<i class="fas fa-times-circle" style="color: #ef4444"></i>';
@@ -468,7 +469,16 @@ function getWorkflowStatusIcon(status) {
         case 'in_progress':
         case 'queued':
         case 'waiting':
+        case 'pending':
+        case 'requested':
             return '<i class="fas fa-circle-notch fa-spin" style="color: #3b82f6"></i>';
+        case 'skipped':
+        case 'neutral':
+            return '<i class="fas fa-minus-circle" style="color: #9ca3af"></i>';
+        case 'timed_out':
+        case 'action_required':
+        case 'stale':
+            return '<i class="fas fa-exclamation-circle" style="color: #f59e0b"></i>';
         default:
             return '<i class="fas fa-circle" style="color: #6b7280"></i>';
     }
@@ -477,6 +487,7 @@ function getWorkflowStatusIcon(status) {
 function getWorkflowStatusClass(status) {
     switch (status) {
         case 'success':
+        case 'completed':
             return 'status-success';
         case 'failure':
             return 'status-failure';
@@ -485,7 +496,16 @@ function getWorkflowStatusClass(status) {
         case 'in_progress':
         case 'queued':
         case 'waiting':
+        case 'pending':
+        case 'requested':
             return 'status-pending';
+        case 'skipped':
+        case 'neutral':
+            return 'status-unknown';
+        case 'timed_out':
+        case 'action_required':
+        case 'stale':
+            return 'status-cancelled';
         default:
             return 'status-unknown';
     }
