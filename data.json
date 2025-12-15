@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765784776069,
+  "timestamp": 1765786072354,
   "repos": [
     {
       "id": 981255395,
@@ -103,7 +103,14 @@
       "open_issues": 0,
       "watchers": 3,
       "default_branch": "main",
-      "temp_clone_token": null,
+      "permissions": {
+        "admin": false,
+        "maintain": false,
+        "push": false,
+        "triage": false,
+        "pull": false
+      },
+      "temp_clone_token": "",
       "network_count": 1,
       "subscribers_count": 1,
       "last_commit_date": "2025-12-14T13:21:07Z"
@@ -214,7 +221,14 @@
       "open_issues": 0,
       "watchers": 0,
       "default_branch": "main",
-      "temp_clone_token": null,
+      "permissions": {
+        "admin": false,
+        "maintain": false,
+        "push": false,
+        "triage": false,
+        "pull": false
+      },
+      "temp_clone_token": "",
       "network_count": 0,
       "subscribers_count": 0,
       "last_commit_date": "2025-12-14T08:22:26Z"
@@ -319,7 +333,14 @@
       "open_issues": 0,
       "watchers": 0,
       "default_branch": "main",
-      "temp_clone_token": null,
+      "permissions": {
+        "admin": false,
+        "maintain": false,
+        "push": false,
+        "triage": false,
+        "pull": false
+      },
+      "temp_clone_token": "",
       "network_count": 0,
       "subscribers_count": 0,
       "last_commit_date": "2025-12-14T01:34:33Z"
@@ -430,7 +451,14 @@
       "open_issues": 0,
       "watchers": 0,
       "default_branch": "main",
-      "temp_clone_token": null,
+      "permissions": {
+        "admin": false,
+        "maintain": false,
+        "push": false,
+        "triage": false,
+        "pull": false
+      },
+      "temp_clone_token": "",
       "network_count": 0,
       "subscribers_count": 0,
       "last_commit_date": "2025-12-13T15:41:50Z"
@@ -535,7 +563,14 @@
       "open_issues": 0,
       "watchers": 0,
       "default_branch": "main",
-      "temp_clone_token": null,
+      "permissions": {
+        "admin": false,
+        "maintain": false,
+        "push": false,
+        "triage": false,
+        "pull": false
+      },
+      "temp_clone_token": "",
       "network_count": 0,
       "subscribers_count": 0,
       "last_commit_date": "2025-12-13T11:16:11Z"
@@ -640,7 +675,14 @@
       "open_issues": 0,
       "watchers": 0,
       "default_branch": "main",
-      "temp_clone_token": null,
+      "permissions": {
+        "admin": false,
+        "maintain": false,
+        "push": false,
+        "triage": false,
+        "pull": false
+      },
+      "temp_clone_token": "",
       "network_count": 0,
       "subscribers_count": 0,
       "last_commit_date": "2025-12-13T10:12:19Z"
@@ -745,7 +787,14 @@
       "open_issues": 0,
       "watchers": 0,
       "default_branch": "main",
-      "temp_clone_token": null,
+      "permissions": {
+        "admin": false,
+        "maintain": false,
+        "push": false,
+        "triage": false,
+        "pull": false
+      },
+      "temp_clone_token": "",
       "network_count": 0,
       "subscribers_count": 0,
       "last_commit_date": "2025-12-13T06:46:14Z"
