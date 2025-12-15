@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765814840050,
+  "timestamp": 1765815446937,
   "repos": [
     {
       "name": "echoevm",
@@ -293,6 +293,48 @@
           "html_url": "https://github.com/smallyunet/ethbft/actions/runs/20235441285",
           "head_sha": "2424fa372aeef659dbd8b437fedc2be0a1eda62c",
           "created_at": "2025-12-15T14:18:52Z"
+        }
+      ],
+      "package_info": null
+    },
+    {
+      "name": "side-project-dashboard",
+      "full_name": "smallyunet/side-project-dashboard",
+      "html_url": "https://github.com/smallyunet/side-project-dashboard",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2025-12-15T16:17:16Z",
+      "created_at": "2025-12-14T14:05:12Z",
+      "last_commit_date": "2025-12-15T16:17:09Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [
+        {
+          "name": "Deploy to GitHub Pages",
+          "status": "in_progress",
+          "conclusion": null,
+          "html_url": "https://github.com/smallyunet/side-project-dashboard/actions/runs/20239278329",
+          "head_sha": "6b01391ab4a966283eaa96a3bb1bdec458dd8932",
+          "created_at": "2025-12-15T16:17:14Z"
+        },
+        {
+          "name": "Update Dashboard Data",
+          "status": "in_progress",
+          "conclusion": null,
+          "html_url": "https://github.com/smallyunet/side-project-dashboard/actions/runs/20239278309",
+          "head_sha": "6b01391ab4a966283eaa96a3bb1bdec458dd8932",
+          "created_at": "2025-12-15T16:17:14Z"
+        },
+        {
+          "name": "pages build and deployment",
+          "status": "in_progress",
+          "conclusion": null,
+          "html_url": "https://github.com/smallyunet/side-project-dashboard/actions/runs/20239277912",
+          "head_sha": "6b01391ab4a966283eaa96a3bb1bdec458dd8932",
+          "created_at": "2025-12-15T16:17:13Z"
         }
       ],
       "package_info": null
