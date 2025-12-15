@@ -1,20 +1,21 @@
 const fs = require('fs');
 
-const REPOS = [
-    'smallyunet/echoevm',
-    'smallyunet/safe-kit',
-    'smallyunet/finder-sight',
-    'smallyunet/privy-wallet-kit',
-    'smallyunet/userop-validator',
-    'smallyunet/etherflow',
-    'smallyunet/go-cggmp-tss',
-    'smallyunet/ethbft'
-];
+// Load Repos from config
+let REPOS = [];
+try {
+    REPOS = require('./repos.json');
+} catch (e) {
+    console.error('Failed to load repos.json. Please ensure it exists.');
+    process.exit(1);
+}
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 
 async function fetchWithAuth(url) {
-    const headers = GITHUB_TOKEN ? { 'Authorization': `Bearer ${GITHUB_TOKEN}` } : {};
+    const headers = {
+        'User-Agent': 'Side-Project-Dashboard',
+        ...(GITHUB_TOKEN ? { 'Authorization': `Bearer ${GITHUB_TOKEN}` } : {})
+    };
     const response = await fetch(url, { headers });
     if (!response.ok) {
         throw new Error(`Failed to fetch ${url}: ${response.status} ${response.statusText}`);
@@ -28,105 +29,110 @@ async function fetchRepoData(repoFullName) {
         const [repoRes, lastCommitRes, releasesRes, workflowRunsRes, tagsRes] = await Promise.all([
             fetchWithAuth(`https://api.github.com/repos/${owner}/${repo}`),
             fetchWithAuth(`https://api.github.com/repos/${owner}/${repo}/commits?per_page=1`),
-            fetchWithAuth(`https://api.github.com/repos/${owner}/${repo}/releases?per_page=3`),
-            fetchWithAuth(`https://api.github.com/repos/${owner}/${repo}/actions/runs?per_page=10`),
+            fetchWithAuth(`https://api.github.com/repos/${owner}/${repo}/releases?per_page=1`), // Reduced to 1
+            fetchWithAuth(`https://api.github.com/repos/${owner}/${repo}/actions/runs?per_page=5`), // Reduced to 5
             fetchWithAuth(`https://api.github.com/repos/${owner}/${repo}/tags?per_page=1`)
         ]);
 
         const repoData = await repoRes.json();
         const lastCommitData = await lastCommitRes.json();
-        const releasesData = await releasesRes.json();
+        // const releasesData = await releasesRes.json(); // Not using releases list anymore in app.js
         const workflowRunsData = await workflowRunsRes.json();
         const tagsData = await tagsRes.json();
 
+        // Extract last commit date
+        let lastCommitDate = null;
         if (Array.isArray(lastCommitData) && lastCommitData.length > 0) {
-            repoData.last_commit_date = lastCommitData[0].commit.author.date;
+            lastCommitDate = lastCommitData[0].commit.author.date;
         }
 
+        // Process Workflow Runs (Minified)
+        let relevantRuns = [];
+        let latestRun = null;
+        if (workflowRunsData.workflow_runs && Array.isArray(workflowRunsData.workflow_runs) && workflowRunsData.workflow_runs.length > 0) {
+            // Filter relevant fields
+            const runs = workflowRunsData.workflow_runs.map(run => ({
+                name: run.name,
+                status: run.status,
+                conclusion: run.conclusion,
+                html_url: run.html_url,
+                head_sha: run.head_sha,
+                created_at: run.created_at
+            }));
+
+            // Match with latest commit if possible
+            if (lastCommitData.length > 0) {
+                const latestSha = lastCommitData[0].sha;
+                const commitRuns = runs.filter(r => r.head_sha === latestSha);
+                if (commitRuns.length > 0) {
+                    relevantRuns = commitRuns;
+                } else {
+                    relevantRuns = [runs[0]];
+                }
+            } else {
+                relevantRuns = [runs[0]];
+            }
+        }
+
+        // Process Latest Tag (Minified)
+        let latestTag = null;
+        if (Array.isArray(tagsData) && tagsData.length > 0) {
+            latestTag = {
+                name: tagsData[0].name
+            };
+        }
+
+        // Construct Minified Repo Object
         return {
-            repo: repoData,
-            lastCommit: Array.isArray(lastCommitData) && lastCommitData.length > 0 ? lastCommitData[0] : null,
-            releases: Array.isArray(releasesData) ? releasesData : [],
-            workflowRuns: Array.isArray(workflowRunsData.workflow_runs) ? workflowRunsData.workflow_runs : [],
-            latestTag: Array.isArray(tagsData) && tagsData.length > 0 ? tagsData[0] : null
+            name: repoData.name,
+            full_name: repoData.full_name,
+            html_url: repoData.html_url,
+            description: repoData.description,
+            language: repoData.language,
+            stargazers_count: repoData.stargazers_count,
+            forks_count: repoData.forks_count,
+            open_issues_count: repoData.open_issues_count,
+            visibility: repoData.visibility,
+            updated_at: repoData.updated_at,
+            created_at: repoData.created_at,
+            last_commit_date: lastCommitDate,
+            latest_tag: latestTag,
+            latest_workflow_runs: relevantRuns
         };
+
     } catch (error) {
         console.error(`Error fetching data for ${repoFullName}:`, error);
         return {
-            repo: {
-                name: repo,
-                full_name: repoFullName,
-                error: true,
-                error_message: error.message
-            },
-            lastCommit: null,
-            releases: [],
-            workflowRuns: [],
-            latestTag: null
+            name: repo,
+            full_name: repoFullName,
+            error: true,
+            error_message: error.message
         };
     }
 }
 
 async function main() {
+    console.log(`Fetching data for ${REPOS.length} repositories...`);
     const repoPromises = REPOS.map(repo => fetchRepoData(repo));
     const results = await Promise.all(repoPromises);
 
-    const repos = results.map(r => {
-        const repo = r.repo;
-        if (r.latestTag) {
-            repo.latest_tag = r.latestTag;
-        }
-        if (r.workflowRuns && Array.isArray(r.workflowRuns) && r.workflowRuns.length > 0 && r.lastCommit) {
-            // Get all workflow runs for the latest commit
-            const latestCommitSha = r.lastCommit.sha;
-            const latestCommitRuns = r.workflowRuns.filter(run => run.head_sha === latestCommitSha);
-            
-            if (latestCommitRuns.length > 0) {
-                repo.latest_workflow_runs = latestCommitRuns;
-                repo.latest_workflow_run = latestCommitRuns[0]; // Keep for backward compatibility
-            } else {
-                // Fallback to the most recent run if no runs match the latest commit
-                repo.latest_workflow_run = r.workflowRuns[0];
-                repo.latest_workflow_runs = [r.workflowRuns[0]];
-            }
-        } else if (r.workflowRuns && Array.isArray(r.workflowRuns) && r.workflowRuns.length > 0) {
-            repo.latest_workflow_run = r.workflowRuns[0];
-            repo.latest_workflow_runs = [r.workflowRuns[0]];
-        }
-        return repo;
-    });
-
-    let allActivity = [];
-    results.forEach(r => {
-        if (r.workflowRuns && Array.isArray(r.workflowRuns)) {
-            allActivity.push(...r.workflowRuns.map(run => ({
-                type: 'workflow',
-                repo: r.repo.name,
-                date: run.created_at, // Keep as string for JSON
-                data: run
-            })));
-        }
-        if (r.releases && Array.isArray(r.releases)) {
-            allActivity.push(...r.releases.map(rel => ({
-                type: 'release',
-                repo: r.repo.name,
-                date: rel.published_at, // Keep as string for JSON
-                data: rel
-            })));
-        }
-    });
-
-    allActivity.sort((a, b) => new Date(b.date) - new Date(a.date));
-    allActivity = allActivity.slice(0, 20);
+    // Filter out nulls if any (though fetchRepoData returns error objects)
+    const validRepos = results;
 
     const data = {
         timestamp: Date.now(),
-        repos,
-        activity: allActivity
+        repos: validRepos
     };
 
-    fs.writeFileSync('data.json', JSON.stringify(data, null, 2));
-    console.log('Data saved to data.json');
+    const outputPath = 'data.json';
+    fs.writeFileSync(outputPath, JSON.stringify(data, null, 2));
+
+    // Get stats
+    const stats = fs.statSync(outputPath);
+    const sizeKeys = stats.size / 1024;
+
+    console.log(`Data saved to ${outputPath}`);
+    console.log(`Total size: ${sizeKeys.toFixed(2)} KB`);
 }
 
 main();

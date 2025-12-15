@@ -21,272 +21,239 @@ const LANGUAGE_COLORS = {
     'Dart': '#00B4AB'
 };
 
-// State
-let state = {
-    repos: [],
-    sortBy: 'updated',
-    loading: false
-};
+class Dashboard {
+    constructor() {
+        this.state = {
+            repos: [],
+            sortBy: 'updated',
+        };
 
-// DOM Elements
-let elements = {};
+        this.elements = {
+            lastUpdated: document.getElementById('last-updated'),
+            totalStars: document.getElementById('total-stars'),
+            totalForks: document.getElementById('total-forks'),
+            totalRepos: document.getElementById('total-repos'),
+            totalIssues: document.getElementById('total-issues'),
+            reposContainer: document.getElementById('repos-container'),
+            sortSelect: document.getElementById('sort-select'),
+        };
+
+        this.bindEvents();
+        this.init();
+    }
+
+    bindEvents() {
+        this.elements.sortSelect.addEventListener('change', (e) => {
+            this.state.sortBy = e.target.value;
+            this.renderRepositories();
+        });
+    }
+
+    async init() {
+        this.showSkeleton();
+        try {
+            // Artificial delay to show off the skeleton if needed, but better to be fast
+            // await new Promise(r => setTimeout(r, 500)); 
+
+            const response = await fetch('data.json');
+            if (!response.ok) throw new Error('Failed to load data');
+
+            const data = await response.json();
+            this.state.repos = data.repos;
+
+            this.updateStats();
+            this.renderRepositories();
+            this.updateLastUpdated(new Date(data.timestamp));
+        } catch (error) {
+            console.error('Error initializing dashboard:', error);
+            this.elements.reposContainer.innerHTML = '<div class="empty-state">Failed to load data. Please try again later.</div>';
+        }
+    }
+
+    showSkeleton() {
+        // Show 6 skeleton cards
+        this.elements.reposContainer.innerHTML = Array(6).fill(0).map(() => this.createSkeletonCard()).join('');
+    }
+
+    createSkeletonCard() {
+        return `
+            <div class="repo-card skeleton-card">
+                <div class="repo-header">
+                    <div class="skeleton skeleton-title"></div>
+                </div>
+                <div class="skeleton skeleton-text long"></div>
+                <div class="skeleton skeleton-text short"></div>
+                <div class="repo-stats" style="margin-top: auto; padding-top: 12px;">
+                    <div class="skeleton skeleton-text" style="width: 20px;"></div>
+                    <div class="skeleton skeleton-text" style="width: 20px;"></div>
+                    <div class="skeleton skeleton-text" style="width: 20px;"></div>
+                </div>
+                <div class="repo-footer">
+                    <div class="skeleton skeleton-text" style="width: 40px;"></div>
+                    <div class="skeleton skeleton-text" style="width: 80px;"></div>
+                </div>
+            </div>
+        `;
+    }
+
+    updateStats() {
+        const stats = this.state.repos.reduce((acc, repo) => {
+            if (repo.error) return acc;
+            acc.stars += repo.stargazers_count || 0;
+            acc.forks += repo.forks_count || 0;
+            acc.issues += repo.open_issues_count || 0;
+            return acc;
+        }, { stars: 0, forks: 0, issues: 0 });
+
+        this.elements.totalStars.textContent = stats.stars;
+        this.elements.totalForks.textContent = stats.forks;
+        this.elements.totalIssues.textContent = stats.issues;
+        this.elements.totalRepos.textContent = this.state.repos.length;
+    }
+
+    renderRepositories() {
+        let sortedRepos = [...this.state.repos];
+
+        switch (this.state.sortBy) {
+            case 'stars':
+                sortedRepos.sort((a, b) => (b.stargazers_count || 0) - (a.stargazers_count || 0));
+                break;
+            case 'forks':
+                sortedRepos.sort((a, b) => (b.forks_count || 0) - (a.forks_count || 0));
+                break;
+            case 'created':
+                sortedRepos.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+                break;
+            case 'updated':
+            default:
+                sortedRepos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+                break;
+        }
+
+        if (sortedRepos.length === 0) {
+            this.elements.reposContainer.innerHTML = '<div class="empty-state">No repositories found.</div>';
+            return;
+        }
+
+        this.elements.reposContainer.innerHTML = sortedRepos.map(repo => this.createRepoCard(repo)).join('');
+    }
+
+    createRepoCard(repo) {
+        if (repo.error) {
+            return `
+                <div class="repo-card error-card">
+                    <div class="repo-header">
+                        <span class="repo-name">
+                            <i class="fas fa-exclamation-triangle"></i> ${repo.full_name}
+                        </span>
+                    </div>
+                    <p class="repo-description">
+                        Failed to load data. ${repo.error_message || 'Check your connection.'}
+                    </p>
+                </div>
+            `;
+        }
+
+        const langColor = LANGUAGE_COLORS[repo.language] || '#ccc';
+        const lastCommitDate = repo.last_commit_date ? new Date(repo.last_commit_date).toLocaleDateString() : 'N/A';
+
+        let tagHtml = '';
+        if (repo.latest_tag) {
+            const tagUrl = `${repo.html_url}/releases/tag/${repo.latest_tag.name}`;
+            tagHtml = `
+                <div class="repo-tag">
+                    <i class="fas fa-tag"></i>
+                    <a href="${tagUrl}" target="_blank">${repo.latest_tag.name}</a>
+                </div>
+            `;
+        }
+
+        let workflowHtml = '';
+        if (repo.latest_workflow_runs && repo.latest_workflow_runs.length > 0) {
+            const workflowLinks = repo.latest_workflow_runs.map(run => {
+                const status = run.conclusion || run.status;
+                const statusIcon = this.getWorkflowStatusIcon(status);
+                const statusClass = this.getWorkflowStatusClass(status);
+                return `<a href="${run.html_url}" target="_blank" class="workflow-link">
+                    ${statusIcon} <span class="${statusClass}">${run.name}</span>
+                </a>`;
+            }).join('');
+
+            workflowHtml = `
+                <div class="repo-workflow">
+                    <span class="workflow-label">Actions:</span>
+                    <div class="workflow-links">${workflowLinks}</div>
+                </div>
+            `;
+        }
+
+        return `
+            <div class="repo-card">
+                <div class="repo-header">
+                    <a href="${repo.html_url}" target="_blank" class="repo-name">
+                        <i class="fas fa-book-bookmark"></i> ${repo.name}
+                    </a>
+                    <span class="repo-visibility">${repo.visibility || 'public'}</span>
+                </div>
+                <p class="repo-description">${repo.description || 'No description available'}</p>
+                <div class="repo-stats">
+                    <div class="repo-stat" title="Stars">
+                        <i class="far fa-star"></i> ${repo.stargazers_count}
+                    </div>
+                    <div class="repo-stat" title="Forks">
+                        <i class="fas fa-code-branch"></i> ${repo.forks_count}
+                    </div>
+                    <div class="repo-stat" title="Open Issues">
+                        <i class="far fa-circle-dot"></i> ${repo.open_issues_count}
+                    </div>
+                </div>
+                ${workflowHtml}
+                <div class="repo-footer">
+                    <div class="repo-lang">
+                        <span class="language-dot" style="background-color: ${langColor}"></span>
+                        ${repo.language || 'Unknown'}
+                    </div>
+                    ${tagHtml}
+                    <div class="repo-updated">
+                        Last commit: ${lastCommitDate}
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+    getWorkflowStatusIcon(status) {
+        switch (status) {
+            case 'success': return '<i class="fas fa-check-circle" style="color: #22c55e"></i>';
+            case 'failure': return '<i class="fas fa-times-circle" style="color: #ef4444"></i>';
+            case 'cancelled': return '<i class="fas fa-ban" style="color: #f59e0b"></i>';
+            case 'in_progress':
+            case 'queued':
+            case 'waiting':
+            case 'pending': return '<i class="fas fa-circle-notch fa-spin" style="color: #3b82f6"></i>';
+            default: return '<i class="fas fa-minus-circle" style="color: #9ca3af"></i>';
+        }
+    }
+
+    getWorkflowStatusClass(status) {
+        switch (status) {
+            case 'success': return 'status-success';
+            case 'failure': return 'status-failure';
+            case 'cancelled': return 'status-cancelled';
+            case 'in_progress':
+            case 'queued':
+            case 'pending': return 'status-pending';
+            default: return 'status-unknown';
+        }
+    }
+
+    updateLastUpdated(date) {
+        const displayDate = date || new Date();
+        this.elements.lastUpdated.textContent = `Updated: ${displayDate.toLocaleString()}`;
+    }
+}
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
-    elements = {
-        lastUpdated: document.getElementById('last-updated'),
-        totalStars: document.getElementById('total-stars'),
-        totalForks: document.getElementById('total-forks'),
-        totalRepos: document.getElementById('total-repos'),
-        totalIssues: document.getElementById('total-issues'),
-        reposContainer: document.getElementById('repos-container'),
-        sortSelect: document.getElementById('sort-select'),
-        navItems: document.querySelectorAll('.nav-item')
-    };
-
-    initDashboard();
-    setupEventListeners();
+    new Dashboard();
 });
-
-function setupEventListeners() {
-    // Sort
-    elements.sortSelect.addEventListener('change', (e) => {
-        state.sortBy = e.target.value;
-        renderRepositories();
-    });
-}
-
-async function initDashboard() {
-    setLoading(true);
-    try {
-        const response = await fetch('data.json');
-        if (!response.ok) {
-            throw new Error('Failed to load data');
-        }
-        const data = await response.json();
-        
-        state.repos = data.repos;
-
-        updateStats();
-        renderRepositories();
-        updateLastUpdated(new Date(data.timestamp));
-    } catch (error) {
-        console.error('Error initializing dashboard:', error);
-        elements.reposContainer.innerHTML = '<div class="empty-state">Failed to load data. Please try again later.</div>';
-    } finally {
-        setLoading(false);
-    }
-}
-
-function setLoading(isLoading) {
-    state.loading = isLoading;
-    
-    if (isLoading) {
-        // Show loading spinner in containers if they are empty
-        const spinner = '<div class="loading-spinner"><i class="fas fa-circle-notch"></i></div>';
-        if (!state.repos.length && elements.reposContainer) {
-            elements.reposContainer.innerHTML = spinner;
-        }
-    }
-}
-
-function updateStats() {
-    const stats = state.repos.reduce((acc, repo) => {
-        if (repo.error) return acc;
-        acc.stars += repo.stargazers_count || 0;
-        acc.forks += repo.forks_count || 0;
-        acc.issues += repo.open_issues_count || 0;
-        return acc;
-    }, { stars: 0, forks: 0, issues: 0 });
-
-    elements.totalStars.textContent = stats.stars;
-    elements.totalForks.textContent = stats.forks;
-    elements.totalIssues.textContent = stats.issues;
-    elements.totalRepos.textContent = state.repos.length;
-}
-
-function renderOverview() {
-    // Top 3 repos by stars
-    const topRepos = [...state.repos]
-        .filter(r => !r.error)
-        .sort((a, b) => (b.stargazers_count || 0) - (a.stargazers_count || 0))
-        .slice(0, 3);
-
-    if (topRepos.length === 0) {
-        elements.topReposContainer.innerHTML = '<div class="empty-state">No repositories found.</div>';
-        return;
-    }
-
-    elements.topReposContainer.innerHTML = topRepos.map(createRepoCard).join('');
-}
-
-function renderRepositories() {
-    console.log('Sorting by:', state.sortBy);
-    let sortedRepos = [...state.repos];
-    
-    switch (state.sortBy) {
-        case 'stars':
-            sortedRepos.sort((a, b) => (b.stargazers_count || 0) - (a.stargazers_count || 0));
-            break;
-        case 'forks':
-            sortedRepos.sort((a, b) => (b.forks_count || 0) - (a.forks_count || 0));
-            break;
-        case 'created':
-            sortedRepos.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
-            break;
-        case 'updated':
-        default:
-            sortedRepos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
-            break;
-    }
-
-    if (sortedRepos.length === 0) {
-        elements.reposContainer.innerHTML = '<div class="empty-state">No repositories found.</div>';
-        return;
-    }
-
-    elements.reposContainer.innerHTML = sortedRepos.map(createRepoCard).join('');
-}
-
-function createRepoCard(repo) {
-    if (repo.error) {
-        return `
-            <div class="repo-card error-card">
-                <div class="repo-header">
-                    <span class="repo-name">
-                        <i class="fas fa-exclamation-triangle"></i> ${repo.full_name}
-                    </span>
-                </div>
-                <p class="repo-description">
-                    Failed to load data. ${repo.error_message || 'Check your connection or API rate limits.'}
-                </p>
-            </div>
-        `;
-    }
-
-    const langColor = LANGUAGE_COLORS[repo.language] || '#ccc';
-    const updatedDate = new Date(repo.updated_at).toLocaleDateString();
-    const lastCommitDate = repo.last_commit_date ? new Date(repo.last_commit_date).toLocaleDateString() : 'N/A';
-
-    let tagHtml = '';
-    if (repo.latest_tag) {
-        const tagUrl = `${repo.html_url}/releases/tag/${repo.latest_tag.name}`;
-        tagHtml = `
-            <div class="repo-tag">
-                <i class="fas fa-tag"></i>
-                <a href="${tagUrl}" target="_blank">${repo.latest_tag.name}</a>
-            </div>
-        `;
-    }
-
-    let workflowHtml = '';
-    if (repo.latest_workflow_runs && repo.latest_workflow_runs.length > 0) {
-        // Show all workflow runs for the latest commit
-        const workflowLinks = repo.latest_workflow_runs.map(run => {
-            const status = run.conclusion || run.status;
-            const statusIcon = getWorkflowStatusIcon(status);
-            const statusClass = getWorkflowStatusClass(status);
-            return `<a href="${run.html_url}" target="_blank" class="workflow-link">
-                ${statusIcon} <span class="${statusClass}">${run.name}</span>
-            </a>`;
-        }).join('');
-        
-        workflowHtml = `
-            <div class="repo-workflow">
-                <span class="workflow-label">Actions:</span>
-                <div class="workflow-links">${workflowLinks}</div>
-            </div>
-        `;
-    }
-
-    return `
-        <div class="repo-card">
-            <div class="repo-header">
-                <a href="${repo.html_url}" target="_blank" class="repo-name">
-                    <i class="fas fa-book-bookmark"></i> ${repo.name}
-                </a>
-                <span class="repo-visibility">${repo.visibility || 'public'}</span>
-            </div>
-            <p class="repo-description">${repo.description || 'No description available'}</p>
-            <div class="repo-stats">
-                <div class="repo-stat" title="Stars">
-                    <i class="far fa-star"></i> ${repo.stargazers_count}
-                </div>
-                <div class="repo-stat" title="Forks">
-                    <i class="fas fa-code-branch"></i> ${repo.forks_count}
-                </div>
-                <div class="repo-stat" title="Open Issues">
-                    <i class="far fa-circle-dot"></i> ${repo.open_issues_count}
-                </div>
-            </div>
-            ${workflowHtml}
-            <div class="repo-footer">
-                <div class="repo-lang">
-                    <span class="language-dot" style="background-color: ${langColor}"></span>
-                    ${repo.language || 'Unknown'}
-                </div>
-                ${tagHtml}
-                <div class="repo-updated">
-                    Last commit: ${lastCommitDate}
-                </div>
-            </div>
-        </div>
-    `;
-}
-
-function getWorkflowStatusIcon(status) {
-    switch (status) {
-        case 'success':
-            return '<i class="fas fa-check-circle" style="color: #22c55e"></i>';
-        case 'failure':
-            return '<i class="fas fa-times-circle" style="color: #ef4444"></i>';
-        case 'cancelled':
-            return '<i class="fas fa-ban" style="color: #f59e0b"></i>';
-        case 'in_progress':
-        case 'queued':
-        case 'waiting':
-        case 'pending':
-        case 'requested':
-            return '<i class="fas fa-circle-notch fa-spin" style="color: #3b82f6"></i>';
-        case 'skipped':
-        case 'neutral':
-            return '<i class="fas fa-minus-circle" style="color: #9ca3af"></i>';
-        case 'timed_out':
-        case 'action_required':
-        case 'stale':
-            return '<i class="fas fa-exclamation-circle" style="color: #f59e0b"></i>';
-        default:
-            return '<i class="fas fa-circle" style="color: #6b7280"></i>';
-    }
-}
-
-function getWorkflowStatusClass(status) {
-    switch (status) {
-        case 'success':
-            return 'status-success';
-        case 'failure':
-            return 'status-failure';
-        case 'cancelled':
-            return 'status-cancelled';
-        case 'in_progress':
-        case 'queued':
-        case 'waiting':
-        case 'pending':
-        case 'requested':
-            return 'status-pending';
-        case 'skipped':
-        case 'neutral':
-            return 'status-unknown';
-        case 'timed_out':
-        case 'action_required':
-        case 'stale':
-            return 'status-cancelled';
-        default:
-            return 'status-unknown';
-    }
-}
-
-function updateLastUpdated(date) {
-    const displayDate = date || new Date();
-    elements.lastUpdated.textContent = `Updated: ${displayDate.toLocaleString()}`;
-}
