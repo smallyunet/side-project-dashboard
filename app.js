@@ -29,20 +29,22 @@ let state = {
 };
 
 // DOM Elements
-const elements = {
-    lastUpdated: document.getElementById('last-updated'),
-    refreshBtn: document.getElementById('refresh-btn'),
-    totalStars: document.getElementById('total-stars'),
-    totalForks: document.getElementById('total-forks'),
-    totalRepos: document.getElementById('total-repos'),
-    totalIssues: document.getElementById('total-issues'),
-    reposContainer: document.getElementById('repos-container'),
-    sortSelect: document.getElementById('sort-select'),
-    navItems: document.querySelectorAll('.nav-item')
-};
+let elements = {};
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
+    elements = {
+        lastUpdated: document.getElementById('last-updated'),
+        refreshBtn: document.getElementById('refresh-btn'),
+        totalStars: document.getElementById('total-stars'),
+        totalForks: document.getElementById('total-forks'),
+        totalRepos: document.getElementById('total-repos'),
+        totalIssues: document.getElementById('total-issues'),
+        reposContainer: document.getElementById('repos-container'),
+        sortSelect: document.getElementById('sort-select'),
+        navItems: document.querySelectorAll('.nav-item')
+    };
+
     initDashboard();
     setupEventListeners();
 });
