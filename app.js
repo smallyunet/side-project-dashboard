@@ -234,12 +234,13 @@ async function fetchAllData() {
     // Collect activity from all repos
     let allActivity = [];
     results.forEach(r => {
-        if (r.commits && Array.isArray(r.commits)) {
-            allActivity.push(...r.commits.map(c => ({
-                type: 'commit',
+        // Add workflow runs to activity
+        if (r.workflowRuns && Array.isArray(r.workflowRuns)) {
+            allActivity.push(...r.workflowRuns.map(run => ({
+                type: 'workflow',
                 repo: r.repo.name,
-                date: new Date(c.commit.author.date),
-                data: c
+                date: new Date(run.created_at),
+                data: run
             })));
         }
         if (r.releases && Array.isArray(r.releases)) {
@@ -259,10 +260,11 @@ async function fetchAllData() {
 async function fetchRepoData(repoFullName) {
     const [owner, repo] = repoFullName.split('/');
     try {
-        const [repoRes, commitsRes, releasesRes] = await Promise.all([
+        const [repoRes, lastCommitRes, releasesRes, workflowRunsRes] = await Promise.all([
             fetchWithAuth(`https://api.github.com/repos/${owner}/${repo}`),
-            fetchWithAuth(`https://api.github.com/repos/${owner}/${repo}/commits?per_page=5`),
-            fetchWithAuth(`https://api.github.com/repos/${owner}/${repo}/releases?per_page=3`)
+            fetchWithAuth(`https://api.github.com/repos/${owner}/${repo}/commits?per_page=1`),
+            fetchWithAuth(`https://api.github.com/repos/${owner}/${repo}/releases?per_page=3`),
+            fetchWithAuth(`https://api.github.com/repos/${owner}/${repo}/actions/runs?per_page=10`)
         ]);
 
         if (!repoRes.ok) {
@@ -272,13 +274,20 @@ async function fetchRepoData(repoFullName) {
         const repoData = await repoRes.json();
         
         // Handle optional data gracefully
-        const commitsData = commitsRes.ok ? await commitsRes.json() : [];
+        const lastCommitData = lastCommitRes.ok ? await lastCommitRes.json() : [];
         const releasesData = releasesRes.ok ? await releasesRes.json() : [];
+        const workflowRunsData = workflowRunsRes.ok ? await workflowRunsRes.json() : { workflow_runs: [] };
+
+        // Add last commit time to repo data
+        if (Array.isArray(lastCommitData) && lastCommitData.length > 0) {
+            repoData.last_commit_date = lastCommitData[0].commit.author.date;
+        }
 
         return {
             repo: repoData,
-            commits: Array.isArray(commitsData) ? commitsData : [],
-            releases: Array.isArray(releasesData) ? releasesData : []
+            lastCommit: Array.isArray(lastCommitData) && lastCommitData.length > 0 ? lastCommitData[0] : null,
+            releases: Array.isArray(releasesData) ? releasesData : [],
+            workflowRuns: Array.isArray(workflowRunsData.workflow_runs) ? workflowRunsData.workflow_runs : []
         };
     } catch (error) {
         console.error(`Error fetching data for ${repoFullName}:`, error);
@@ -293,8 +302,9 @@ async function fetchRepoData(repoFullName) {
                 error: true,
                 error_message: error.message
             }, 
-            commits: [], 
-            releases: [] 
+            lastCommit: null, 
+            releases: [],
+            workflowRuns: []
         };
     }
 }
@@ -375,6 +385,7 @@ function createRepoCard(repo) {
 
     const langColor = LANGUAGE_COLORS[repo.language] || '#ccc';
     const updatedDate = new Date(repo.updated_at).toLocaleDateString();
+    const lastCommitDate = repo.last_commit_date ? new Date(repo.last_commit_date).toLocaleDateString() : 'N/A';
 
     return `
         <div class="repo-card">
@@ -402,7 +413,7 @@ function createRepoCard(repo) {
                     ${repo.language || 'Unknown'}
                 </div>
                 <div class="repo-updated">
-                    Updated ${updatedDate}
+                    Last commit: ${lastCommitDate}
                 </div>
             </div>
         </div>
@@ -419,10 +430,14 @@ function renderActivity() {
         const date = item.date.toLocaleDateString() + ' ' + item.date.toLocaleTimeString();
         let content = '';
         let icon = '';
+        let statusClass = '';
 
-        if (item.type === 'commit') {
-            content = `Pushed commit: <a href="${item.data.html_url}" target="_blank" style="color: var(--accent-primary)">${item.data.commit.message}</a>`;
-            icon = '<i class="fas fa-code-commit"></i>';
+        if (item.type === 'workflow') {
+            const status = item.data.conclusion || item.data.status;
+            const statusIcon = getWorkflowStatusIcon(status);
+            statusClass = getWorkflowStatusClass(status);
+            content = `Workflow run: <a href="${item.data.html_url}" target="_blank" style="color: var(--accent-primary)">${item.data.name}</a> - <span class="${statusClass}">${status}</span>`;
+            icon = statusIcon;
         } else if (item.type === 'release') {
             content = `Published release: <a href="${item.data.html_url}" target="_blank" style="color: var(--accent-secondary)">${item.data.name || item.data.tag_name}</a>`;
             icon = '<i class="fas fa-tag"></i>';
@@ -440,6 +455,40 @@ function renderActivity() {
             </div>
         `;
     }).join('');
+}
+
+function getWorkflowStatusIcon(status) {
+    switch (status) {
+        case 'success':
+            return '<i class="fas fa-check-circle" style="color: #22c55e"></i>';
+        case 'failure':
+            return '<i class="fas fa-times-circle" style="color: #ef4444"></i>';
+        case 'cancelled':
+            return '<i class="fas fa-ban" style="color: #f59e0b"></i>';
+        case 'in_progress':
+        case 'queued':
+        case 'waiting':
+            return '<i class="fas fa-circle-notch fa-spin" style="color: #3b82f6"></i>';
+        default:
+            return '<i class="fas fa-circle" style="color: #6b7280"></i>';
+    }
+}
+
+function getWorkflowStatusClass(status) {
+    switch (status) {
+        case 'success':
+            return 'status-success';
+        case 'failure':
+            return 'status-failure';
+        case 'cancelled':
+            return 'status-cancelled';
+        case 'in_progress':
+        case 'queued':
+        case 'waiting':
+            return 'status-pending';
+        default:
+            return 'status-unknown';
+    }
 }
 
 function updateLastUpdated() {

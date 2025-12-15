@@ -678,3 +678,29 @@ select {
     display: flex;
     align-items: center;
 }
+
+/* Workflow Status Styles */
+.status-success {
+    color: #22c55e;
+    font-weight: 600;
+}
+
+.status-failure {
+    color: #ef4444;
+    font-weight: 600;
+}
+
+.status-cancelled {
+    color: #f59e0b;
+    font-weight: 600;
+}
+
+.status-pending {
+    color: #3b82f6;
+    font-weight: 600;
+}
+
+.status-unknown {
+    color: #6b7280;
+    font-weight: 600;
+}
