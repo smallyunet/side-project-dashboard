@@ -215,7 +215,7 @@ class Dashboard {
         if (repo.latest_tag) {
             const tagUrl = `${repo.html_url}/releases/tag/${repo.latest_tag.name}`;
             tagHtml = `
-                <div class="repo-tag">
+                <div class="version-badge tag-badge">
                     <i class="fas fa-tag"></i>
                     <a href="${tagUrl}" target="_blank">${repo.latest_tag.name}</a>
                 </div>
@@ -245,10 +245,13 @@ class Dashboard {
         if (repo.package_info) {
             const iconClass = repo.package_info.type === 'pypi' ? 'fab fa-python' : 'fab fa-npm';
             const iconColor = repo.package_info.type === 'pypi' ? '#3775a9' : '#CB3837';
+            // Add specific class based on package type for easier styling
+            const packageTypeClass = repo.package_info.type === 'pypi' ? 'pypi-badge' : 'npm-badge';
+
             packageHtml = `
-                <div class="repo-package">
-                    <i class="${iconClass}" style="color: ${iconColor}; margin-right: 4px;"></i>
-                    <a href="${repo.package_info.url}" target="_blank" style="text-decoration: none; color: inherit;">${repo.package_info.version}</a>
+                <div class="version-badge package-badge ${packageTypeClass}">
+                    <i class="${iconClass}" style="color: ${iconColor};"></i>
+                    <a href="${repo.package_info.url}" target="_blank">${repo.package_info.version}</a>
                 </div>
              `;
         }
@@ -274,15 +277,22 @@ class Dashboard {
                     </div>
                 </div>
                 ${workflowHtml}
-                <div class="repo-footer">
-                    <div class="repo-lang">
-                        <span class="language-dot" style="background-color: ${langColor}"></span>
-                        ${repo.language || 'Unknown'}
-                    </div>
-                    ${tagHtml}
-                    ${packageHtml}
-                    <div class="repo-updated" title="${repo.last_commit_date ? new Date(repo.last_commit_date).toLocaleString() : ''}">
-                        ${lastCommitDate === 'N/A' ? 'No commits' : 'Updated ' + lastCommitDate}
+                
+                <div class="repo-bottom">
+                    ${(tagHtml || packageHtml) ? `
+                    <div class="repo-versions">
+                        ${tagHtml}
+                        ${packageHtml}
+                    </div>` : ''}
+
+                    <div class="repo-footer">
+                        <div class="repo-lang">
+                            <span class="language-dot" style="background-color: ${langColor}"></span>
+                            ${repo.language || 'Unknown'}
+                        </div>
+                        <div class="repo-updated" title="${repo.last_commit_date ? new Date(repo.last_commit_date).toLocaleString() : ''}">
+                            ${lastCommitDate === 'N/A' ? 'No commits' : 'Updated ' + lastCommitDate}
+                        </div>
                     </div>
                 </div>
             </div>
