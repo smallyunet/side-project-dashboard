@@ -460,7 +460,6 @@ function renderActivity() {
 function getWorkflowStatusIcon(status) {
     switch (status) {
         case 'success':
-        case 'completed':
             return '<i class="fas fa-check-circle" style="color: #22c55e"></i>';
         case 'failure':
             return '<i class="fas fa-times-circle" style="color: #ef4444"></i>';
@@ -487,7 +486,6 @@ function getWorkflowStatusIcon(status) {
 function getWorkflowStatusClass(status) {
     switch (status) {
         case 'success':
-        case 'completed':
             return 'status-success';
         case 'failure':
             return 'status-failure';
