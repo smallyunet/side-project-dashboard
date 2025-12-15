@@ -7,9 +7,9 @@ A real-time monitoring dashboard for GitHub repositories, deployed on GitHub Pag
 - 📊 **Repository Overview** - View all repositories at a glance
 - ⭐ **Statistics** - Total stars, forks, and watchers
 - 🏷️ **Latest Release** - See the most recent release tag and date
-- 📝 **Latest Commit** - View the most recent commit message and author
-- 🚀 **GitHub Actions** - Monitor workflow run status
-- 🔄 **Auto-refresh** - Data refreshes every 5 minutes
+- 📝 **Last Commit Time** - View when each repository was last updated
+- 🚀 **GitHub Actions** - Monitor workflow run status with success/failure indicators
+- 🔄 **Auto-refresh** - Data refreshes every 10 minutes
 - 📱 **Responsive** - Works on desktop and mobile devices
 
 ## Monitored Repositories
@@ -38,7 +38,7 @@ This dashboard is automatically deployed to GitHub Pages when changes are pushed
 This dashboard uses the GitHub REST API without authentication. The rate limit is:
 - **60 requests per hour** for unauthenticated requests
 
-With 7 repositories and 4 API calls per repository, each refresh uses ~28 requests. This allows for approximately 2 full refreshes per hour.
+With 7 repositories and 4 API calls per repository (repo info, last commit, releases, workflow runs), each refresh uses ~28 requests. This allows for approximately 2 full refreshes per hour.
 
 ### Increasing Rate Limits (Optional)
 
