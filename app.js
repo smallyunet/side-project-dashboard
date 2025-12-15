@@ -26,6 +26,7 @@ class Dashboard {
         this.state = {
             repos: [],
             sortBy: 'updated',
+            theme: localStorage.getItem('theme') || 'light'
         };
 
         this.elements = {
@@ -36,6 +37,7 @@ class Dashboard {
             totalIssues: document.getElementById('total-issues'),
             reposContainer: document.getElementById('repos-container'),
             sortSelect: document.getElementById('sort-select'),
+            themeToggle: document.getElementById('theme-toggle'),
         };
 
         this.bindEvents();
@@ -47,14 +49,18 @@ class Dashboard {
             this.state.sortBy = e.target.value;
             this.renderRepositories();
         });
+
+        if (this.elements.themeToggle) {
+            this.elements.themeToggle.addEventListener('click', () => {
+                this.toggleTheme();
+            });
+        }
     }
 
     async init() {
+        this.initTheme();
         this.showSkeleton();
         try {
-            // Artificial delay to show off the skeleton if needed, but better to be fast
-            // await new Promise(r => setTimeout(r, 500)); 
-
             const response = await fetch('data.json');
             if (!response.ok) throw new Error('Failed to load data');
 
@@ -70,8 +76,53 @@ class Dashboard {
         }
     }
 
+    initTheme() {
+        // Check system preference if no stored theme
+        if (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            this.state.theme = 'dark';
+        }
+        this.applyTheme();
+    }
+
+    toggleTheme() {
+        this.state.theme = this.state.theme === 'light' ? 'dark' : 'light';
+        localStorage.setItem('theme', this.state.theme);
+        this.applyTheme();
+    }
+
+    applyTheme() {
+        document.documentElement.setAttribute('data-theme', this.state.theme);
+        const icon = this.elements.themeToggle.querySelector('i');
+        if (this.state.theme === 'dark') {
+            icon.className = 'fas fa-sun';
+        } else {
+            icon.className = 'fas fa-moon';
+        }
+    }
+
+    formatNumber(num) {
+        return new Intl.NumberFormat('en-US', { notation: "compact", compactDisplay: "short" }).format(num);
+    }
+
+    formatRelativeTime(date) {
+        const now = new Date();
+        const diffInSeconds = Math.floor((now - date) / 1000);
+
+        const rtf = new Intl.RelativeTimeFormat('en', { numeric: 'auto' });
+
+        if (diffInSeconds < 60) return rtf.format(-diffInSeconds, 'second');
+        const diffInMinutes = Math.floor(diffInSeconds / 60);
+        if (diffInMinutes < 60) return rtf.format(-diffInMinutes, 'minute');
+        const diffInHours = Math.floor(diffInMinutes / 60);
+        if (diffInHours < 24) return rtf.format(-diffInHours, 'hour');
+        const diffInDays = Math.floor(diffInHours / 24);
+        if (diffInDays < 30) return rtf.format(-diffInDays, 'day');
+        const diffInMonths = Math.floor(diffInDays / 30);
+        if (diffInMonths < 12) return rtf.format(-diffInMonths, 'month');
+        return rtf.format(-Math.floor(diffInDays / 365), 'year');
+    }
+
     showSkeleton() {
-        // Show 6 skeleton cards
         this.elements.reposContainer.innerHTML = Array(6).fill(0).map(() => this.createSkeletonCard()).join('');
     }
 
@@ -83,7 +134,7 @@ class Dashboard {
                 </div>
                 <div class="skeleton skeleton-text long"></div>
                 <div class="skeleton skeleton-text short"></div>
-                <div class="repo-stats" style="margin-top: auto; padding-top: 12px;">
+                <div class="repo-stats">
                     <div class="skeleton skeleton-text" style="width: 20px;"></div>
                     <div class="skeleton skeleton-text" style="width: 20px;"></div>
                     <div class="skeleton skeleton-text" style="width: 20px;"></div>
@@ -105,9 +156,9 @@ class Dashboard {
             return acc;
         }, { stars: 0, forks: 0, issues: 0 });
 
-        this.elements.totalStars.textContent = stats.stars;
-        this.elements.totalForks.textContent = stats.forks;
-        this.elements.totalIssues.textContent = stats.issues;
+        this.elements.totalStars.textContent = this.formatNumber(stats.stars);
+        this.elements.totalForks.textContent = this.formatNumber(stats.forks);
+        this.elements.totalIssues.textContent = this.formatNumber(stats.issues);
         this.elements.totalRepos.textContent = this.state.repos.length;
     }
 
@@ -155,7 +206,10 @@ class Dashboard {
         }
 
         const langColor = LANGUAGE_COLORS[repo.language] || '#ccc';
-        const lastCommitDate = repo.last_commit_date ? new Date(repo.last_commit_date).toLocaleDateString() : 'N/A';
+        const lastCommitDate = repo.last_commit_date ? this.formatRelativeTime(new Date(repo.last_commit_date)) : 'N/A';
+        const stars = this.formatNumber(repo.stargazers_count || 0);
+        const forks = this.formatNumber(repo.forks_count || 0);
+        const issues = this.formatNumber(repo.open_issues_count || 0);
 
         let tagHtml = '';
         if (repo.latest_tag) {
@@ -210,13 +264,13 @@ class Dashboard {
                 <p class="repo-description">${repo.description || 'No description available'}</p>
                 <div class="repo-stats">
                     <div class="repo-stat" title="Stars">
-                        <i class="far fa-star"></i> ${repo.stargazers_count}
+                        <i class="far fa-star"></i> ${stars}
                     </div>
                     <div class="repo-stat" title="Forks">
-                        <i class="fas fa-code-branch"></i> ${repo.forks_count}
+                        <i class="fas fa-code-branch"></i> ${forks}
                     </div>
                     <div class="repo-stat" title="Open Issues">
-                        <i class="far fa-circle-dot"></i> ${repo.open_issues_count}
+                        <i class="far fa-circle-dot"></i> ${issues}
                     </div>
                 </div>
                 ${workflowHtml}
@@ -227,8 +281,8 @@ class Dashboard {
                     </div>
                     ${tagHtml}
                     ${packageHtml}
-                    <div class="repo-updated">
-                        Last commit: ${lastCommitDate}
+                    <div class="repo-updated" title="${repo.last_commit_date ? new Date(repo.last_commit_date).toLocaleString() : ''}">
+                        ${lastCommitDate === 'N/A' ? 'No commits' : 'Updated ' + lastCommitDate}
                     </div>
                 </div>
             </div>
@@ -262,7 +316,9 @@ class Dashboard {
 
     updateLastUpdated(date) {
         const displayDate = date || new Date();
-        this.elements.lastUpdated.textContent = `Updated: ${displayDate.toLocaleString()}`;
+        const timeString = this.formatRelativeTime(displayDate);
+        this.elements.lastUpdated.textContent = `Updated: ${timeString}`;
+        this.elements.lastUpdated.title = displayDate.toLocaleString();
     }
 }
 
