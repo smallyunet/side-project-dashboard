@@ -66,7 +66,14 @@ async function main() {
     const repoPromises = REPOS.map(repo => fetchRepoData(repo));
     const results = await Promise.all(repoPromises);
 
-    const repos = results.map(r => r.repo);
+    const repos = results.map(r => {
+        const repo = r.repo;
+        if (r.workflowRuns && Array.isArray(r.workflowRuns) && r.workflowRuns.length > 0) {
+            repo.latest_workflow_run = r.workflowRuns[0];
+        }
+        return repo;
+    });
+
     let allActivity = [];
     results.forEach(r => {
         if (r.workflowRuns && Array.isArray(r.workflowRuns)) {

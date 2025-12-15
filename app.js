@@ -24,7 +24,6 @@ const LANGUAGE_COLORS = {
 // State
 let state = {
     repos: [],
-    activity: [],
     sortBy: 'updated',
     loading: false
 };
@@ -38,7 +37,6 @@ const elements = {
     totalRepos: document.getElementById('total-repos'),
     totalIssues: document.getElementById('total-issues'),
     reposContainer: document.getElementById('repos-container'),
-    activityTimeline: document.getElementById('activity-timeline'),
     sortSelect: document.getElementById('sort-select'),
     navItems: document.querySelectorAll('.nav-item')
 };
@@ -72,15 +70,9 @@ async function initDashboard() {
         const data = await response.json();
         
         state.repos = data.repos;
-        // Convert date strings back to Date objects
-        state.activity = data.activity.map(item => ({
-            ...item,
-            date: new Date(item.date)
-        }));
 
         updateStats();
         renderRepositories();
-        renderActivity();
         updateLastUpdated(new Date(data.timestamp));
     } catch (error) {
         console.error('Error initializing dashboard:', error);
@@ -102,7 +94,6 @@ function setLoading(isLoading) {
         const spinner = '<div class="loading-spinner"><i class="fas fa-circle-notch"></i></div>';
         if (!state.repos.length) {
             elements.reposContainer.innerHTML = spinner;
-            elements.activityTimeline.innerHTML = spinner;
         }
     } else {
         icon.classList.remove('fa-spin');
@@ -188,6 +179,23 @@ function createRepoCard(repo) {
     const updatedDate = new Date(repo.updated_at).toLocaleDateString();
     const lastCommitDate = repo.last_commit_date ? new Date(repo.last_commit_date).toLocaleDateString() : 'N/A';
 
+    let workflowHtml = '';
+    if (repo.latest_workflow_run) {
+        const run = repo.latest_workflow_run;
+        const status = run.conclusion || run.status;
+        const statusIcon = getWorkflowStatusIcon(status);
+        const statusClass = getWorkflowStatusClass(status);
+        
+        workflowHtml = `
+            <div class="repo-workflow">
+                <span class="workflow-label">Latest Action:</span>
+                <a href="${run.html_url}" target="_blank" class="workflow-link">
+                    ${statusIcon} <span class="${statusClass}">${run.name}</span>
+                </a>
+            </div>
+        `;
+    }
+
     return `
         <div class="repo-card">
             <div class="repo-header">
@@ -208,6 +216,7 @@ function createRepoCard(repo) {
                     <i class="far fa-circle-dot"></i> ${repo.open_issues_count}
                 </div>
             </div>
+            ${workflowHtml}
             <div class="repo-footer">
                 <div class="repo-lang">
                     <span class="language-dot" style="background-color: ${langColor}"></span>
@@ -219,43 +228,6 @@ function createRepoCard(repo) {
             </div>
         </div>
     `;
-}
-
-function renderActivity() {
-    if (state.activity.length === 0) {
-        elements.activityTimeline.innerHTML = '<div class="empty-state">No recent activity found.</div>';
-        return;
-    }
-
-    elements.activityTimeline.innerHTML = state.activity.map(item => {
-        const date = item.date.toLocaleDateString() + ' ' + item.date.toLocaleTimeString();
-        let content = '';
-        let icon = '';
-        let statusClass = '';
-
-        if (item.type === 'workflow') {
-            const status = item.data.conclusion || item.data.status;
-            const statusIcon = getWorkflowStatusIcon(status);
-            statusClass = getWorkflowStatusClass(status);
-            content = `Workflow run: <a href="${item.data.html_url}" target="_blank" style="color: var(--accent-primary)">${item.data.name}</a> - <span class="${statusClass}">${status}</span>`;
-            icon = statusIcon;
-        } else if (item.type === 'release') {
-            content = `Published release: <a href="${item.data.html_url}" target="_blank" style="color: var(--accent-secondary)">${item.data.name || item.data.tag_name}</a>`;
-            icon = '<i class="fas fa-tag"></i>';
-        }
-
-        return `
-            <div class="timeline-item">
-                <div class="timeline-header">
-                    <span class="timeline-repo">${item.repo}</span>
-                    <span class="timeline-date">${date}</span>
-                </div>
-                <div class="timeline-content">
-                    ${icon} ${content}
-                </div>
-            </div>
-        `;
-    }).join('');
 }
 
 function getWorkflowStatusIcon(status) {
@@ -310,7 +282,7 @@ function getWorkflowStatusClass(status) {
     }
 }
 
-function updateLastUpdated() {
-    const now = new Date();
-    elements.lastUpdated.textContent = `Updated: ${now.toLocaleTimeString()}`;
+function updateLastUpdated(date) {
+    const displayDate = date || new Date();
+    elements.lastUpdated.textContent = `Updated: ${displayDate.toLocaleString()}`;
 }

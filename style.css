@@ -313,3 +313,32 @@ select {
 ::-webkit-scrollbar-thumb:hover {
     background: #9ca3af;
 }
+
+/* Repo Workflow */
+.repo-workflow {
+    margin-top: 12px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-color);
+}
+
+.workflow-label {
+    color: var(--text-secondary);
+    font-size: 12px;
+}
+
+.workflow-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.workflow-link:hover {
+    text-decoration: underline;
+}
