@@ -1,14 +1,3 @@
-// Repository list to monitor
-const REPOS = [
-    'smallyunet/echoevm',
-    'smallyunet/safe-kit',
-    'smallyunet/finder-sight',
-    'smallyunet/privy-wallet-kit',
-    'smallyunet/userop-validator',
-    'smallyunet/etherflow',
-    'smallyunet/go-cggmp-tss'
-];
-
 // Language colors (from GitHub)
 const LANGUAGE_COLORS = {
     'JavaScript': '#f1e05a',
@@ -40,19 +29,10 @@ let state = {
     loading: false
 };
 
-// Cache Config
-const CACHE_KEY = 'dashboard_data';
-const CACHE_DURATION = 10 * 60 * 1000; // 10 minutes
-
 // DOM Elements
 const elements = {
     lastUpdated: document.getElementById('last-updated'),
     refreshBtn: document.getElementById('refresh-btn'),
-    settingsBtn: document.getElementById('settings-btn'),
-    settingsModal: document.getElementById('settings-modal'),
-    closeModalBtn: document.querySelector('.close-modal'),
-    saveTokenBtn: document.getElementById('save-token-btn'),
-    githubTokenInput: document.getElementById('github-token'),
     totalStars: document.getElementById('total-stars'),
     totalForks: document.getElementById('total-forks'),
     totalRepos: document.getElementById('total-repos'),
@@ -65,55 +45,14 @@ const elements = {
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
-    // Load token if exists
-    const token = localStorage.getItem('github_token');
-    if (token) {
-        elements.githubTokenInput.value = token;
-    }
-
     initDashboard();
     setupEventListeners();
-
-    // Auto refresh every 10 minutes
-    setInterval(() => {
-        if (!state.loading) {
-            console.log('Auto-refreshing data...');
-            initDashboard();
-        }
-    }, 600000);
 });
 
 function setupEventListeners() {
     // Refresh
     elements.refreshBtn.addEventListener('click', () => {
-        initDashboard(true); // Force refresh
-    });
-
-    // Settings Modal
-    elements.settingsBtn.addEventListener('click', () => {
-        elements.settingsModal.classList.add('active');
-    });
-
-    elements.closeModalBtn.addEventListener('click', () => {
-        elements.settingsModal.classList.remove('active');
-    });
-
-    elements.saveTokenBtn.addEventListener('click', () => {
-        const token = elements.githubTokenInput.value.trim();
-        if (token) {
-            localStorage.setItem('github_token', token);
-        } else {
-            localStorage.removeItem('github_token');
-        }
-        elements.settingsModal.classList.remove('active');
-        initDashboard(true); // Refresh with new token
-    });
-
-    // Close modal on outside click
-    elements.settingsModal.addEventListener('click', (e) => {
-        if (e.target === elements.settingsModal) {
-            elements.settingsModal.classList.remove('active');
-        }
+        initDashboard();
     });
 
     // Sort
@@ -123,86 +62,32 @@ function setupEventListeners() {
     });
 }
 
-async function initDashboard(forceRefresh = false) {
+async function initDashboard() {
     setLoading(true);
     try {
-        if (!forceRefresh) {
-            const cachedData = loadFromCache();
-            if (cachedData) {
-                console.log('Loading from cache...');
-                state.repos = cachedData.repos;
-                state.activity = cachedData.activity;
-                updateStats();
-                renderRepositories();
-                renderActivity();
-                updateLastUpdated(new Date(cachedData.timestamp));
-                setLoading(false);
-                return;
-            }
+        const response = await fetch('data.json');
+        if (!response.ok) {
+            throw new Error('Failed to load data');
         }
-
-        await fetchAllData();
+        const data = await response.json();
         
-        // Save to cache
-        saveToCache({
-            repos: state.repos,
-            activity: state.activity
-        });
+        state.repos = data.repos;
+        // Convert date strings back to Date objects
+        state.activity = data.activity.map(item => ({
+            ...item,
+            date: new Date(item.date)
+        }));
 
         updateStats();
         renderRepositories();
         renderActivity();
-        updateLastUpdated();
+        updateLastUpdated(new Date(data.timestamp));
     } catch (error) {
         console.error('Error initializing dashboard:', error);
-        if (error.message.includes('rate limit')) {
-            alert(error.message);
-            elements.settingsModal.classList.add('active');
-        } else {
-            alert('Failed to load dashboard data. Check console for details.');
-        }
+        elements.reposContainer.innerHTML = '<div class="empty-state">Failed to load data. Please try again later.</div>';
     } finally {
         setLoading(false);
     }
-}
-
-function loadFromCache() {
-    const cached = localStorage.getItem(CACHE_KEY);
-    if (!cached) return null;
-    
-    try {
-        const { timestamp, data } = JSON.parse(cached);
-        if (Date.now() - timestamp > CACHE_DURATION) return null;
-        return { ...data, timestamp };
-    } catch (e) {
-        return null;
-    }
-}
-
-function saveToCache(data) {
-    localStorage.setItem(CACHE_KEY, JSON.stringify({
-        timestamp: Date.now(),
-        data
-    }));
-}
-
-function getAuthHeaders() {
-    const token = localStorage.getItem('github_token');
-    return token ? { 'Authorization': `Bearer ${token}` } : {};
-}
-
-async function fetchWithAuth(url) {
-    const headers = getAuthHeaders();
-    const response = await fetch(url, { headers });
-    
-    if (response.status === 403) {
-        const rateLimitRemaining = response.headers.get('x-ratelimit-remaining');
-        if (rateLimitRemaining === '0') {
-            throw new Error('API rate limit exceeded. Please add a GitHub token in settings.');
-        }
-    }
-    
-    return response;
 }
 
 function setLoading(isLoading) {
@@ -222,90 +107,6 @@ function setLoading(isLoading) {
     } else {
         icon.classList.remove('fa-spin');
         elements.refreshBtn.disabled = false;
-    }
-}
-
-async function fetchAllData() {
-    const repoPromises = REPOS.map(repo => fetchRepoData(repo));
-    const results = await Promise.all(repoPromises);
-    
-    state.repos = results.map(r => r.repo);
-    
-    // Collect activity from all repos
-    let allActivity = [];
-    results.forEach(r => {
-        // Add workflow runs to activity
-        if (r.workflowRuns && Array.isArray(r.workflowRuns)) {
-            allActivity.push(...r.workflowRuns.map(run => ({
-                type: 'workflow',
-                repo: r.repo.name,
-                date: new Date(run.created_at),
-                data: run
-            })));
-        }
-        if (r.releases && Array.isArray(r.releases)) {
-            allActivity.push(...r.releases.map(rel => ({
-                type: 'release',
-                repo: r.repo.name,
-                date: new Date(rel.published_at),
-                data: rel
-            })));
-        }
-    });
-
-    // Sort activity by date desc
-    state.activity = allActivity.sort((a, b) => b.date - a.date).slice(0, 20);
-}
-
-async function fetchRepoData(repoFullName) {
-    const [owner, repo] = repoFullName.split('/');
-    try {
-        const [repoRes, lastCommitRes, releasesRes, workflowRunsRes] = await Promise.all([
-            fetchWithAuth(`https://api.github.com/repos/${owner}/${repo}`),
-            fetchWithAuth(`https://api.github.com/repos/${owner}/${repo}/commits?per_page=1`),
-            fetchWithAuth(`https://api.github.com/repos/${owner}/${repo}/releases?per_page=3`),
-            fetchWithAuth(`https://api.github.com/repos/${owner}/${repo}/actions/runs?per_page=10`)
-        ]);
-
-        if (!repoRes.ok) {
-            throw new Error(`GitHub API returned ${repoRes.status}`);
-        }
-
-        const repoData = await repoRes.json();
-        
-        // Handle optional data gracefully
-        const lastCommitData = lastCommitRes.ok ? await lastCommitRes.json() : [];
-        const releasesData = releasesRes.ok ? await releasesRes.json() : [];
-        const workflowRunsData = workflowRunsRes.ok ? await workflowRunsRes.json() : { workflow_runs: [] };
-
-        // Add last commit time to repo data
-        if (Array.isArray(lastCommitData) && lastCommitData.length > 0) {
-            repoData.last_commit_date = lastCommitData[0].commit.author.date;
-        }
-
-        return {
-            repo: repoData,
-            lastCommit: Array.isArray(lastCommitData) && lastCommitData.length > 0 ? lastCommitData[0] : null,
-            releases: Array.isArray(releasesData) ? releasesData : [],
-            workflowRuns: Array.isArray(workflowRunsData.workflow_runs) ? workflowRunsData.workflow_runs : []
-        };
-    } catch (error) {
-        console.error(`Error fetching data for ${repoFullName}:`, error);
-        // Propagate rate limit errors
-        if (error.message.includes('rate limit')) {
-            throw error;
-        }
-        return { 
-            repo: { 
-                name: repo, 
-                full_name: repoFullName, 
-                error: true,
-                error_message: error.message
-            }, 
-            lastCommit: null, 
-            releases: [],
-            workflowRuns: []
-        };
     }
 }
 

@@ -1,0 +1,103 @@
+const fs = require('fs');
+
+const REPOS = [
+    'smallyunet/echoevm',
+    'smallyunet/safe-kit',
+    'smallyunet/finder-sight',
+    'smallyunet/privy-wallet-kit',
+    'smallyunet/userop-validator',
+    'smallyunet/etherflow',
+    'smallyunet/go-cggmp-tss'
+];
+
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+
+async function fetchWithAuth(url) {
+    const headers = GITHUB_TOKEN ? { 'Authorization': `Bearer ${GITHUB_TOKEN}` } : {};
+    const response = await fetch(url, { headers });
+    if (!response.ok) {
+        throw new Error(`Failed to fetch ${url}: ${response.status} ${response.statusText}`);
+    }
+    return response;
+}
+
+async function fetchRepoData(repoFullName) {
+    const [owner, repo] = repoFullName.split('/');
+    try {
+        const [repoRes, lastCommitRes, releasesRes, workflowRunsRes] = await Promise.all([
+            fetchWithAuth(`https://api.github.com/repos/${owner}/${repo}`),
+            fetchWithAuth(`https://api.github.com/repos/${owner}/${repo}/commits?per_page=1`),
+            fetchWithAuth(`https://api.github.com/repos/${owner}/${repo}/releases?per_page=3`),
+            fetchWithAuth(`https://api.github.com/repos/${owner}/${repo}/actions/runs?per_page=10`)
+        ]);
+
+        const repoData = await repoRes.json();
+        const lastCommitData = await lastCommitRes.json();
+        const releasesData = await releasesRes.json();
+        const workflowRunsData = await workflowRunsRes.json();
+
+        if (Array.isArray(lastCommitData) && lastCommitData.length > 0) {
+            repoData.last_commit_date = lastCommitData[0].commit.author.date;
+        }
+
+        return {
+            repo: repoData,
+            lastCommit: Array.isArray(lastCommitData) && lastCommitData.length > 0 ? lastCommitData[0] : null,
+            releases: Array.isArray(releasesData) ? releasesData : [],
+            workflowRuns: Array.isArray(workflowRunsData.workflow_runs) ? workflowRunsData.workflow_runs : []
+        };
+    } catch (error) {
+        console.error(`Error fetching data for ${repoFullName}:`, error);
+        return {
+            repo: {
+                name: repo,
+                full_name: repoFullName,
+                error: true,
+                error_message: error.message
+            },
+            lastCommit: null,
+            releases: [],
+            workflowRuns: []
+        };
+    }
+}
+
+async function main() {
+    const repoPromises = REPOS.map(repo => fetchRepoData(repo));
+    const results = await Promise.all(repoPromises);
+
+    const repos = results.map(r => r.repo);
+    let allActivity = [];
+    results.forEach(r => {
+        if (r.workflowRuns && Array.isArray(r.workflowRuns)) {
+            allActivity.push(...r.workflowRuns.map(run => ({
+                type: 'workflow',
+                repo: r.repo.name,
+                date: run.created_at, // Keep as string for JSON
+                data: run
+            })));
+        }
+        if (r.releases && Array.isArray(r.releases)) {
+            allActivity.push(...r.releases.map(rel => ({
+                type: 'release',
+                repo: r.repo.name,
+                date: rel.published_at, // Keep as string for JSON
+                data: rel
+            })));
+        }
+    });
+
+    allActivity.sort((a, b) => new Date(b.date) - new Date(a.date));
+    allActivity = allActivity.slice(0, 20);
+
+    const data = {
+        timestamp: Date.now(),
+        repos,
+        activity: allActivity
+    };
+
+    fs.writeFileSync('data.json', JSON.stringify(data, null, 2));
+    console.log('Data saved to data.json');
+}
+
+main();
