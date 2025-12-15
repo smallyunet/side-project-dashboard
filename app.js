@@ -86,19 +86,22 @@ async function initDashboard() {
 
 function setLoading(isLoading) {
     state.loading = isLoading;
+    
+    if (!elements.refreshBtn) return;
+    
     const icon = elements.refreshBtn.querySelector('i');
     
     if (isLoading) {
-        icon.classList.add('fa-spin');
+        if (icon) icon.classList.add('fa-spin');
         elements.refreshBtn.disabled = true;
         
         // Show loading spinner in containers if they are empty
         const spinner = '<div class="loading-spinner"><i class="fas fa-circle-notch"></i></div>';
-        if (!state.repos.length) {
+        if (!state.repos.length && elements.reposContainer) {
             elements.reposContainer.innerHTML = spinner;
         }
     } else {
-        icon.classList.remove('fa-spin');
+        if (icon) icon.classList.remove('fa-spin');
         elements.refreshBtn.disabled = false;
     }
 }
