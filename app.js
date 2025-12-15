@@ -185,18 +185,21 @@ function createRepoCard(repo) {
     const lastCommitDate = repo.last_commit_date ? new Date(repo.last_commit_date).toLocaleDateString() : 'N/A';
 
     let workflowHtml = '';
-    if (repo.latest_workflow_run) {
-        const run = repo.latest_workflow_run;
-        const status = run.conclusion || run.status;
-        const statusIcon = getWorkflowStatusIcon(status);
-        const statusClass = getWorkflowStatusClass(status);
+    if (repo.latest_workflow_runs && repo.latest_workflow_runs.length > 0) {
+        // Show all workflow runs for the latest commit
+        const workflowLinks = repo.latest_workflow_runs.map(run => {
+            const status = run.conclusion || run.status;
+            const statusIcon = getWorkflowStatusIcon(status);
+            const statusClass = getWorkflowStatusClass(status);
+            return `<a href="${run.html_url}" target="_blank" class="workflow-link">
+                ${statusIcon} <span class="${statusClass}">${run.name}</span>
+            </a>`;
+        }).join('');
         
         workflowHtml = `
             <div class="repo-workflow">
-                <span class="workflow-label">Latest Action:</span>
-                <a href="${run.html_url}" target="_blank" class="workflow-link">
-                    ${statusIcon} <span class="${statusClass}">${run.name}</span>
-                </a>
+                <span class="workflow-label">Actions:</span>
+                <div class="workflow-links">${workflowLinks}</div>
             </div>
         `;
     }

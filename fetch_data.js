@@ -68,8 +68,22 @@ async function main() {
 
     const repos = results.map(r => {
         const repo = r.repo;
-        if (r.workflowRuns && Array.isArray(r.workflowRuns) && r.workflowRuns.length > 0) {
+        if (r.workflowRuns && Array.isArray(r.workflowRuns) && r.workflowRuns.length > 0 && r.lastCommit) {
+            // Get all workflow runs for the latest commit
+            const latestCommitSha = r.lastCommit.sha;
+            const latestCommitRuns = r.workflowRuns.filter(run => run.head_sha === latestCommitSha);
+            
+            if (latestCommitRuns.length > 0) {
+                repo.latest_workflow_runs = latestCommitRuns;
+                repo.latest_workflow_run = latestCommitRuns[0]; // Keep for backward compatibility
+            } else {
+                // Fallback to the most recent run if no runs match the latest commit
+                repo.latest_workflow_run = r.workflowRuns[0];
+                repo.latest_workflow_runs = [r.workflowRuns[0]];
+            }
+        } else if (r.workflowRuns && Array.isArray(r.workflowRuns) && r.workflowRuns.length > 0) {
             repo.latest_workflow_run = r.workflowRuns[0];
+            repo.latest_workflow_runs = [r.workflowRuns[0]];
         }
         return repo;
     });

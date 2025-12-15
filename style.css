@@ -319,7 +319,7 @@ select {
     margin-top: 12px;
     font-size: 0.9rem;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 8px;
     padding-top: 12px;
     border-top: 1px solid var(--border-color);
@@ -328,15 +328,24 @@ select {
 .workflow-label {
     color: var(--text-secondary);
     font-size: 12px;
+    flex-shrink: 0;
+    padding-top: 2px;
+}
+
+.workflow-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 12px;
 }
 
 .workflow-link {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: 4px;
     text-decoration: none;
     color: var(--text-primary);
     font-weight: 500;
+    font-size: 12px;
 }
 
 .workflow-link:hover {
