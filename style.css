@@ -241,6 +241,28 @@ body {
     color: var(--text-muted);
 }
 
+.repo-tag {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-family: var(--font-family);
+    color: var(--text-secondary);
+}
+
+.repo-tag i {
+    color: var(--accent-primary);
+    font-size: 10px;
+}
+
+.repo-tag a {
+    color: var(--accent-primary);
+    text-decoration: none;
+}
+
+.repo-tag a:hover {
+    text-decoration: underline;
+}
+
 /* Timeline */
 .timeline-container {
     border: 1px solid var(--border-color);

@@ -184,6 +184,17 @@ function createRepoCard(repo) {
     const updatedDate = new Date(repo.updated_at).toLocaleDateString();
     const lastCommitDate = repo.last_commit_date ? new Date(repo.last_commit_date).toLocaleDateString() : 'N/A';
 
+    let tagHtml = '';
+    if (repo.latest_tag) {
+        const tagUrl = `${repo.html_url}/releases/tag/${repo.latest_tag.name}`;
+        tagHtml = `
+            <div class="repo-tag">
+                <i class="fas fa-tag"></i>
+                <a href="${tagUrl}" target="_blank">${repo.latest_tag.name}</a>
+            </div>
+        `;
+    }
+
     let workflowHtml = '';
     if (repo.latest_workflow_runs && repo.latest_workflow_runs.length > 0) {
         // Show all workflow runs for the latest commit
@@ -230,6 +241,7 @@ function createRepoCard(repo) {
                     <span class="language-dot" style="background-color: ${langColor}"></span>
                     ${repo.language || 'Unknown'}
                 </div>
+                ${tagHtml}
                 <div class="repo-updated">
                     Last commit: ${lastCommitDate}
                 </div>
