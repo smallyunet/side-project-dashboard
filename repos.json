@@ -7,5 +7,7 @@
     "smallyunet/etherflow",
     "smallyunet/go-cggmp-tss",
     "smallyunet/ethbft",
-    "smallyunet/psbt-lens"
+    "smallyunet/psbt-lens",
+    "smallyunet/solana-tx-parser",
+    "smallyunet/pbft-visualizer"
 ]
