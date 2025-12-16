@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765852741742,
+  "timestamp": 1765855976440,
   "repos": [
     {
       "name": "echoevm",
@@ -268,7 +268,9 @@
       "updated_at": "2025-12-13T06:46:29Z",
       "created_at": "2025-12-13T03:39:51Z",
       "last_commit_date": "2025-12-13T06:46:14Z",
-      "latest_tag": null,
+      "latest_tag": {
+        "name": "v0.0.1"
+      },
       "latest_workflow_runs": [
         {
           "name": "CI",
@@ -318,23 +320,31 @@
       "full_name": "smallyunet/psbt-lens",
       "html_url": "https://github.com/smallyunet/psbt-lens",
       "description": null,
-      "language": null,
+      "language": "TypeScript",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-16T02:20:00Z",
+      "updated_at": "2025-12-16T02:53:55Z",
       "created_at": "2025-12-16T02:17:43Z",
-      "last_commit_date": "2025-12-16T02:17:52Z",
+      "last_commit_date": "2025-12-16T02:53:48Z",
       "latest_tag": null,
       "latest_workflow_runs": [
+        {
+          "name": "Deploy to GitHub Pages",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/psbt-lens/actions/runs/20254869853",
+          "head_sha": "25a28af12522db26b89496b0200d7311d91952a9",
+          "created_at": "2025-12-16T02:53:54Z"
+        },
         {
           "name": "pages build and deployment",
           "status": "completed",
           "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/psbt-lens/actions/runs/20254279558",
-          "head_sha": "0bf2b9c4630ac6b33f1ace0d189dd21a448b49bf",
-          "created_at": "2025-12-16T02:19:53Z"
+          "html_url": "https://github.com/smallyunet/psbt-lens/actions/runs/20254869420",
+          "head_sha": "25a28af12522db26b89496b0200d7311d91952a9",
+          "created_at": "2025-12-16T02:53:52Z"
         }
       ],
       "package_info": null,
