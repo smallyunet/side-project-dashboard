@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765893992248,
+  "timestamp": 1765896773038,
   "repos": [
     {
       "name": "echoevm",
@@ -183,42 +183,50 @@
       "name": "userop-validator",
       "full_name": "smallyunet/userop-validator",
       "html_url": "https://github.com/smallyunet/userop-validator",
-      "description": null,
+      "description": "A robust, EIP-7562 compliant ERC-4337 UserOperation validator.",
       "language": "TypeScript",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-13T11:16:18Z",
+      "updated_at": "2025-12-16T14:40:59Z",
       "created_at": "2025-12-13T10:17:00Z",
-      "last_commit_date": "2025-12-13T11:16:11Z",
+      "last_commit_date": "2025-12-16T14:38:41Z",
       "latest_tag": {
-        "name": "v0.0.1"
+        "name": "v0.0.2"
       },
       "latest_workflow_runs": [
+        {
+          "name": "Publish to NPM",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20271722265",
+          "head_sha": "7528c7ce0f78927b82aef0af4fbcfb3f877b2184",
+          "created_at": "2025-12-16T14:39:03Z"
+        },
         {
           "name": "CI",
           "status": "completed",
           "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20191283288",
-          "head_sha": "84a681dec51926e01c43c924d71a36e055c85a52",
-          "created_at": "2025-12-13T11:16:16Z"
+          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20271714273",
+          "head_sha": "7528c7ce0f78927b82aef0af4fbcfb3f877b2184",
+          "created_at": "2025-12-16T14:38:47Z"
         },
         {
           "name": "Deploy Docs",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20191283281",
-          "head_sha": "84a681dec51926e01c43c924d71a36e055c85a52",
-          "created_at": "2025-12-13T11:16:16Z"
+          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20271714228",
+          "head_sha": "7528c7ce0f78927b82aef0af4fbcfb3f877b2184",
+          "created_at": "2025-12-16T14:38:47Z"
         },
         {
           "name": "pages build and deployment",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20191283168",
-          "head_sha": "84a681dec51926e01c43c924d71a36e055c85a52",
-          "created_at": "2025-12-13T11:16:15Z"
+          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20271713983",
+          "head_sha": "7528c7ce0f78927b82aef0af4fbcfb3f877b2184",
+          "created_at": "2025-12-16T14:38:47Z"
         }
       ],
       "package_info": null,
@@ -349,6 +357,53 @@
       ],
       "package_info": null,
       "homepage": "https://smallyunet.github.io/psbt-lens/",
+      "has_pages": true
+    },
+    {
+      "name": "solana-tx-parser",
+      "full_name": "smallyunet/solana-tx-parser",
+      "html_url": "https://github.com/smallyunet/solana-tx-parser",
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2025-12-16T14:46:00Z",
+      "created_at": "2025-12-16T14:45:49Z",
+      "last_commit_date": "2025-12-16T14:45:55Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [],
+      "package_info": null,
+      "homepage": null,
+      "has_pages": false
+    },
+    {
+      "name": "pbft-visualizer",
+      "full_name": "smallyunet/pbft-visualizer",
+      "html_url": "https://github.com/smallyunet/pbft-visualizer",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2025-12-08T14:42:17Z",
+      "created_at": "2025-11-08T14:53:07Z",
+      "last_commit_date": "2025-12-08T14:42:09Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [
+        {
+          "name": "Deploy to GitHub Pages",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/pbft-visualizer/actions/runs/20031956729",
+          "head_sha": "c356b766cfa99a3a166aa911c149c5b2d0440e42",
+          "created_at": "2025-12-08T14:42:15Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/pbft-visualizer/",
       "has_pages": true
     }
   ]
