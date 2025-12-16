@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765896773038,
+  "timestamp": 1765897608109,
   "repos": [
     {
       "name": "echoevm",
@@ -189,47 +189,52 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-16T14:40:59Z",
+      "updated_at": "2025-12-16T14:58:55Z",
       "created_at": "2025-12-13T10:17:00Z",
-      "last_commit_date": "2025-12-16T14:38:41Z",
+      "last_commit_date": "2025-12-16T14:58:48Z",
       "latest_tag": {
-        "name": "v0.0.2"
+        "name": "v0.0.3"
       },
       "latest_workflow_runs": [
         {
           "name": "Publish to NPM",
           "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20271722265",
-          "head_sha": "7528c7ce0f78927b82aef0af4fbcfb3f877b2184",
-          "created_at": "2025-12-16T14:39:03Z"
-        },
-        {
-          "name": "CI",
-          "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20271714273",
-          "head_sha": "7528c7ce0f78927b82aef0af4fbcfb3f877b2184",
-          "created_at": "2025-12-16T14:38:47Z"
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20272354853",
+          "head_sha": "99df374cfc8f2d7da8987a001d1082796a3b6206",
+          "created_at": "2025-12-16T14:59:07Z"
         },
         {
           "name": "Deploy Docs",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20271714228",
-          "head_sha": "7528c7ce0f78927b82aef0af4fbcfb3f877b2184",
-          "created_at": "2025-12-16T14:38:47Z"
+          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20272347990",
+          "head_sha": "99df374cfc8f2d7da8987a001d1082796a3b6206",
+          "created_at": "2025-12-16T14:58:53Z"
+        },
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20272347984",
+          "head_sha": "99df374cfc8f2d7da8987a001d1082796a3b6206",
+          "created_at": "2025-12-16T14:58:53Z"
         },
         {
           "name": "pages build and deployment",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20271713983",
-          "head_sha": "7528c7ce0f78927b82aef0af4fbcfb3f877b2184",
-          "created_at": "2025-12-16T14:38:47Z"
+          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20272347588",
+          "head_sha": "99df374cfc8f2d7da8987a001d1082796a3b6206",
+          "created_at": "2025-12-16T14:58:52Z"
         }
       ],
-      "package_info": null,
+      "package_info": {
+        "type": "npm",
+        "name": "userop-validator",
+        "version": "0.0.2",
+        "url": "https://www.npmjs.com/package/userop-validator"
+      },
       "homepage": "https://smallyunet.github.io/userop-validator/",
       "has_pages": true
     },
@@ -360,18 +365,18 @@
       "has_pages": true
     },
     {
-      "name": "solana-tx-parser",
-      "full_name": "smallyunet/solana-tx-parser",
-      "html_url": "https://github.com/smallyunet/solana-tx-parser",
+      "name": "solana-tx-decoder",
+      "full_name": "smallyunet/solana-tx-decoder",
+      "html_url": "https://github.com/smallyunet/solana-tx-decoder",
       "description": null,
-      "language": null,
+      "language": "TypeScript",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-16T14:46:00Z",
+      "updated_at": "2025-12-16T15:03:35Z",
       "created_at": "2025-12-16T14:45:49Z",
-      "last_commit_date": "2025-12-16T14:45:55Z",
+      "last_commit_date": "2025-12-16T14:57:04Z",
       "latest_tag": null,
       "latest_workflow_runs": [],
       "package_info": null,
