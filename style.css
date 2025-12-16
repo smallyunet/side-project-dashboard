@@ -211,7 +211,8 @@ body {
 .repo-header {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Changed from flex-start to center for better alignment */
+    align-items: center;
+    /* Changed from flex-start to center for better alignment */
     margin-bottom: 8px;
 }
 
@@ -219,7 +220,8 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    overflow: hidden; /* Ensure ellipsis works */
+    overflow: hidden;
+    /* Ensure ellipsis works */
 }
 
 .repo-website-icon {
@@ -288,7 +290,7 @@ body {
     color: var(--text-secondary);
     margin-bottom: auto;
     padding-bottom: 8px;
-    border-bottom: 1px solid var(--border-color);
+    /* border-bottom removed */
 }
 
 .repo-stat {
@@ -306,9 +308,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 0;
-    padding-top: 0;
-    border-top: none;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid var(--border-color);
     font-size: 11px;
     color: var(--text-muted);
 }
