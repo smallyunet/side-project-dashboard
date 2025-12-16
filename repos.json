@@ -6,5 +6,6 @@
     "smallyunet/userop-validator",
     "smallyunet/etherflow",
     "smallyunet/go-cggmp-tss",
-    "smallyunet/ethbft"
+    "smallyunet/ethbft",
+    "smallyunet/psbt-lens"
 ]
