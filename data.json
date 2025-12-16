@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765851567207,
+  "timestamp": 1765851799320,
   "repos": [
     {
       "name": "echoevm",
@@ -27,7 +27,9 @@
           "created_at": "2025-12-14T13:21:13Z"
         }
       ],
-      "package_info": null
+      "package_info": null,
+      "homepage": "http://echoevm.com/",
+      "has_pages": true
     },
     {
       "name": "safe-kit",
@@ -76,7 +78,9 @@
         "name": "safe-kit",
         "version": "0.0.5",
         "url": "https://pypi.org/project/safe-kit/"
-      }
+      },
+      "homepage": "https://smallyunet.github.io/safe-kit/",
+      "has_pages": true
     },
     {
       "name": "finder-sight",
@@ -120,7 +124,9 @@
           "created_at": "2025-12-14T01:34:37Z"
         }
       ],
-      "package_info": null
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/finder-sight/",
+      "has_pages": true
     },
     {
       "name": "privy-wallet-kit",
@@ -169,7 +175,9 @@
         "name": "privy-wallet-kit",
         "version": "0.0.2",
         "url": "https://www.npmjs.com/package/privy-wallet-kit"
-      }
+      },
+      "homepage": "https://smallyunet.github.io/privy-wallet-kit/",
+      "has_pages": true
     },
     {
       "name": "userop-validator",
@@ -213,7 +221,9 @@
           "created_at": "2025-12-13T11:16:15Z"
         }
       ],
-      "package_info": null
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/userop-validator/",
+      "has_pages": true
     },
     {
       "name": "etherflow",
@@ -241,7 +251,9 @@
           "created_at": "2025-12-15T15:21:10Z"
         }
       ],
-      "package_info": null
+      "package_info": null,
+      "homepage": null,
+      "has_pages": false
     },
     {
       "name": "go-cggmp-tss",
@@ -267,7 +279,9 @@
           "created_at": "2025-12-13T06:46:28Z"
         }
       ],
-      "package_info": null
+      "package_info": null,
+      "homepage": null,
+      "has_pages": false
     },
     {
       "name": "ethbft",
@@ -295,24 +309,15 @@
           "created_at": "2025-12-15T14:18:52Z"
         }
       ],
-      "package_info": null
+      "package_info": null,
+      "homepage": "",
+      "has_pages": false
     },
     {
       "name": "psbt-lens",
       "full_name": "smallyunet/psbt-lens",
-      "html_url": "https://github.com/smallyunet/psbt-lens",
-      "description": null,
-      "language": null,
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "visibility": "public",
-      "updated_at": "2025-12-16T02:17:57Z",
-      "created_at": "2025-12-16T02:17:43Z",
-      "last_commit_date": "2025-12-16T02:17:52Z",
-      "latest_tag": null,
-      "latest_workflow_runs": [],
-      "package_info": null
+      "error": true,
+      "error_message": "fetch failed"
     }
   ]
 }

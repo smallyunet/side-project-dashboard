@@ -175,7 +175,9 @@ async function fetchRepoData(repoFullName) {
             last_commit_date: lastCommitDate,
             latest_tag: latestTag,
             latest_workflow_runs: relevantRuns,
-            package_info: packageInfo
+            package_info: packageInfo,
+            homepage: repoData.homepage,
+            has_pages: repoData.has_pages
         };
 
     } catch (error) {

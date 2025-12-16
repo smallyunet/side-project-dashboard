@@ -211,8 +211,30 @@ body {
 .repo-header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center; /* Changed from flex-start to center for better alignment */
     margin-bottom: 8px;
+}
+
+.repo-header-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    overflow: hidden; /* Ensure ellipsis works */
+}
+
+.repo-website-icon {
+    color: var(--text-secondary);
+    font-size: 12px;
+    opacity: 0.6;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+
+.repo-website-icon:hover {
+    color: var(--accent-primary);
+    opacity: 1;
 }
 
 .repo-name {

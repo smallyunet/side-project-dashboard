@@ -256,12 +256,25 @@ class Dashboard {
              `;
         }
 
+        let websiteHtml = '';
+        // Check if homepage is available and looks like a URL
+        if (repo.homepage && (repo.homepage.startsWith('http') || repo.homepage.startsWith('https'))) {
+            websiteHtml = `
+                <a href="${repo.homepage}" target="_blank" class="repo-website-icon" title="Visit Website">
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            `;
+        }
+
         return `
             <div class="repo-card">
                 <div class="repo-header">
-                    <a href="${repo.html_url}" target="_blank" class="repo-name">
-                        <i class="fas fa-book-bookmark"></i> ${repo.name}
-                    </a>
+                    <div class="repo-header-left">
+                        <a href="${repo.html_url}" target="_blank" class="repo-name">
+                            <i class="fas fa-book-bookmark"></i> ${repo.name}
+                        </a>
+                        ${websiteHtml}
+                    </div>
                     <span class="repo-visibility">${repo.visibility || 'public'}</span>
                 </div>
                 <p class="repo-description">${repo.description || 'No description available'}</p>
@@ -277,26 +290,26 @@ class Dashboard {
                     </div>
                 </div>
                 ${workflowHtml}
-                
-                <div class="repo-bottom">
-                    ${(tagHtml || packageHtml) ? `
+
+        <div class="repo-bottom">
+            ${(tagHtml || packageHtml) ? `
                     <div class="repo-versions">
                         ${tagHtml}
                         ${packageHtml}
                     </div>` : ''}
 
-                    <div class="repo-footer">
-                        <div class="repo-lang">
-                            <span class="language-dot" style="background-color: ${langColor}"></span>
-                            ${repo.language || 'Unknown'}
-                        </div>
-                        <div class="repo-updated" title="${repo.last_commit_date ? new Date(repo.last_commit_date).toLocaleString() : ''}">
-                            ${lastCommitDate === 'N/A' ? 'No commits' : 'Updated ' + lastCommitDate}
-                        </div>
-                    </div>
+            <div class="repo-footer">
+                <div class="repo-lang">
+                    <span class="language-dot" style="background-color: ${langColor}"></span>
+                    ${repo.language || 'Unknown'}
+                </div>
+                <div class="repo-updated" title="${repo.last_commit_date ? new Date(repo.last_commit_date).toLocaleString() : ''}">
+                    ${lastCommitDate === 'N/A' ? 'No commits' : 'Updated ' + lastCommitDate}
                 </div>
             </div>
-        `;
+        </div>
+            </div >
+            `;
     }
 
     getWorkflowStatusIcon(status) {
@@ -327,7 +340,7 @@ class Dashboard {
     updateLastUpdated(date) {
         const displayDate = date || new Date();
         const timeString = this.formatRelativeTime(displayDate);
-        this.elements.lastUpdated.textContent = `Updated: ${timeString}`;
+        this.elements.lastUpdated.textContent = `Updated: ${timeString} `;
         this.elements.lastUpdated.title = displayDate.toLocaleString();
     }
 }
