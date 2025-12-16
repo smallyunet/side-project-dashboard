@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765858523920,
+  "timestamp": 1765861624382,
   "repos": [
     {
       "name": "echoevm",
@@ -265,20 +265,20 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-13T06:46:29Z",
+      "updated_at": "2025-12-16T04:18:02Z",
       "created_at": "2025-12-13T03:39:51Z",
-      "last_commit_date": "2025-12-13T06:46:14Z",
+      "last_commit_date": "2025-12-16T04:17:55Z",
       "latest_tag": {
-        "name": "v0.0.1"
+        "name": "v0.0.2"
       },
       "latest_workflow_runs": [
         {
           "name": "CI",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/20188368476",
-          "head_sha": "e924cb6013c0ffb658db5f07bf2cf36dff7d2c4e",
-          "created_at": "2025-12-13T06:46:28Z"
+          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/20256339840",
+          "head_sha": "dc373c5904ba3d035462d30606bc9e955f8a3eff",
+          "created_at": "2025-12-16T04:18:00Z"
         }
       ],
       "package_info": null,
