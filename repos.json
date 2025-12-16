@@ -1,13 +1,14 @@
 [
     "smallyunet/echoevm",
+    "smallyunet/ethbft",
     "smallyunet/safe-kit",
     "smallyunet/finder-sight",
     "smallyunet/privy-wallet-kit",
     "smallyunet/userop-validator",
     "smallyunet/etherflow",
     "smallyunet/go-cggmp-tss",
-    "smallyunet/ethbft",
     "smallyunet/psbt-lens",
     "smallyunet/solana-tx-parser",
-    "smallyunet/pbft-visualizer"
+    "smallyunet/pbft-visualizer",
+    "smallyunet/zabi-rs"
 ]
