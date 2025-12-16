@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765851799320,
+  "timestamp": 1765852139824,
   "repos": [
     {
       "name": "echoevm",
@@ -316,8 +316,30 @@
     {
       "name": "psbt-lens",
       "full_name": "smallyunet/psbt-lens",
-      "error": true,
-      "error_message": "fetch failed"
+      "html_url": "https://github.com/smallyunet/psbt-lens",
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2025-12-16T02:20:00Z",
+      "created_at": "2025-12-16T02:17:43Z",
+      "last_commit_date": "2025-12-16T02:17:52Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/psbt-lens/actions/runs/20254279558",
+          "head_sha": "0bf2b9c4630ac6b33f1ace0d189dd21a448b49bf",
+          "created_at": "2025-12-16T02:19:53Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/psbt-lens/",
+      "has_pages": true
     }
   ]
 }
