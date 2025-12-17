@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Side Project Dashboard</title>
-    <meta name="description" content="A minimalist dashboard to monitor GitHub side projects - stars, forks, releases, and CI status.">
+    <meta name="description"
+        content="A minimalist dashboard to monitor GitHub side projects - stars, forks, releases, and CI status.">
     <meta name="keywords" content="GitHub, Dashboard, Side Project, Repository Monitor">
     <meta property="og:title" content="Side Project Dashboard">
     <meta property="og:description" content="Monitor your GitHub side projects at a glance.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://spd.smallyu.net">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="app-container">
         <main class="main-content">
@@ -74,7 +78,8 @@
                     <h3>Repositories</h3>
                     <div class="filters-inline">
                         <select id="sort-select">
-                            <option value="updated">Last Updated</option>
+                            <option value="updated" selected>Last Updated</option>
+                            <option value="default">Default</option>
                             <option value="stars">Stars</option>
                             <option value="forks">Forks</option>
                             <option value="created">Created Date</option>
@@ -90,4 +95,5 @@
 
     <script src="app.js"></script>
 </body>
+
 </html>

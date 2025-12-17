@@ -176,8 +176,15 @@ class Dashboard {
                 sortedRepos.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
                 break;
             case 'updated':
+                sortedRepos.sort((a, b) => {
+                    const dateA = a.last_commit_date ? new Date(a.last_commit_date) : new Date(a.updated_at);
+                    const dateB = b.last_commit_date ? new Date(b.last_commit_date) : new Date(b.updated_at);
+                    return dateB - dateA;
+                });
+                break;
+            case 'default':
             default:
-                sortedRepos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+                // No sort needed, use original order
                 break;
         }
 
