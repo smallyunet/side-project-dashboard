@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765980381441,
+  "timestamp": 1765983976771,
   "repos": [
     {
       "name": "echoevm",
@@ -264,31 +264,39 @@
       "name": "etherflow",
       "full_name": "smallyunet/etherflow",
       "html_url": "https://github.com/smallyunet/etherflow",
-      "description": null,
+      "description": "A lightweight, reorg-aware EVM data indexing framework for Go.",
       "language": "Go",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-15T15:21:12Z",
+      "updated_at": "2025-12-17T14:47:03Z",
       "created_at": "2025-12-13T10:06:19Z",
-      "last_commit_date": "2025-12-15T15:21:05Z",
+      "last_commit_date": "2025-12-17T14:46:56Z",
       "latest_tag": {
-        "name": "v0.0.1"
+        "name": "v0.0.2"
       },
       "latest_workflow_runs": [
         {
           "name": "CI",
           "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/etherflow/actions/runs/20237480753",
-          "head_sha": "ba6c9f018ec538660901752b4810ad15552ad90f",
-          "created_at": "2025-12-15T15:21:10Z"
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/etherflow/actions/runs/20306779992",
+          "head_sha": "67fb4783150beed34d6483c4f5d92b5c35259247",
+          "created_at": "2025-12-17T14:47:02Z"
+        },
+        {
+          "name": "Publish Docs",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/etherflow/actions/runs/20306779898",
+          "head_sha": "67fb4783150beed34d6483c4f5d92b5c35259247",
+          "created_at": "2025-12-17T14:47:01Z"
         }
       ],
       "package_info": null,
-      "homepage": null,
-      "has_pages": false
+      "homepage": "https://smallyunet.github.io/etherflow/",
+      "has_pages": true
     },
     {
       "name": "go-cggmp-tss",
