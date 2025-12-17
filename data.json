@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765983976771,
+  "timestamp": 1765987610803,
   "repos": [
     {
       "name": "echoevm",
@@ -338,29 +338,36 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-16T02:53:55Z",
+      "updated_at": "2025-12-17T15:42:52Z",
       "created_at": "2025-12-16T02:17:43Z",
-      "last_commit_date": "2025-12-16T02:53:48Z",
-      "latest_tag": null,
+      "last_commit_date": "2025-12-17T15:42:46Z",
+      "latest_tag": {
+        "name": "v0.0.1"
+      },
       "latest_workflow_runs": [
+        {
+          "name": "Publish Package to npmjs",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/psbt-lens/actions/runs/20308524362",
+          "head_sha": "f2dfc50ee404ffc3c8014ca43b18b8a09fe23382",
+          "created_at": "2025-12-17T15:43:20Z"
+        },
         {
           "name": "Deploy to GitHub Pages",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/psbt-lens/actions/runs/20254869853",
-          "head_sha": "25a28af12522db26b89496b0200d7311d91952a9",
-          "created_at": "2025-12-16T02:53:54Z"
-        },
-        {
-          "name": "pages build and deployment",
-          "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/psbt-lens/actions/runs/20254869420",
-          "head_sha": "25a28af12522db26b89496b0200d7311d91952a9",
-          "created_at": "2025-12-16T02:53:52Z"
+          "html_url": "https://github.com/smallyunet/psbt-lens/actions/runs/20308510967",
+          "head_sha": "f2dfc50ee404ffc3c8014ca43b18b8a09fe23382",
+          "created_at": "2025-12-17T15:42:52Z"
         }
       ],
-      "package_info": null,
+      "package_info": {
+        "type": "npm",
+        "name": "psbt-lens",
+        "version": "0.1.0",
+        "url": "https://www.npmjs.com/package/psbt-lens"
+      },
       "homepage": "https://smallyunet.github.io/psbt-lens/",
       "has_pages": true
     },
