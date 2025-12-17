@@ -1,5 +1,5 @@
 {
-  "timestamp": 1765930815203,
+  "timestamp": 1765935219731,
   "repos": [
     {
       "name": "echoevm",
@@ -152,36 +152,28 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-13T15:41:56Z",
+      "updated_at": "2025-12-17T01:31:38Z",
       "created_at": "2025-12-12T17:04:53Z",
-      "last_commit_date": "2025-12-13T15:41:50Z",
+      "last_commit_date": "2025-12-17T01:31:30Z",
       "latest_tag": {
         "name": "v0.0.2"
       },
       "latest_workflow_runs": [
         {
-          "name": "Publish to NPM",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/privy-wallet-kit/actions/runs/20194259728",
-          "head_sha": "2038502bd508ae0ff6e1a7fb0d775db118efe339",
-          "created_at": "2025-12-13T15:42:09Z"
-        },
-        {
           "name": "CI",
           "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/privy-wallet-kit/actions/runs/20194255934",
-          "head_sha": "2038502bd508ae0ff6e1a7fb0d775db118efe339",
-          "created_at": "2025-12-13T15:41:55Z"
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/privy-wallet-kit/actions/runs/20288534935",
+          "head_sha": "bf960737bbb05f3b7aac04c23e042bf1833eecc0",
+          "created_at": "2025-12-17T01:31:37Z"
         },
         {
           "name": "Deploy Storybook to GitHub Pages",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/privy-wallet-kit/actions/runs/20194255929",
-          "head_sha": "2038502bd508ae0ff6e1a7fb0d775db118efe339",
-          "created_at": "2025-12-13T15:41:55Z"
+          "html_url": "https://github.com/smallyunet/privy-wallet-kit/actions/runs/20288534923",
+          "head_sha": "bf960737bbb05f3b7aac04c23e042bf1833eecc0",
+          "created_at": "2025-12-17T01:31:37Z"
         }
       ],
       "package_info": {
