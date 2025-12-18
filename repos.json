@@ -10,5 +10,6 @@
     "smallyunet/psbt-lens",
     "smallyunet/solana-tx-parser",
     "smallyunet/pbft-visualizer",
-    "smallyunet/zabi-rs"
+    "smallyunet/zabi-rs",
+    "smallyunet/the-trapper"
 ]
