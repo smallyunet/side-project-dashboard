@@ -193,8 +193,11 @@ async function fetchRepoData(repoFullName) {
 
 async function main() {
     console.log(`Fetching data for ${REPOS.length} repositories...`);
-    const repoPromises = REPOS.map(repo => fetchRepoData(repo));
-    const results = await Promise.all(repoPromises);
+    const results = [];
+    for (const repo of REPOS) {
+        // console.log(`Fetching ${repo}...`); // Optional logging
+        results.push(await fetchRepoData(repo));
+    }
 
     // Filter out nulls if any (though fetchRepoData returns error objects)
     const validRepos = results;
