@@ -1,5 +1,5 @@
 {
-  "timestamp": 1766071317113,
+  "timestamp": 1766074012449,
   "repos": [
     {
       "name": "echoevm",
@@ -65,15 +65,15 @@
       "name": "safe-kit",
       "full_name": "smallyunet/safe-kit",
       "html_url": "https://github.com/smallyunet/safe-kit",
-      "description": null,
+      "description": "A Python implementation of the Safe Protocol Kit, designed to mirror the official Node.js SDK's developer experience.",
       "language": "Python",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-16T15:58:55Z",
+      "updated_at": "2025-12-18T16:01:02Z",
       "created_at": "2025-12-12T11:25:11Z",
-      "last_commit_date": "2025-12-16T15:58:49Z",
+      "last_commit_date": "2025-12-18T16:00:55Z",
       "latest_tag": {
         "name": "v0.0.7"
       },
@@ -82,9 +82,9 @@
           "name": "CI",
           "status": "completed",
           "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20274280441",
-          "head_sha": "643bcdb5c920729b720329df54db9d8292cbf6bb",
-          "created_at": "2025-12-16T15:58:54Z"
+          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20343063783",
+          "head_sha": "02e4c656b1f25afcc33f0d6414f8276fa1730a2b",
+          "created_at": "2025-12-18T16:01:01Z"
         }
       ],
       "package_info": {
@@ -154,13 +154,13 @@
       "name": "privy-wallet-kit",
       "full_name": "smallyunet/privy-wallet-kit",
       "html_url": "https://github.com/smallyunet/privy-wallet-kit",
-      "description": null,
+      "description": "Privy Wallet Kit is an open-source React UI component library designed to provide drop-in components and headless hooks for Privy Embedded Wallets.",
       "language": "TypeScript",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-17T01:33:45Z",
+      "updated_at": "2025-12-18T15:54:18Z",
       "created_at": "2025-12-12T17:04:53Z",
       "last_commit_date": "2025-12-17T01:33:36Z",
       "latest_tag": {
@@ -302,43 +302,59 @@
       "name": "go-cggmp-tss",
       "full_name": "smallyunet/go-cggmp-tss",
       "html_url": "https://github.com/smallyunet/go-cggmp-tss",
-      "description": null,
+      "description": "A pure Go implementation of the CGGMP21 Threshold Signature Scheme (TSS) protocol.",
       "language": "Go",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-16T04:18:02Z",
+      "updated_at": "2025-12-18T15:31:45Z",
       "created_at": "2025-12-13T03:39:51Z",
-      "last_commit_date": "2025-12-16T04:17:55Z",
+      "last_commit_date": "2025-12-18T15:31:37Z",
       "latest_tag": {
         "name": "v0.0.2"
       },
       "latest_workflow_runs": [
         {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/20342388207",
+          "head_sha": "beeb4a902d73747529fb47f6c8bc98dd23e44b55",
+          "created_at": "2025-12-18T15:38:18Z"
+        },
+        {
+          "name": "Publish docs via GitHub Pages",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/20342185491",
+          "head_sha": "beeb4a902d73747529fb47f6c8bc98dd23e44b55",
+          "created_at": "2025-12-18T15:31:41Z"
+        },
+        {
           "name": "CI",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/20256339840",
-          "head_sha": "dc373c5904ba3d035462d30606bc9e955f8a3eff",
-          "created_at": "2025-12-16T04:18:00Z"
+          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/20342185471",
+          "head_sha": "beeb4a902d73747529fb47f6c8bc98dd23e44b55",
+          "created_at": "2025-12-18T15:31:41Z"
         }
       ],
       "package_info": null,
-      "homepage": null,
-      "has_pages": false
+      "homepage": "https://smallyunet.github.io/go-cggmp-tss/",
+      "has_pages": true
     },
     {
       "name": "psbt-lens",
       "full_name": "smallyunet/psbt-lens",
       "html_url": "https://github.com/smallyunet/psbt-lens",
-      "description": null,
+      "description": "PSBT Lens is a modern, pure client-side visualization and debugging tool for Bitcoin Partially Signed Bitcoin Transactions (PSBTs).",
       "language": "TypeScript",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-17T16:34:12Z",
+      "updated_at": "2025-12-18T15:57:56Z",
       "created_at": "2025-12-16T02:17:43Z",
       "last_commit_date": "2025-12-17T16:34:06Z",
       "latest_tag": {
