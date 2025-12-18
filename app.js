@@ -287,13 +287,13 @@ class Dashboard {
                 <p class="repo-description">${repo.description || 'No description available'}</p>
                 <div class="repo-stats">
                     <div class="repo-stat" title="Stars">
-                        <i class="far fa-star"></i> ${stars}
+                        <i class="fas fa-star"></i> ${stars}
                     </div>
                     <div class="repo-stat" title="Forks">
                         <i class="fas fa-code-branch"></i> ${forks}
                     </div>
                     <div class="repo-stat" title="Open Issues">
-                        <i class="far fa-circle-dot"></i> ${issues}
+                        <i class="fas fa-circle-dot"></i> ${issues}
                     </div>
                 </div>
                 ${workflowHtml}
