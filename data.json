@@ -1,35 +1,11 @@
 {
-  "timestamp": 1766076256230,
+  "timestamp": 1766077688069,
   "repos": [
     {
       "name": "echoevm",
       "full_name": "smallyunet/echoevm",
-      "html_url": "https://github.com/smallyunet/echoevm",
-      "description": "EchoEVM is a minimal, pedagogical Ethereum Virtual Machine (EVM) implementation in Go, designed for transparent bytecode execution and experimentation.",
-      "language": "Go",
-      "stargazers_count": 3,
-      "forks_count": 1,
-      "open_issues_count": 0,
-      "visibility": "public",
-      "updated_at": "2025-12-17T07:23:11Z",
-      "created_at": "2025-05-10T17:28:13Z",
-      "last_commit_date": "2025-12-17T07:23:05Z",
-      "latest_tag": {
-        "name": "v0.0.12"
-      },
-      "latest_workflow_runs": [
-        {
-          "name": "pages build and deployment",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/echoevm/actions/runs/20294979644",
-          "head_sha": "2f74c0b42ce2b81a829c9a56408cefee5899cc32",
-          "created_at": "2025-12-17T07:23:09Z"
-        }
-      ],
-      "package_info": null,
-      "homepage": "http://echoevm.com/",
-      "has_pages": true
+      "error": true,
+      "error_message": "fetch failed"
     },
     {
       "name": "ethbft",
