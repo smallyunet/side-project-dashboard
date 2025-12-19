@@ -199,7 +199,9 @@ async function fetchRepoData(repoFullName) {
             package_info: packageInfo,
             homepage: repoData.homepage,
             has_pages: repoData.has_pages,
-            commit_count: commitCount
+            commit_count: commitCount,
+            topics: repoData.topics || [],
+            license: repoData.license
         };
 
     } catch (error) {

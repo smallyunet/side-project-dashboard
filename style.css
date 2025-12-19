@@ -324,12 +324,26 @@ body {
     color: var(--text-muted);
 }
 
+.repo-footer-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
 .repo-lang {
     display: flex;
     align-items: center;
     gap: 4px;
     font-weight: 500;
     color: var(--text-secondary);
+}
+
+.repo-license {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--text-secondary);
+    font-family: var(--font-family);
 }
 
 .language-dot {
@@ -353,6 +367,25 @@ body {
     display: flex;
     align-items: center;
     gap: 4px;
+}
+
+/* Topic Badges */
+.repo-topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.topic-badge {
+    padding: 2px 8px;
+    background-color: var(--bg-body);
+    color: var(--accent-primary);
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 500;
+    font-family: var(--font-family);
+    border: 1px solid var(--border-color);
 }
 
 /* Version Badges */
