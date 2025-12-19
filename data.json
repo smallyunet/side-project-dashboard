@@ -1,5 +1,5 @@
 {
-  "timestamp": 1766142327906,
+  "timestamp": 1766146118309,
   "repos": [
     {
       "name": "echoevm",
@@ -40,32 +40,40 @@
       "name": "ethbft",
       "full_name": "smallyunet/ethbft",
       "html_url": "https://github.com/smallyunet/ethbft",
-      "description": "Ethereum to CometBFT Bridge",
+      "description": "A minimal Ethereum ↔ CometBFT bridge for Engine API orchestration and block production.",
       "language": "Go",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-17T01:56:08Z",
+      "updated_at": "2025-12-19T11:29:50Z",
       "created_at": "2025-08-31T16:31:07Z",
-      "last_commit_date": "2025-12-17T01:56:00Z",
+      "last_commit_date": "2025-12-19T11:28:51Z",
       "latest_tag": {
-        "name": "v0.0.3"
+        "name": "v0.0.4"
       },
       "latest_workflow_runs": [
         {
+          "name": "Deploy Documentation",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/ethbft/actions/runs/20368676229",
+          "head_sha": "579f6a3b47692733bde1029f0f61099efc8530e1",
+          "created_at": "2025-12-19T11:28:56Z"
+        },
+        {
           "name": "CI",
           "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/ethbft/actions/runs/20288962790",
-          "head_sha": "856c5145165cb5a5f898c444ac56a94910f3d700",
-          "created_at": "2025-12-17T01:56:06Z"
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/ethbft/actions/runs/20368676223",
+          "head_sha": "579f6a3b47692733bde1029f0f61099efc8530e1",
+          "created_at": "2025-12-19T11:28:56Z"
         }
       ],
       "package_info": null,
-      "homepage": "",
-      "has_pages": false,
-      "commit_count": 37,
+      "homepage": "https://smallyunet.github.io/ethbft/",
+      "has_pages": true,
+      "commit_count": 40,
       "topics": [],
       "license": {
         "key": "mit",
