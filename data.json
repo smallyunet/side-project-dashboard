@@ -1,5 +1,5 @@
 {
-  "timestamp": 1766135217881,
+  "timestamp": 1766135341110,
   "repos": [
     {
       "name": "echoevm",
@@ -29,7 +29,12 @@
       ],
       "package_info": null,
       "homepage": "http://echoevm.com/",
-      "has_pages": true
+      "has_pages": true,
+      "commit_count": 78,
+      "topics": [
+        "evm"
+      ],
+      "license": null
     },
     {
       "name": "ethbft",
@@ -59,7 +64,16 @@
       ],
       "package_info": null,
       "homepage": "",
-      "has_pages": false
+      "has_pages": false,
+      "commit_count": 37,
+      "topics": [],
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      }
     },
     {
       "name": "safe-kit",
@@ -94,7 +108,16 @@
         "url": "https://pypi.org/project/safe-kit/"
       },
       "homepage": "https://smallyunet.github.io/safe-kit/",
-      "has_pages": true
+      "has_pages": true,
+      "commit_count": 36,
+      "topics": [],
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      }
     },
     {
       "name": "finder-sight",
@@ -148,7 +171,10 @@
       ],
       "package_info": null,
       "homepage": "https://smallyunet.github.io/finder-sight/",
-      "has_pages": true
+      "has_pages": true,
+      "commit_count": 16,
+      "topics": [],
+      "license": null
     },
     {
       "name": "privy-wallet-kit",
@@ -199,7 +225,16 @@
         "url": "https://www.npmjs.com/package/privy-wallet-kit"
       },
       "homepage": "https://smallyunet.github.io/privy-wallet-kit/",
-      "has_pages": true
+      "has_pages": true,
+      "commit_count": 21,
+      "topics": [],
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      }
     },
     {
       "name": "userop-validator",
@@ -250,7 +285,10 @@
         "url": "https://www.npmjs.com/package/userop-validator"
       },
       "homepage": "https://smallyunet.github.io/userop-validator/",
-      "has_pages": true
+      "has_pages": true,
+      "commit_count": 8,
+      "topics": [],
+      "license": null
     },
     {
       "name": "etherflow",
@@ -288,7 +326,10 @@
       ],
       "package_info": null,
       "homepage": "https://smallyunet.github.io/etherflow/",
-      "has_pages": true
+      "has_pages": true,
+      "commit_count": 7,
+      "topics": [],
+      "license": null
     },
     {
       "name": "go-cggmp-tss",
@@ -334,7 +375,10 @@
       ],
       "package_info": null,
       "homepage": "https://smallyunet.github.io/go-cggmp-tss/",
-      "has_pages": true
+      "has_pages": true,
+      "commit_count": 11,
+      "topics": [],
+      "license": null
     },
     {
       "name": "psbt-lens",
@@ -364,7 +408,10 @@
       ],
       "package_info": null,
       "homepage": "https://smallyunet.github.io/psbt-lens/",
-      "has_pages": true
+      "has_pages": true,
+      "commit_count": 7,
+      "topics": [],
+      "license": null
     },
     {
       "name": "solana-tx-decoder",
@@ -394,7 +441,10 @@
       ],
       "package_info": null,
       "homepage": "https://smallyunet.github.io/solana-tx-decoder/",
-      "has_pages": true
+      "has_pages": true,
+      "commit_count": 7,
+      "topics": [],
+      "license": null
     },
     {
       "name": "pbft-visualizer",
@@ -424,7 +474,10 @@
       ],
       "package_info": null,
       "homepage": "https://smallyunet.github.io/pbft-visualizer/",
-      "has_pages": true
+      "has_pages": true,
+      "commit_count": 17,
+      "topics": [],
+      "license": null
     },
     {
       "name": "zabi-rs",
@@ -454,7 +507,10 @@
       ],
       "package_info": null,
       "homepage": "https://smallyunet.github.io/zabi-rs/",
-      "has_pages": true
+      "has_pages": true,
+      "commit_count": 5,
+      "topics": [],
+      "license": null
     },
     {
       "name": "the-trapper",
@@ -484,7 +540,41 @@
       ],
       "package_info": null,
       "homepage": "https://smallyunet.github.io/the-trapper/",
-      "has_pages": true
+      "has_pages": true,
+      "commit_count": 5,
+      "topics": [],
+      "license": null
+    },
+    {
+      "name": "prediction-market-indexer",
+      "full_name": "smallyunet/prediction-market-indexer",
+      "html_url": "https://github.com/smallyunet/prediction-market-indexer",
+      "description": "A high-performance, SQL-based indexer and API for prediction market analytics, built with Ponder and Hono.",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2025-12-19T09:01:42Z",
+      "created_at": "2025-12-19T08:40:39Z",
+      "last_commit_date": "2025-12-19T09:01:35Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [
+        {
+          "name": "Deploy Docs to GitHub Pages",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/prediction-market-indexer/actions/runs/20365080979",
+          "head_sha": "2e7e3971c9808e83e533ec75978132e2331b2485",
+          "created_at": "2025-12-19T09:01:40Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/prediction-market-indexer/",
+      "has_pages": true,
+      "commit_count": 5,
+      "topics": [],
+      "license": null
     }
   ]
 }
