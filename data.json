@@ -1,5 +1,5 @@
 {
-  "timestamp": 1766138745428,
+  "timestamp": 1766142327906,
   "repos": [
     {
       "name": "echoevm",
@@ -186,47 +186,31 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-19T09:27:44Z",
+      "updated_at": "2025-12-19T10:25:01Z",
       "created_at": "2025-12-12T17:04:53Z",
-      "last_commit_date": "2025-12-19T09:27:38Z",
+      "last_commit_date": "2025-12-19T10:24:57Z",
       "latest_tag": {
-        "name": "v0.0.2"
+        "name": "v0.0.3"
       },
       "latest_workflow_runs": [
         {
-          "name": "Format",
+          "name": "Publish to NPM",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/privy-wallet-kit/actions/runs/20365749512",
-          "head_sha": "ebab62b7803560fe9bfec4f417ea01d8b3ba8b65",
-          "created_at": "2025-12-19T09:27:42Z"
-        },
-        {
-          "name": "Deploy Storybook to GitHub Pages",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/privy-wallet-kit/actions/runs/20365749477",
-          "head_sha": "ebab62b7803560fe9bfec4f417ea01d8b3ba8b65",
-          "created_at": "2025-12-19T09:27:42Z"
-        },
-        {
-          "name": "CI",
-          "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/privy-wallet-kit/actions/runs/20365749457",
-          "head_sha": "ebab62b7803560fe9bfec4f417ea01d8b3ba8b65",
-          "created_at": "2025-12-19T09:27:42Z"
+          "html_url": "https://github.com/smallyunet/privy-wallet-kit/actions/runs/20367561875",
+          "head_sha": "605fa1839c9a31145725bb0439c768552e1731b8",
+          "created_at": "2025-12-19T10:41:43Z"
         }
       ],
       "package_info": {
         "type": "npm",
         "name": "privy-wallet-kit",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "url": "https://www.npmjs.com/package/privy-wallet-kit"
       },
       "homepage": "https://smallyunet.github.io/privy-wallet-kit/",
       "has_pages": true,
-      "commit_count": 23,
+      "commit_count": 25,
       "topics": [],
       "license": {
         "key": "mit",
