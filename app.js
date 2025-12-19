@@ -37,7 +37,7 @@ class Dashboard {
             totalIssues: document.getElementById('total-issues'),
             reposContainer: document.getElementById('repos-container'),
             sortSelect: document.getElementById('sort-select'),
-            themeToggle: document.getElementById('theme-toggle'),
+            themeToggle: document.getElementById('theme-toggle')
         };
 
         this.bindEvents();
@@ -214,9 +214,11 @@ class Dashboard {
 
         const langColor = LANGUAGE_COLORS[repo.language] || '#ccc';
         const lastCommitDate = repo.last_commit_date ? this.formatRelativeTime(new Date(repo.last_commit_date)) : 'N/A';
+        const createdDate = repo.created_at ? this.formatRelativeTime(new Date(repo.created_at)) : 'N/A';
         const stars = this.formatNumber(repo.stargazers_count || 0);
         const forks = this.formatNumber(repo.forks_count || 0);
         const issues = this.formatNumber(repo.open_issues_count || 0);
+        const commits = this.formatNumber(repo.commit_count || 0);
 
         let tagHtml = '';
         if (repo.latest_tag) {
@@ -286,14 +288,17 @@ class Dashboard {
                 </div>
                 <p class="repo-description">${repo.description || 'No description available'}</p>
                 <div class="repo-stats">
-                    <div class="repo-stat" title="Stars">
+                    <div class="repo-stat ${repo.stargazers_count === 0 ? 'stat-zero' : ''}" title="Stars">
                         <i class="fas fa-star"></i> ${stars}
                     </div>
-                    <div class="repo-stat" title="Forks">
+                    <div class="repo-stat ${repo.forks_count === 0 ? 'stat-zero' : ''}" title="Forks">
                         <i class="fas fa-code-branch"></i> ${forks}
                     </div>
-                    <div class="repo-stat" title="Open Issues">
+                    <div class="repo-stat ${repo.open_issues_count === 0 ? 'stat-zero' : ''}" title="Open Issues">
                         <i class="fas fa-circle-dot"></i> ${issues}
+                    </div>
+                    <div class="repo-stat ${!repo.commit_count ? 'stat-zero' : ''}" title="Total Commits">
+                        <i class="fas fa-history"></i> ${commits}
                     </div>
                 </div>
                 ${workflowHtml}
@@ -310,12 +315,17 @@ class Dashboard {
                     <span class="language-dot" style="background-color: ${langColor}"></span>
                     ${repo.language || 'Unknown'}
                 </div>
-                <div class="repo-updated" title="${repo.last_commit_date ? new Date(repo.last_commit_date).toLocaleString() : ''}">
-                    ${lastCommitDate === 'N/A' ? 'No commits' : 'Updated ' + lastCommitDate}
+                <div class="repo-dates">
+                     <div class="repo-date" title="Created: ${repo.created_at ? new Date(repo.created_at).toLocaleString() : ''}">
+                        <i class="far fa-calendar-plus"></i> ${createdDate === 'N/A' ? 'N/A' : createdDate}
+                    </div>
+                    <div class="repo-date" title="Updated: ${repo.last_commit_date ? new Date(repo.last_commit_date).toLocaleString() : ''}">
+                         <i class="far fa-clock"></i> ${lastCommitDate === 'N/A' ? 'No commits' : lastCommitDate}
+                    </div>
                 </div>
             </div>
         </div>
-            </div >
+            </div>
             `;
     }
 

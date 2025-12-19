@@ -106,6 +106,27 @@ async function fetchRepoData(repoFullName) {
             lastCommitDate = lastCommitData[0].commit.author.date;
         }
 
+        // Extract commit count
+        let commitCount = 0;
+        const linkHeader = lastCommitRes.headers.get('Link');
+        if (linkHeader) {
+            const matches = linkHeader.match(/&page=(\d+)>; rel="last"/);
+            if (matches && matches[1]) {
+                commitCount = parseInt(matches[1], 10);
+            }
+        } else if (Array.isArray(lastCommitData)) {
+            // Fallback for small repos (only 1 page)
+            // If the array is full (length == 1), and no link header, it means there is exactly 1 commit... 
+            // actually if per_page=1, no link header means ONLY 1 commit total.
+            // If per_page was default (30), no link header means <= 30 commits.
+            // Since we use per_page=1, if there is data but no link header, it's 1 commit.
+            // But wait, if there are 0 commits, the array is empty.
+            // If there's 1 commit: array length 1. Is there a link header for page 1? usually no if only 1 page.
+            if (lastCommitData.length > 0) {
+                commitCount = 1; // At least one, and no pagination means exactly one page of 1.
+            }
+        }
+
         // Process Workflow Runs (Minified)
         let relevantRuns = [];
         let latestRun = null;
@@ -177,7 +198,8 @@ async function fetchRepoData(repoFullName) {
             latest_workflow_runs: relevantRuns,
             package_info: packageInfo,
             homepage: repoData.homepage,
-            has_pages: repoData.has_pages
+            has_pages: repoData.has_pages,
+            commit_count: commitCount
         };
 
     } catch (error) {

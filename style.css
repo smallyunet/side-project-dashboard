@@ -180,6 +180,13 @@ body {
     color: var(--text-primary);
     line-height: 1.2;
     letter-spacing: -0.025em;
+    font-family: var(--font-family);
+    /* Monospace */
+}
+
+/* Zero stats dimming */
+.stat-zero {
+    opacity: 0.4;
 }
 
 /* Repositories Grid */
@@ -290,6 +297,8 @@ body {
     color: var(--text-secondary);
     margin-bottom: auto;
     padding-bottom: 8px;
+    font-family: var(--font-family);
+    /* Monospace */
     /* border-bottom removed */
 }
 
@@ -330,10 +339,20 @@ body {
     display: inline-block;
 }
 
-.repo-updated {
+.repo-dates {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2px;
+}
+
+.repo-date {
     font-family: var(--font-family);
     color: var(--text-muted);
     font-size: 10px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
 
 /* Version Badges */
@@ -413,6 +432,12 @@ body {
 }
 
 /* Filters */
+.filters-inline {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 select {
     padding: 4px 8px;
     border: 1px solid var(--border-color);

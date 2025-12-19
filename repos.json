@@ -11,5 +11,6 @@
     "smallyunet/solana-tx-parser",
     "smallyunet/pbft-visualizer",
     "smallyunet/zabi-rs",
-    "smallyunet/the-trapper"
+    "smallyunet/the-trapper",
+    "smallyunet/prediction-market-indexer"
 ]
