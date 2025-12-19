@@ -275,24 +275,6 @@ class Dashboard {
             `;
         }
 
-        // Topics
-        let topicsHtml = '';
-        if (repo.topics && repo.topics.length > 0) {
-            const topicLimit = 4;
-            topicsHtml = `<div class="repo-topics">
-                ${repo.topics.slice(0, topicLimit).map(topic => `<span class="topic-badge">${topic}</span>`).join('')}
-                ${repo.topics.length > topicLimit ? `<span class="topic-badge">+${repo.topics.length - topicLimit}</span>` : ''}
-            </div>`;
-        }
-
-        // License
-        let licenseHtml = '';
-        if (repo.license && repo.license.spdx_id) {
-            licenseHtml = `<span class="repo-license" title="${repo.license.name}">
-                <i class="fas fa-balance-scale"></i> ${repo.license.spdx_id}
-            </span>`;
-        }
-
         return `
             <div class="repo-card">
                 <div class="repo-header">
@@ -305,7 +287,6 @@ class Dashboard {
                     <span class="repo-visibility">${repo.visibility || 'public'}</span>
                 </div>
                 <p class="repo-description">${repo.description || 'No description available'}</p>
-                ${topicsHtml}
                 <div class="repo-stats">
                     <div class="repo-stat ${repo.stargazers_count === 0 ? 'stat-zero' : ''}" title="Stars">
                         <i class="fas fa-star"></i> ${stars}
@@ -330,12 +311,9 @@ class Dashboard {
                     </div>` : ''}
 
             <div class="repo-footer">
-                <div class="repo-footer-left">
-                     <div class="repo-lang">
-                        <span class="language-dot" style="background-color: ${langColor}"></span>
-                        ${repo.language || 'Unknown'}
-                    </div>
-                    ${licenseHtml}
+                <div class="repo-lang">
+                    <span class="language-dot" style="background-color: ${langColor}"></span>
+                    ${repo.language || 'Unknown'}
                 </div>
                 <div class="repo-dates">
                      <div class="repo-date" title="Created: ${repo.created_at ? new Date(repo.created_at).toLocaleString() : ''}">

@@ -210,7 +210,7 @@ body {
 }
 
 .repo-card:hover {
-    transform: translateY(-1px);
+    transform: translateY(-2px);
     box-shadow: var(--shadow-md);
     border-color: var(--accent-primary);
 }
@@ -331,10 +331,14 @@ body {
 }
 
 .repo-lang {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 4px;
+    gap: 6px;
     font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 12px;
+    background-color: var(--bg-body);
+    border: 1px solid var(--border-color);
     color: var(--text-secondary);
 }
 
