@@ -1,5 +1,5 @@
 {
-  "timestamp": 1766210808995,
+  "timestamp": 1766214317376,
   "repos": [
     {
       "name": "echoevm",
@@ -473,20 +473,36 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-20T03:35:47Z",
+      "updated_at": "2025-12-20T07:05:10Z",
       "created_at": "2025-12-16T15:24:29Z",
-      "last_commit_date": "2025-12-20T03:35:44Z",
+      "last_commit_date": "2025-12-20T07:05:04Z",
       "latest_tag": {
         "name": "v0.0.4"
       },
       "latest_workflow_runs": [
         {
-          "name": "Publish to Crates.io",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/20388490335",
-          "head_sha": "ba9e45e7449707bdabca2eb21d431298cbd43609",
-          "created_at": "2025-12-20T03:30:51Z"
+          "name": "Deploy Docs to GitHub Pages",
+          "status": "in_progress",
+          "conclusion": null,
+          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/20390879865",
+          "head_sha": "aa836d9d8f9cf6c169772ba7c1bdb8dc126f1559",
+          "created_at": "2025-12-20T07:05:08Z"
+        },
+        {
+          "name": "CI",
+          "status": "in_progress",
+          "conclusion": null,
+          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/20390879864",
+          "head_sha": "aa836d9d8f9cf6c169772ba7c1bdb8dc126f1559",
+          "created_at": "2025-12-20T07:05:08Z"
+        },
+        {
+          "name": "Benchmark & Update README",
+          "status": "in_progress",
+          "conclusion": null,
+          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/20390879861",
+          "head_sha": "aa836d9d8f9cf6c169772ba7c1bdb8dc126f1559",
+          "created_at": "2025-12-20T07:05:08Z"
         }
       ],
       "package_info": {
@@ -497,7 +513,7 @@
       },
       "homepage": "https://smallyunet.github.io/zabi-rs/",
       "has_pages": true,
-      "commit_count": 26,
+      "commit_count": 27,
       "topics": [],
       "license": null
     },
