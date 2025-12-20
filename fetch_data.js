@@ -259,10 +259,13 @@ async function fetchRepoData(repoFullName) {
         try {
             // Check for VS Code extensions first (repo name starts with 'vscode-')
             if (repoData.name.startsWith('vscode-')) {
+                // Use 'smallyu' as publisher if owner is 'smallyunet', otherwise use owner
+                const publisher = owner === 'smallyunet' ? 'smallyu' : owner;
+
                 // Try both VS Code Marketplace and Open VSX in parallel
                 const [vscode, openvsx] = await Promise.all([
-                    fetchVscodeMarketplaceData(owner, repoData.name),
-                    fetchOpenVsxData(owner, repoData.name)
+                    fetchVscodeMarketplaceData(publisher, repoData.name),
+                    fetchOpenVsxData(publisher, repoData.name)
                 ]);
 
                 // Store both if available, otherwise whichever is found

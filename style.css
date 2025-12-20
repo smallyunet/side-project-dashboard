@@ -253,11 +253,9 @@ body {
     text-decoration: none;
     font-family: var(--font-family);
     transition: color 0.2s;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 180px;
-    /* Prevent long names from breaking layout */
+    word-break: break-word;
+    line-height: 1.2;
+    /* Removed max-width enabling text wrapping */
 }
 
 .repo-name:hover {
