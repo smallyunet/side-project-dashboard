@@ -1,5 +1,5 @@
 {
-  "timestamp": 1766190000882,
+  "timestamp": 1766193639981,
   "repos": [
     {
       "name": "echoevm",
@@ -481,26 +481,39 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-17T16:56:04Z",
+      "updated_at": "2025-12-20T01:12:16Z",
       "created_at": "2025-12-16T15:24:29Z",
-      "last_commit_date": "2025-12-17T16:55:56Z",
+      "last_commit_date": "2025-12-20T01:11:38Z",
       "latest_tag": {
-        "name": "v0.0.1"
+        "name": "v0.0.2"
       },
       "latest_workflow_runs": [
         {
           "name": "Deploy Docs to GitHub Pages",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/20310668879",
-          "head_sha": "a82c765fae29239b77b3843ca5bc9b3e235168b2",
-          "created_at": "2025-12-17T16:56:02Z"
+          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/20386809861",
+          "head_sha": "b86574c04f8ca65418c93beeb70d20b983825a93",
+          "created_at": "2025-12-20T01:12:14Z"
+        },
+        {
+          "name": "Publish to Crates.io",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/20386805795",
+          "head_sha": "b86574c04f8ca65418c93beeb70d20b983825a93",
+          "created_at": "2025-12-20T01:11:55Z"
         }
       ],
-      "package_info": null,
+      "package_info": {
+        "type": "crates",
+        "name": "zabi-rs",
+        "version": "0.0.1",
+        "url": "https://crates.io/crates/zabi-rs"
+      },
       "homepage": "https://smallyunet.github.io/zabi-rs/",
       "has_pages": true,
-      "commit_count": 5,
+      "commit_count": 6,
       "topics": [],
       "license": null
     },
