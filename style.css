@@ -459,6 +459,10 @@ body {
     color: #3775a9;
 }
 
+.crates-badge i {
+    color: #dea584;
+}
+
 .package-badge:hover {
     background-color: rgba(0, 0, 0, 0.06);
     transform: translateY(-1px);

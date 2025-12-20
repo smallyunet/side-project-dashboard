@@ -83,6 +83,30 @@ async function fetchNpmData(packageName) {
     }
 }
 
+async function fetchCratesData(packageName) {
+    try {
+        const res = await fetch(`https://crates.io/api/v1/crates/${packageName}`, {
+            headers: {
+                'User-Agent': 'Side-Project-Dashboard'
+            }
+        });
+        if (res.status === 404) return null;
+        if (!res.ok) throw new Error(`Crates.io status: ${res.status}`);
+
+        const data = await res.json();
+        const version = data.crate.max_version;
+
+        return {
+            type: 'crates',
+            name: packageName,
+            version: version,
+            url: `https://crates.io/crates/${packageName}`
+        };
+    } catch (e) {
+        return null;
+    }
+}
+
 async function fetchRepoData(repoFullName) {
     const [owner, repo] = repoFullName.split('/');
     try {
@@ -175,6 +199,9 @@ async function fetchRepoData(repoFullName) {
                 let npm = await fetchNpmData(repoData.name);
                 // logic to try variants? For now, just repo name.
                 if (npm) packageInfo = npm;
+            } else if (lang === 'Rust') {
+                const crates = await fetchCratesData(repoData.name);
+                if (crates) packageInfo = crates;
             }
         } catch (pkgErr) {
             console.warn(`Error checking package info for ${repoData.name}:`, pkgErr.message);

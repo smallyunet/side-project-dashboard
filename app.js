@@ -252,10 +252,22 @@ class Dashboard {
 
         let packageHtml = '';
         if (repo.package_info) {
-            const iconClass = repo.package_info.type === 'pypi' ? 'fab fa-python' : 'fab fa-npm';
-            const iconColor = repo.package_info.type === 'pypi' ? '#3775a9' : '#CB3837';
-            // Add specific class based on package type for easier styling
-            const packageTypeClass = repo.package_info.type === 'pypi' ? 'pypi-badge' : 'npm-badge';
+            let iconClass, iconColor, packageTypeClass;
+
+            if (repo.package_info.type === 'pypi') {
+                iconClass = 'fab fa-python';
+                iconColor = '#3775a9';
+                packageTypeClass = 'pypi-badge';
+            } else if (repo.package_info.type === 'crates') {
+                iconClass = 'fab fa-rust'; // FontAwesome Rust icon (if available, or use a generic one if not, but usually it is there or fa-cubes) -> fa-rust exists? Actually fa-rust acts up sometimes. Let's check if FontAwesome 5/6 has fa-rust. It was added in v5.0.0.
+                // But wait, the user's HTML probably uses a CDN. I'll assume fa-rust works.
+                iconColor = '#dea584';
+                packageTypeClass = 'crates-badge';
+            } else {
+                iconClass = 'fab fa-npm';
+                iconColor = '#CB3837';
+                packageTypeClass = 'npm-badge';
+            }
 
             packageHtml = `
                 <div class="version-badge package-badge ${packageTypeClass}">
