@@ -1,5 +1,5 @@
 {
-  "timestamp": 1766214317376,
+  "timestamp": 1766218004119,
   "repos": [
     {
       "name": "echoevm",
@@ -137,42 +137,42 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-20T04:58:58Z",
+      "updated_at": "2025-12-20T07:40:53Z",
       "created_at": "2025-12-13T13:37:31Z",
-      "last_commit_date": "2025-12-20T04:58:52Z",
+      "last_commit_date": "2025-12-20T07:40:45Z",
       "latest_tag": {
-        "name": "v0.0.3"
+        "name": "v0.0.4"
       },
       "latest_workflow_runs": [
         {
           "name": "Build macOS App",
           "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20391290149",
+          "head_sha": "5064172c320e33a807742d3ac811144535e304f2",
+          "created_at": "2025-12-20T07:41:11Z"
+        },
+        {
+          "name": "Build macOS App",
+          "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20389476306",
-          "head_sha": "b391a264bb30ffba3101cb2b3842f3193c565caf",
-          "created_at": "2025-12-20T04:58:56Z"
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20391285841",
+          "head_sha": "5064172c320e33a807742d3ac811144535e304f2",
+          "created_at": "2025-12-20T07:40:51Z"
         },
         {
           "name": "CI",
           "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20389476303",
-          "head_sha": "b391a264bb30ffba3101cb2b3842f3193c565caf",
-          "created_at": "2025-12-20T04:58:56Z"
-        },
-        {
-          "name": "pages build and deployment",
-          "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20389476199",
-          "head_sha": "b391a264bb30ffba3101cb2b3842f3193c565caf",
-          "created_at": "2025-12-20T04:58:55Z"
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20391285837",
+          "head_sha": "5064172c320e33a807742d3ac811144535e304f2",
+          "created_at": "2025-12-20T07:40:51Z"
         }
       ],
       "package_info": null,
       "homepage": "https://smallyunet.github.io/finder-sight/",
       "has_pages": true,
-      "commit_count": 18,
+      "commit_count": 22,
       "topics": [],
       "license": null
     },
@@ -473,47 +473,31 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-20T07:05:10Z",
+      "updated_at": "2025-12-20T07:10:12Z",
       "created_at": "2025-12-16T15:24:29Z",
-      "last_commit_date": "2025-12-20T07:05:04Z",
+      "last_commit_date": "2025-12-20T07:10:08Z",
       "latest_tag": {
-        "name": "v0.0.4"
+        "name": "v0.0.5"
       },
       "latest_workflow_runs": [
         {
-          "name": "Deploy Docs to GitHub Pages",
-          "status": "in_progress",
-          "conclusion": null,
-          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/20390879865",
+          "name": "Publish to Crates.io",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/20390881995",
           "head_sha": "aa836d9d8f9cf6c169772ba7c1bdb8dc126f1559",
-          "created_at": "2025-12-20T07:05:08Z"
-        },
-        {
-          "name": "CI",
-          "status": "in_progress",
-          "conclusion": null,
-          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/20390879864",
-          "head_sha": "aa836d9d8f9cf6c169772ba7c1bdb8dc126f1559",
-          "created_at": "2025-12-20T07:05:08Z"
-        },
-        {
-          "name": "Benchmark & Update README",
-          "status": "in_progress",
-          "conclusion": null,
-          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/20390879861",
-          "head_sha": "aa836d9d8f9cf6c169772ba7c1bdb8dc126f1559",
-          "created_at": "2025-12-20T07:05:08Z"
+          "created_at": "2025-12-20T07:05:21Z"
         }
       ],
       "package_info": {
         "type": "crates",
         "name": "zabi-rs",
-        "version": "0.0.4",
+        "version": "0.0.5",
         "url": "https://crates.io/crates/zabi-rs"
       },
       "homepage": "https://smallyunet.github.io/zabi-rs/",
       "has_pages": true,
-      "commit_count": 27,
+      "commit_count": 28,
       "topics": [],
       "license": null
     },
