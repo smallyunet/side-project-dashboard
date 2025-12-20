@@ -463,6 +463,14 @@ body {
     color: #dea584;
 }
 
+.vscode-badge i {
+    color: #007ACC;
+}
+
+.openvsx-badge i {
+    color: #c160ef;
+}
+
 .package-badge:hover {
     background-color: rgba(0, 0, 0, 0.06);
     transform: translateY(-1px);

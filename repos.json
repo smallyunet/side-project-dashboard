@@ -12,5 +12,6 @@
     "smallyunet/pbft-visualizer",
     "smallyunet/zabi-rs",
     "smallyunet/the-trapper",
-    "smallyunet/prediction-market-indexer"
+    "smallyunet/prediction-market-indexer",
+    "smallyunet/vscode-antigravity-hud"
 ]

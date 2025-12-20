@@ -252,29 +252,41 @@ class Dashboard {
 
         let packageHtml = '';
         if (repo.package_info) {
-            let iconClass, iconColor, packageTypeClass;
+            // Handle both single package info and array of package infos
+            const packages = Array.isArray(repo.package_info) ? repo.package_info : [repo.package_info];
 
-            if (repo.package_info.type === 'pypi') {
-                iconClass = 'fab fa-python';
-                iconColor = '#3775a9';
-                packageTypeClass = 'pypi-badge';
-            } else if (repo.package_info.type === 'crates') {
-                iconClass = 'fab fa-rust'; // FontAwesome Rust icon (if available, or use a generic one if not, but usually it is there or fa-cubes) -> fa-rust exists? Actually fa-rust acts up sometimes. Let's check if FontAwesome 5/6 has fa-rust. It was added in v5.0.0.
-                // But wait, the user's HTML probably uses a CDN. I'll assume fa-rust works.
-                iconColor = '#dea584';
-                packageTypeClass = 'crates-badge';
-            } else {
-                iconClass = 'fab fa-npm';
-                iconColor = '#CB3837';
-                packageTypeClass = 'npm-badge';
-            }
+            packageHtml = packages.map(pkg => {
+                let iconClass, iconColor, packageTypeClass;
 
-            packageHtml = `
-                <div class="version-badge package-badge ${packageTypeClass}">
-                    <i class="${iconClass}" style="color: ${iconColor};"></i>
-                    <a href="${repo.package_info.url}" target="_blank">${repo.package_info.version}</a>
-                </div>
-             `;
+                if (pkg.type === 'pypi') {
+                    iconClass = 'fab fa-python';
+                    iconColor = '#3775a9';
+                    packageTypeClass = 'pypi-badge';
+                } else if (pkg.type === 'crates') {
+                    iconClass = 'fab fa-rust';
+                    iconColor = '#dea584';
+                    packageTypeClass = 'crates-badge';
+                } else if (pkg.type === 'vscode') {
+                    iconClass = 'fas fa-puzzle-piece';
+                    iconColor = '#007ACC';
+                    packageTypeClass = 'vscode-badge';
+                } else if (pkg.type === 'openvsx') {
+                    iconClass = 'fas fa-cube';
+                    iconColor = '#c160ef';
+                    packageTypeClass = 'openvsx-badge';
+                } else {
+                    iconClass = 'fab fa-npm';
+                    iconColor = '#CB3837';
+                    packageTypeClass = 'npm-badge';
+                }
+
+                return `
+                    <div class="version-badge package-badge ${packageTypeClass}">
+                        <i class="${iconClass}" style="color: ${iconColor};"></i>
+                        <a href="${pkg.url}" target="_blank">${pkg.version}</a>
+                    </div>
+                `;
+            }).join('');
         }
 
         let websiteHtml = '';

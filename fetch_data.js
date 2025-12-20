@@ -107,6 +107,72 @@ async function fetchCratesData(packageName) {
     }
 }
 
+async function fetchVscodeMarketplaceData(publisherName, extensionName) {
+    try {
+        const res = await fetch('https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json;api-version=3.0-preview.1'
+            },
+            body: JSON.stringify({
+                filters: [{
+                    criteria: [
+                        { filterType: 7, value: `${publisherName}.${extensionName}` }
+                    ]
+                }],
+                flags: 914
+            })
+        });
+
+        if (!res.ok) return null;
+
+        const data = await res.json();
+        const extension = data.results?.[0]?.extensions?.[0];
+
+        if (!extension) return null;
+
+        const installStat = extension.statistics?.find(s => s.statisticName === 'install');
+
+        return {
+            type: 'vscode',
+            name: extension.displayName || extensionName,
+            version: extension.versions?.[0]?.version,
+            url: `https://marketplace.visualstudio.com/items?itemName=${publisherName}.${extensionName}`,
+            installs: installStat?.value || 0
+        };
+    } catch (e) {
+        return null;
+    }
+}
+
+async function fetchOpenVsxData(publisherName, extensionName) {
+    try {
+        const res = await fetch(`https://open-vsx.org/api/${publisherName}/${extensionName}`, {
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (!res.ok) return null;
+
+        const data = await res.json();
+
+        // Check if extension exists (error field indicates not found)
+        if (data.error) return null;
+
+        return {
+            type: 'openvsx',
+            name: data.displayName || extensionName,
+            version: data.version,
+            url: `https://open-vsx.org/extension/${publisherName}/${extensionName}`,
+            downloads: data.downloadCount || 0
+        };
+    } catch (e) {
+        return null;
+    }
+}
+
 async function fetchRepoData(repoFullName) {
     const [owner, repo] = repoFullName.split('/');
     try {
@@ -187,11 +253,24 @@ async function fetchRepoData(repoFullName) {
             };
         }
 
-        // Fetch Package Info (PyPI or NPM)
+        // Fetch Package Info (PyPI, NPM, Crates, VS Code extensions)
         let packageInfo = null;
         const lang = repoData.language;
         try {
-            if (lang === 'Python') {
+            // Check for VS Code extensions first (repo name starts with 'vscode-')
+            if (repoData.name.startsWith('vscode-')) {
+                // Try both VS Code Marketplace and Open VSX in parallel
+                const [vscode, openvsx] = await Promise.all([
+                    fetchVscodeMarketplaceData(owner, repoData.name),
+                    fetchOpenVsxData(owner, repoData.name)
+                ]);
+
+                // Store both if available, otherwise whichever is found
+                const extensions = [vscode, openvsx].filter(Boolean);
+                if (extensions.length > 0) {
+                    packageInfo = extensions.length === 1 ? extensions[0] : extensions;
+                }
+            } else if (lang === 'Python') {
                 const pypi = await fetchPyPiData(repoData.name);
                 if (pypi) packageInfo = pypi;
             } else if (lang === 'JavaScript' || lang === 'TypeScript') {
