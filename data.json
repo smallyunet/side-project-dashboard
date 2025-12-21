@@ -1,5 +1,5 @@
 {
-  "timestamp": 1766293589816,
+  "timestamp": 1766297230195,
   "repos": [
     {
       "name": "echoevm",
@@ -374,31 +374,39 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-21T04:46:00Z",
+      "updated_at": "2025-12-21T05:23:49Z",
       "created_at": "2025-12-16T02:17:43Z",
-      "last_commit_date": "2025-12-21T04:45:55Z",
+      "last_commit_date": "2025-12-21T05:23:34Z",
       "latest_tag": {
-        "name": "v0.0.2"
+        "name": "v0.0.4"
       },
       "latest_workflow_runs": [
+        {
+          "name": "Publish Package to npmjs",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/psbt-lens/actions/runs/20405242305",
+          "head_sha": "3efb246a54bab40afc5bf2b4f1d42d4ab73af2b5",
+          "created_at": "2025-12-21T05:23:51Z"
+        },
         {
           "name": "Deploy to GitHub Pages",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/psbt-lens/actions/runs/20404834512",
-          "head_sha": "0010b143e240f3e6f2ee15b5a4f9a7a67c6bf5c7",
-          "created_at": "2025-12-21T04:45:59Z"
+          "html_url": "https://github.com/smallyunet/psbt-lens/actions/runs/20405241971",
+          "head_sha": "3efb246a54bab40afc5bf2b4f1d42d4ab73af2b5",
+          "created_at": "2025-12-21T05:23:47Z"
         }
       ],
       "package_info": {
         "type": "npm",
         "name": "psbt-lens",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "url": "https://www.npmjs.com/package/psbt-lens"
       },
       "homepage": "https://smallyunet.github.io/psbt-lens/",
       "has_pages": true,
-      "commit_count": 9,
+      "commit_count": 11,
       "topics": [],
       "license": null
     },
@@ -617,7 +625,7 @@
           "name": "Antigravity HUD",
           "version": "0.0.6",
           "url": "https://open-vsx.org/extension/smallyu/vscode-antigravity-hud",
-          "downloads": 119
+          "downloads": 125
         }
       ],
       "homepage": "",
