@@ -13,5 +13,6 @@
     "smallyunet/zabi-rs",
     "smallyunet/the-trapper",
     "smallyunet/prediction-market-indexer",
-    "smallyunet/vscode-antigravity-hud"
+    "smallyunet/vscode-antigravity-hud",
+    "smallyunet/konachan-downloader"
 ]
