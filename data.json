@@ -1,5 +1,5 @@
 {
-  "timestamp": 1766507388262,
+  "timestamp": 1766509586339,
   "repos": [
     {
       "name": "echoevm",
@@ -83,38 +83,30 @@
       "language": "Python",
       "stargazers_count": 0,
       "forks_count": 0,
-      "open_issues_count": 6,
+      "open_issues_count": 5,
       "visibility": "public",
-      "updated_at": "2025-12-23T13:23:10Z",
+      "updated_at": "2025-12-23T17:00:18Z",
       "created_at": "2025-12-12T11:25:11Z",
-      "last_commit_date": "2025-12-23T13:23:04Z",
+      "last_commit_date": "2025-12-23T17:00:14Z",
       "latest_tag": {
         "name": "v0.0.11"
       },
       "latest_workflow_runs": [
         {
-          "name": "Publish to PyPI",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20461899693",
-          "head_sha": "da0324fdfbb440c33c7035625aadf7013a0b7aed",
-          "created_at": "2025-12-23T13:23:18Z"
-        },
-        {
           "name": "Publish Docs",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20461896595",
-          "head_sha": "da0324fdfbb440c33c7035625aadf7013a0b7aed",
-          "created_at": "2025-12-23T13:23:09Z"
+          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20466766586",
+          "head_sha": "6d4b1d291b715a19a3bf3981112b7c51341b0be8",
+          "created_at": "2025-12-23T17:00:17Z"
         },
         {
           "name": "CI",
           "status": "completed",
           "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20461896592",
-          "head_sha": "da0324fdfbb440c33c7035625aadf7013a0b7aed",
-          "created_at": "2025-12-23T13:23:09Z"
+          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20466766574",
+          "head_sha": "6d4b1d291b715a19a3bf3981112b7c51341b0be8",
+          "created_at": "2025-12-23T17:00:17Z"
         }
       ],
       "package_info": {
@@ -125,7 +117,7 @@
       },
       "homepage": "https://smallyunet.github.io/safe-kit/",
       "has_pages": true,
-      "commit_count": 56,
+      "commit_count": 57,
       "topics": [],
       "license": {
         "key": "mit",
@@ -145,50 +137,42 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-22T14:36:32Z",
+      "updated_at": "2025-12-23T16:50:15Z",
       "created_at": "2025-12-13T13:37:31Z",
-      "last_commit_date": "2025-12-22T14:36:20Z",
+      "last_commit_date": "2025-12-23T16:50:09Z",
       "latest_tag": {
         "name": "v0.0.7"
       },
       "latest_workflow_runs": [
         {
-          "name": "Build macOS App",
-          "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20434982982",
-          "head_sha": "90bc4e47e6d517350420e8b9e38f0e3b22540fea",
-          "created_at": "2025-12-22T14:36:39Z"
-        },
-        {
           "name": "CI",
           "status": "completed",
           "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20434978897",
-          "head_sha": "90bc4e47e6d517350420e8b9e38f0e3b22540fea",
-          "created_at": "2025-12-22T14:36:29Z"
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20466549672",
+          "head_sha": "381812beeeb1c07f6c5f89bd60c81b4ea7d462df",
+          "created_at": "2025-12-23T16:50:13Z"
         },
         {
           "name": "Build macOS App",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20434978894",
-          "head_sha": "90bc4e47e6d517350420e8b9e38f0e3b22540fea",
-          "created_at": "2025-12-22T14:36:29Z"
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20466549655",
+          "head_sha": "381812beeeb1c07f6c5f89bd60c81b4ea7d462df",
+          "created_at": "2025-12-23T16:50:13Z"
         },
         {
           "name": "pages build and deployment",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20434978660",
-          "head_sha": "90bc4e47e6d517350420e8b9e38f0e3b22540fea",
-          "created_at": "2025-12-22T14:36:29Z"
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20466549388",
+          "head_sha": "381812beeeb1c07f6c5f89bd60c81b4ea7d462df",
+          "created_at": "2025-12-23T16:50:13Z"
         }
       ],
       "package_info": null,
       "homepage": "https://smallyunet.github.io/finder-sight/",
       "has_pages": true,
-      "commit_count": 34,
+      "commit_count": 35,
       "topics": [],
       "license": null
     },
@@ -729,17 +713,17 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-23T16:27:55Z",
+      "updated_at": "2025-12-23T16:51:45Z",
       "created_at": "2025-12-23T15:47:32Z",
-      "last_commit_date": "2025-12-23T16:27:48Z",
+      "last_commit_date": "2025-12-23T16:51:38Z",
       "latest_tag": {
-        "name": "v0.0.2"
+        "name": "v0.0.3"
       },
       "latest_workflow_runs": [],
       "package_info": null,
       "homepage": "",
       "has_pages": false,
-      "commit_count": 4,
+      "commit_count": 6,
       "topics": [],
       "license": {
         "key": "mit",
