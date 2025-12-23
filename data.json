@@ -1,5 +1,5 @@
 {
-  "timestamp": 1766484357441,
+  "timestamp": 1766487934028,
   "repos": [
     {
       "name": "echoevm",
@@ -675,28 +675,28 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-23T05:35:32Z",
+      "updated_at": "2025-12-23T10:11:24Z",
       "created_at": "2025-12-20T11:28:05Z",
-      "last_commit_date": "2025-12-23T05:27:24Z",
+      "last_commit_date": "2025-12-23T10:11:17Z",
       "latest_tag": {
-        "name": "v0.1.0"
+        "name": "v0.1.1"
       },
       "latest_workflow_runs": [
         {
           "name": "Release",
           "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/vscode-antigravity-hud/actions/runs/20452299176",
-          "head_sha": "d675704207f1ac3e3a639866e680fd2f529c74a4",
-          "created_at": "2025-12-23T05:27:40Z"
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/vscode-antigravity-hud/actions/runs/20457858800",
+          "head_sha": "4ef86456923e1c33103b72b62c0cc67992b58700",
+          "created_at": "2025-12-23T10:11:54Z"
         },
         {
           "name": "CI",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/vscode-antigravity-hud/actions/runs/20452296388",
-          "head_sha": "d675704207f1ac3e3a639866e680fd2f529c74a4",
-          "created_at": "2025-12-23T05:27:29Z"
+          "html_url": "https://github.com/smallyunet/vscode-antigravity-hud/actions/runs/20457847085",
+          "head_sha": "4ef86456923e1c33103b72b62c0cc67992b58700",
+          "created_at": "2025-12-23T10:11:21Z"
         }
       ],
       "package_info": [
@@ -712,12 +712,12 @@
           "name": "Antigravity HUD",
           "version": "0.1.0",
           "url": "https://open-vsx.org/extension/smallyu/vscode-antigravity-hud",
-          "downloads": 216
+          "downloads": 218
         }
       ],
       "homepage": "",
       "has_pages": false,
-      "commit_count": 22,
+      "commit_count": 23,
       "topics": [],
       "license": {
         "key": "mit",
