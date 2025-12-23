@@ -1,5 +1,5 @@
 {
-  "timestamp": 1766505976880,
+  "timestamp": 1766507388262,
   "repos": [
     {
       "name": "echoevm",
@@ -704,12 +704,42 @@
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://open-vsx.org/extension/smallyu/vscode-antigravity-hud",
-          "downloads": 254
+          "downloads": 256
         }
       ],
       "homepage": "",
       "has_pages": false,
       "commit_count": 26,
+      "topics": [],
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      }
+    },
+    {
+      "name": "konachan-downloader",
+      "full_name": "smallyunet/konachan-downloader",
+      "html_url": "https://github.com/smallyunet/konachan-downloader",
+      "description": "A professional, multi-threaded Python CLI tool to download images from konachan.",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2025-12-23T16:27:55Z",
+      "created_at": "2025-12-23T15:47:32Z",
+      "last_commit_date": "2025-12-23T16:27:48Z",
+      "latest_tag": {
+        "name": "v0.0.2"
+      },
+      "latest_workflow_runs": [],
+      "package_info": null,
+      "homepage": "",
+      "has_pages": false,
+      "commit_count": 4,
       "topics": [],
       "license": {
         "key": "mit",
