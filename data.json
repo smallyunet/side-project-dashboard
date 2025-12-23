@@ -1,5 +1,5 @@
 {
-  "timestamp": 1766487934028,
+  "timestamp": 1766491745002,
   "repos": [
     {
       "name": "echoevm",
@@ -93,36 +93,36 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-21T14:07:39Z",
+      "updated_at": "2025-12-23T11:58:37Z",
       "created_at": "2025-12-12T11:25:11Z",
-      "last_commit_date": "2025-12-21T14:07:33Z",
+      "last_commit_date": "2025-12-23T11:58:31Z",
       "latest_tag": {
-        "name": "v0.0.9"
+        "name": "v0.0.10"
       },
       "latest_workflow_runs": [
         {
           "name": "Publish to PyPI",
           "status": "completed",
           "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20410994486",
-          "head_sha": "09b002fc3bc8b0f0b3f154d1fb3b313841d6e52c",
-          "created_at": "2025-12-21T14:07:52Z"
+          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20460108100",
+          "head_sha": "e14641f8c3095e6c7499d11b34008180ee2d04ed",
+          "created_at": "2025-12-23T11:58:55Z"
         },
         {
           "name": "CI",
           "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20410991901",
-          "head_sha": "09b002fc3bc8b0f0b3f154d1fb3b313841d6e52c",
-          "created_at": "2025-12-21T14:07:38Z"
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20460102635",
+          "head_sha": "e14641f8c3095e6c7499d11b34008180ee2d04ed",
+          "created_at": "2025-12-23T11:58:36Z"
         },
         {
           "name": "Publish Docs",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20410991891",
-          "head_sha": "09b002fc3bc8b0f0b3f154d1fb3b313841d6e52c",
-          "created_at": "2025-12-21T14:07:38Z"
+          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20460102632",
+          "head_sha": "e14641f8c3095e6c7499d11b34008180ee2d04ed",
+          "created_at": "2025-12-23T11:58:36Z"
         }
       ],
       "package_info": {
@@ -133,7 +133,7 @@
       },
       "homepage": "https://smallyunet.github.io/safe-kit/",
       "has_pages": true,
-      "commit_count": 51,
+      "commit_count": 52,
       "topics": [],
       "license": {
         "key": "mit",
@@ -675,49 +675,49 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-23T10:11:24Z",
+      "updated_at": "2025-12-23T11:22:19Z",
       "created_at": "2025-12-20T11:28:05Z",
-      "last_commit_date": "2025-12-23T10:11:17Z",
+      "last_commit_date": "2025-12-23T11:22:11Z",
       "latest_tag": {
-        "name": "v0.1.1"
+        "name": "v0.1.2"
       },
       "latest_workflow_runs": [
         {
           "name": "Release",
           "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/vscode-antigravity-hud/actions/runs/20457858800",
-          "head_sha": "4ef86456923e1c33103b72b62c0cc67992b58700",
-          "created_at": "2025-12-23T10:11:54Z"
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/vscode-antigravity-hud/actions/runs/20459401809",
+          "head_sha": "456515159a1e1c3104210c34f27b87fa36a8eb98",
+          "created_at": "2025-12-23T11:23:04Z"
         },
         {
           "name": "CI",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/vscode-antigravity-hud/actions/runs/20457847085",
-          "head_sha": "4ef86456923e1c33103b72b62c0cc67992b58700",
-          "created_at": "2025-12-23T10:11:21Z"
+          "html_url": "https://github.com/smallyunet/vscode-antigravity-hud/actions/runs/20459385885",
+          "head_sha": "456515159a1e1c3104210c34f27b87fa36a8eb98",
+          "created_at": "2025-12-23T11:22:17Z"
         }
       ],
       "package_info": [
         {
           "type": "vscode",
           "name": "Antigravity HUD",
-          "version": "0.1.0",
+          "version": "0.1.2",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 66
+          "installs": 81
         },
         {
           "type": "openvsx",
           "name": "Antigravity HUD",
-          "version": "0.1.0",
+          "version": "0.1.2",
           "url": "https://open-vsx.org/extension/smallyu/vscode-antigravity-hud",
-          "downloads": 218
+          "downloads": 219
         }
       ],
       "homepage": "",
       "has_pages": false,
-      "commit_count": 23,
+      "commit_count": 26,
       "topics": [],
       "license": {
         "key": "mit",
