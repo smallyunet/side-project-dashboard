@@ -1,5 +1,5 @@
 {
-  "timestamp": 1766549777977,
+  "timestamp": 1766550979691,
   "repos": [
     {
       "name": "echoevm",
@@ -34,7 +34,8 @@
       "topics": [
         "evm"
       ],
-      "license": null
+      "license": null,
+      "category": "infrastructure"
     },
     {
       "name": "ethbft",
@@ -73,7 +74,223 @@
         "spdx_id": "MIT",
         "url": "https://api.github.com/licenses/mit",
         "node_id": "MDc6TGljZW5zZTEz"
-      }
+      },
+      "category": "infrastructure"
+    },
+    {
+      "name": "etherflow",
+      "full_name": "smallyunet/etherflow",
+      "html_url": "https://github.com/smallyunet/etherflow",
+      "description": "A lightweight, reorg-aware EVM data indexing framework for Go.",
+      "language": "Go",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2025-12-23T15:18:11Z",
+      "created_at": "2025-12-13T10:06:19Z",
+      "last_commit_date": "2025-12-23T15:18:04Z",
+      "latest_tag": {
+        "name": "v0.0.3"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Publish Docs",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/etherflow/actions/runs/20464521901",
+          "head_sha": "b308992e281ff8ba9ab0e36c401e84fa292c4d6b",
+          "created_at": "2025-12-23T15:18:09Z"
+        },
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/etherflow/actions/runs/20464521889",
+          "head_sha": "b308992e281ff8ba9ab0e36c401e84fa292c4d6b",
+          "created_at": "2025-12-23T15:18:09Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/etherflow/",
+      "has_pages": true,
+      "commit_count": 10,
+      "topics": [],
+      "license": null,
+      "category": "infrastructure"
+    },
+    {
+      "name": "go-cggmp-tss",
+      "full_name": "smallyunet/go-cggmp-tss",
+      "html_url": "https://github.com/smallyunet/go-cggmp-tss",
+      "description": "A pure Go implementation of the CGGMP21 Threshold Signature Scheme (TSS) protocol.",
+      "language": "Go",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2025-12-21T16:44:33Z",
+      "created_at": "2025-12-13T03:39:51Z",
+      "last_commit_date": "2025-12-21T16:43:53Z",
+      "latest_tag": {
+        "name": "v0.0.5"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/20412832272",
+          "head_sha": "8ac93546e19c8e3534f87c99bbb6d29856c5ed3d",
+          "created_at": "2025-12-21T16:44:31Z"
+        },
+        {
+          "name": "Benchmarks",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/20412832270",
+          "head_sha": "8ac93546e19c8e3534f87c99bbb6d29856c5ed3d",
+          "created_at": "2025-12-21T16:44:31Z"
+        },
+        {
+          "name": "Publish docs via GitHub Pages",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/20412832269",
+          "head_sha": "8ac93546e19c8e3534f87c99bbb6d29856c5ed3d",
+          "created_at": "2025-12-21T16:44:31Z"
+        },
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/20412832171",
+          "head_sha": "8ac93546e19c8e3534f87c99bbb6d29856c5ed3d",
+          "created_at": "2025-12-21T16:44:30Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/go-cggmp-tss/",
+      "has_pages": true,
+      "commit_count": 20,
+      "topics": [],
+      "license": null,
+      "category": "infrastructure"
+    },
+    {
+      "name": "zabi-rs",
+      "full_name": "smallyunet/zabi-rs",
+      "html_url": "https://github.com/smallyunet/zabi-rs",
+      "description": "Zero-allocation, no_std EVM ABI decoder for high-performance Rust applications.",
+      "language": "Rust",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2025-12-20T07:10:12Z",
+      "created_at": "2025-12-16T15:24:29Z",
+      "last_commit_date": "2025-12-20T07:10:08Z",
+      "latest_tag": {
+        "name": "v0.0.5"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Publish to Crates.io",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/20390881995",
+          "head_sha": "aa836d9d8f9cf6c169772ba7c1bdb8dc126f1559",
+          "created_at": "2025-12-20T07:05:21Z"
+        }
+      ],
+      "package_info": {
+        "type": "crates",
+        "name": "zabi-rs",
+        "version": "0.0.5",
+        "url": "https://crates.io/crates/zabi-rs"
+      },
+      "homepage": "https://smallyunet.github.io/zabi-rs/",
+      "has_pages": true,
+      "commit_count": 28,
+      "topics": [],
+      "license": null,
+      "category": "infrastructure"
+    },
+    {
+      "name": "prediction-market-indexer",
+      "full_name": "smallyunet/prediction-market-indexer",
+      "html_url": "https://github.com/smallyunet/prediction-market-indexer",
+      "description": "A high-performance, SQL-based indexer and API for prediction market analytics, built with Ponder and Hono.",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2025-12-22T15:29:43Z",
+      "created_at": "2025-12-19T08:40:39Z",
+      "last_commit_date": "2025-12-22T15:29:32Z",
+      "latest_tag": {
+        "name": "v0.0.2"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Deploy Docs to GitHub Pages",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/prediction-market-indexer/actions/runs/20436363139",
+          "head_sha": "b52a7ccaf33453b06fd3e4f5024f8790e14e040f",
+          "created_at": "2025-12-22T15:29:37Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/prediction-market-indexer/",
+      "has_pages": true,
+      "commit_count": 7,
+      "topics": [],
+      "license": null,
+      "category": "infrastructure"
+    },
+    {
+      "name": "the-trapper",
+      "full_name": "smallyunet/the-trapper",
+      "html_url": "https://github.com/smallyunet/the-trapper",
+      "description": "An educational collection of EVM honeypots designed to deceive and trap sophisticated attackers.",
+      "language": "Solidity",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2025-12-20T08:25:53Z",
+      "created_at": "2025-12-18T16:24:19Z",
+      "last_commit_date": "2025-12-20T08:25:46Z",
+      "latest_tag": {
+        "name": "v0.0.2"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Tests",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/the-trapper/actions/runs/20391752271",
+          "head_sha": "1721b95a7e19d622892877123eae61855ba5da7d",
+          "created_at": "2025-12-20T08:25:51Z"
+        },
+        {
+          "name": "Documentation",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/the-trapper/actions/runs/20391752269",
+          "head_sha": "1721b95a7e19d622892877123eae61855ba5da7d",
+          "created_at": "2025-12-20T08:25:51Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/the-trapper/",
+      "has_pages": true,
+      "commit_count": 6,
+      "topics": [],
+      "license": null,
+      "category": "components_sdk"
     },
     {
       "name": "safe-kit",
@@ -125,56 +342,8 @@
         "spdx_id": "MIT",
         "url": "https://api.github.com/licenses/mit",
         "node_id": "MDc6TGljZW5zZTEz"
-      }
-    },
-    {
-      "name": "finder-sight",
-      "full_name": "smallyunet/finder-sight",
-      "html_url": "https://github.com/smallyunet/finder-sight",
-      "description": "A macOS app for local reverse image search.",
-      "language": "Python",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "visibility": "public",
-      "updated_at": "2025-12-23T16:50:15Z",
-      "created_at": "2025-12-13T13:37:31Z",
-      "last_commit_date": "2025-12-23T16:50:09Z",
-      "latest_tag": {
-        "name": "v0.0.7"
       },
-      "latest_workflow_runs": [
-        {
-          "name": "CI",
-          "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20466549672",
-          "head_sha": "381812beeeb1c07f6c5f89bd60c81b4ea7d462df",
-          "created_at": "2025-12-23T16:50:13Z"
-        },
-        {
-          "name": "Build macOS App",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20466549655",
-          "head_sha": "381812beeeb1c07f6c5f89bd60c81b4ea7d462df",
-          "created_at": "2025-12-23T16:50:13Z"
-        },
-        {
-          "name": "pages build and deployment",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20466549388",
-          "head_sha": "381812beeeb1c07f6c5f89bd60c81b4ea7d462df",
-          "created_at": "2025-12-23T16:50:13Z"
-        }
-      ],
-      "package_info": null,
-      "homepage": "https://smallyunet.github.io/finder-sight/",
-      "has_pages": true,
-      "commit_count": 35,
-      "topics": [],
-      "license": null
+      "category": "components_sdk"
     },
     {
       "name": "privy-wallet-kit",
@@ -218,7 +387,8 @@
         "spdx_id": "MIT",
         "url": "https://api.github.com/licenses/mit",
         "node_id": "MDc6TGljZW5zZTEz"
-      }
+      },
+      "category": "components_sdk"
     },
     {
       "name": "userop-validator",
@@ -280,151 +450,8 @@
       "has_pages": true,
       "commit_count": 9,
       "topics": [],
-      "license": null
-    },
-    {
-      "name": "etherflow",
-      "full_name": "smallyunet/etherflow",
-      "html_url": "https://github.com/smallyunet/etherflow",
-      "description": "A lightweight, reorg-aware EVM data indexing framework for Go.",
-      "language": "Go",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "visibility": "public",
-      "updated_at": "2025-12-23T15:18:11Z",
-      "created_at": "2025-12-13T10:06:19Z",
-      "last_commit_date": "2025-12-23T15:18:04Z",
-      "latest_tag": {
-        "name": "v0.0.3"
-      },
-      "latest_workflow_runs": [
-        {
-          "name": "Publish Docs",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/etherflow/actions/runs/20464521901",
-          "head_sha": "b308992e281ff8ba9ab0e36c401e84fa292c4d6b",
-          "created_at": "2025-12-23T15:18:09Z"
-        },
-        {
-          "name": "CI",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/etherflow/actions/runs/20464521889",
-          "head_sha": "b308992e281ff8ba9ab0e36c401e84fa292c4d6b",
-          "created_at": "2025-12-23T15:18:09Z"
-        }
-      ],
-      "package_info": null,
-      "homepage": "https://smallyunet.github.io/etherflow/",
-      "has_pages": true,
-      "commit_count": 10,
-      "topics": [],
-      "license": null
-    },
-    {
-      "name": "go-cggmp-tss",
-      "full_name": "smallyunet/go-cggmp-tss",
-      "html_url": "https://github.com/smallyunet/go-cggmp-tss",
-      "description": "A pure Go implementation of the CGGMP21 Threshold Signature Scheme (TSS) protocol.",
-      "language": "Go",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "visibility": "public",
-      "updated_at": "2025-12-21T16:44:33Z",
-      "created_at": "2025-12-13T03:39:51Z",
-      "last_commit_date": "2025-12-21T16:43:53Z",
-      "latest_tag": {
-        "name": "v0.0.5"
-      },
-      "latest_workflow_runs": [
-        {
-          "name": "CI",
-          "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/20412832272",
-          "head_sha": "8ac93546e19c8e3534f87c99bbb6d29856c5ed3d",
-          "created_at": "2025-12-21T16:44:31Z"
-        },
-        {
-          "name": "Benchmarks",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/20412832270",
-          "head_sha": "8ac93546e19c8e3534f87c99bbb6d29856c5ed3d",
-          "created_at": "2025-12-21T16:44:31Z"
-        },
-        {
-          "name": "Publish docs via GitHub Pages",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/20412832269",
-          "head_sha": "8ac93546e19c8e3534f87c99bbb6d29856c5ed3d",
-          "created_at": "2025-12-21T16:44:31Z"
-        },
-        {
-          "name": "pages build and deployment",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/20412832171",
-          "head_sha": "8ac93546e19c8e3534f87c99bbb6d29856c5ed3d",
-          "created_at": "2025-12-21T16:44:30Z"
-        }
-      ],
-      "package_info": null,
-      "homepage": "https://smallyunet.github.io/go-cggmp-tss/",
-      "has_pages": true,
-      "commit_count": 20,
-      "topics": [],
-      "license": null
-    },
-    {
-      "name": "psbt-lens",
-      "full_name": "smallyunet/psbt-lens",
-      "html_url": "https://github.com/smallyunet/psbt-lens",
-      "description": "PSBT Lens is a modern, pure client-side visualization and debugging tool for Bitcoin Partially Signed Bitcoin Transactions (PSBTs).",
-      "language": "TypeScript",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "visibility": "public",
-      "updated_at": "2025-12-21T05:23:49Z",
-      "created_at": "2025-12-16T02:17:43Z",
-      "last_commit_date": "2025-12-21T05:23:34Z",
-      "latest_tag": {
-        "name": "v0.0.4"
-      },
-      "latest_workflow_runs": [
-        {
-          "name": "Publish Package to npmjs",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/psbt-lens/actions/runs/20405242305",
-          "head_sha": "3efb246a54bab40afc5bf2b4f1d42d4ab73af2b5",
-          "created_at": "2025-12-21T05:23:51Z"
-        },
-        {
-          "name": "Deploy to GitHub Pages",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/psbt-lens/actions/runs/20405241971",
-          "head_sha": "3efb246a54bab40afc5bf2b4f1d42d4ab73af2b5",
-          "created_at": "2025-12-21T05:23:47Z"
-        }
-      ],
-      "package_info": {
-        "type": "npm",
-        "name": "psbt-lens",
-        "version": "0.0.3",
-        "url": "https://www.npmjs.com/package/psbt-lens"
-      },
-      "homepage": "https://smallyunet.github.io/psbt-lens/",
-      "has_pages": true,
-      "commit_count": 11,
-      "topics": [],
-      "license": null
+      "license": null,
+      "category": "components_sdk"
     },
     {
       "name": "solana-tx-decoder",
@@ -494,7 +521,105 @@
       "has_pages": true,
       "commit_count": 12,
       "topics": [],
-      "license": null
+      "license": null,
+      "category": "components_sdk"
+    },
+    {
+      "name": "psbt-lens",
+      "full_name": "smallyunet/psbt-lens",
+      "html_url": "https://github.com/smallyunet/psbt-lens",
+      "description": "PSBT Lens is a modern, pure client-side visualization and debugging tool for Bitcoin Partially Signed Bitcoin Transactions (PSBTs).",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2025-12-21T05:23:49Z",
+      "created_at": "2025-12-16T02:17:43Z",
+      "last_commit_date": "2025-12-21T05:23:34Z",
+      "latest_tag": {
+        "name": "v0.0.4"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Publish Package to npmjs",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/psbt-lens/actions/runs/20405242305",
+          "head_sha": "3efb246a54bab40afc5bf2b4f1d42d4ab73af2b5",
+          "created_at": "2025-12-21T05:23:51Z"
+        },
+        {
+          "name": "Deploy to GitHub Pages",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/psbt-lens/actions/runs/20405241971",
+          "head_sha": "3efb246a54bab40afc5bf2b4f1d42d4ab73af2b5",
+          "created_at": "2025-12-21T05:23:47Z"
+        }
+      ],
+      "package_info": {
+        "type": "npm",
+        "name": "psbt-lens",
+        "version": "0.0.3",
+        "url": "https://www.npmjs.com/package/psbt-lens"
+      },
+      "homepage": "https://smallyunet.github.io/psbt-lens/",
+      "has_pages": true,
+      "commit_count": 11,
+      "topics": [],
+      "license": null,
+      "category": "components_sdk"
+    },
+    {
+      "name": "finder-sight",
+      "full_name": "smallyunet/finder-sight",
+      "html_url": "https://github.com/smallyunet/finder-sight",
+      "description": "A macOS app for local reverse image search.",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2025-12-23T16:50:15Z",
+      "created_at": "2025-12-13T13:37:31Z",
+      "last_commit_date": "2025-12-23T16:50:09Z",
+      "latest_tag": {
+        "name": "v0.0.7"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20466549672",
+          "head_sha": "381812beeeb1c07f6c5f89bd60c81b4ea7d462df",
+          "created_at": "2025-12-23T16:50:13Z"
+        },
+        {
+          "name": "Build macOS App",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20466549655",
+          "head_sha": "381812beeeb1c07f6c5f89bd60c81b4ea7d462df",
+          "created_at": "2025-12-23T16:50:13Z"
+        },
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20466549388",
+          "head_sha": "381812beeeb1c07f6c5f89bd60c81b4ea7d462df",
+          "created_at": "2025-12-23T16:50:13Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/finder-sight/",
+      "has_pages": true,
+      "commit_count": 35,
+      "topics": [],
+      "license": null,
+      "category": "user_applications"
     },
     {
       "name": "pbft-visualizer",
@@ -527,119 +652,8 @@
       "has_pages": true,
       "commit_count": 19,
       "topics": [],
-      "license": null
-    },
-    {
-      "name": "zabi-rs",
-      "full_name": "smallyunet/zabi-rs",
-      "html_url": "https://github.com/smallyunet/zabi-rs",
-      "description": "Zero-allocation, no_std EVM ABI decoder for high-performance Rust applications.",
-      "language": "Rust",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "visibility": "public",
-      "updated_at": "2025-12-20T07:10:12Z",
-      "created_at": "2025-12-16T15:24:29Z",
-      "last_commit_date": "2025-12-20T07:10:08Z",
-      "latest_tag": {
-        "name": "v0.0.5"
-      },
-      "latest_workflow_runs": [
-        {
-          "name": "Publish to Crates.io",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/20390881995",
-          "head_sha": "aa836d9d8f9cf6c169772ba7c1bdb8dc126f1559",
-          "created_at": "2025-12-20T07:05:21Z"
-        }
-      ],
-      "package_info": {
-        "type": "crates",
-        "name": "zabi-rs",
-        "version": "0.0.5",
-        "url": "https://crates.io/crates/zabi-rs"
-      },
-      "homepage": "https://smallyunet.github.io/zabi-rs/",
-      "has_pages": true,
-      "commit_count": 28,
-      "topics": [],
-      "license": null
-    },
-    {
-      "name": "the-trapper",
-      "full_name": "smallyunet/the-trapper",
-      "html_url": "https://github.com/smallyunet/the-trapper",
-      "description": "An educational collection of EVM honeypots designed to deceive and trap sophisticated attackers.",
-      "language": "Solidity",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "visibility": "public",
-      "updated_at": "2025-12-20T08:25:53Z",
-      "created_at": "2025-12-18T16:24:19Z",
-      "last_commit_date": "2025-12-20T08:25:46Z",
-      "latest_tag": {
-        "name": "v0.0.2"
-      },
-      "latest_workflow_runs": [
-        {
-          "name": "Tests",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/the-trapper/actions/runs/20391752271",
-          "head_sha": "1721b95a7e19d622892877123eae61855ba5da7d",
-          "created_at": "2025-12-20T08:25:51Z"
-        },
-        {
-          "name": "Documentation",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/the-trapper/actions/runs/20391752269",
-          "head_sha": "1721b95a7e19d622892877123eae61855ba5da7d",
-          "created_at": "2025-12-20T08:25:51Z"
-        }
-      ],
-      "package_info": null,
-      "homepage": "https://smallyunet.github.io/the-trapper/",
-      "has_pages": true,
-      "commit_count": 6,
-      "topics": [],
-      "license": null
-    },
-    {
-      "name": "prediction-market-indexer",
-      "full_name": "smallyunet/prediction-market-indexer",
-      "html_url": "https://github.com/smallyunet/prediction-market-indexer",
-      "description": "A high-performance, SQL-based indexer and API for prediction market analytics, built with Ponder and Hono.",
-      "language": "TypeScript",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "visibility": "public",
-      "updated_at": "2025-12-22T15:29:43Z",
-      "created_at": "2025-12-19T08:40:39Z",
-      "last_commit_date": "2025-12-22T15:29:32Z",
-      "latest_tag": {
-        "name": "v0.0.2"
-      },
-      "latest_workflow_runs": [
-        {
-          "name": "Deploy Docs to GitHub Pages",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/prediction-market-indexer/actions/runs/20436363139",
-          "head_sha": "b52a7ccaf33453b06fd3e4f5024f8790e14e040f",
-          "created_at": "2025-12-22T15:29:37Z"
-        }
-      ],
-      "package_info": null,
-      "homepage": "https://smallyunet.github.io/prediction-market-indexer/",
-      "has_pages": true,
-      "commit_count": 7,
-      "topics": [],
-      "license": null
+      "license": null,
+      "category": "user_applications"
     },
     {
       "name": "vscode-antigravity-hud",
@@ -681,7 +695,7 @@
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 95
+          "installs": 108
         },
         {
           "type": "openvsx",
@@ -701,7 +715,8 @@
         "spdx_id": "MIT",
         "url": "https://api.github.com/licenses/mit",
         "node_id": "MDc6TGljZW5zZTEz"
-      }
+      },
+      "category": "user_applications"
     },
     {
       "name": "konachan-downloader",
@@ -731,7 +746,8 @@
         "spdx_id": "MIT",
         "url": "https://api.github.com/licenses/mit",
         "node_id": "MDc6TGljZW5zZTEz"
-      }
+      },
+      "category": "user_applications"
     }
   ]
 }
