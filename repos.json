@@ -1,18 +1,24 @@
-[
-    "smallyunet/echoevm",
-    "smallyunet/ethbft",
-    "smallyunet/safe-kit",
-    "smallyunet/finder-sight",
-    "smallyunet/privy-wallet-kit",
-    "smallyunet/userop-validator",
-    "smallyunet/etherflow",
-    "smallyunet/go-cggmp-tss",
-    "smallyunet/psbt-lens",
-    "smallyunet/solana-tx-parser",
-    "smallyunet/pbft-visualizer",
-    "smallyunet/zabi-rs",
-    "smallyunet/the-trapper",
-    "smallyunet/prediction-market-indexer",
-    "smallyunet/vscode-antigravity-hud",
-    "smallyunet/konachan-downloader"
-]
+{
+    "infrastructure": [
+        "smallyunet/echoevm",
+        "smallyunet/ethbft",
+        "smallyunet/etherflow",
+        "smallyunet/go-cggmp-tss",
+        "smallyunet/zabi-rs",
+        "smallyunet/prediction-market-indexer"
+    ],
+    "components_sdk": [
+        "smallyunet/the-trapper",
+        "smallyunet/safe-kit",
+        "smallyunet/privy-wallet-kit",
+        "smallyunet/userop-validator",
+        "smallyunet/solana-tx-parser",
+        "smallyunet/psbt-lens"
+    ],
+    "user_applications": [
+        "smallyunet/finder-sight",
+        "smallyunet/pbft-visualizer",
+        "smallyunet/vscode-antigravity-hud",
+        "smallyunet/konachan-downloader"
+    ]
+}

@@ -1,9 +1,10 @@
 const fs = require('fs');
 
 // Load Repos from config
-let REPOS = [];
+// Load Repos from config
+let REPOS_CONFIG = {};
 try {
-    REPOS = require('./repos.json');
+    REPOS_CONFIG = require('./repos.json');
 } catch (e) {
     console.error('Failed to load repos.json. Please ensure it exists.');
     process.exit(1);
@@ -325,11 +326,18 @@ async function fetchRepoData(repoFullName) {
 }
 
 async function main() {
-    console.log(`Fetching data for ${REPOS.length} repositories...`);
+    console.log('Fetching data...');
     const results = [];
-    for (const repo of REPOS) {
-        // console.log(`Fetching ${repo}...`); // Optional logging
-        results.push(await fetchRepoData(repo));
+
+    // Iterate through categories
+    for (const [category, repos] of Object.entries(REPOS_CONFIG)) {
+        console.log(`Processing category: ${category} (${repos.length} repos)`);
+        for (const repo of repos) {
+            const data = await fetchRepoData(repo);
+            // Attach category to the repo data
+            data.category = category;
+            results.push(data);
+        }
     }
 
     // Filter out nulls if any (though fetchRepoData returns error objects)

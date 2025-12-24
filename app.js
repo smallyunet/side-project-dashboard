@@ -163,37 +163,88 @@ class Dashboard {
     }
 
     renderRepositories() {
-        let sortedRepos = [...this.state.repos];
+        const CATEGORIES = {
+            'infrastructure': 'Infrastructure',
+            'components_sdk': 'Components & SDKs',
+            'user_applications': 'User Applications'
+        };
 
+        const CATEGORY_ORDER = ['infrastructure', 'components_sdk', 'user_applications'];
+
+        // Group repos by category
+        const groupedRepos = this.state.repos.reduce((acc, repo) => {
+            const cat = repo.category || 'other';
+            if (!acc[cat]) acc[cat] = [];
+            acc[cat].push(repo);
+            return acc;
+        }, {});
+
+        this.elements.reposContainer.innerHTML = '';
+        let hasRepos = false;
+
+        CATEGORY_ORDER.forEach(categoryKey => {
+            const repos = groupedRepos[categoryKey];
+            if (!repos || repos.length === 0) return;
+
+            hasRepos = true;
+
+            // Sort repos within category
+            this.sortRepos(repos);
+
+            // Create Section
+            const section = document.createElement('div');
+            section.className = 'category-section';
+            section.innerHTML = `
+                <h3 class="category-title">${CATEGORIES[categoryKey] || categoryKey}</h3>
+                <div class="repos-grid">
+                    ${repos.map(repo => this.createRepoCard(repo)).join('')}
+                </div>
+            `;
+            this.elements.reposContainer.appendChild(section);
+        });
+
+        // Handle uncategorized repos (if any)
+        const otherRepos = groupedRepos['other'];
+        if (otherRepos && otherRepos.length > 0) {
+            hasRepos = true;
+            this.sortRepos(otherRepos);
+            const section = document.createElement('div');
+            section.className = 'category-section';
+            section.innerHTML = `
+                <h3 class="category-title">Other</h3>
+                <div class="repos-grid">
+                    ${otherRepos.map(repo => this.createRepoCard(repo)).join('')}
+                </div>
+            `;
+            this.elements.reposContainer.appendChild(section);
+        }
+
+        if (!hasRepos) {
+            this.elements.reposContainer.innerHTML = '<div class="empty-state">No repositories found.</div>';
+        }
+    }
+
+    sortRepos(repos) {
         switch (this.state.sortBy) {
             case 'stars':
-                sortedRepos.sort((a, b) => (b.stargazers_count || 0) - (a.stargazers_count || 0));
+                repos.sort((a, b) => (b.stargazers_count || 0) - (a.stargazers_count || 0));
                 break;
             case 'forks':
-                sortedRepos.sort((a, b) => (b.forks_count || 0) - (a.forks_count || 0));
+                repos.sort((a, b) => (b.forks_count || 0) - (a.forks_count || 0));
                 break;
             case 'created':
-                sortedRepos.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+                repos.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
                 break;
             case 'updated':
-                sortedRepos.sort((a, b) => {
+                repos.sort((a, b) => {
                     const dateA = a.last_commit_date ? new Date(a.last_commit_date) : new Date(a.updated_at);
                     const dateB = b.last_commit_date ? new Date(b.last_commit_date) : new Date(b.updated_at);
                     return dateB - dateA;
                 });
                 break;
-            case 'default':
             default:
-                // No sort needed, use original order
                 break;
         }
-
-        if (sortedRepos.length === 0) {
-            this.elements.reposContainer.innerHTML = '<div class="empty-state">No repositories found.</div>';
-            return;
-        }
-
-        this.elements.reposContainer.innerHTML = sortedRepos.map(repo => this.createRepoCard(repo)).join('');
     }
 
     createRepoCard(repo) {
