@@ -1,5 +1,5 @@
 {
-  "timestamp": 1766570742523,
+  "timestamp": 1766574339659,
   "repos": [
     {
       "name": "echoevm",
@@ -581,42 +581,50 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-23T16:50:15Z",
+      "updated_at": "2025-12-24T11:01:27Z",
       "created_at": "2025-12-13T13:37:31Z",
-      "last_commit_date": "2025-12-23T16:50:09Z",
+      "last_commit_date": "2025-12-24T11:01:19Z",
       "latest_tag": {
-        "name": "v0.0.7"
+        "name": "v0.0.8"
       },
       "latest_workflow_runs": [
         {
-          "name": "CI",
+          "name": "Build macOS App",
           "status": "completed",
           "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20466549672",
-          "head_sha": "381812beeeb1c07f6c5f89bd60c81b4ea7d462df",
-          "created_at": "2025-12-23T16:50:13Z"
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20484744370",
+          "head_sha": "c4044484b20b6dc718c109e50b51f146b31299b4",
+          "created_at": "2025-12-24T11:01:35Z"
         },
         {
           "name": "Build macOS App",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20466549655",
-          "head_sha": "381812beeeb1c07f6c5f89bd60c81b4ea7d462df",
-          "created_at": "2025-12-23T16:50:13Z"
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20484742229",
+          "head_sha": "c4044484b20b6dc718c109e50b51f146b31299b4",
+          "created_at": "2025-12-24T11:01:25Z"
+        },
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20484742228",
+          "head_sha": "c4044484b20b6dc718c109e50b51f146b31299b4",
+          "created_at": "2025-12-24T11:01:25Z"
         },
         {
           "name": "pages build and deployment",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20466549388",
-          "head_sha": "381812beeeb1c07f6c5f89bd60c81b4ea7d462df",
-          "created_at": "2025-12-23T16:50:13Z"
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20484742100",
+          "head_sha": "c4044484b20b6dc718c109e50b51f146b31299b4",
+          "created_at": "2025-12-24T11:01:25Z"
         }
       ],
       "package_info": null,
       "homepage": "https://smallyunet.github.io/finder-sight/",
       "has_pages": true,
-      "commit_count": 35,
+      "commit_count": 37,
       "topics": [],
       "license": null,
       "category": "user_applications"
@@ -695,14 +703,14 @@
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 108
+          "installs": 105
         },
         {
           "type": "openvsx",
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://open-vsx.org/extension/smallyu/vscode-antigravity-hud",
-          "downloads": 275
+          "downloads": 285
         }
       ],
       "homepage": "",
@@ -728,9 +736,9 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-24T06:38:18Z",
+      "updated_at": "2025-12-24T10:39:26Z",
       "created_at": "2025-12-23T15:47:32Z",
-      "last_commit_date": "2025-12-24T06:38:11Z",
+      "last_commit_date": "2025-12-24T10:39:20Z",
       "latest_tag": {
         "name": "v0.0.6"
       },
@@ -738,7 +746,7 @@
       "package_info": null,
       "homepage": "",
       "has_pages": false,
-      "commit_count": 11,
+      "commit_count": 12,
       "topics": [],
       "license": {
         "key": "mit",
