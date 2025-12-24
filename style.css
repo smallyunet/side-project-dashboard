@@ -619,17 +619,19 @@ select:hover {
 
 /* Category Sections */
 .category-section {
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 .category-title {
-    font-size: 1.5rem;
+    font-size: 14px;
     font-weight: 600;
-    margin-bottom: 1.5rem;
-    color: var(--text-primary);
+    margin-bottom: 12px;
+    color: var(--text-secondary);
     display: flex;
     align-items: center;
     gap: 0.75rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
 
 .category-title::after {
