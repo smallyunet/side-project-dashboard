@@ -1,5 +1,5 @@
 {
-  "timestamp": 1766696699888,
+  "timestamp": 1766700317399,
   "repos": [
     {
       "name": "echoevm",
@@ -300,7 +300,7 @@
       "language": "Python",
       "stargazers_count": 0,
       "forks_count": 0,
-      "open_issues_count": 0,
+      "open_issues_count": 2,
       "visibility": "public",
       "updated_at": "2025-12-24T08:29:09Z",
       "created_at": "2025-12-12T11:25:11Z",
@@ -310,20 +310,20 @@
       },
       "latest_workflow_runs": [
         {
-          "name": "CI",
+          "name": "github_actions in /. - Update #1191078625",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20482022527",
+          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20511341009",
           "head_sha": "0bb94a81c6ef0959a58d54f9d52b78f85aa3033c",
-          "created_at": "2025-12-24T08:29:07Z"
+          "created_at": "2025-12-25T21:45:59Z"
         },
         {
-          "name": "Publish Docs",
+          "name": "pip in /. - Update #1191078624",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20482022519",
+          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20511340966",
           "head_sha": "0bb94a81c6ef0959a58d54f9d52b78f85aa3033c",
-          "created_at": "2025-12-24T08:29:07Z"
+          "created_at": "2025-12-25T21:45:59Z"
         }
       ],
       "package_info": {
@@ -703,14 +703,14 @@
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 164
+          "installs": 176
         },
         {
           "type": "openvsx",
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://open-vsx.org/extension/smallyu/vscode-antigravity-hud",
-          "downloads": 319
+          "downloads": 320
         }
       ],
       "homepage": "",
