@@ -1,5 +1,5 @@
 {
-  "timestamp": 1766743535989,
+  "timestamp": 1766747111132,
   "repos": [
     {
       "name": "echoevm",
@@ -300,30 +300,30 @@
       "language": "Python",
       "stargazers_count": 0,
       "forks_count": 0,
-      "open_issues_count": 2,
+      "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-24T08:29:09Z",
+      "updated_at": "2025-12-26T11:04:28Z",
       "created_at": "2025-12-12T11:25:11Z",
-      "last_commit_date": "2025-12-24T08:29:05Z",
+      "last_commit_date": "2025-12-26T11:04:24Z",
       "latest_tag": {
         "name": "v0.0.11"
       },
       "latest_workflow_runs": [
         {
-          "name": "github_actions in /. - Update #1191078625",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20511341009",
-          "head_sha": "0bb94a81c6ef0959a58d54f9d52b78f85aa3033c",
-          "created_at": "2025-12-25T21:45:59Z"
+          "name": "Publish Docs",
+          "status": "in_progress",
+          "conclusion": null,
+          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20521325514",
+          "head_sha": "3ae677cb4180381c75d80b07f2fc9d3d326dee92",
+          "created_at": "2025-12-26T11:04:26Z"
         },
         {
-          "name": "pip in /. - Update #1191078624",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20511340966",
-          "head_sha": "0bb94a81c6ef0959a58d54f9d52b78f85aa3033c",
-          "created_at": "2025-12-25T21:45:59Z"
+          "name": "CI",
+          "status": "in_progress",
+          "conclusion": null,
+          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20521325490",
+          "head_sha": "3ae677cb4180381c75d80b07f2fc9d3d326dee92",
+          "created_at": "2025-12-26T11:04:26Z"
         }
       ],
       "package_info": {
@@ -334,7 +334,7 @@
       },
       "homepage": "https://smallyunet.github.io/safe-kit/",
       "has_pages": true,
-      "commit_count": 61,
+      "commit_count": 63,
       "topics": [],
       "license": {
         "key": "mit",
@@ -703,7 +703,7 @@
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 197
+          "installs": 177
         },
         {
           "type": "openvsx",
