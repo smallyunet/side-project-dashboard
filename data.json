@@ -1,5 +1,5 @@
 {
-  "timestamp": 1766808794154,
+  "timestamp": 1766811965474,
   "repos": [
     {
       "name": "echoevm",
@@ -463,44 +463,44 @@
       "forks_count": 0,
       "open_issues_count": 1,
       "visibility": "public",
-      "updated_at": "2025-12-27T03:53:27Z",
+      "updated_at": "2025-12-27T04:26:30Z",
       "created_at": "2025-12-16T14:45:49Z",
-      "last_commit_date": "2025-12-27T03:53:21Z",
+      "last_commit_date": "2025-12-27T04:26:24Z",
       "latest_tag": {
         "name": "v0.0.3"
       },
       "latest_workflow_runs": [
         {
-          "name": "Documentation",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20533951355",
-          "head_sha": "8ca365bb3ffb56a8691f51b704a588b615a07d62",
-          "created_at": "2025-12-27T03:53:25Z"
-        },
-        {
           "name": "Test",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20533951354",
-          "head_sha": "8ca365bb3ffb56a8691f51b704a588b615a07d62",
-          "created_at": "2025-12-27T03:53:25Z"
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20534287731",
+          "head_sha": "f8e2c1004191767b5c50635a4e1e7ddd0b5ff5d6",
+          "created_at": "2025-12-27T04:26:28Z"
         },
         {
           "name": "CI",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20533951352",
-          "head_sha": "8ca365bb3ffb56a8691f51b704a588b615a07d62",
-          "created_at": "2025-12-27T03:53:25Z"
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20534287727",
+          "head_sha": "f8e2c1004191767b5c50635a4e1e7ddd0b5ff5d6",
+          "created_at": "2025-12-27T04:26:28Z"
+        },
+        {
+          "name": ".github/workflows/e2e.yml",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20534287644",
+          "head_sha": "f8e2c1004191767b5c50635a4e1e7ddd0b5ff5d6",
+          "created_at": "2025-12-27T04:26:28Z"
         },
         {
           "name": "pages build and deployment",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20533951183",
-          "head_sha": "8ca365bb3ffb56a8691f51b704a588b615a07d62",
-          "created_at": "2025-12-27T03:53:24Z"
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20534287563",
+          "head_sha": "f8e2c1004191767b5c50635a4e1e7ddd0b5ff5d6",
+          "created_at": "2025-12-27T04:26:27Z"
         }
       ],
       "package_info": {
@@ -511,7 +511,7 @@
       },
       "homepage": "https://smallyunet.github.io/solana-tx-decoder/",
       "has_pages": true,
-      "commit_count": 15,
+      "commit_count": 16,
       "topics": [],
       "license": {
         "key": "isc",
@@ -701,7 +701,7 @@
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 217
+          "installs": 200
         },
         {
           "type": "openvsx",
