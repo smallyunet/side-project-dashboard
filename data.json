@@ -1,5 +1,5 @@
 {
-  "timestamp": 1766841141666,
+  "timestamp": 1766844310476,
   "repos": [
     {
       "name": "echoevm",
@@ -260,34 +260,34 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-20T08:25:53Z",
+      "updated_at": "2025-12-27T14:04:54Z",
       "created_at": "2025-12-18T16:24:19Z",
-      "last_commit_date": "2025-12-20T08:25:46Z",
+      "last_commit_date": "2025-12-27T14:04:48Z",
       "latest_tag": {
         "name": "v0.0.2"
       },
       "latest_workflow_runs": [
         {
-          "name": "Tests",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/the-trapper/actions/runs/20391752271",
-          "head_sha": "1721b95a7e19d622892877123eae61855ba5da7d",
-          "created_at": "2025-12-20T08:25:51Z"
+          "name": "Documentation",
+          "status": "in_progress",
+          "conclusion": null,
+          "html_url": "https://github.com/smallyunet/the-trapper/actions/runs/20540018640",
+          "head_sha": "742c7bf253618975ea8566c83f91502c663110cc",
+          "created_at": "2025-12-27T14:04:52Z"
         },
         {
-          "name": "Documentation",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/the-trapper/actions/runs/20391752269",
-          "head_sha": "1721b95a7e19d622892877123eae61855ba5da7d",
-          "created_at": "2025-12-20T08:25:51Z"
+          "name": "Tests",
+          "status": "in_progress",
+          "conclusion": null,
+          "html_url": "https://github.com/smallyunet/the-trapper/actions/runs/20540018628",
+          "head_sha": "742c7bf253618975ea8566c83f91502c663110cc",
+          "created_at": "2025-12-27T14:04:52Z"
         }
       ],
       "package_info": null,
       "homepage": "https://smallyunet.github.io/the-trapper/",
       "has_pages": true,
-      "commit_count": 6,
+      "commit_count": 9,
       "topics": [],
       "license": null,
       "category": "components_sdk"
@@ -463,63 +463,63 @@
       "forks_count": 0,
       "open_issues_count": 1,
       "visibility": "public",
-      "updated_at": "2025-12-27T13:04:12Z",
+      "updated_at": "2025-12-27T13:49:45Z",
       "created_at": "2025-12-16T14:45:49Z",
-      "last_commit_date": "2025-12-27T13:04:05Z",
+      "last_commit_date": "2025-12-27T13:49:39Z",
       "latest_tag": {
-        "name": "v0.0.3"
+        "name": "v0.0.5"
       },
       "latest_workflow_runs": [
         {
-          "name": "CI",
+          "name": "Publish to NPM",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20539395272",
-          "head_sha": "b12a8b60ab3d9b1001cbdf3d6928a3d3f7100de9",
-          "created_at": "2025-12-27T13:04:10Z"
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20539878249",
+          "head_sha": "4a41f3c127d1a1d2ae2608e53989d5d909b79a06",
+          "created_at": "2025-12-27T13:49:55Z"
         },
         {
           "name": "Test",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20539395266",
-          "head_sha": "b12a8b60ab3d9b1001cbdf3d6928a3d3f7100de9",
-          "created_at": "2025-12-27T13:04:10Z"
-        },
-        {
-          "name": "Documentation",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20539395262",
-          "head_sha": "b12a8b60ab3d9b1001cbdf3d6928a3d3f7100de9",
-          "created_at": "2025-12-27T13:04:10Z"
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20539878247",
+          "head_sha": "4a41f3c127d1a1d2ae2608e53989d5d909b79a06",
+          "created_at": "2025-12-27T13:49:55Z"
         },
         {
           "name": ".github/workflows/e2e.yml",
           "status": "completed",
           "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20539395081",
-          "head_sha": "b12a8b60ab3d9b1001cbdf3d6928a3d3f7100de9",
-          "created_at": "2025-12-27T13:04:09Z"
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20539878190",
+          "head_sha": "4a41f3c127d1a1d2ae2608e53989d5d909b79a06",
+          "created_at": "2025-12-27T13:49:55Z"
         },
         {
-          "name": "pages build and deployment",
+          "name": "CI",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20539395034",
-          "head_sha": "b12a8b60ab3d9b1001cbdf3d6928a3d3f7100de9",
-          "created_at": "2025-12-27T13:04:09Z"
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20539876417",
+          "head_sha": "4a41f3c127d1a1d2ae2608e53989d5d909b79a06",
+          "created_at": "2025-12-27T13:49:44Z"
+        },
+        {
+          "name": "Test",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20539876407",
+          "head_sha": "4a41f3c127d1a1d2ae2608e53989d5d909b79a06",
+          "created_at": "2025-12-27T13:49:44Z"
         }
       ],
       "package_info": {
         "type": "npm",
         "name": "solana-tx-decoder",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "url": "https://www.npmjs.com/package/solana-tx-decoder"
       },
       "homepage": "https://smallyunet.github.io/solana-tx-decoder/",
       "has_pages": true,
-      "commit_count": 23,
+      "commit_count": 27,
       "topics": [],
       "license": {
         "key": "isc",
@@ -709,7 +709,7 @@
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 226
+          "installs": 224
         },
         {
           "type": "openvsx",
