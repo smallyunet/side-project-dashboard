@@ -1,5 +1,5 @@
 {
-  "timestamp": 1766851538383,
+  "timestamp": 1766855059794,
   "repos": [
     {
       "name": "echoevm",
@@ -463,63 +463,63 @@
       "forks_count": 0,
       "open_issues_count": 1,
       "visibility": "public",
-      "updated_at": "2025-12-27T13:49:45Z",
+      "updated_at": "2025-12-27T16:21:31Z",
       "created_at": "2025-12-16T14:45:49Z",
-      "last_commit_date": "2025-12-27T13:49:39Z",
+      "last_commit_date": "2025-12-27T16:21:25Z",
       "latest_tag": {
-        "name": "v0.0.5"
+        "name": "v0.0.6"
       },
       "latest_workflow_runs": [
-        {
-          "name": "Publish to NPM",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20539878249",
-          "head_sha": "4a41f3c127d1a1d2ae2608e53989d5d909b79a06",
-          "created_at": "2025-12-27T13:49:55Z"
-        },
         {
           "name": "Test",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20539878247",
-          "head_sha": "4a41f3c127d1a1d2ae2608e53989d5d909b79a06",
-          "created_at": "2025-12-27T13:49:55Z"
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20541435472",
+          "head_sha": "c8b9f0b66f064aadb42d511f95869440bba08a44",
+          "created_at": "2025-12-27T16:21:52Z"
+        },
+        {
+          "name": "Publish to NPM",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20541435465",
+          "head_sha": "c8b9f0b66f064aadb42d511f95869440bba08a44",
+          "created_at": "2025-12-27T16:21:52Z"
         },
         {
           "name": ".github/workflows/e2e.yml",
           "status": "completed",
           "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20539878190",
-          "head_sha": "4a41f3c127d1a1d2ae2608e53989d5d909b79a06",
-          "created_at": "2025-12-27T13:49:55Z"
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20541435374",
+          "head_sha": "c8b9f0b66f064aadb42d511f95869440bba08a44",
+          "created_at": "2025-12-27T16:21:51Z"
         },
         {
           "name": "CI",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20539876417",
-          "head_sha": "4a41f3c127d1a1d2ae2608e53989d5d909b79a06",
-          "created_at": "2025-12-27T13:49:44Z"
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20541432496",
+          "head_sha": "c8b9f0b66f064aadb42d511f95869440bba08a44",
+          "created_at": "2025-12-27T16:21:30Z"
         },
         {
-          "name": "Test",
+          "name": "Documentation",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20539876407",
-          "head_sha": "4a41f3c127d1a1d2ae2608e53989d5d909b79a06",
-          "created_at": "2025-12-27T13:49:44Z"
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20541432495",
+          "head_sha": "c8b9f0b66f064aadb42d511f95869440bba08a44",
+          "created_at": "2025-12-27T16:21:30Z"
         }
       ],
       "package_info": {
         "type": "npm",
         "name": "solana-tx-decoder",
-        "version": "0.0.4",
+        "version": "0.0.6",
         "url": "https://www.npmjs.com/package/solana-tx-decoder"
       },
       "homepage": "https://smallyunet.github.io/solana-tx-decoder/",
       "has_pages": true,
-      "commit_count": 27,
+      "commit_count": 28,
       "topics": [],
       "license": {
         "key": "isc",
@@ -540,39 +540,31 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-21T05:23:49Z",
+      "updated_at": "2025-12-27T16:23:18Z",
       "created_at": "2025-12-16T02:17:43Z",
-      "last_commit_date": "2025-12-21T05:23:34Z",
+      "last_commit_date": "2025-12-27T16:23:12Z",
       "latest_tag": {
-        "name": "v0.0.4"
+        "name": "v0.0.5"
       },
       "latest_workflow_runs": [
-        {
-          "name": "Publish Package to npmjs",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/psbt-lens/actions/runs/20405242305",
-          "head_sha": "3efb246a54bab40afc5bf2b4f1d42d4ab73af2b5",
-          "created_at": "2025-12-21T05:23:51Z"
-        },
         {
           "name": "Deploy to GitHub Pages",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/psbt-lens/actions/runs/20405241971",
-          "head_sha": "3efb246a54bab40afc5bf2b4f1d42d4ab73af2b5",
-          "created_at": "2025-12-21T05:23:47Z"
+          "html_url": "https://github.com/smallyunet/psbt-lens/actions/runs/20541449597",
+          "head_sha": "e9e54d55ed90b65d4ab9a60057175490c6a05b7a",
+          "created_at": "2025-12-27T16:23:16Z"
         }
       ],
       "package_info": {
         "type": "npm",
         "name": "psbt-lens",
-        "version": "0.0.3",
+        "version": "0.0.5",
         "url": "https://www.npmjs.com/package/psbt-lens"
       },
       "homepage": "https://smallyunet.github.io/psbt-lens/",
       "has_pages": true,
-      "commit_count": 11,
+      "commit_count": 14,
       "topics": [],
       "license": null,
       "category": "components_sdk"
@@ -709,7 +701,7 @@
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 233
+          "installs": 228
         },
         {
           "type": "openvsx",
@@ -742,17 +734,17 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-24T10:39:26Z",
+      "updated_at": "2025-12-27T16:35:07Z",
       "created_at": "2025-12-23T15:47:32Z",
-      "last_commit_date": "2025-12-24T10:39:20Z",
+      "last_commit_date": "2025-12-27T16:35:01Z",
       "latest_tag": {
-        "name": "v0.0.6"
+        "name": "v0.0.7"
       },
       "latest_workflow_runs": [],
       "package_info": null,
       "homepage": "",
       "has_pages": false,
-      "commit_count": 12,
+      "commit_count": 13,
       "topics": [],
       "license": {
         "key": "mit",
