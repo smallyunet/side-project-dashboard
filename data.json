@@ -1,5 +1,5 @@
 {
-  "timestamp": 1766837257226,
+  "timestamp": 1766841141666,
   "repos": [
     {
       "name": "echoevm",
@@ -463,52 +463,52 @@
       "forks_count": 0,
       "open_issues_count": 1,
       "visibility": "public",
-      "updated_at": "2025-12-27T05:32:02Z",
+      "updated_at": "2025-12-27T13:04:12Z",
       "created_at": "2025-12-16T14:45:49Z",
-      "last_commit_date": "2025-12-27T05:31:55Z",
+      "last_commit_date": "2025-12-27T13:04:05Z",
       "latest_tag": {
         "name": "v0.0.3"
       },
       "latest_workflow_runs": [
         {
-          "name": "Test",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20534937102",
-          "head_sha": "9cb4bcce45ba44ad93e633d9695258b308662d36",
-          "created_at": "2025-12-27T05:32:01Z"
-        },
-        {
           "name": "CI",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20534937046",
-          "head_sha": "9cb4bcce45ba44ad93e633d9695258b308662d36",
-          "created_at": "2025-12-27T05:32:01Z"
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20539395272",
+          "head_sha": "b12a8b60ab3d9b1001cbdf3d6928a3d3f7100de9",
+          "created_at": "2025-12-27T13:04:10Z"
+        },
+        {
+          "name": "Test",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20539395266",
+          "head_sha": "b12a8b60ab3d9b1001cbdf3d6928a3d3f7100de9",
+          "created_at": "2025-12-27T13:04:10Z"
         },
         {
           "name": "Documentation",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20534937042",
-          "head_sha": "9cb4bcce45ba44ad93e633d9695258b308662d36",
-          "created_at": "2025-12-27T05:32:01Z"
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20539395262",
+          "head_sha": "b12a8b60ab3d9b1001cbdf3d6928a3d3f7100de9",
+          "created_at": "2025-12-27T13:04:10Z"
         },
         {
           "name": ".github/workflows/e2e.yml",
           "status": "completed",
           "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20534936846",
-          "head_sha": "9cb4bcce45ba44ad93e633d9695258b308662d36",
-          "created_at": "2025-12-27T05:32:00Z"
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20539395081",
+          "head_sha": "b12a8b60ab3d9b1001cbdf3d6928a3d3f7100de9",
+          "created_at": "2025-12-27T13:04:09Z"
         },
         {
           "name": "pages build and deployment",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20534936803",
-          "head_sha": "9cb4bcce45ba44ad93e633d9695258b308662d36",
-          "created_at": "2025-12-27T05:32:00Z"
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20539395034",
+          "head_sha": "b12a8b60ab3d9b1001cbdf3d6928a3d3f7100de9",
+          "created_at": "2025-12-27T13:04:09Z"
         }
       ],
       "package_info": {
@@ -519,7 +519,7 @@
       },
       "homepage": "https://smallyunet.github.io/solana-tx-decoder/",
       "has_pages": true,
-      "commit_count": 17,
+      "commit_count": 23,
       "topics": [],
       "license": {
         "key": "isc",
@@ -709,14 +709,14 @@
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 227
+          "installs": 226
         },
         {
           "type": "openvsx",
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://open-vsx.org/extension/smallyu/vscode-antigravity-hud",
-          "downloads": 353
+          "downloads": 354
         }
       ],
       "homepage": "",
