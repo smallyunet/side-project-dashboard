@@ -1,5 +1,5 @@
 {
-  "timestamp": 1766919874736,
+  "timestamp": 1766923681111,
   "repos": [
     {
       "name": "echoevm",
@@ -363,55 +363,31 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-28T10:17:55Z",
+      "updated_at": "2025-12-28T11:42:50Z",
       "created_at": "2025-12-12T17:04:53Z",
-      "last_commit_date": "2025-12-28T10:17:49Z",
+      "last_commit_date": "2025-12-28T11:42:46Z",
       "latest_tag": {
-        "name": "v0.0.5"
+        "name": "v0.0.6"
       },
       "latest_workflow_runs": [
         {
           "name": "Publish to NPM",
           "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/privy-wallet-kit/actions/runs/20552374753",
-          "head_sha": "544d118324bcb2f241f3ac66f8b74d87310fc28f",
-          "created_at": "2025-12-28T10:18:05Z"
-        },
-        {
-          "name": "CI",
-          "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/privy-wallet-kit/actions/runs/20552373192",
-          "head_sha": "544d118324bcb2f241f3ac66f8b74d87310fc28f",
-          "created_at": "2025-12-28T10:17:54Z"
-        },
-        {
-          "name": "Deploy Storybook to GitHub Pages",
-          "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/privy-wallet-kit/actions/runs/20552373180",
-          "head_sha": "544d118324bcb2f241f3ac66f8b74d87310fc28f",
-          "created_at": "2025-12-28T10:17:54Z"
-        },
-        {
-          "name": "Format",
-          "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/privy-wallet-kit/actions/runs/20552373175",
-          "head_sha": "544d118324bcb2f241f3ac66f8b74d87310fc28f",
-          "created_at": "2025-12-28T10:17:54Z"
+          "html_url": "https://github.com/smallyunet/privy-wallet-kit/actions/runs/20553270395",
+          "head_sha": "8fd58629eae0e5d2707e00d27c5ff4ef495fb7f7",
+          "created_at": "2025-12-28T11:41:59Z"
         }
       ],
       "package_info": {
         "type": "npm",
         "name": "privy-wallet-kit",
-        "version": "0.0.3",
+        "version": "0.0.6",
         "url": "https://www.npmjs.com/package/privy-wallet-kit"
       },
       "homepage": "https://smallyunet.github.io/privy-wallet-kit/",
       "has_pages": true,
-      "commit_count": 31,
+      "commit_count": 33,
       "topics": [],
       "license": {
         "key": "mit",
@@ -733,7 +709,7 @@
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 246
+          "installs": 245
         },
         {
           "type": "openvsx",
