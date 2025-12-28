@@ -1,5 +1,5 @@
 {
-  "timestamp": 1766912726062,
+  "timestamp": 1766915845737,
   "repos": [
     {
       "name": "echoevm",
@@ -753,6 +753,29 @@
         "url": "https://api.github.com/licenses/mit",
         "node_id": "MDc6TGljZW5zZTEz"
       },
+      "category": "user_applications"
+    },
+    {
+      "name": "chatgpt-visualizer",
+      "full_name": "smallyunet/chatgpt-visualizer",
+      "html_url": "https://github.com/smallyunet/chatgpt-visualizer",
+      "description": "A privacy-first, local web tool for visualizing and exploring your exported ChatGPT conversation history.",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2025-12-28T09:01:31Z",
+      "created_at": "2025-12-28T07:56:13Z",
+      "last_commit_date": "2025-12-28T09:01:26Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [],
+      "package_info": null,
+      "homepage": "",
+      "has_pages": false,
+      "commit_count": 4,
+      "topics": [],
+      "license": null,
       "category": "user_applications"
     }
   ]
