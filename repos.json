@@ -19,6 +19,7 @@
         "smallyunet/finder-sight",
         "smallyunet/pbft-visualizer",
         "smallyunet/vscode-antigravity-hud",
-        "smallyunet/konachan-downloader"
+        "smallyunet/konachan-downloader",
+        "smallyunet/chatgpt-visualizer"
     ]
 }
