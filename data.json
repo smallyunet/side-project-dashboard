@@ -1,5 +1,5 @@
 {
-  "timestamp": 1767014215573,
+  "timestamp": 1767017166230,
   "repos": [
     {
       "name": "echoevm",
@@ -416,44 +416,44 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-22T02:51:35Z",
+      "updated_at": "2025-12-29T13:44:31Z",
       "created_at": "2025-12-13T10:17:00Z",
-      "last_commit_date": "2025-12-22T02:51:28Z",
+      "last_commit_date": "2025-12-29T13:44:20Z",
       "latest_tag": {
-        "name": "v0.0.4"
+        "name": "v0.0.5"
       },
       "latest_workflow_runs": [
         {
           "name": "Publish to NPM",
           "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20420259385",
-          "head_sha": "b540006f6f736bcd47aa693dba28cd3f0ec4e174",
-          "created_at": "2025-12-22T02:51:42Z"
-        },
-        {
-          "name": "Deploy Docs",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20420257351",
-          "head_sha": "b540006f6f736bcd47aa693dba28cd3f0ec4e174",
-          "created_at": "2025-12-22T02:51:33Z"
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20574327186",
+          "head_sha": "7edd66afda2bf6d8f7017500d62879a674cb999e",
+          "created_at": "2025-12-29T13:44:41Z"
         },
         {
           "name": "CI",
           "status": "completed",
           "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20420257350",
-          "head_sha": "b540006f6f736bcd47aa693dba28cd3f0ec4e174",
-          "created_at": "2025-12-22T02:51:33Z"
+          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20574323536",
+          "head_sha": "7edd66afda2bf6d8f7017500d62879a674cb999e",
+          "created_at": "2025-12-29T13:44:30Z"
+        },
+        {
+          "name": "Deploy Docs",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20574323526",
+          "head_sha": "7edd66afda2bf6d8f7017500d62879a674cb999e",
+          "created_at": "2025-12-29T13:44:30Z"
         },
         {
           "name": "pages build and deployment",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20420257179",
-          "head_sha": "b540006f6f736bcd47aa693dba28cd3f0ec4e174",
-          "created_at": "2025-12-22T02:51:32Z"
+          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20574323195",
+          "head_sha": "7edd66afda2bf6d8f7017500d62879a674cb999e",
+          "created_at": "2025-12-29T13:44:29Z"
         }
       ],
       "package_info": {
@@ -464,7 +464,7 @@
       },
       "homepage": "https://smallyunet.github.io/userop-validator/",
       "has_pages": true,
-      "commit_count": 9,
+      "commit_count": 12,
       "topics": [],
       "license": null,
       "category": "components_sdk"
@@ -709,7 +709,7 @@
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 282
+          "installs": 272
         },
         {
           "type": "openvsx",
