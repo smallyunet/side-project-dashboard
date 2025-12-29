@@ -1,5 +1,5 @@
 {
-  "timestamp": 1766982273665,
+  "timestamp": 1766985116480,
   "repos": [
     {
       "name": "echoevm",
@@ -717,7 +717,7 @@
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 259
+          "installs": 262
         },
         {
           "type": "openvsx",
@@ -750,31 +750,31 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-29T04:11:27Z",
+      "updated_at": "2025-12-29T04:58:38Z",
       "created_at": "2025-12-23T15:47:32Z",
-      "last_commit_date": "2025-12-29T04:11:20Z",
+      "last_commit_date": "2025-12-29T04:58:31Z",
       "latest_tag": {
-        "name": "v0.0.9"
+        "name": "v0.0.10"
       },
       "latest_workflow_runs": [
         {
-          "name": "Publish to PyPI",
+          "name": "Publish Docs",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/konachan-downloader/actions/runs/20564613148",
-          "head_sha": "7ca9769b5960c8d37db1f9e686dc346be56a0d8b",
-          "created_at": "2025-12-29T04:11:42Z"
+          "html_url": "https://github.com/smallyunet/konachan-downloader/actions/runs/20565217134",
+          "head_sha": "f3ff612d79d93640c2ec80d10b401452c1ea8534",
+          "created_at": "2025-12-29T04:58:36Z"
         }
       ],
       "package_info": {
         "type": "pypi",
         "name": "konachan-downloader",
-        "version": "0.0.9",
+        "version": "0.0.10",
         "url": "https://pypi.org/project/konachan-downloader/"
       },
-      "homepage": "",
-      "has_pages": false,
-      "commit_count": 18,
+      "homepage": "https://smallyunet.github.io/konachan-downloader/",
+      "has_pages": true,
+      "commit_count": 22,
       "topics": [],
       "license": {
         "key": "mit",
