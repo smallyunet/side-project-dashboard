@@ -1,5 +1,5 @@
 {
-  "timestamp": 1767154676001,
+  "timestamp": 1767157720646,
   "repos": [
     {
       "name": "echoevm",
@@ -11,26 +11,34 @@
       "forks_count": 1,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-21T07:27:25Z",
+      "updated_at": "2025-12-31T04:36:48Z",
       "created_at": "2025-05-10T17:28:13Z",
-      "last_commit_date": "2025-12-21T07:27:19Z",
+      "last_commit_date": "2025-12-31T04:34:47Z",
       "latest_tag": {
-        "name": "v0.0.13"
+        "name": "v0.0.14"
       },
       "latest_workflow_runs": [
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/echoevm/actions/runs/20612151466",
+          "head_sha": "1b19dd970539a3904db9bd25edbffeba4417a60b",
+          "created_at": "2025-12-31T04:36:46Z"
+        },
         {
           "name": "pages build and deployment",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/echoevm/actions/runs/20406518790",
-          "head_sha": "09fd911a731ee3b1deed1a965002d7c5900c8020",
-          "created_at": "2025-12-21T07:27:23Z"
+          "html_url": "https://github.com/smallyunet/echoevm/actions/runs/20612151227",
+          "head_sha": "1b19dd970539a3904db9bd25edbffeba4417a60b",
+          "created_at": "2025-12-31T04:36:45Z"
         }
       ],
       "package_info": null,
       "homepage": "http://echoevm.com/",
       "has_pages": true,
-      "commit_count": 80,
+      "commit_count": 82,
       "topics": [
         "evm"
       ],
@@ -591,11 +599,11 @@
       "html_url": "https://github.com/smallyunet/finder-sight",
       "description": "A macOS app for local reverse image search.",
       "language": "Python",
-      "stargazers_count": 0,
+      "stargazers_count": 1,
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-29T12:56:49Z",
+      "updated_at": "2025-12-31T05:00:27Z",
       "created_at": "2025-12-13T13:37:31Z",
       "last_commit_date": "2025-12-29T12:56:32Z",
       "latest_tag": {
@@ -709,7 +717,7 @@
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 330
+          "installs": 328
         },
         {
           "type": "openvsx",
