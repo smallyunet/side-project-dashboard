@@ -5,7 +5,9 @@
         "smallyunet/etherflow",
         "smallyunet/go-cggmp-tss",
         "smallyunet/zabi-rs",
-        "smallyunet/prediction-market-indexer"
+        "smallyunet/prediction-market-indexer",
+        "smallyunet/doge-hack",
+        "smallyunet/dogecoin-rs"
     ],
     "components_sdk": [
         "smallyunet/the-trapper",
