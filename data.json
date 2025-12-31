@@ -1,5 +1,5 @@
 {
-  "timestamp": 1767191850938,
+  "timestamp": 1767193539079,
   "repos": [
     {
       "name": "echoevm",
@@ -255,20 +255,29 @@
       "full_name": "smallyunet/doge-hack",
       "html_url": "https://github.com/smallyunet/doge-hack",
       "description": null,
-      "language": null,
+      "language": "Rust",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-31T14:32:48Z",
+      "updated_at": "2025-12-31T14:37:37Z",
       "created_at": "2025-12-31T14:32:38Z",
-      "last_commit_date": "2025-12-31T14:32:43Z",
+      "last_commit_date": "2025-12-31T14:37:30Z",
       "latest_tag": null,
-      "latest_workflow_runs": [],
+      "latest_workflow_runs": [
+        {
+          "name": "Rust CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/doge-hack/actions/runs/20621134018",
+          "head_sha": "a8817739191d17efca6da056edda87806f082f06",
+          "created_at": "2025-12-31T14:37:37Z"
+        }
+      ],
       "package_info": null,
       "homepage": null,
       "has_pages": false,
-      "commit_count": 1,
+      "commit_count": 2,
       "topics": [],
       "license": null,
       "category": "infrastructure"
@@ -278,20 +287,20 @@
       "full_name": "smallyunet/dogecoin-rs",
       "html_url": "https://github.com/smallyunet/dogecoin-rs",
       "description": null,
-      "language": null,
+      "language": "Rust",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-31T14:33:20Z",
+      "updated_at": "2025-12-31T14:46:42Z",
       "created_at": "2025-12-31T14:33:11Z",
-      "last_commit_date": "2025-12-31T14:33:16Z",
+      "last_commit_date": "2025-12-31T14:46:36Z",
       "latest_tag": null,
       "latest_workflow_runs": [],
       "package_info": null,
       "homepage": null,
       "has_pages": false,
-      "commit_count": 1,
+      "commit_count": 2,
       "topics": [],
       "license": null,
       "category": "infrastructure"
@@ -747,7 +756,7 @@
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 330
+          "installs": 333
         },
         {
           "type": "openvsx",
