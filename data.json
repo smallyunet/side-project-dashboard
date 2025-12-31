@@ -1,5 +1,5 @@
 {
-  "timestamp": 1767189936872,
+  "timestamp": 1767191850938,
   "repos": [
     {
       "name": "echoevm",
@@ -246,6 +246,52 @@
       "homepage": "https://smallyunet.github.io/prediction-market-indexer/",
       "has_pages": true,
       "commit_count": 7,
+      "topics": [],
+      "license": null,
+      "category": "infrastructure"
+    },
+    {
+      "name": "doge-hack",
+      "full_name": "smallyunet/doge-hack",
+      "html_url": "https://github.com/smallyunet/doge-hack",
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2025-12-31T14:32:48Z",
+      "created_at": "2025-12-31T14:32:38Z",
+      "last_commit_date": "2025-12-31T14:32:43Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [],
+      "package_info": null,
+      "homepage": null,
+      "has_pages": false,
+      "commit_count": 1,
+      "topics": [],
+      "license": null,
+      "category": "infrastructure"
+    },
+    {
+      "name": "dogecoin-rs",
+      "full_name": "smallyunet/dogecoin-rs",
+      "html_url": "https://github.com/smallyunet/dogecoin-rs",
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2025-12-31T14:33:20Z",
+      "created_at": "2025-12-31T14:33:11Z",
+      "last_commit_date": "2025-12-31T14:33:16Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [],
+      "package_info": null,
+      "homepage": null,
+      "has_pages": false,
+      "commit_count": 1,
       "topics": [],
       "license": null,
       "category": "infrastructure"
@@ -701,7 +747,7 @@
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 328
+          "installs": 330
         },
         {
           "type": "openvsx",
