@@ -1,5 +1,5 @@
 {
-  "timestamp": 1767279932229,
+  "timestamp": 1767280252367,
   "repos": [
     {
       "name": "echoevm",
@@ -787,7 +787,7 @@
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 349
+          "installs": 351
         },
         {
           "type": "openvsx",
@@ -908,6 +908,48 @@
       "homepage": "http://eag.smallyu.net/",
       "has_pages": true,
       "commit_count": 15,
+      "topics": [],
+      "license": null,
+      "category": "user_applications"
+    },
+    {
+      "name": "dark20",
+      "full_name": "smallyunet/dark20",
+      "html_url": "https://github.com/smallyunet/dark20",
+      "description": "Dark-20 is a digital monument to Kabosu serving as a cryptographic black hole for burning Dogecoin.",
+      "language": "HTML",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-01-01T15:09:49Z",
+      "created_at": "2026-01-01T07:26:02Z",
+      "last_commit_date": "2026-01-01T15:09:42Z",
+      "latest_tag": {
+        "name": "v0.0.1"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Deploy to GitHub Pages",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/dark20/actions/runs/20640815853",
+          "head_sha": "db5983ce9421b64251d3aeb7d3f7045b6fef1fb3",
+          "created_at": "2026-01-01T15:09:47Z"
+        },
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/dark20/actions/runs/20640815772",
+          "head_sha": "db5983ce9421b64251d3aeb7d3f7045b6fef1fb3",
+          "created_at": "2026-01-01T15:09:47Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "http://dark20.xyz/",
+      "has_pages": true,
+      "commit_count": 5,
       "topics": [],
       "license": null,
       "category": "user_applications"
