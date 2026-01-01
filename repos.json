@@ -24,6 +24,7 @@
         "smallyunet/vscode-antigravity-hud",
         "smallyunet/konachan-downloader",
         "smallyunet/chatgpt-visualizer",
-        "smallyunet/eth-address-generator"
+        "smallyunet/eth-address-generator",
+        "smallyunet/dark20"
     ]
 }
