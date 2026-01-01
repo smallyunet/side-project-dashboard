@@ -1,5 +1,5 @@
 {
-  "timestamp": 1767276318127,
+  "timestamp": 1767279932229,
   "repos": [
     {
       "name": "echoevm",
@@ -129,50 +129,50 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-21T16:44:33Z",
+      "updated_at": "2026-01-01T14:54:37Z",
       "created_at": "2025-12-13T03:39:51Z",
-      "last_commit_date": "2025-12-21T16:43:53Z",
+      "last_commit_date": "2026-01-01T14:54:31Z",
       "latest_tag": {
-        "name": "v0.0.5"
+        "name": "v0.0.7"
       },
       "latest_workflow_runs": [
         {
           "name": "CI",
           "status": "completed",
           "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/20412832272",
-          "head_sha": "8ac93546e19c8e3534f87c99bbb6d29856c5ed3d",
-          "created_at": "2025-12-21T16:44:31Z"
+          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/20640603804",
+          "head_sha": "a0c740293096c3e81db1a6eaae7b0190d7072e68",
+          "created_at": "2026-01-01T14:54:35Z"
         },
         {
           "name": "Benchmarks",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/20412832270",
-          "head_sha": "8ac93546e19c8e3534f87c99bbb6d29856c5ed3d",
-          "created_at": "2025-12-21T16:44:31Z"
+          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/20640603803",
+          "head_sha": "a0c740293096c3e81db1a6eaae7b0190d7072e68",
+          "created_at": "2026-01-01T14:54:35Z"
         },
         {
           "name": "Publish docs via GitHub Pages",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/20412832269",
-          "head_sha": "8ac93546e19c8e3534f87c99bbb6d29856c5ed3d",
-          "created_at": "2025-12-21T16:44:31Z"
+          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/20640603799",
+          "head_sha": "a0c740293096c3e81db1a6eaae7b0190d7072e68",
+          "created_at": "2026-01-01T14:54:35Z"
         },
         {
           "name": "pages build and deployment",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/20412832171",
-          "head_sha": "8ac93546e19c8e3534f87c99bbb6d29856c5ed3d",
-          "created_at": "2025-12-21T16:44:30Z"
+          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/20640603654",
+          "head_sha": "a0c740293096c3e81db1a6eaae7b0190d7072e68",
+          "created_at": "2026-01-01T14:54:35Z"
         }
       ],
       "package_info": null,
       "homepage": "https://smallyunet.github.io/go-cggmp-tss/",
       "has_pages": true,
-      "commit_count": 20,
+      "commit_count": 22,
       "topics": [],
       "license": null,
       "category": "infrastructure"
@@ -494,47 +494,55 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2026-01-01T14:00:10Z",
+      "updated_at": "2026-01-01T14:43:14Z",
       "created_at": "2025-12-13T10:17:00Z",
-      "last_commit_date": "2026-01-01T14:00:04Z",
+      "last_commit_date": "2026-01-01T14:43:08Z",
       "latest_tag": {
-        "name": "v0.0.6"
+        "name": "v0.0.8"
       },
       "latest_workflow_runs": [
+        {
+          "name": "Publish to NPM",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20640468976",
+          "head_sha": "84308454794540f78d6e3cc1adaf7655a9b33678",
+          "created_at": "2026-01-01T14:43:22Z"
+        },
         {
           "name": "Deploy Docs",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20639821989",
-          "head_sha": "0611690764f8be6844618b0f6760d4c7c65e133d",
-          "created_at": "2026-01-01T14:00:09Z"
+          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20640467551",
+          "head_sha": "84308454794540f78d6e3cc1adaf7655a9b33678",
+          "created_at": "2026-01-01T14:43:13Z"
         },
         {
           "name": "CI",
           "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20639821964",
-          "head_sha": "0611690764f8be6844618b0f6760d4c7c65e133d",
-          "created_at": "2026-01-01T14:00:09Z"
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20640467548",
+          "head_sha": "84308454794540f78d6e3cc1adaf7655a9b33678",
+          "created_at": "2026-01-01T14:43:13Z"
         },
         {
           "name": "pages build and deployment",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20639821773",
-          "head_sha": "0611690764f8be6844618b0f6760d4c7c65e133d",
-          "created_at": "2026-01-01T14:00:08Z"
+          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/20640467446",
+          "head_sha": "84308454794540f78d6e3cc1adaf7655a9b33678",
+          "created_at": "2026-01-01T14:43:12Z"
         }
       ],
       "package_info": {
         "type": "npm",
         "name": "userop-validator",
-        "version": "0.0.4",
+        "version": "0.0.8",
         "url": "https://www.npmjs.com/package/userop-validator"
       },
       "homepage": "https://smallyunet.github.io/userop-validator/",
       "has_pages": true,
-      "commit_count": 16,
+      "commit_count": 20,
       "topics": [],
       "license": null,
       "category": "components_sdk"
@@ -779,7 +787,7 @@
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 351
+          "installs": 349
         },
         {
           "type": "openvsx",
