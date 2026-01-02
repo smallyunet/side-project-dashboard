@@ -1,5 +1,5 @@
 {
-  "timestamp": 1767366350692,
+  "timestamp": 1767369950573,
   "repos": [
     {
       "name": "echoevm",
@@ -87,34 +87,42 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-23T15:18:11Z",
+      "updated_at": "2026-01-02T15:37:54Z",
       "created_at": "2025-12-13T10:06:19Z",
-      "last_commit_date": "2025-12-23T15:18:04Z",
+      "last_commit_date": "2026-01-02T15:37:47Z",
       "latest_tag": {
-        "name": "v0.0.3"
+        "name": "v0.0.4"
       },
       "latest_workflow_runs": [
-        {
-          "name": "Publish Docs",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/etherflow/actions/runs/20464521901",
-          "head_sha": "b308992e281ff8ba9ab0e36c401e84fa292c4d6b",
-          "created_at": "2025-12-23T15:18:09Z"
-        },
         {
           "name": "CI",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/etherflow/actions/runs/20464521889",
-          "head_sha": "b308992e281ff8ba9ab0e36c401e84fa292c4d6b",
-          "created_at": "2025-12-23T15:18:09Z"
+          "html_url": "https://github.com/smallyunet/etherflow/actions/runs/20661130126",
+          "head_sha": "ed4624b38d02410cbc3271f41b0f0d413edb0de2",
+          "created_at": "2026-01-02T15:37:52Z"
+        },
+        {
+          "name": "E2E Tests",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/etherflow/actions/runs/20661130117",
+          "head_sha": "ed4624b38d02410cbc3271f41b0f0d413edb0de2",
+          "created_at": "2026-01-02T15:37:52Z"
+        },
+        {
+          "name": "Publish Docs",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/etherflow/actions/runs/20661130115",
+          "head_sha": "ed4624b38d02410cbc3271f41b0f0d413edb0de2",
+          "created_at": "2026-01-02T15:37:52Z"
         }
       ],
       "package_info": null,
       "homepage": "https://smallyunet.github.io/etherflow/",
       "has_pages": true,
-      "commit_count": 10,
+      "commit_count": 14,
       "topics": [],
       "license": null,
       "category": "infrastructure"
@@ -787,14 +795,14 @@
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 368
+          "installs": 361
         },
         {
           "type": "openvsx",
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://open-vsx.org/extension/smallyu/vscode-antigravity-hud",
-          "downloads": 448
+          "downloads": 449
         }
       ],
       "homepage": "",
