@@ -1,5 +1,5 @@
 {
-  "timestamp": 1767321741735,
+  "timestamp": 1767324848262,
   "repos": [
     {
       "name": "echoevm",
@@ -226,26 +226,26 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-22T15:29:43Z",
+      "updated_at": "2026-01-02T03:10:27Z",
       "created_at": "2025-12-19T08:40:39Z",
-      "last_commit_date": "2025-12-22T15:29:32Z",
+      "last_commit_date": "2026-01-02T03:10:21Z",
       "latest_tag": {
-        "name": "v0.0.2"
+        "name": "v0.0.3"
       },
       "latest_workflow_runs": [
         {
           "name": "Deploy Docs to GitHub Pages",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/prediction-market-indexer/actions/runs/20436363139",
-          "head_sha": "b52a7ccaf33453b06fd3e4f5024f8790e14e040f",
-          "created_at": "2025-12-22T15:29:37Z"
+          "html_url": "https://github.com/smallyunet/prediction-market-indexer/actions/runs/20649956225",
+          "head_sha": "18b4b76a72992df593a7a4a07574e900f84394be",
+          "created_at": "2026-01-02T03:10:25Z"
         }
       ],
       "package_info": null,
       "homepage": "https://smallyunet.github.io/prediction-market-indexer/",
       "has_pages": true,
-      "commit_count": 7,
+      "commit_count": 9,
       "topics": [],
       "license": null,
       "category": "infrastructure"
@@ -787,14 +787,14 @@
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 355
+          "installs": 351
         },
         {
           "type": "openvsx",
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://open-vsx.org/extension/smallyu/vscode-antigravity-hud",
-          "downloads": 443
+          "downloads": 444
         }
       ],
       "homepage": "",
