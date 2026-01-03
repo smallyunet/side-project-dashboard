@@ -1,5 +1,5 @@
 {
-  "timestamp": 1767445965098,
+  "timestamp": 1767449117897,
   "repos": [
     {
       "name": "echoevm",
@@ -195,20 +195,20 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2026-01-03T13:10:16Z",
+      "updated_at": "2026-01-03T13:58:55Z",
       "created_at": "2025-12-16T15:24:29Z",
-      "last_commit_date": "2026-01-03T13:10:12Z",
+      "last_commit_date": "2026-01-03T13:58:51Z",
       "latest_tag": {
-        "name": "v0.0.7"
+        "name": "v0.0.9"
       },
       "latest_workflow_runs": [
         {
-          "name": "Publish to Crates.io",
+          "name": "Benchmark & Update README",
           "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/20677658695",
-          "head_sha": "2ad1d6dbb2ed25bdb8582a61bb15055105727527",
-          "created_at": "2026-01-03T13:05:22Z"
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/20678194863",
+          "head_sha": "33a746914aef1ffeb81add1a1d1b59d2a040fba0",
+          "created_at": "2026-01-03T13:53:48Z"
         }
       ],
       "package_info": {
@@ -219,7 +219,7 @@
       },
       "homepage": "https://smallyunet.github.io/zabi-rs/",
       "has_pages": true,
-      "commit_count": 39,
+      "commit_count": 53,
       "topics": [],
       "license": null,
       "category": "infrastructure"
@@ -795,7 +795,7 @@
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 383
+          "installs": 377
         },
         {
           "type": "openvsx",
