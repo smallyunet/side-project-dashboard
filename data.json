@@ -1,5 +1,5 @@
 {
-  "timestamp": 1767705404790,
+  "timestamp": 1767708352017,
   "repos": [
     {
       "name": "echoevm",
@@ -803,7 +803,7 @@
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 433
+          "installs": 439
         },
         {
           "type": "openvsx",
@@ -933,14 +933,14 @@
       "full_name": "smallyunet/dark20",
       "html_url": "https://github.com/smallyunet/dark20",
       "description": "Dark-20 is a digital monument to Kabosu serving as a cryptographic black hole for burning Dogecoin.",
-      "language": "HTML",
+      "language": "JavaScript",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2026-01-05T15:31:49Z",
+      "updated_at": "2026-01-06T13:54:27Z",
       "created_at": "2026-01-01T07:26:02Z",
-      "last_commit_date": "2026-01-05T15:31:43Z",
+      "last_commit_date": "2026-01-06T13:54:20Z",
       "latest_tag": {
         "name": "v0.0.1"
       },
@@ -949,23 +949,23 @@
           "name": "Deploy to GitHub Pages",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/dark20/actions/runs/20720308671",
-          "head_sha": "0e6c43a0564fe24c14ba92bc307ff5bb489dcc70",
-          "created_at": "2026-01-05T15:31:48Z"
+          "html_url": "https://github.com/smallyunet/dark20/actions/runs/20750410038",
+          "head_sha": "2297add360bcc293adfe147df29393e6ecc28651",
+          "created_at": "2026-01-06T13:54:25Z"
         },
         {
           "name": "pages build and deployment",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/dark20/actions/runs/20720308161",
-          "head_sha": "0e6c43a0564fe24c14ba92bc307ff5bb489dcc70",
-          "created_at": "2026-01-05T15:31:47Z"
+          "html_url": "https://github.com/smallyunet/dark20/actions/runs/20750409798",
+          "head_sha": "2297add360bcc293adfe147df29393e6ecc28651",
+          "created_at": "2026-01-06T13:54:24Z"
         }
       ],
       "package_info": null,
       "homepage": "http://dark20.xyz/",
       "has_pages": true,
-      "commit_count": 7,
+      "commit_count": 9,
       "topics": [],
       "license": null,
       "category": "user_applications"
