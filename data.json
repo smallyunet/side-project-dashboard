@@ -1,5 +1,5 @@
 {
-  "timestamp": 1767798421063,
+  "timestamp": 1767802055154,
   "repos": [
     {
       "name": "echoevm",
@@ -739,26 +739,26 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-26T07:22:04Z",
+      "updated_at": "2026-01-07T15:14:40Z",
       "created_at": "2025-11-08T14:53:07Z",
-      "last_commit_date": "2025-12-26T07:21:57Z",
+      "last_commit_date": "2026-01-07T15:14:33Z",
       "latest_tag": {
-        "name": "v0.0.5"
+        "name": "v0.0.6"
       },
       "latest_workflow_runs": [
         {
           "name": "Deploy to GitHub Pages",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/pbft-visualizer/actions/runs/20518252880",
-          "head_sha": "94b25854976543cb9dcc82331e4d86b90fc83ae3",
-          "created_at": "2025-12-26T07:22:02Z"
+          "html_url": "https://github.com/smallyunet/pbft-visualizer/actions/runs/20786179683",
+          "head_sha": "f48c0ed68a761205a822dd045bec1fb0b00df0ce",
+          "created_at": "2026-01-07T15:14:38Z"
         }
       ],
       "package_info": null,
       "homepage": "https://smallyunet.github.io/pbft-visualizer/",
       "has_pages": true,
-      "commit_count": 20,
+      "commit_count": 21,
       "topics": [],
       "license": null,
       "category": "user_applications"
@@ -803,7 +803,7 @@
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 465
+          "installs": 470
         },
         {
           "type": "openvsx",
@@ -881,15 +881,17 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-28T09:01:31Z",
+      "updated_at": "2026-01-07T15:40:53Z",
       "created_at": "2025-12-28T07:56:13Z",
-      "last_commit_date": "2025-12-28T09:01:26Z",
-      "latest_tag": null,
+      "last_commit_date": "2026-01-07T15:40:30Z",
+      "latest_tag": {
+        "name": "v0.0.2"
+      },
       "latest_workflow_runs": [],
       "package_info": null,
       "homepage": "",
       "has_pages": false,
-      "commit_count": 4,
+      "commit_count": 7,
       "topics": [],
       "license": null,
       "category": "user_applications"
