@@ -1,5 +1,5 @@
 {
-  "timestamp": 1767852498398,
+  "timestamp": 1767856112804,
   "repos": [
     {
       "name": "echoevm",
@@ -685,9 +685,17 @@
       "created_at": "2025-12-13T13:37:31Z",
       "last_commit_date": "2026-01-08T06:05:36Z",
       "latest_tag": {
-        "name": "v0.0.16"
+        "name": "v0.1.0"
       },
       "latest_workflow_runs": [
+        {
+          "name": "Build macOS App",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20807475087",
+          "head_sha": "20222878651fad6d8c428776d2d492c645b5dce7",
+          "created_at": "2026-01-08T06:12:53Z"
+        },
         {
           "name": "Build macOS App",
           "status": "completed",
@@ -795,7 +803,7 @@
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 480
+          "installs": 481
         },
         {
           "type": "openvsx",
