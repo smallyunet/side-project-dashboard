@@ -1,5 +1,5 @@
 {
-  "timestamp": 1767964636543,
+  "timestamp": 1767967595613,
   "repos": [
     {
       "name": "echoevm",
@@ -642,31 +642,39 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-27T16:23:18Z",
+      "updated_at": "2026-01-09T13:55:18Z",
       "created_at": "2025-12-16T02:17:43Z",
-      "last_commit_date": "2025-12-27T16:23:12Z",
+      "last_commit_date": "2026-01-09T13:55:09Z",
       "latest_tag": {
-        "name": "v0.0.5"
+        "name": "v0.0.6"
       },
       "latest_workflow_runs": [
         {
-          "name": "Deploy to GitHub Pages",
+          "name": "Publish Package to npmjs",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/psbt-lens/actions/runs/20541449597",
-          "head_sha": "e9e54d55ed90b65d4ab9a60057175490c6a05b7a",
-          "created_at": "2025-12-27T16:23:16Z"
+          "html_url": "https://github.com/smallyunet/psbt-lens/actions/runs/20854157525",
+          "head_sha": "84393cdaf5202dca4b74ce18fc872ede9324d1f6",
+          "created_at": "2026-01-09T13:55:38Z"
+        },
+        {
+          "name": "Deploy to GitHub Pages",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/psbt-lens/actions/runs/20854146438",
+          "head_sha": "84393cdaf5202dca4b74ce18fc872ede9324d1f6",
+          "created_at": "2026-01-09T13:55:16Z"
         }
       ],
       "package_info": {
         "type": "npm",
         "name": "psbt-lens",
-        "version": "0.0.5",
+        "version": "0.0.6",
         "url": "https://www.npmjs.com/package/psbt-lens"
       },
       "homepage": "https://smallyunet.github.io/psbt-lens/",
       "has_pages": true,
-      "commit_count": 14,
+      "commit_count": 15,
       "topics": [],
       "license": null,
       "category": "components_sdk"
@@ -803,7 +811,7 @@
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 501
+          "installs": 499
         },
         {
           "type": "openvsx",
