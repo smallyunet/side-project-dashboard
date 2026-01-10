@@ -1,5 +1,5 @@
 {
-  "timestamp": 1768039517488,
+  "timestamp": 1768043058220,
   "repos": [
     {
       "name": "echoevm",
@@ -234,26 +234,26 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2026-01-02T03:10:27Z",
+      "updated_at": "2026-01-10T10:30:19Z",
       "created_at": "2025-12-19T08:40:39Z",
-      "last_commit_date": "2026-01-02T03:10:21Z",
+      "last_commit_date": "2026-01-10T10:30:12Z",
       "latest_tag": {
-        "name": "v0.0.3"
+        "name": "v0.0.4"
       },
       "latest_workflow_runs": [
         {
           "name": "Deploy Docs to GitHub Pages",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/prediction-market-indexer/actions/runs/20649956225",
-          "head_sha": "18b4b76a72992df593a7a4a07574e900f84394be",
-          "created_at": "2026-01-02T03:10:25Z"
+          "html_url": "https://github.com/smallyunet/prediction-market-indexer/actions/runs/20876972998",
+          "head_sha": "d0ac7878b01e275b8837c8ebf5e2f74be73d2cd4",
+          "created_at": "2026-01-10T10:30:18Z"
         }
       ],
       "package_info": null,
       "homepage": "https://smallyunet.github.io/prediction-market-indexer/",
       "has_pages": true,
-      "commit_count": 9,
+      "commit_count": 10,
       "topics": [],
       "license": null,
       "category": "infrastructure"
@@ -388,55 +388,47 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-28T10:03:42Z",
+      "updated_at": "2026-01-10T10:47:30Z",
       "created_at": "2025-12-12T11:25:11Z",
-      "last_commit_date": "2025-12-28T10:03:33Z",
+      "last_commit_date": "2026-01-10T10:47:25Z",
       "latest_tag": {
-        "name": "v0.0.12"
+        "name": "v0.0.13"
       },
       "latest_workflow_runs": [
         {
-          "name": "github_actions in /. - Update #1198317310",
+          "name": "Publish to PyPI",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20702107742",
-          "head_sha": "36afd8d4d5f0b3b2732f00eb28abb695fa1e2bab",
-          "created_at": "2026-01-05T01:08:21Z"
+          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20877166280",
+          "head_sha": "405208bf1059345af7d20f24d20aef53c0000336",
+          "created_at": "2026-01-10T10:47:37Z"
         },
         {
-          "name": "pip in /. - Update #1198316454",
+          "name": "Publish Docs",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20702104411",
-          "head_sha": "36afd8d4d5f0b3b2732f00eb28abb695fa1e2bab",
-          "created_at": "2026-01-05T01:08:09Z"
+          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20877165120",
+          "head_sha": "405208bf1059345af7d20f24d20aef53c0000336",
+          "created_at": "2026-01-10T10:47:29Z"
         },
         {
-          "name": "github_actions in /. - Update #1192020876",
+          "name": "CI",
           "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20561893176",
-          "head_sha": "36afd8d4d5f0b3b2732f00eb28abb695fa1e2bab",
-          "created_at": "2025-12-29T00:38:59Z"
-        },
-        {
-          "name": "pip in /. - Update #1192020872",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20561893173",
-          "head_sha": "36afd8d4d5f0b3b2732f00eb28abb695fa1e2bab",
-          "created_at": "2025-12-29T00:38:59Z"
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20877165115",
+          "head_sha": "405208bf1059345af7d20f24d20aef53c0000336",
+          "created_at": "2026-01-10T10:47:29Z"
         }
       ],
       "package_info": {
         "type": "pypi",
         "name": "safe-kit",
-        "version": "0.0.11",
+        "version": "0.0.13",
         "url": "https://pypi.org/project/safe-kit/"
       },
       "homepage": "https://smallyunet.github.io/safe-kit/",
       "has_pages": true,
-      "commit_count": 64,
+      "commit_count": 65,
       "topics": [],
       "license": {
         "key": "mit",
@@ -811,7 +803,7 @@
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 508
+          "installs": 503
         },
         {
           "type": "openvsx",
