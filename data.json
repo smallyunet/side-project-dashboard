@@ -1,5 +1,5 @@
 {
-  "timestamp": 1768219757467,
+  "timestamp": 1768223922824,
   "repos": [
     {
       "name": "echoevm",
@@ -11,26 +11,26 @@
       "forks_count": 1,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-31T13:32:36Z",
+      "updated_at": "2026-01-12T13:09:45Z",
       "created_at": "2025-05-10T17:28:13Z",
-      "last_commit_date": "2025-12-31T13:32:30Z",
+      "last_commit_date": "2026-01-12T13:09:38Z",
       "latest_tag": {
-        "name": "v0.0.14"
+        "name": "v0.0.15"
       },
       "latest_workflow_runs": [
         {
           "name": "CI",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/echoevm/actions/runs/20620044222",
-          "head_sha": "4a6ad7f5c2636ac36af199a06925993b34ff5bcf",
-          "created_at": "2025-12-31T13:32:35Z"
+          "html_url": "https://github.com/smallyunet/echoevm/actions/runs/20920546564",
+          "head_sha": "e2935d3c8d99358f2528d973a39be25c17332545",
+          "created_at": "2026-01-12T13:09:44Z"
         }
       ],
       "package_info": null,
       "homepage": "http://echoevm.com/",
       "has_pages": true,
-      "commit_count": 84,
+      "commit_count": 85,
       "topics": [
         "evm"
       ],
@@ -268,26 +268,26 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-31T15:06:53Z",
+      "updated_at": "2026-01-12T12:30:45Z",
       "created_at": "2025-12-31T14:32:38Z",
-      "last_commit_date": "2025-12-31T15:06:47Z",
+      "last_commit_date": "2026-01-12T12:30:38Z",
       "latest_tag": {
-        "name": "v0.0.1"
+        "name": "v0.0.2"
       },
       "latest_workflow_runs": [
         {
           "name": "Rust CI",
           "status": "completed",
           "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/doge-hack/actions/runs/20621627162",
-          "head_sha": "8acc835fc62a732dd52e2991f4603f56163d10a1",
-          "created_at": "2025-12-31T15:06:51Z"
+          "html_url": "https://github.com/smallyunet/doge-hack/actions/runs/20919433321",
+          "head_sha": "d324c74a540127d1fdcd4525cbd7b256fa414407",
+          "created_at": "2026-01-12T12:30:43Z"
         }
       ],
       "package_info": null,
       "homepage": "",
       "has_pages": false,
-      "commit_count": 3,
+      "commit_count": 4,
       "topics": [],
       "license": null,
       "category": "infrastructure"
@@ -797,7 +797,7 @@
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 535
+          "installs": 528
         },
         {
           "type": "openvsx",
