@@ -1,5 +1,5 @@
 {
-  "timestamp": 1768223922824,
+  "timestamp": 1768226870749,
   "repos": [
     {
       "name": "echoevm",
@@ -11,26 +11,34 @@
       "forks_count": 1,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2026-01-12T13:09:45Z",
+      "updated_at": "2026-01-12T13:25:39Z",
       "created_at": "2025-05-10T17:28:13Z",
-      "last_commit_date": "2026-01-12T13:09:38Z",
+      "last_commit_date": "2026-01-12T13:25:14Z",
       "latest_tag": {
-        "name": "v0.0.15"
+        "name": "v0.0.16"
       },
       "latest_workflow_runs": [
         {
-          "name": "CI",
+          "name": "Graph Update: go_modules in /. #1206551073",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/echoevm/actions/runs/20920546564",
-          "head_sha": "e2935d3c8d99358f2528d973a39be25c17332545",
-          "created_at": "2026-01-12T13:09:44Z"
+          "html_url": "https://github.com/smallyunet/echoevm/actions/runs/20921008828",
+          "head_sha": "ad598f8508f8cf773eed3ebd54e2f43847b105c9",
+          "created_at": "2026-01-12T13:25:21Z"
+        },
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/echoevm/actions/runs/20921007766",
+          "head_sha": "ad598f8508f8cf773eed3ebd54e2f43847b105c9",
+          "created_at": "2026-01-12T13:25:19Z"
         }
       ],
       "package_info": null,
       "homepage": "http://echoevm.com/",
       "has_pages": true,
-      "commit_count": 85,
+      "commit_count": 86,
       "topics": [
         "evm"
       ],
