@@ -1,5 +1,5 @@
 {
-  "timestamp": 1768205268166,
+  "timestamp": 1768209018775,
   "repos": [
     {
       "name": "echoevm",
@@ -441,31 +441,31 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-12-28T11:42:50Z",
+      "updated_at": "2026-01-12T08:29:00Z",
       "created_at": "2025-12-12T17:04:53Z",
-      "last_commit_date": "2025-12-28T11:42:46Z",
+      "last_commit_date": "2026-01-12T08:28:56Z",
       "latest_tag": {
-        "name": "v0.0.6"
+        "name": "v0.0.7"
       },
       "latest_workflow_runs": [
         {
-          "name": "Publish to NPM",
+          "name": "Format",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/privy-wallet-kit/actions/runs/20553270395",
-          "head_sha": "8fd58629eae0e5d2707e00d27c5ff4ef495fb7f7",
-          "created_at": "2025-12-28T11:41:59Z"
+          "html_url": "https://github.com/smallyunet/privy-wallet-kit/actions/runs/20912644079",
+          "head_sha": "bf435ee487f5c3fb2d197d2d3ea55a00424f282b",
+          "created_at": "2026-01-12T08:27:58Z"
         }
       ],
       "package_info": {
         "type": "npm",
         "name": "privy-wallet-kit",
-        "version": "0.0.6",
+        "version": "0.0.7",
         "url": "https://www.npmjs.com/package/privy-wallet-kit"
       },
       "homepage": "https://smallyunet.github.io/privy-wallet-kit/",
       "has_pages": true,
-      "commit_count": 33,
+      "commit_count": 35,
       "topics": [],
       "license": {
         "key": "mit",
@@ -795,7 +795,7 @@
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 528
+          "installs": 532
         },
         {
           "type": "openvsx",
