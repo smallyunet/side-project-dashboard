@@ -1,5 +1,5 @@
 {
-  "timestamp": 1768177372007,
+  "timestamp": 1768181665125,
   "repos": [
     {
       "name": "echoevm",
@@ -386,7 +386,7 @@
       "language": "Python",
       "stargazers_count": 0,
       "forks_count": 0,
-      "open_issues_count": 1,
+      "open_issues_count": 2,
       "visibility": "public",
       "updated_at": "2026-01-10T10:47:30Z",
       "created_at": "2025-12-12T11:25:11Z",
@@ -397,8 +397,8 @@
       "latest_workflow_runs": [
         {
           "name": "pip in /. - Update #1205700762",
-          "status": "in_progress",
-          "conclusion": null,
+          "status": "completed",
+          "conclusion": "success",
           "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20904341278",
           "head_sha": "405208bf1059345af7d20f24d20aef53c0000336",
           "created_at": "2026-01-12T00:19:48Z"
@@ -410,14 +410,6 @@
           "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20904341165",
           "head_sha": "405208bf1059345af7d20f24d20aef53c0000336",
           "created_at": "2026-01-12T00:19:47Z"
-        },
-        {
-          "name": "Publish to PyPI",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/20877166280",
-          "head_sha": "405208bf1059345af7d20f24d20aef53c0000336",
-          "created_at": "2026-01-10T10:47:37Z"
         }
       ],
       "package_info": {
@@ -803,7 +795,7 @@
           "name": "Antigravity HUD",
           "version": "0.1.2",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 527
+          "installs": 523
         },
         {
           "type": "openvsx",
