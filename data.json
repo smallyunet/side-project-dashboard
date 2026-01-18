@@ -1,5 +1,5 @@
 {
-  "timestamp": 1768752340411,
+  "timestamp": 1768754075111,
   "repos": [
     {
       "name": "echoevm",
@@ -871,7 +871,7 @@
           "name": "Antigravity HUD",
           "version": "0.2.1",
           "url": "https://open-vsx.org/extension/smallyu/vscode-antigravity-hud",
-          "downloads": 940
+          "downloads": 941
         }
       ],
       "homepage": "",
@@ -1029,6 +1029,38 @@
       "homepage": "http://dark20.xyz/",
       "has_pages": true,
       "commit_count": 10,
+      "topics": [],
+      "license": null,
+      "category": "user_applications"
+    },
+    {
+      "name": "yinwang-archive",
+      "full_name": "smallyunet/yinwang-archive",
+      "html_url": "https://github.com/smallyunet/yinwang-archive",
+      "description": "A comprehensive toolset to archive, preserve, and generate a readable static site for Wang Yin's blog.",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-01-18T16:34:09Z",
+      "created_at": "2026-01-18T16:01:34Z",
+      "last_commit_date": "2026-01-18T16:02:20Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/yinwang-archive/actions/runs/21114614555",
+          "head_sha": "09a7a3dcc244e886293faafef5a3b67efc541048",
+          "created_at": "2026-01-18T16:03:54Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/yinwang-archive/",
+      "has_pages": true,
+      "commit_count": 2,
       "topics": [],
       "license": null,
       "category": "user_applications"
