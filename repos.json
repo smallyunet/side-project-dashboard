@@ -25,6 +25,7 @@
         "smallyunet/konachan-downloader",
         "smallyunet/chatgpt-visualizer",
         "smallyunet/eth-address-generator",
-        "smallyunet/dark20"
+        "smallyunet/dark20",
+        "smallyunet/yinwang-archive"
     ]
 }
