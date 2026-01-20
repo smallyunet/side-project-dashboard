@@ -1,5 +1,5 @@
 {
-  "timestamp": 1768918288703,
+  "timestamp": 1768921797637,
   "repos": [
     {
       "name": "echoevm",
@@ -872,14 +872,14 @@
           "name": "Antigravity HUD",
           "version": "0.2.1",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 625
+          "installs": 630
         },
         {
           "type": "openvsx",
           "name": "Antigravity HUD",
           "version": "0.2.1",
           "url": "https://open-vsx.org/extension/smallyu/vscode-antigravity-hud",
-          "downloads": 969
+          "downloads": 970
         }
       ],
       "homepage": "",
@@ -970,31 +970,31 @@
       "full_name": "smallyunet/eth-address-generator",
       "html_url": "https://github.com/smallyunet/eth-address-generator",
       "description": "Web app for generating Ethereum addresses from private keys or randomly.",
-      "language": "CSS",
+      "language": "JavaScript",
       "stargazers_count": 2,
       "forks_count": 1,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2026-01-18T13:01:34Z",
+      "updated_at": "2026-01-20T14:24:39Z",
       "created_at": "2023-04-21T09:37:11Z",
-      "last_commit_date": "2026-01-18T13:01:28Z",
+      "last_commit_date": "2026-01-20T14:23:25Z",
       "latest_tag": {
-        "name": "v0.0.4"
+        "name": "v0.0.5"
       },
       "latest_workflow_runs": [
         {
           "name": "pages build and deployment",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/eth-address-generator/actions/runs/21112156750",
-          "head_sha": "c247877aa6ad77fc12c888dd8e036e55ced85f0a",
-          "created_at": "2026-01-18T13:01:32Z"
+          "html_url": "https://github.com/smallyunet/eth-address-generator/actions/runs/21174980426",
+          "head_sha": "54941af5bff2a960a3526ae4e0b29c11bef127f8",
+          "created_at": "2026-01-20T14:23:29Z"
         }
       ],
       "package_info": null,
       "homepage": "http://eag.smallyu.net/",
       "has_pages": true,
-      "commit_count": 18,
+      "commit_count": 19,
       "topics": [],
       "license": null,
       "category": "user_applications"
