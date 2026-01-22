@@ -1,5 +1,5 @@
 {
-  "timestamp": 1769052936188,
+  "timestamp": 1769055835886,
   "repos": [
     {
       "name": "echoevm",
@@ -842,49 +842,49 @@
       "forks_count": 0,
       "open_issues_count": 3,
       "visibility": "public",
-      "updated_at": "2026-01-21T11:49:24Z",
+      "updated_at": "2026-01-22T04:10:37Z",
       "created_at": "2025-12-20T11:28:05Z",
-      "last_commit_date": "2026-01-21T11:49:17Z",
+      "last_commit_date": "2026-01-22T04:10:29Z",
       "latest_tag": {
-        "name": "v0.2.2"
+        "name": "v0.2.3"
       },
       "latest_workflow_runs": [
         {
           "name": "Release",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/vscode-antigravity-hud/actions/runs/21208465186",
-          "head_sha": "e9cd45303483bdaac66da17ab0c1605d3e22c1b2",
-          "created_at": "2026-01-21T11:49:33Z"
+          "html_url": "https://github.com/smallyunet/vscode-antigravity-hud/actions/runs/21235730315",
+          "head_sha": "a3182d9c10bb8013362e4e45b8e1d91fcfdd0259",
+          "created_at": "2026-01-22T04:10:47Z"
         },
         {
           "name": "CI",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/vscode-antigravity-hud/actions/runs/21208459599",
-          "head_sha": "e9cd45303483bdaac66da17ab0c1605d3e22c1b2",
-          "created_at": "2026-01-21T11:49:22Z"
+          "html_url": "https://github.com/smallyunet/vscode-antigravity-hud/actions/runs/21235727152",
+          "head_sha": "a3182d9c10bb8013362e4e45b8e1d91fcfdd0259",
+          "created_at": "2026-01-22T04:10:36Z"
         }
       ],
       "package_info": [
         {
           "type": "vscode",
           "name": "Antigravity HUD",
-          "version": "0.2.2",
+          "version": "0.2.3",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 646
+          "installs": 650
         },
         {
           "type": "openvsx",
           "name": "Antigravity HUD",
-          "version": "0.2.2",
+          "version": "0.2.3",
           "url": "https://open-vsx.org/extension/smallyu/vscode-antigravity-hud",
-          "downloads": 1096
+          "downloads": 1099
         }
       ],
       "homepage": "",
       "has_pages": false,
-      "commit_count": 34,
+      "commit_count": 35,
       "topics": [],
       "license": {
         "key": "mit",
