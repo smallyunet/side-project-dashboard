@@ -1,5 +1,5 @@
 {
-  "timestamp": 1769166368550,
+  "timestamp": 1769170159382,
   "repos": [
     {
       "name": "echoevm",
@@ -308,26 +308,34 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2026-01-12T12:30:45Z",
+      "updated_at": "2026-01-23T12:02:09Z",
       "created_at": "2025-12-31T14:32:38Z",
-      "last_commit_date": "2026-01-12T12:30:38Z",
+      "last_commit_date": "2026-01-23T12:02:01Z",
       "latest_tag": {
-        "name": "v0.0.2"
+        "name": "v0.0.3"
       },
       "latest_workflow_runs": [
         {
           "name": "Rust CI",
           "status": "completed",
           "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/doge-hack/actions/runs/20919433321",
-          "head_sha": "d324c74a540127d1fdcd4525cbd7b256fa414407",
-          "created_at": "2026-01-12T12:30:43Z"
+          "html_url": "https://github.com/smallyunet/doge-hack/actions/runs/21285455903",
+          "head_sha": "de41df692958409d730e14fda3cd568bdac0357b",
+          "created_at": "2026-01-23T12:02:06Z"
+        },
+        {
+          "name": "Deploy Docs (GitHub Pages)",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/doge-hack/actions/runs/21285455889",
+          "head_sha": "de41df692958409d730e14fda3cd568bdac0357b",
+          "created_at": "2026-01-23T12:02:06Z"
         }
       ],
       "package_info": null,
       "homepage": "",
-      "has_pages": false,
-      "commit_count": 4,
+      "has_pages": true,
+      "commit_count": 6,
       "topics": [],
       "license": null,
       "category": "infrastructure"
@@ -634,52 +642,52 @@
       "forks_count": 0,
       "open_issues_count": 1,
       "visibility": "public",
-      "updated_at": "2026-01-12T08:02:37Z",
+      "updated_at": "2026-01-23T11:37:35Z",
       "created_at": "2025-12-16T14:45:49Z",
-      "last_commit_date": "2026-01-12T08:02:28Z",
+      "last_commit_date": "2026-01-23T11:37:27Z",
       "latest_tag": {
-        "name": "v0.0.7"
+        "name": "v0.0.8"
       },
       "latest_workflow_runs": [
         {
           "name": "Publish to NPM",
           "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20912038896",
-          "head_sha": "89ee0d22c2c4e2fa75e9215c96038f99e9047c9b",
-          "created_at": "2026-01-12T08:02:46Z"
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/21284837305",
+          "head_sha": "fb72cca1ea5f59066a53a06625aee26600563c7f",
+          "created_at": "2026-01-23T11:37:39Z"
         },
         {
           "name": "Test",
           "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20912038865",
-          "head_sha": "89ee0d22c2c4e2fa75e9215c96038f99e9047c9b",
-          "created_at": "2026-01-12T08:02:46Z"
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/21284837276",
+          "head_sha": "fb72cca1ea5f59066a53a06625aee26600563c7f",
+          "created_at": "2026-01-23T11:37:39Z"
         },
         {
           "name": ".github/workflows/e2e.yml",
           "status": "completed",
           "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20912038678",
-          "head_sha": "89ee0d22c2c4e2fa75e9215c96038f99e9047c9b",
-          "created_at": "2026-01-12T08:02:45Z"
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/21284837040",
+          "head_sha": "fb72cca1ea5f59066a53a06625aee26600563c7f",
+          "created_at": "2026-01-23T11:37:39Z"
         },
         {
-          "name": "Test",
+          "name": "CI",
           "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20912035041",
-          "head_sha": "89ee0d22c2c4e2fa75e9215c96038f99e9047c9b",
-          "created_at": "2026-01-12T08:02:36Z"
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/21284835018",
+          "head_sha": "fb72cca1ea5f59066a53a06625aee26600563c7f",
+          "created_at": "2026-01-23T11:37:34Z"
         },
         {
           "name": "Documentation",
           "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/20912035040",
-          "head_sha": "89ee0d22c2c4e2fa75e9215c96038f99e9047c9b",
-          "created_at": "2026-01-12T08:02:36Z"
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/21284835006",
+          "head_sha": "fb72cca1ea5f59066a53a06625aee26600563c7f",
+          "created_at": "2026-01-23T11:37:34Z"
         }
       ],
       "package_info": {
@@ -690,7 +698,7 @@
       },
       "homepage": "https://smallyunet.github.io/solana-tx-decoder/",
       "has_pages": true,
-      "commit_count": 30,
+      "commit_count": 31,
       "topics": [],
       "license": {
         "key": "isc",
@@ -879,7 +887,7 @@
           "name": "Antigravity HUD",
           "version": "0.2.4",
           "url": "https://open-vsx.org/extension/smallyu/vscode-antigravity-hud",
-          "downloads": 1297
+          "downloads": 1303
         }
       ],
       "homepage": "",
