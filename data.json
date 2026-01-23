@@ -1,5 +1,5 @@
 {
-  "timestamp": 1769152141005,
+  "timestamp": 1769155642437,
   "repos": [
     {
       "name": "echoevm",
@@ -842,28 +842,28 @@
       "forks_count": 0,
       "open_issues_count": 3,
       "visibility": "public",
-      "updated_at": "2026-01-22T04:10:37Z",
+      "updated_at": "2026-01-23T08:02:12Z",
       "created_at": "2025-12-20T11:28:05Z",
-      "last_commit_date": "2026-01-22T04:10:29Z",
+      "last_commit_date": "2026-01-23T08:02:05Z",
       "latest_tag": {
-        "name": "v0.2.3"
+        "name": "v0.2.4"
       },
       "latest_workflow_runs": [
         {
           "name": "Release",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/vscode-antigravity-hud/actions/runs/21235730315",
-          "head_sha": "a3182d9c10bb8013362e4e45b8e1d91fcfdd0259",
-          "created_at": "2026-01-22T04:10:47Z"
+          "html_url": "https://github.com/smallyunet/vscode-antigravity-hud/actions/runs/21279015818",
+          "head_sha": "7e1855ea1bb9ca910be4cd086ff28c78d6d3b9df",
+          "created_at": "2026-01-23T08:02:29Z"
         },
         {
           "name": "CI",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/vscode-antigravity-hud/actions/runs/21235727152",
-          "head_sha": "a3182d9c10bb8013362e4e45b8e1d91fcfdd0259",
-          "created_at": "2026-01-22T04:10:36Z"
+          "html_url": "https://github.com/smallyunet/vscode-antigravity-hud/actions/runs/21279006708",
+          "head_sha": "7e1855ea1bb9ca910be4cd086ff28c78d6d3b9df",
+          "created_at": "2026-01-23T08:02:11Z"
         }
       ],
       "package_info": [
@@ -877,14 +877,14 @@
         {
           "type": "openvsx",
           "name": "Antigravity HUD",
-          "version": "0.2.3",
+          "version": "0.2.4",
           "url": "https://open-vsx.org/extension/smallyu/vscode-antigravity-hud",
-          "downloads": 1248
+          "downloads": 1249
         }
       ],
       "homepage": "",
       "has_pages": false,
-      "commit_count": 35,
+      "commit_count": 36,
       "topics": [],
       "license": {
         "key": "mit",
