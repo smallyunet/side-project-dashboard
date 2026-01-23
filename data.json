@@ -1,5 +1,5 @@
 {
-  "timestamp": 1769184469578,
+  "timestamp": 1769188159260,
   "repos": [
     {
       "name": "echoevm",
@@ -397,26 +397,26 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2026-01-13T14:31:24Z",
+      "updated_at": "2026-01-23T16:14:36Z",
       "created_at": "2025-12-31T15:16:19Z",
-      "last_commit_date": "2026-01-13T14:31:02Z",
+      "last_commit_date": "2026-01-23T16:14:17Z",
       "latest_tag": {
-        "name": "v0.0.1"
+        "name": "v0.0.2"
       },
       "latest_workflow_runs": [
         {
           "name": "Deploy Documentation",
           "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/lightminer-rust/actions/runs/20960476130",
-          "head_sha": "bf5e6cc79c99152900566967f56da3941ca8da8f",
-          "created_at": "2026-01-13T14:31:06Z"
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/lightminer-rust/actions/runs/21292865573",
+          "head_sha": "e4fc20cb713ca029b114d7b1632738a3fdabe94e",
+          "created_at": "2026-01-23T16:14:22Z"
         }
       ],
       "package_info": null,
       "homepage": "https://smallyunet.github.io/lightminer-rust/",
       "has_pages": true,
-      "commit_count": 5,
+      "commit_count": 6,
       "topics": [],
       "license": null,
       "category": "infrastructure"
@@ -880,14 +880,14 @@
           "name": "Antigravity HUD",
           "version": "0.2.4",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 664
+          "installs": 662
         },
         {
           "type": "openvsx",
           "name": "Antigravity HUD",
           "version": "0.2.4",
           "url": "https://open-vsx.org/extension/smallyu/vscode-antigravity-hud",
-          "downloads": 1327
+          "downloads": 1331
         }
       ],
       "homepage": "",
