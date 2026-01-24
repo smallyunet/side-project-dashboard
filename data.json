@@ -1,5 +1,5 @@
 {
-  "timestamp": 1769222392216,
+  "timestamp": 1769225610230,
   "repos": [
     {
       "name": "echoevm",
@@ -342,36 +342,36 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2026-01-23T15:57:25Z",
+      "updated_at": "2026-01-24T03:00:00Z",
       "created_at": "2025-12-31T14:33:11Z",
-      "last_commit_date": "2026-01-23T15:57:19Z",
+      "last_commit_date": "2026-01-24T02:59:54Z",
       "latest_tag": {
         "name": "v0.0.4"
       },
       "latest_workflow_runs": [
         {
-          "name": "Publish to crates.io",
+          "name": "Format (rustfmt)",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/libdogecoin-rs/actions/runs/21292341687",
-          "head_sha": "c40424e9b574046b84777787304b520f9be52104",
-          "created_at": "2026-01-23T15:57:36Z"
-        },
-        {
-          "name": "Deploy Documentation to GitHub Pages",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/libdogecoin-rs/actions/runs/21292335755",
-          "head_sha": "c40424e9b574046b84777787304b520f9be52104",
-          "created_at": "2026-01-23T15:57:24Z"
+          "html_url": "https://github.com/smallyunet/libdogecoin-rs/actions/runs/21308051890",
+          "head_sha": "21b095a098fff16d429d9a0c87ce28cb1797a4af",
+          "created_at": "2026-01-24T02:59:58Z"
         },
         {
           "name": "CI",
           "status": "completed",
           "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/libdogecoin-rs/actions/runs/21292335749",
-          "head_sha": "c40424e9b574046b84777787304b520f9be52104",
-          "created_at": "2026-01-23T15:57:24Z"
+          "html_url": "https://github.com/smallyunet/libdogecoin-rs/actions/runs/21308051887",
+          "head_sha": "21b095a098fff16d429d9a0c87ce28cb1797a4af",
+          "created_at": "2026-01-24T02:59:58Z"
+        },
+        {
+          "name": "Deploy Documentation to GitHub Pages",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/libdogecoin-rs/actions/runs/21308051884",
+          "head_sha": "21b095a098fff16d429d9a0c87ce28cb1797a4af",
+          "created_at": "2026-01-24T02:59:58Z"
         }
       ],
       "package_info": {
@@ -382,7 +382,7 @@
       },
       "homepage": "https://smallyunet.github.io/libdogecoin-rs/",
       "has_pages": true,
-      "commit_count": 12,
+      "commit_count": 13,
       "topics": [],
       "license": null,
       "category": "infrastructure"
@@ -880,14 +880,14 @@
           "name": "Antigravity HUD",
           "version": "0.2.4",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 664
+          "installs": 662
         },
         {
           "type": "openvsx",
           "name": "Antigravity HUD",
           "version": "0.2.4",
           "url": "https://open-vsx.org/extension/smallyu/vscode-antigravity-hud",
-          "downloads": 1373
+          "downloads": 1374
         }
       ],
       "homepage": "",
