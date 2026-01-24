@@ -1,5 +1,5 @@
 {
-  "timestamp": 1769228185854,
+  "timestamp": 1769231188494,
   "repos": [
     {
       "name": "echoevm",
@@ -195,63 +195,55 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2026-01-17T14:06:16Z",
+      "updated_at": "2026-01-24T04:59:35Z",
       "created_at": "2025-12-16T15:24:29Z",
-      "last_commit_date": "2026-01-17T14:06:05Z",
+      "last_commit_date": "2026-01-24T04:58:07Z",
       "latest_tag": {
-        "name": "v0.0.12"
+        "name": "v0.0.13"
       },
       "latest_workflow_runs": [
         {
           "name": "Publish to Crates.io",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/21095500195",
-          "head_sha": "685f16957131778487d87e5355e408b2abe807fd",
-          "created_at": "2026-01-17T14:08:00Z"
-        },
-        {
-          "name": "Publish to Crates.io",
-          "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/21095478316",
-          "head_sha": "685f16957131778487d87e5355e408b2abe807fd",
-          "created_at": "2026-01-17T14:06:31Z"
+          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/21309570503",
+          "head_sha": "4d9b49906e2a3170d40796b18dd3894474f6676b",
+          "created_at": "2026-01-24T04:59:42Z"
         },
         {
           "name": "CI",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/21095475102",
-          "head_sha": "685f16957131778487d87e5355e408b2abe807fd",
-          "created_at": "2026-01-17T14:06:14Z"
+          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/21309568463",
+          "head_sha": "4d9b49906e2a3170d40796b18dd3894474f6676b",
+          "created_at": "2026-01-24T04:59:34Z"
         },
         {
           "name": "Deploy Docs to GitHub Pages",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/21095475097",
-          "head_sha": "685f16957131778487d87e5355e408b2abe807fd",
-          "created_at": "2026-01-17T14:06:14Z"
+          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/21309568460",
+          "head_sha": "4d9b49906e2a3170d40796b18dd3894474f6676b",
+          "created_at": "2026-01-24T04:59:34Z"
         },
         {
           "name": "Benchmark & Update README",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/21095475096",
-          "head_sha": "685f16957131778487d87e5355e408b2abe807fd",
-          "created_at": "2026-01-17T14:06:14Z"
+          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/21309568454",
+          "head_sha": "4d9b49906e2a3170d40796b18dd3894474f6676b",
+          "created_at": "2026-01-24T04:59:34Z"
         }
       ],
       "package_info": {
         "type": "crates",
         "name": "zabi-rs",
-        "version": "0.0.12",
+        "version": "0.0.13",
         "url": "https://crates.io/crates/zabi-rs"
       },
       "homepage": "https://smallyunet.github.io/zabi-rs/",
       "has_pages": true,
-      "commit_count": 60,
+      "commit_count": 61,
       "topics": [],
       "license": null,
       "category": "infrastructure"
