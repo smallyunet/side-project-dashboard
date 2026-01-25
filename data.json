@@ -1,5 +1,5 @@
 {
-  "timestamp": 1769353521903,
+  "timestamp": 1769357157326,
   "repos": [
     {
       "name": "echoevm",
@@ -51,13 +51,13 @@
       "created_at": "2025-08-31T16:31:07Z",
       "last_commit_date": "2026-01-25T15:05:04Z",
       "latest_tag": {
-        "name": "v0.0.7"
+        "name": "v0.0.8"
       },
       "latest_workflow_runs": [
         {
           "name": "CI",
-          "status": "in_progress",
-          "conclusion": null,
+          "status": "completed",
+          "conclusion": "success",
           "html_url": "https://github.com/smallyunet/ethbft/actions/runs/21334663412",
           "head_sha": "aac77ea8b8d58be2f5ffaf9ee1c904b5cf8621e6",
           "created_at": "2026-01-25T15:05:09Z"
