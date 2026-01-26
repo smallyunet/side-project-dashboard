@@ -1,5 +1,5 @@
 {
-  "timestamp": 1769382335749,
+  "timestamp": 1769387012017,
   "repos": [
     {
       "name": "echoevm",
@@ -473,28 +473,28 @@
       },
       "latest_workflow_runs": [
         {
-          "name": "Publish to PyPI",
+          "name": "pip in / for ruff - Update #1220098430",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/21272937033",
+          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/21342155684",
           "head_sha": "647a9e657a0d6254fd2abe08bdafb0b3ec98968b",
-          "created_at": "2026-01-23T02:57:52Z"
+          "created_at": "2026-01-26T00:18:58Z"
         },
         {
-          "name": "Publish Docs",
+          "name": "github_actions in /. - Update #1220098409",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/21272933569",
+          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/21342155334",
           "head_sha": "647a9e657a0d6254fd2abe08bdafb0b3ec98968b",
-          "created_at": "2026-01-23T02:57:38Z"
+          "created_at": "2026-01-26T00:18:57Z"
         },
         {
-          "name": "CI",
+          "name": "pip in /. - Update #1220098406",
           "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/21272933559",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/21342155332",
           "head_sha": "647a9e657a0d6254fd2abe08bdafb0b3ec98968b",
-          "created_at": "2026-01-23T02:57:38Z"
+          "created_at": "2026-01-26T00:18:57Z"
         }
       ],
       "package_info": {
@@ -896,7 +896,7 @@
           "name": "Antigravity HUD",
           "version": "0.2.4",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 678
+          "installs": 676
         },
         {
           "type": "openvsx",
