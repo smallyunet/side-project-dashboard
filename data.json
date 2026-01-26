@@ -1,5 +1,5 @@
 {
-  "timestamp": 1769421955422,
+  "timestamp": 1769422060690,
   "repos": [
     {
       "name": "echoevm",
@@ -1145,8 +1145,8 @@
       "latest_workflow_runs": [
         {
           "name": "pages build and deployment",
-          "status": "in_progress",
-          "conclusion": null,
+          "status": "completed",
+          "conclusion": "success",
           "html_url": "https://github.com/smallyunet/yinwang-weibo/actions/runs/21353669086",
           "head_sha": "ca71278a2dbf1f907264faa430969310172d5f68",
           "created_at": "2026-01-26T10:04:05Z"
