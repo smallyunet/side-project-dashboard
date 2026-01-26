@@ -27,6 +27,7 @@
         "smallyunet/eth-address-generator",
         "smallyunet/dark20",
         "smallyunet/yinwang-archive",
-        "smallyunet/bitdoge"
+        "smallyunet/bitdoge",
+        "smallyunet/yinwang-weibo"
     ]
 }
