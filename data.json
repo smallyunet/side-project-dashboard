@@ -1,5 +1,5 @@
 {
-  "timestamp": 1769404461318,
+  "timestamp": 1769407805713,
   "repos": [
     {
       "name": "echoevm",
@@ -258,26 +258,26 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2026-01-19T15:25:00Z",
+      "updated_at": "2026-01-26T05:41:06Z",
       "created_at": "2025-12-19T08:40:39Z",
-      "last_commit_date": "2026-01-19T15:24:51Z",
+      "last_commit_date": "2026-01-26T05:41:00Z",
       "latest_tag": {
-        "name": "v0.0.5"
+        "name": "v0.0.6"
       },
       "latest_workflow_runs": [
         {
           "name": "Deploy Docs to GitHub Pages",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/prediction-market-indexer/actions/runs/21142910248",
-          "head_sha": "164deac4cf9bc510a199f034724c2e740b978b13",
-          "created_at": "2026-01-19T15:24:58Z"
+          "html_url": "https://github.com/smallyunet/prediction-market-indexer/actions/runs/21347538034",
+          "head_sha": "e533eb7b775c014f957181379909be34a165d1ca",
+          "created_at": "2026-01-26T05:41:04Z"
         }
       ],
       "package_info": null,
       "homepage": "https://smallyunet.github.io/prediction-market-indexer/",
       "has_pages": true,
-      "commit_count": 11,
+      "commit_count": 12,
       "topics": [],
       "license": null,
       "category": "infrastructure"
@@ -423,34 +423,34 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2026-01-18T13:06:34Z",
+      "updated_at": "2026-01-26T05:22:27Z",
       "created_at": "2025-12-18T16:24:19Z",
-      "last_commit_date": "2026-01-18T13:06:28Z",
+      "last_commit_date": "2026-01-26T05:22:21Z",
       "latest_tag": {
-        "name": "v0.0.4"
+        "name": "v0.0.5"
       },
       "latest_workflow_runs": [
-        {
-          "name": "Documentation",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/the-trapper/actions/runs/21112222645",
-          "head_sha": "b83caee862a973052f95e2b1731f2e7d476f25ad",
-          "created_at": "2026-01-18T13:06:32Z"
-        },
         {
           "name": "Tests",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/the-trapper/actions/runs/21112222633",
-          "head_sha": "b83caee862a973052f95e2b1731f2e7d476f25ad",
-          "created_at": "2026-01-18T13:06:32Z"
+          "html_url": "https://github.com/smallyunet/the-trapper/actions/runs/21347215129",
+          "head_sha": "6942e4ea803492c5b787cbd84cd1b0695f0d3075",
+          "created_at": "2026-01-26T05:22:26Z"
+        },
+        {
+          "name": "Documentation",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/the-trapper/actions/runs/21347215127",
+          "head_sha": "6942e4ea803492c5b787cbd84cd1b0695f0d3075",
+          "created_at": "2026-01-26T05:22:26Z"
         }
       ],
       "package_info": null,
       "homepage": "https://smallyunet.github.io/the-trapper/",
       "has_pages": true,
-      "commit_count": 18,
+      "commit_count": 19,
       "topics": [],
       "license": null,
       "category": "components_sdk"
@@ -904,7 +904,7 @@
           "name": "Antigravity HUD",
           "version": "0.2.4",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 681
+          "installs": 689
         },
         {
           "type": "openvsx",
