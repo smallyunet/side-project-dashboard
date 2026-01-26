@@ -1,5 +1,5 @@
 {
-  "timestamp": 1769401687779,
+  "timestamp": 1769404461318,
   "repos": [
     {
       "name": "echoevm",
@@ -735,31 +735,39 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2026-01-14T14:11:55Z",
+      "updated_at": "2026-01-26T04:56:58Z",
       "created_at": "2025-12-16T02:17:43Z",
-      "last_commit_date": "2026-01-14T14:11:49Z",
+      "last_commit_date": "2026-01-26T04:56:51Z",
       "latest_tag": {
-        "name": "v0.0.6"
+        "name": "v0.0.7"
       },
       "latest_workflow_runs": [
+        {
+          "name": "Publish Package to npmjs",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/psbt-lens/actions/runs/21346786579",
+          "head_sha": "e7ebafee67bf0760e40c716897810ad0c1d75386",
+          "created_at": "2026-01-26T04:57:02Z"
+        },
         {
           "name": "Deploy to GitHub Pages",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/psbt-lens/actions/runs/20997153965",
-          "head_sha": "b5686f661061ecb62343e7d5ca1ba434d5770817",
-          "created_at": "2026-01-14T14:11:53Z"
+          "html_url": "https://github.com/smallyunet/psbt-lens/actions/runs/21346784470",
+          "head_sha": "e7ebafee67bf0760e40c716897810ad0c1d75386",
+          "created_at": "2026-01-26T04:56:56Z"
         }
       ],
       "package_info": {
         "type": "npm",
         "name": "psbt-lens",
-        "version": "0.0.6",
+        "version": "0.0.7",
         "url": "https://www.npmjs.com/package/psbt-lens"
       },
       "homepage": "https://smallyunet.github.io/psbt-lens/",
       "has_pages": true,
-      "commit_count": 16,
+      "commit_count": 17,
       "topics": [],
       "license": null,
       "category": "components_sdk"
@@ -862,11 +870,11 @@
       "html_url": "https://github.com/smallyunet/vscode-antigravity-hud",
       "description": "A lightweight VS Code extension for monitoring Google Antigravity AI IDE model usage quota.",
       "language": "TypeScript",
-      "stargazers_count": 2,
+      "stargazers_count": 1,
       "forks_count": 0,
       "open_issues_count": 3,
       "visibility": "public",
-      "updated_at": "2026-01-23T08:02:12Z",
+      "updated_at": "2026-01-26T05:11:22Z",
       "created_at": "2025-12-20T11:28:05Z",
       "last_commit_date": "2026-01-23T08:02:05Z",
       "latest_tag": {
@@ -896,14 +904,14 @@
           "name": "Antigravity HUD",
           "version": "0.2.4",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 680
+          "installs": 681
         },
         {
           "type": "openvsx",
           "name": "Antigravity HUD",
           "version": "0.2.4",
           "url": "https://open-vsx.org/extension/smallyu/vscode-antigravity-hud",
-          "downloads": 1482
+          "downloads": 1483
         }
       ],
       "homepage": "",
