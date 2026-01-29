@@ -1,5 +1,5 @@
 {
-  "timestamp": 1769696217798,
+  "timestamp": 1769699612454,
   "repos": [
     {
       "name": "echoevm",
@@ -896,7 +896,7 @@
           "name": "Antigravity HUD",
           "version": "0.2.4",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 718
+          "installs": 727
         },
         {
           "type": "openvsx",
@@ -1102,20 +1102,29 @@
       "full_name": "smallyunet/bitdoge",
       "html_url": "https://github.com/smallyunet/bitdoge",
       "description": "A gamified Bitcoin tribute simulating 140 years of history on Ethereum.",
-      "language": "Solidity",
+      "language": "JavaScript",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2026-01-20T15:03:21Z",
+      "updated_at": "2026-01-29T14:39:03Z",
       "created_at": "2026-01-20T14:47:49Z",
-      "last_commit_date": "2026-01-20T15:02:18Z",
+      "last_commit_date": "2026-01-29T14:36:29Z",
       "latest_tag": null,
-      "latest_workflow_runs": [],
+      "latest_workflow_runs": [
+        {
+          "name": "Deploy Web to GitHub Pages",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/bitdoge/actions/runs/21482309443",
+          "head_sha": "3e2c6363da5c1b9e5cb3b69c9c460f13bcd91bd8",
+          "created_at": "2026-01-29T14:36:37Z"
+        }
+      ],
       "package_info": null,
-      "homepage": "",
-      "has_pages": false,
-      "commit_count": 2,
+      "homepage": "https://smallyunet.github.io/bitdoge/",
+      "has_pages": true,
+      "commit_count": 3,
       "topics": [],
       "license": null,
       "category": "user_applications"
