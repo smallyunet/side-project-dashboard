@@ -1,5 +1,5 @@
 {
-  "timestamp": 1770125326928,
+  "timestamp": 1770128393162,
   "repos": [
     {
       "name": "echoevm",
@@ -904,7 +904,7 @@
           "name": "Antigravity HUD",
           "version": "0.2.4",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 772
+          "installs": 774
         },
         {
           "type": "openvsx",
