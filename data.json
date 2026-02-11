@@ -1,5 +1,5 @@
 {
-  "timestamp": 1770823387316,
+  "timestamp": 1770827114516,
   "repos": [
     {
       "name": "echoevm",
@@ -1117,30 +1117,30 @@
       "name": "bitdoge",
       "full_name": "smallyunet/bitdoge",
       "html_url": "https://github.com/smallyunet/bitdoge",
-      "description": "A gamified Bitcoin tribute simulating 140 years of history on Ethereum.",
+      "description": "BitDoge mimics Bitcoin's supply curve on Ethereum.",
       "language": "JavaScript",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2026-02-11T15:17:08Z",
+      "updated_at": "2026-02-11T15:57:52Z",
       "created_at": "2026-01-20T14:47:49Z",
-      "last_commit_date": "2026-02-11T15:16:59Z",
+      "last_commit_date": "2026-02-11T15:57:45Z",
       "latest_tag": null,
       "latest_workflow_runs": [
         {
           "name": "Deploy Web to GitHub Pages",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/bitdoge/actions/runs/21910853683",
-          "head_sha": "c64d63b4260f483e924ac4c54cf9d2d4da9b7abe",
-          "created_at": "2026-02-11T15:17:06Z"
+          "html_url": "https://github.com/smallyunet/bitdoge/actions/runs/21912392546",
+          "head_sha": "6e398ae55cd4f7d6505cbbdcde33f75bc537fccd",
+          "created_at": "2026-02-11T15:57:51Z"
         }
       ],
       "package_info": null,
       "homepage": "https://smallyunet.github.io/bitdoge/",
       "has_pages": true,
-      "commit_count": 9,
+      "commit_count": 13,
       "topics": [],
       "license": null,
       "category": "user_applications"
