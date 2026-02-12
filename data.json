@@ -1,5 +1,5 @@
 {
-  "timestamp": 1770909606311,
+  "timestamp": 1770913316242,
   "repos": [
     {
       "name": "echoevm",
@@ -904,7 +904,7 @@
           "name": "Antigravity HUD",
           "version": "0.2.4",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 825
+          "installs": 824
         },
         {
           "type": "openvsx",
@@ -1123,9 +1123,9 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2026-02-11T15:57:52Z",
+      "updated_at": "2026-02-12T16:04:33Z",
       "created_at": "2026-01-20T14:47:49Z",
-      "last_commit_date": "2026-02-11T15:57:45Z",
+      "last_commit_date": "2026-02-12T16:03:36Z",
       "latest_tag": null,
       "latest_workflow_runs": [
         {
@@ -1140,7 +1140,7 @@
       "package_info": null,
       "homepage": "https://smallyunet.github.io/bitdoge/",
       "has_pages": true,
-      "commit_count": 13,
+      "commit_count": 14,
       "topics": [],
       "license": null,
       "category": "user_applications"
