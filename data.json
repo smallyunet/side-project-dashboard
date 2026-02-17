@@ -1,5 +1,5 @@
 {
-  "timestamp": 1771345251906,
+  "timestamp": 1771349045605,
   "repos": [
     {
       "name": "echoevm",
@@ -40,15 +40,91 @@
     {
       "name": "ethbft",
       "full_name": "smallyunet/ethbft",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/ethbft/commits?per_page=1: 401 Unauthorized",
+      "html_url": "https://github.com/smallyunet/ethbft",
+      "description": "A minimal Ethereum ↔ CometBFT bridge for Engine API orchestration and block production.",
+      "language": "Go",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-01-25T15:05:10Z",
+      "created_at": "2025-08-31T16:31:07Z",
+      "last_commit_date": "2026-01-25T15:05:04Z",
+      "latest_tag": {
+        "name": "v0.0.8"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/ethbft/actions/runs/21334663412",
+          "head_sha": "aac77ea8b8d58be2f5ffaf9ee1c904b5cf8621e6",
+          "created_at": "2026-01-25T15:05:09Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/ethbft/",
+      "has_pages": true,
+      "commit_count": 46,
+      "topics": [],
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
       "category": "infrastructure"
     },
     {
       "name": "etherflow",
       "full_name": "smallyunet/etherflow",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/etherflow/tags?per_page=1: 401 Unauthorized",
+      "html_url": "https://github.com/smallyunet/etherflow",
+      "description": "A lightweight, reorg-aware EVM data indexing framework for Go.",
+      "language": "Go",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-01-24T03:39:28Z",
+      "created_at": "2025-12-13T10:06:19Z",
+      "last_commit_date": "2026-01-24T03:39:21Z",
+      "latest_tag": {
+        "name": "v0.0.6"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "E2E Tests",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/etherflow/actions/runs/21308567768",
+          "head_sha": "756358e4332507cae4b74ab9e1ea5cfdbaabf2f9",
+          "created_at": "2026-01-24T03:39:26Z"
+        },
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/etherflow/actions/runs/21308567764",
+          "head_sha": "756358e4332507cae4b74ab9e1ea5cfdbaabf2f9",
+          "created_at": "2026-01-24T03:39:26Z"
+        },
+        {
+          "name": "Publish Docs",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/etherflow/actions/runs/21308567759",
+          "head_sha": "756358e4332507cae4b74ab9e1ea5cfdbaabf2f9",
+          "created_at": "2026-01-24T03:39:26Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/etherflow/",
+      "has_pages": true,
+      "commit_count": 16,
+      "topics": [],
+      "license": null,
       "category": "infrastructure"
     },
     {
@@ -374,8 +450,70 @@
     {
       "name": "safe-kit",
       "full_name": "smallyunet/safe-kit",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/safe-kit/commits?per_page=1: 401 Unauthorized",
+      "html_url": "https://github.com/smallyunet/safe-kit",
+      "description": "A Python implementation of the Safe Protocol Kit, designed to mirror the official Node.js SDK's developer experience.",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 2,
+      "visibility": "public",
+      "updated_at": "2026-01-23T02:57:40Z",
+      "created_at": "2025-12-12T11:25:11Z",
+      "last_commit_date": "2026-01-23T02:52:40Z",
+      "latest_tag": {
+        "name": "v0.0.14"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "github_actions in /. - Update #1244557282",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/22045827717",
+          "head_sha": "647a9e657a0d6254fd2abe08bdafb0b3ec98968b",
+          "created_at": "2026-02-16T00:16:35Z"
+        },
+        {
+          "name": "pip in / for ruff, mkdocstrings - Update #1244557304",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/22045827708",
+          "head_sha": "647a9e657a0d6254fd2abe08bdafb0b3ec98968b",
+          "created_at": "2026-02-16T00:16:35Z"
+        },
+        {
+          "name": "pip in /. - Update #1244557280",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/22045827655",
+          "head_sha": "647a9e657a0d6254fd2abe08bdafb0b3ec98968b",
+          "created_at": "2026-02-16T00:16:35Z"
+        },
+        {
+          "name": "pip in / for setuptools, ruff, mkdocstrings - Update #1237237728",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/safe-kit/actions/runs/21808067583",
+          "head_sha": "647a9e657a0d6254fd2abe08bdafb0b3ec98968b",
+          "created_at": "2026-02-09T00:17:09Z"
+        }
+      ],
+      "package_info": {
+        "type": "pypi",
+        "name": "safe-kit",
+        "version": "0.0.14",
+        "url": "https://pypi.org/project/safe-kit/"
+      },
+      "homepage": "https://smallyunet.github.io/safe-kit/",
+      "has_pages": true,
+      "commit_count": 67,
+      "topics": [],
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
       "category": "components_sdk"
     },
     {
@@ -450,50 +588,388 @@
     {
       "name": "userop-validator",
       "full_name": "smallyunet/userop-validator",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/userop-validator/releases?per_page=1: 401 Unauthorized",
+      "html_url": "https://github.com/smallyunet/userop-validator",
+      "description": "A robust, EIP-7562 compliant ERC-4337 UserOperation validator.",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-01-24T09:46:51Z",
+      "created_at": "2025-12-13T10:17:00Z",
+      "last_commit_date": "2026-01-24T09:46:44Z",
+      "latest_tag": {
+        "name": "v0.0.10"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Publish to NPM",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/21313176864",
+          "head_sha": "1e01804354c3ffeae2db7f761a68d63ccd1e5cba",
+          "created_at": "2026-01-24T09:47:01Z"
+        },
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/21313173729",
+          "head_sha": "1e01804354c3ffeae2db7f761a68d63ccd1e5cba",
+          "created_at": "2026-01-24T09:46:49Z"
+        },
+        {
+          "name": "Deploy Docs",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/21313173728",
+          "head_sha": "1e01804354c3ffeae2db7f761a68d63ccd1e5cba",
+          "created_at": "2026-01-24T09:46:49Z"
+        },
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/userop-validator/actions/runs/21313173561",
+          "head_sha": "1e01804354c3ffeae2db7f761a68d63ccd1e5cba",
+          "created_at": "2026-01-24T09:46:48Z"
+        }
+      ],
+      "package_info": {
+        "type": "npm",
+        "name": "userop-validator",
+        "version": "0.0.9",
+        "url": "https://www.npmjs.com/package/userop-validator"
+      },
+      "homepage": "https://smallyunet.github.io/userop-validator/",
+      "has_pages": true,
+      "commit_count": 22,
+      "topics": [],
+      "license": null,
       "category": "components_sdk"
     },
     {
-      "name": "solana-tx-parser",
-      "full_name": "smallyunet/solana-tx-parser",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/solana-tx-parser/releases?per_page=1: 401 Unauthorized",
+      "name": "solana-tx-decoder",
+      "full_name": "smallyunet/solana-tx-decoder",
+      "html_url": "https://github.com/smallyunet/solana-tx-decoder",
+      "description": "A robust, extensible TypeScript library for parsing Solana transactions into structured, human-readable data.",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "visibility": "public",
+      "updated_at": "2026-01-23T11:37:35Z",
+      "created_at": "2025-12-16T14:45:49Z",
+      "last_commit_date": "2026-01-23T11:37:27Z",
+      "latest_tag": {
+        "name": "v0.0.8"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Publish to NPM",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/21284837305",
+          "head_sha": "fb72cca1ea5f59066a53a06625aee26600563c7f",
+          "created_at": "2026-01-23T11:37:39Z"
+        },
+        {
+          "name": "Test",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/21284837276",
+          "head_sha": "fb72cca1ea5f59066a53a06625aee26600563c7f",
+          "created_at": "2026-01-23T11:37:39Z"
+        },
+        {
+          "name": ".github/workflows/e2e.yml",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/21284837040",
+          "head_sha": "fb72cca1ea5f59066a53a06625aee26600563c7f",
+          "created_at": "2026-01-23T11:37:39Z"
+        },
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/21284835018",
+          "head_sha": "fb72cca1ea5f59066a53a06625aee26600563c7f",
+          "created_at": "2026-01-23T11:37:34Z"
+        },
+        {
+          "name": "Documentation",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/21284835006",
+          "head_sha": "fb72cca1ea5f59066a53a06625aee26600563c7f",
+          "created_at": "2026-01-23T11:37:34Z"
+        }
+      ],
+      "package_info": {
+        "type": "npm",
+        "name": "solana-tx-decoder",
+        "version": "0.0.7",
+        "url": "https://www.npmjs.com/package/solana-tx-decoder"
+      },
+      "homepage": "https://smallyunet.github.io/solana-tx-decoder/",
+      "has_pages": true,
+      "commit_count": 31,
+      "topics": [],
+      "license": {
+        "key": "isc",
+        "name": "ISC License",
+        "spdx_id": "ISC",
+        "url": "https://api.github.com/licenses/isc",
+        "node_id": "MDc6TGljZW5zZTEw"
+      },
       "category": "components_sdk"
     },
     {
       "name": "psbt-lens",
       "full_name": "smallyunet/psbt-lens",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/psbt-lens/tags?per_page=1: 401 Unauthorized",
+      "html_url": "https://github.com/smallyunet/psbt-lens",
+      "description": "PSBT Lens is a modern, pure client-side visualization and debugging tool for Bitcoin Partially Signed Bitcoin Transactions (PSBTs).",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-01-26T04:56:58Z",
+      "created_at": "2025-12-16T02:17:43Z",
+      "last_commit_date": "2026-01-26T04:56:51Z",
+      "latest_tag": {
+        "name": "v0.0.7"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Publish Package to npmjs",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/psbt-lens/actions/runs/21346786579",
+          "head_sha": "e7ebafee67bf0760e40c716897810ad0c1d75386",
+          "created_at": "2026-01-26T04:57:02Z"
+        },
+        {
+          "name": "Deploy to GitHub Pages",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/psbt-lens/actions/runs/21346784470",
+          "head_sha": "e7ebafee67bf0760e40c716897810ad0c1d75386",
+          "created_at": "2026-01-26T04:56:56Z"
+        }
+      ],
+      "package_info": {
+        "type": "npm",
+        "name": "psbt-lens",
+        "version": "0.0.7",
+        "url": "https://www.npmjs.com/package/psbt-lens"
+      },
+      "homepage": "https://smallyunet.github.io/psbt-lens/",
+      "has_pages": true,
+      "commit_count": 17,
+      "topics": [],
+      "license": null,
       "category": "components_sdk"
     },
     {
       "name": "finder-sight",
       "full_name": "smallyunet/finder-sight",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/finder-sight/releases?per_page=1: 401 Unauthorized",
+      "html_url": "https://github.com/smallyunet/finder-sight",
+      "description": "A macOS app for local reverse image search.",
+      "language": "Python",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-01-08T06:05:45Z",
+      "created_at": "2025-12-13T13:37:31Z",
+      "last_commit_date": "2026-01-08T06:05:36Z",
+      "latest_tag": {
+        "name": "v0.1.0"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Build macOS App",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20807475087",
+          "head_sha": "20222878651fad6d8c428776d2d492c645b5dce7",
+          "created_at": "2026-01-08T06:12:53Z"
+        },
+        {
+          "name": "Build macOS App",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20807320768",
+          "head_sha": "20222878651fad6d8c428776d2d492c645b5dce7",
+          "created_at": "2026-01-08T06:05:43Z"
+        },
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20807320726",
+          "head_sha": "20222878651fad6d8c428776d2d492c645b5dce7",
+          "created_at": "2026-01-08T06:05:43Z"
+        },
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/20807320436",
+          "head_sha": "20222878651fad6d8c428776d2d492c645b5dce7",
+          "created_at": "2026-01-08T06:05:42Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/finder-sight/",
+      "has_pages": true,
+      "commit_count": 58,
+      "topics": [],
+      "license": null,
       "category": "user_applications"
     },
     {
       "name": "pbft-visualizer",
       "full_name": "smallyunet/pbft-visualizer",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/pbft-visualizer/tags?per_page=1: 401 Unauthorized",
+      "html_url": "https://github.com/smallyunet/pbft-visualizer",
+      "description": "An interactive educational tool for visualizing the Practical Byzantine Fault Tolerance (PBFT) consensus protocol phases.",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-01-24T07:35:26Z",
+      "created_at": "2025-11-08T14:53:07Z",
+      "last_commit_date": "2026-01-24T07:35:19Z",
+      "latest_tag": {
+        "name": "v0.0.8"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Deploy to GitHub Pages",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/pbft-visualizer/actions/runs/21311569407",
+          "head_sha": "5cdeb6ab92c539c4e4ffbc103931dd7d346e05dc",
+          "created_at": "2026-01-24T07:35:23Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/pbft-visualizer/",
+      "has_pages": true,
+      "commit_count": 23,
+      "topics": [],
+      "license": null,
       "category": "user_applications"
     },
     {
       "name": "vscode-antigravity-hud",
       "full_name": "smallyunet/vscode-antigravity-hud",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/vscode-antigravity-hud/actions/runs?per_page=5: 401 Unauthorized",
+      "html_url": "https://github.com/smallyunet/vscode-antigravity-hud",
+      "description": "A lightweight VS Code extension for monitoring Google Antigravity AI IDE model usage quota.",
+      "language": "TypeScript",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 3,
+      "visibility": "public",
+      "updated_at": "2026-01-26T05:11:22Z",
+      "created_at": "2025-12-20T11:28:05Z",
+      "last_commit_date": "2026-01-23T08:02:05Z",
+      "latest_tag": {
+        "name": "v0.2.4"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Release",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/vscode-antigravity-hud/actions/runs/21279015818",
+          "head_sha": "7e1855ea1bb9ca910be4cd086ff28c78d6d3b9df",
+          "created_at": "2026-01-23T08:02:29Z"
+        },
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/vscode-antigravity-hud/actions/runs/21279006708",
+          "head_sha": "7e1855ea1bb9ca910be4cd086ff28c78d6d3b9df",
+          "created_at": "2026-01-23T08:02:11Z"
+        }
+      ],
+      "package_info": [
+        {
+          "type": "vscode",
+          "name": "Antigravity HUD",
+          "version": "0.2.4",
+          "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
+          "installs": 852
+        },
+        {
+          "type": "openvsx",
+          "name": "Antigravity HUD",
+          "version": "0.2.4",
+          "url": "https://open-vsx.org/extension/smallyu/vscode-antigravity-hud",
+          "downloads": 1978
+        }
+      ],
+      "homepage": "",
+      "has_pages": false,
+      "commit_count": 36,
+      "topics": [],
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
       "category": "user_applications"
     },
     {
       "name": "konachan-downloader",
       "full_name": "smallyunet/konachan-downloader",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/konachan-downloader/commits?per_page=1: 401 Unauthorized",
+      "html_url": "https://github.com/smallyunet/konachan-downloader",
+      "description": "A professional, multi-threaded Python CLI tool to download images from konachan.",
+      "language": "Python",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2025-12-29T04:58:38Z",
+      "created_at": "2025-12-23T15:47:32Z",
+      "last_commit_date": "2025-12-29T04:58:31Z",
+      "latest_tag": {
+        "name": "v0.0.10"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Publish Docs",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/konachan-downloader/actions/runs/20565217134",
+          "head_sha": "f3ff612d79d93640c2ec80d10b401452c1ea8534",
+          "created_at": "2025-12-29T04:58:36Z"
+        }
+      ],
+      "package_info": {
+        "type": "pypi",
+        "name": "konachan-downloader",
+        "version": "0.0.10",
+        "url": "https://pypi.org/project/konachan-downloader/"
+      },
+      "homepage": "https://smallyunet.github.io/konachan-downloader/",
+      "has_pages": true,
+      "commit_count": 22,
+      "topics": [],
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
       "category": "user_applications"
     },
     {
@@ -598,24 +1074,107 @@
       "category": "user_applications"
     },
     {
-      "name": "yinwang-archive",
-      "full_name": "smallyunet/yinwang-archive",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/yinwang-archive/actions/runs?per_page=5: 401 Unauthorized",
+      "name": "yinwang-blog",
+      "full_name": "smallyunet/yinwang-blog",
+      "html_url": "https://github.com/smallyunet/yinwang-blog",
+      "description": "A comprehensive toolset to archive, preserve, and generate a readable static site for Wang Yin's blog.",
+      "language": "HTML",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-02-10T09:52:31Z",
+      "created_at": "2026-01-18T16:01:34Z",
+      "last_commit_date": "2026-02-09T05:24:35Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/yinwang-blog/actions/runs/21860019527",
+          "head_sha": "f8fc5f6c77f534e8fda58e409b4e64bbb90a9e1f",
+          "created_at": "2026-02-10T09:52:32Z"
+        },
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/yinwang-blog/actions/runs/21813441615",
+          "head_sha": "f8fc5f6c77f534e8fda58e409b4e64bbb90a9e1f",
+          "created_at": "2026-02-09T05:24:50Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/yinwang-archive/",
+      "has_pages": true,
+      "commit_count": 29,
+      "topics": [],
+      "license": null,
       "category": "user_applications"
     },
     {
       "name": "bitdoge",
       "full_name": "smallyunet/bitdoge",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/bitdoge/tags?per_page=1: 401 Unauthorized",
+      "html_url": "https://github.com/smallyunet/bitdoge",
+      "description": "BitDoge mimics Bitcoin's supply curve on Ethereum.",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-02-15T10:30:41Z",
+      "created_at": "2026-01-20T14:47:49Z",
+      "last_commit_date": "2026-02-15T10:30:33Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [
+        {
+          "name": "Deploy Web to GitHub Pages",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/bitdoge/actions/runs/22034115310",
+          "head_sha": "dfc758d0402d496ee09dc49d3d0c32e9647bc2eb",
+          "created_at": "2026-02-15T10:30:39Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/bitdoge/",
+      "has_pages": true,
+      "commit_count": 16,
+      "topics": [],
+      "license": null,
       "category": "user_applications"
     },
     {
       "name": "yinwang-weibo",
       "full_name": "smallyunet/yinwang-weibo",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/yinwang-weibo/releases?per_page=1: 401 Unauthorized",
+      "html_url": "https://github.com/smallyunet/yinwang-weibo",
+      "description": "A comprehensive Weibo archiver that captures full-text content via browser automation and generates a modern, navigable static website.",
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-02-14T08:31:12Z",
+      "created_at": "2026-01-26T09:55:24Z",
+      "last_commit_date": "2026-02-14T08:31:04Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/yinwang-weibo/actions/runs/22014284197",
+          "head_sha": "7026f7ac9aec7fc58e37573061ba239a2013cbbe",
+          "created_at": "2026-02-14T08:31:09Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/yinwang-weibo/",
+      "has_pages": true,
+      "commit_count": 17,
+      "topics": [],
+      "license": null,
       "category": "user_applications"
     }
   ]
