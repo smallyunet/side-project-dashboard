@@ -1,11 +1,40 @@
 {
-  "timestamp": 1771427975107,
+  "timestamp": 1771431742205,
   "repos": [
     {
       "name": "echoevm",
       "full_name": "smallyunet/echoevm",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/echoevm/commits?per_page=1: 401 Unauthorized",
+      "html_url": "https://github.com/smallyunet/echoevm",
+      "description": "EchoEVM is a minimal, pedagogical Ethereum Virtual Machine (EVM) implementation in Go, designed for transparent bytecode execution and experimentation.",
+      "language": "Go",
+      "stargazers_count": 3,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-02-09T11:17:25Z",
+      "created_at": "2025-05-10T17:28:13Z",
+      "last_commit_date": "2026-02-09T11:17:18Z",
+      "latest_tag": {
+        "name": "v0.0.18"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/echoevm/actions/runs/21822923051",
+          "head_sha": "de8bfa4ab85494f983abd3e2bd18d7dc2ab88aaf",
+          "created_at": "2026-02-09T11:17:25Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "http://echoevm.com/",
+      "has_pages": true,
+      "commit_count": 89,
+      "topics": [
+        "evm"
+      ],
+      "license": null,
       "category": "infrastructure"
     },
     {
@@ -290,8 +319,56 @@
     {
       "name": "libdogecoin-rs",
       "full_name": "smallyunet/libdogecoin-rs",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/libdogecoin-rs/tags?per_page=1: 401 Unauthorized",
+      "html_url": "https://github.com/smallyunet/libdogecoin-rs",
+      "description": "libdogecoin-rs: A safe, idiomatic Rust wrapper for libdogecoin, abstracting away unsafe C FFI.",
+      "language": "Rust",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-01-24T03:00:00Z",
+      "created_at": "2025-12-31T14:33:11Z",
+      "last_commit_date": "2026-01-24T02:59:54Z",
+      "latest_tag": {
+        "name": "v0.0.4"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Format (rustfmt)",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/libdogecoin-rs/actions/runs/21308051890",
+          "head_sha": "21b095a098fff16d429d9a0c87ce28cb1797a4af",
+          "created_at": "2026-01-24T02:59:58Z"
+        },
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/libdogecoin-rs/actions/runs/21308051887",
+          "head_sha": "21b095a098fff16d429d9a0c87ce28cb1797a4af",
+          "created_at": "2026-01-24T02:59:58Z"
+        },
+        {
+          "name": "Deploy Documentation to GitHub Pages",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/libdogecoin-rs/actions/runs/21308051884",
+          "head_sha": "21b095a098fff16d429d9a0c87ce28cb1797a4af",
+          "created_at": "2026-01-24T02:59:58Z"
+        }
+      ],
+      "package_info": {
+        "type": "crates",
+        "name": "libdogecoin-rs",
+        "version": "0.0.4",
+        "url": "https://crates.io/crates/libdogecoin-rs"
+      },
+      "homepage": "https://smallyunet.github.io/libdogecoin-rs/",
+      "has_pages": true,
+      "commit_count": 13,
+      "topics": [],
+      "license": null,
       "category": "infrastructure"
     },
     {
@@ -572,10 +649,80 @@
       "category": "components_sdk"
     },
     {
-      "name": "solana-tx-parser",
-      "full_name": "smallyunet/solana-tx-parser",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/solana-tx-parser: 401 Unauthorized",
+      "name": "solana-tx-decoder",
+      "full_name": "smallyunet/solana-tx-decoder",
+      "html_url": "https://github.com/smallyunet/solana-tx-decoder",
+      "description": "A robust, extensible TypeScript library for parsing Solana transactions into structured, human-readable data.",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "visibility": "public",
+      "updated_at": "2026-01-23T11:37:35Z",
+      "created_at": "2025-12-16T14:45:49Z",
+      "last_commit_date": "2026-01-23T11:37:27Z",
+      "latest_tag": {
+        "name": "v0.0.8"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Publish to NPM",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/21284837305",
+          "head_sha": "fb72cca1ea5f59066a53a06625aee26600563c7f",
+          "created_at": "2026-01-23T11:37:39Z"
+        },
+        {
+          "name": "Test",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/21284837276",
+          "head_sha": "fb72cca1ea5f59066a53a06625aee26600563c7f",
+          "created_at": "2026-01-23T11:37:39Z"
+        },
+        {
+          "name": ".github/workflows/e2e.yml",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/21284837040",
+          "head_sha": "fb72cca1ea5f59066a53a06625aee26600563c7f",
+          "created_at": "2026-01-23T11:37:39Z"
+        },
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/21284835018",
+          "head_sha": "fb72cca1ea5f59066a53a06625aee26600563c7f",
+          "created_at": "2026-01-23T11:37:34Z"
+        },
+        {
+          "name": "Documentation",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/21284835006",
+          "head_sha": "fb72cca1ea5f59066a53a06625aee26600563c7f",
+          "created_at": "2026-01-23T11:37:34Z"
+        }
+      ],
+      "package_info": {
+        "type": "npm",
+        "name": "solana-tx-decoder",
+        "version": "0.0.7",
+        "url": "https://www.npmjs.com/package/solana-tx-decoder"
+      },
+      "homepage": "https://smallyunet.github.io/solana-tx-decoder/",
+      "has_pages": true,
+      "commit_count": 31,
+      "topics": [],
+      "license": {
+        "key": "isc",
+        "name": "ISC License",
+        "spdx_id": "ISC",
+        "url": "https://api.github.com/licenses/isc",
+        "node_id": "MDc6TGljZW5zZTEw"
+      },
       "category": "components_sdk"
     },
     {
@@ -757,7 +904,7 @@
           "name": "Antigravity HUD",
           "version": "0.2.4",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 857
+          "installs": 854
         },
         {
           "type": "openvsx",
@@ -853,8 +1000,35 @@
     {
       "name": "eth-address-generator",
       "full_name": "smallyunet/eth-address-generator",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/eth-address-generator/commits?per_page=1: 401 Unauthorized",
+      "html_url": "https://github.com/smallyunet/eth-address-generator",
+      "description": "Web app for generating Ethereum addresses from private keys or randomly.",
+      "language": "JavaScript",
+      "stargazers_count": 2,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-01-20T14:24:39Z",
+      "created_at": "2023-04-21T09:37:11Z",
+      "last_commit_date": "2026-01-20T14:23:25Z",
+      "latest_tag": {
+        "name": "v0.0.5"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/eth-address-generator/actions/runs/21174980426",
+          "head_sha": "54941af5bff2a960a3526ae4e0b29c11bef127f8",
+          "created_at": "2026-01-20T14:23:29Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "http://eag.smallyu.net/",
+      "has_pages": true,
+      "commit_count": 19,
+      "topics": [],
+      "license": null,
       "category": "user_applications"
     },
     {
@@ -942,8 +1116,33 @@
     {
       "name": "bitdoge",
       "full_name": "smallyunet/bitdoge",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/bitdoge/actions/runs?per_page=5: 401 Unauthorized",
+      "html_url": "https://github.com/smallyunet/bitdoge",
+      "description": "BitDoge mimics Bitcoin's supply curve on Ethereum.",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-02-15T10:30:41Z",
+      "created_at": "2026-01-20T14:47:49Z",
+      "last_commit_date": "2026-02-15T10:30:33Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [
+        {
+          "name": "Deploy Web to GitHub Pages",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/bitdoge/actions/runs/22034115310",
+          "head_sha": "dfc758d0402d496ee09dc49d3d0c32e9647bc2eb",
+          "created_at": "2026-02-15T10:30:39Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/bitdoge/",
+      "has_pages": true,
+      "commit_count": 16,
+      "topics": [],
+      "license": null,
       "category": "user_applications"
     },
     {
