@@ -1,5 +1,5 @@
 {
-  "timestamp": 1771943009244,
+  "timestamp": 1771946537564,
   "repos": [
     {
       "name": "echoevm",
@@ -904,7 +904,7 @@
           "name": "Antigravity HUD",
           "version": "0.2.4",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 890
+          "installs": 887
         },
         {
           "type": "openvsx",
@@ -1074,17 +1074,75 @@
       "category": "user_applications"
     },
     {
-      "name": "yinwang-archive",
-      "full_name": "smallyunet/yinwang-archive",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/yinwang-archive/actions/runs?per_page=5: 502 Bad Gateway",
+      "name": "yinwang-blog",
+      "full_name": "smallyunet/yinwang-blog",
+      "html_url": "https://github.com/smallyunet/yinwang-blog",
+      "description": "A comprehensive toolset to archive, preserve, and generate a readable static site for Wang Yin's blog.",
+      "language": "HTML",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-02-10T09:52:31Z",
+      "created_at": "2026-01-18T16:01:34Z",
+      "last_commit_date": "2026-02-09T05:24:35Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/yinwang-blog/actions/runs/21860019527",
+          "head_sha": "f8fc5f6c77f534e8fda58e409b4e64bbb90a9e1f",
+          "created_at": "2026-02-10T09:52:32Z"
+        },
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/yinwang-blog/actions/runs/21813441615",
+          "head_sha": "f8fc5f6c77f534e8fda58e409b4e64bbb90a9e1f",
+          "created_at": "2026-02-09T05:24:50Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/yinwang-archive/",
+      "has_pages": true,
+      "commit_count": 29,
+      "topics": [],
+      "license": null,
       "category": "user_applications"
     },
     {
       "name": "bitdoge",
       "full_name": "smallyunet/bitdoge",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/bitdoge: 502 Bad Gateway",
+      "html_url": "https://github.com/smallyunet/bitdoge",
+      "description": "BitDoge mimics Bitcoin's supply curve on Ethereum.",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-02-15T10:30:41Z",
+      "created_at": "2026-01-20T14:47:49Z",
+      "last_commit_date": "2026-02-15T10:30:33Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [
+        {
+          "name": "Deploy Web to GitHub Pages",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/bitdoge/actions/runs/22034115310",
+          "head_sha": "dfc758d0402d496ee09dc49d3d0c32e9647bc2eb",
+          "created_at": "2026-02-15T10:30:39Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/bitdoge/",
+      "has_pages": true,
+      "commit_count": 16,
+      "topics": [],
+      "license": null,
       "category": "user_applications"
     },
     {
