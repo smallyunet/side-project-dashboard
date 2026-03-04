@@ -1,11 +1,40 @@
 {
-  "timestamp": 1772626383546,
+  "timestamp": 1772630798167,
   "repos": [
     {
       "name": "echoevm",
       "full_name": "smallyunet/echoevm",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/echoevm/actions/runs?per_page=5: 502 Bad Gateway",
+      "html_url": "https://github.com/smallyunet/echoevm",
+      "description": "EchoEVM is a minimal, pedagogical Ethereum Virtual Machine (EVM) implementation in Go, designed for transparent bytecode execution and experimentation.",
+      "language": "Go",
+      "stargazers_count": 3,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-02-09T11:17:25Z",
+      "created_at": "2025-05-10T17:28:13Z",
+      "last_commit_date": "2026-02-09T11:17:18Z",
+      "latest_tag": {
+        "name": "v0.0.18"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/echoevm/actions/runs/21822923051",
+          "head_sha": "de8bfa4ab85494f983abd3e2bd18d7dc2ab88aaf",
+          "created_at": "2026-02-09T11:17:25Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "http://echoevm.com/",
+      "has_pages": true,
+      "commit_count": 89,
+      "topics": [
+        "evm"
+      ],
+      "license": null,
       "category": "infrastructure"
     },
     {
@@ -101,15 +130,114 @@
     {
       "name": "go-cggmp-tss",
       "full_name": "smallyunet/go-cggmp-tss",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/go-cggmp-tss/actions/runs?per_page=5: 502 Bad Gateway",
+      "html_url": "https://github.com/smallyunet/go-cggmp-tss",
+      "description": "A pure Go implementation of the CGGMP21 Threshold Signature Scheme (TSS) protocol.",
+      "language": "Go",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-02-10T07:58:36Z",
+      "created_at": "2025-12-13T03:39:51Z",
+      "last_commit_date": "2026-01-24T01:46:36Z",
+      "latest_tag": {
+        "name": "v0.0.9"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/21307047157",
+          "head_sha": "7fbbc6abd8e85cb221a143e1d4a5b63d9b5e1e60",
+          "created_at": "2026-01-24T01:46:42Z"
+        },
+        {
+          "name": "Publish docs via GitHub Pages",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/21307047152",
+          "head_sha": "7fbbc6abd8e85cb221a143e1d4a5b63d9b5e1e60",
+          "created_at": "2026-01-24T01:46:42Z"
+        },
+        {
+          "name": "Benchmarks",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/21307047147",
+          "head_sha": "7fbbc6abd8e85cb221a143e1d4a5b63d9b5e1e60",
+          "created_at": "2026-01-24T01:46:42Z"
+        },
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/21307046961",
+          "head_sha": "7fbbc6abd8e85cb221a143e1d4a5b63d9b5e1e60",
+          "created_at": "2026-01-24T01:46:41Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/go-cggmp-tss/",
+      "has_pages": true,
+      "commit_count": 24,
+      "topics": [],
+      "license": null,
       "category": "infrastructure"
     },
     {
       "name": "zabi-rs",
       "full_name": "smallyunet/zabi-rs",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/zabi-rs/tags?per_page=1: 502 Bad Gateway",
+      "html_url": "https://github.com/smallyunet/zabi-rs",
+      "description": "Zero-allocation, no_std EVM ABI decoder for high-performance Rust applications.",
+      "language": "Rust",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-01-27T12:24:45Z",
+      "created_at": "2025-12-16T15:24:29Z",
+      "last_commit_date": "2026-01-27T12:24:38Z",
+      "latest_tag": {
+        "name": "v0.0.13"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Deploy Docs to GitHub Pages",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/21397076351",
+          "head_sha": "53a03852a6f960d7fd1b1d842c700d1bad2f70c4",
+          "created_at": "2026-01-27T12:24:43Z"
+        },
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/21397076341",
+          "head_sha": "53a03852a6f960d7fd1b1d842c700d1bad2f70c4",
+          "created_at": "2026-01-27T12:24:43Z"
+        },
+        {
+          "name": "Benchmark & Update README",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/21397076340",
+          "head_sha": "53a03852a6f960d7fd1b1d842c700d1bad2f70c4",
+          "created_at": "2026-01-27T12:24:43Z"
+        }
+      ],
+      "package_info": {
+        "type": "crates",
+        "name": "zabi-rs",
+        "version": "0.0.13",
+        "url": "https://crates.io/crates/zabi-rs"
+      },
+      "homepage": "https://smallyunet.github.io/zabi-rs/",
+      "has_pages": true,
+      "commit_count": 62,
+      "topics": [],
+      "license": null,
       "category": "infrastructure"
     },
     {
@@ -946,10 +1074,43 @@
       "category": "user_applications"
     },
     {
-      "name": "yinwang-archive",
-      "full_name": "smallyunet/yinwang-archive",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/yinwang-archive: 502 Bad Gateway",
+      "name": "yinwang-blog",
+      "full_name": "smallyunet/yinwang-blog",
+      "html_url": "https://github.com/smallyunet/yinwang-blog",
+      "description": "A comprehensive toolset to archive, preserve, and generate a readable static site for Wang Yin's blog.",
+      "language": "HTML",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-02-10T09:52:31Z",
+      "created_at": "2026-01-18T16:01:34Z",
+      "last_commit_date": "2026-02-09T05:24:35Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/yinwang-blog/actions/runs/21860019527",
+          "head_sha": "f8fc5f6c77f534e8fda58e409b4e64bbb90a9e1f",
+          "created_at": "2026-02-10T09:52:32Z"
+        },
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/yinwang-blog/actions/runs/21813441615",
+          "head_sha": "f8fc5f6c77f534e8fda58e409b4e64bbb90a9e1f",
+          "created_at": "2026-02-09T05:24:50Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/yinwang-archive/",
+      "has_pages": true,
+      "commit_count": 29,
+      "topics": [],
+      "license": null,
       "category": "user_applications"
     },
     {
