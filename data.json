@@ -1,5 +1,5 @@
 {
-  "timestamp": 1772717366597,
+  "timestamp": 1772720346256,
   "repos": [
     {
       "name": "echoevm",
@@ -243,8 +243,35 @@
     {
       "name": "prediction-market-indexer",
       "full_name": "smallyunet/prediction-market-indexer",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/prediction-market-indexer/commits?per_page=1: 502 Bad Gateway",
+      "html_url": "https://github.com/smallyunet/prediction-market-indexer",
+      "description": "A high-performance, SQL-based indexer and API for prediction market analytics, built with Ponder and Hono.",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-01-26T05:41:06Z",
+      "created_at": "2025-12-19T08:40:39Z",
+      "last_commit_date": "2026-01-26T05:41:00Z",
+      "latest_tag": {
+        "name": "v0.0.6"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Deploy Docs to GitHub Pages",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/prediction-market-indexer/actions/runs/21347538034",
+          "head_sha": "e533eb7b775c014f957181379909be34a165d1ca",
+          "created_at": "2026-01-26T05:41:04Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/prediction-market-indexer/",
+      "has_pages": true,
+      "commit_count": 12,
+      "topics": [],
+      "license": null,
       "category": "infrastructure"
     },
     {
@@ -622,10 +649,80 @@
       "category": "components_sdk"
     },
     {
-      "name": "solana-tx-parser",
-      "full_name": "smallyunet/solana-tx-parser",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/solana-tx-parser/tags?per_page=1: 502 Bad Gateway",
+      "name": "solana-tx-decoder",
+      "full_name": "smallyunet/solana-tx-decoder",
+      "html_url": "https://github.com/smallyunet/solana-tx-decoder",
+      "description": "A robust, extensible TypeScript library for parsing Solana transactions into structured, human-readable data.",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 1,
+      "visibility": "public",
+      "updated_at": "2026-01-23T11:37:35Z",
+      "created_at": "2025-12-16T14:45:49Z",
+      "last_commit_date": "2026-01-23T11:37:27Z",
+      "latest_tag": {
+        "name": "v0.0.8"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Publish to NPM",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/21284837305",
+          "head_sha": "fb72cca1ea5f59066a53a06625aee26600563c7f",
+          "created_at": "2026-01-23T11:37:39Z"
+        },
+        {
+          "name": "Test",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/21284837276",
+          "head_sha": "fb72cca1ea5f59066a53a06625aee26600563c7f",
+          "created_at": "2026-01-23T11:37:39Z"
+        },
+        {
+          "name": ".github/workflows/e2e.yml",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/21284837040",
+          "head_sha": "fb72cca1ea5f59066a53a06625aee26600563c7f",
+          "created_at": "2026-01-23T11:37:39Z"
+        },
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/21284835018",
+          "head_sha": "fb72cca1ea5f59066a53a06625aee26600563c7f",
+          "created_at": "2026-01-23T11:37:34Z"
+        },
+        {
+          "name": "Documentation",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/solana-tx-decoder/actions/runs/21284835006",
+          "head_sha": "fb72cca1ea5f59066a53a06625aee26600563c7f",
+          "created_at": "2026-01-23T11:37:34Z"
+        }
+      ],
+      "package_info": {
+        "type": "npm",
+        "name": "solana-tx-decoder",
+        "version": "0.0.7",
+        "url": "https://www.npmjs.com/package/solana-tx-decoder"
+      },
+      "homepage": "https://smallyunet.github.io/solana-tx-decoder/",
+      "has_pages": true,
+      "commit_count": 31,
+      "topics": [],
+      "license": {
+        "key": "isc",
+        "name": "ISC License",
+        "spdx_id": "ISC",
+        "url": "https://api.github.com/licenses/isc",
+        "node_id": "MDc6TGljZW5zZTEw"
+      },
       "category": "components_sdk"
     },
     {
@@ -807,7 +904,7 @@
           "name": "Antigravity HUD",
           "version": "0.2.4",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 935
+          "installs": 937
         },
         {
           "type": "openvsx",
