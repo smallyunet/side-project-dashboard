@@ -1,5 +1,5 @@
 {
-  "timestamp": 1773238816101,
+  "timestamp": 1773242318041,
   "repos": [
     {
       "name": "echoevm",
@@ -277,43 +277,8 @@
     {
       "name": "doge-hack",
       "full_name": "smallyunet/doge-hack",
-      "html_url": "https://github.com/smallyunet/doge-hack",
-      "description": "Doge-Hack uses the standard rust-bitcoin library to create valid Dogecoin transactions, proving Doge is just Bitcoin in a yellow vest.",
-      "language": "Rust",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "visibility": "public",
-      "updated_at": "2026-01-23T12:02:09Z",
-      "created_at": "2025-12-31T14:32:38Z",
-      "last_commit_date": "2026-01-23T12:02:01Z",
-      "latest_tag": {
-        "name": "v0.0.3"
-      },
-      "latest_workflow_runs": [
-        {
-          "name": "Rust CI",
-          "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/doge-hack/actions/runs/21285455903",
-          "head_sha": "de41df692958409d730e14fda3cd568bdac0357b",
-          "created_at": "2026-01-23T12:02:06Z"
-        },
-        {
-          "name": "Deploy Docs (GitHub Pages)",
-          "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/doge-hack/actions/runs/21285455889",
-          "head_sha": "de41df692958409d730e14fda3cd568bdac0357b",
-          "created_at": "2026-01-23T12:02:06Z"
-        }
-      ],
-      "package_info": null,
-      "homepage": "",
-      "has_pages": true,
-      "commit_count": 6,
-      "topics": [],
-      "license": null,
+      "error": true,
+      "error_message": "fetch failed",
       "category": "infrastructure"
     },
     {
