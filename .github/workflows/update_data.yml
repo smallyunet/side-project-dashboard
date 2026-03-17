@@ -1,8 +1,8 @@
 name: Update Dashboard Data
 
 on:
-  schedule:
-    - cron: '0 * * * *' # Run every hour
+  # schedule:
+  #   - cron: '0 * * * *' # Run every hour
   workflow_dispatch:
   push:
     branches:
