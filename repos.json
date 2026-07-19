@@ -2,21 +2,23 @@
     "infrastructure": [
         "smallyunet/echoevm",
         "smallyunet/ethbft",
-        "smallyunet/etherflow",
-        "smallyunet/go-cggmp-tss",
-        "smallyunet/zabi-rs",
         "smallyunet/prediction-market-indexer",
-        "smallyunet/doge-hack",
-        "smallyunet/libdogecoin-rs",
         "smallyunet/lightminer-rust",
         "smallyunet/memory-mcp-server"
     ],
-    "components_sdk": [
-        "smallyunet/the-trapper",
+    "libraries_sdk": [
+        "smallyunet/etherflow",
+        "smallyunet/go-cggmp-tss",
+        "smallyunet/zabi-rs",
+        "smallyunet/libdogecoin-rs",
         "smallyunet/safe-kit",
         "smallyunet/privy-wallet-kit",
         "smallyunet/userop-validator",
-        "smallyunet/solana-tx-parser",
+        "smallyunet/solana-tx-parser"
+    ],
+    "developer_tools": [
+        "smallyunet/doge-hack",
+        "smallyunet/the-trapper",
         "smallyunet/psbt-lens",
         "smallyunet/erc20-multichain-deployer",
         "smallyunet/defi-invariant-lab"
