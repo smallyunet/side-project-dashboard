@@ -8,7 +8,8 @@
         "smallyunet/prediction-market-indexer",
         "smallyunet/doge-hack",
         "smallyunet/libdogecoin-rs",
-        "smallyunet/lightminer-rust"
+        "smallyunet/lightminer-rust",
+        "smallyunet/memory-mcp-server"
     ],
     "components_sdk": [
         "smallyunet/the-trapper",
@@ -16,7 +17,9 @@
         "smallyunet/privy-wallet-kit",
         "smallyunet/userop-validator",
         "smallyunet/solana-tx-parser",
-        "smallyunet/psbt-lens"
+        "smallyunet/psbt-lens",
+        "smallyunet/erc20-multichain-deployer",
+        "smallyunet/defi-invariant-lab"
     ],
     "user_applications": [
         "smallyunet/finder-sight",
@@ -26,8 +29,14 @@
         "smallyunet/chatgpt-visualizer",
         "smallyunet/eth-address-generator",
         "smallyunet/dark20",
-        "smallyunet/yinwang-archive",
         "smallyunet/bitdoge",
-        "smallyunet/yinwang-weibo"
+        "smallyunet/polymarket-leaderboard-x",
+        "smallyunet/btc.wedding",
+        "smallyunet/poly-rewards",
+        "smallyunet/poly-elon",
+        "smallyunet/ai-notifier",
+        "smallyunet/polymarket-builder",
+        "smallyunet/hyper-funding",
+        "smallyunet/codex-notch"
     ]
 }
