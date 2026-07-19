@@ -1,5 +1,5 @@
 {
-  "timestamp": 1784477005798,
+  "timestamp": 1784477523754,
   "repos": [
     {
       "name": "echoevm",
@@ -420,6 +420,34 @@
       "category": "infrastructure"
     },
     {
+      "name": "memory-mcp-server",
+      "full_name": "smallyunet/memory-mcp-server",
+      "html_url": "https://github.com/smallyunet/memory-mcp-server",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2025-11-08T04:13:42Z",
+      "created_at": "2025-11-07T15:07:37Z",
+      "last_commit_date": "2025-11-08T04:13:33Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [],
+      "package_info": {
+        "type": "pypi",
+        "name": "memory-mcp-server",
+        "version": "0.2.0",
+        "url": "https://pypi.org/project/memory-mcp-server/"
+      },
+      "homepage": null,
+      "has_pages": false,
+      "commit_count": 5,
+      "topics": [],
+      "license": null,
+      "category": "infrastructure"
+    },
+    {
       "name": "the-trapper",
       "full_name": "smallyunet/the-trapper",
       "html_url": "https://github.com/smallyunet/the-trapper",
@@ -779,6 +807,80 @@
       "category": "components_sdk"
     },
     {
+      "name": "erc20-multichain-deployer",
+      "full_name": "smallyunet/erc20-multichain-deployer",
+      "html_url": "https://github.com/smallyunet/erc20-multichain-deployer",
+      "description": null,
+      "language": "Solidity",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2025-10-19T13:10:54Z",
+      "created_at": "2025-09-18T02:19:04Z",
+      "last_commit_date": "2025-10-19T13:10:47Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/erc20-multichain-deployer/actions/runs/18630904308",
+          "head_sha": "9aaca901b197aa919f9d616b0d35abefd855688c",
+          "created_at": "2025-10-19T13:10:52Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": null,
+      "has_pages": false,
+      "commit_count": 8,
+      "topics": [],
+      "license": null,
+      "category": "components_sdk"
+    },
+    {
+      "name": "defi-invariant-lab",
+      "full_name": "smallyunet/defi-invariant-lab",
+      "html_url": "https://github.com/smallyunet/defi-invariant-lab",
+      "description": null,
+      "language": "Solidity",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2025-08-21T11:24:02Z",
+      "created_at": "2025-08-20T09:51:18Z",
+      "last_commit_date": "2025-08-21T11:23:56Z",
+      "latest_tag": {
+        "name": "v0.0.4"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/defi-invariant-lab/actions/runs/17125478788",
+          "head_sha": "acc4f15acad5d95d9ffab072886361154dc33c3d",
+          "created_at": "2025-08-21T11:24:13Z"
+        },
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/defi-invariant-lab/actions/runs/17125474784",
+          "head_sha": "acc4f15acad5d95d9ffab072886361154dc33c3d",
+          "created_at": "2025-08-21T11:24:01Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": null,
+      "has_pages": false,
+      "commit_count": 6,
+      "topics": [],
+      "license": null,
+      "category": "components_sdk"
+    },
+    {
       "name": "finder-sight",
       "full_name": "smallyunet/finder-sight",
       "html_url": "https://github.com/smallyunet/finder-sight",
@@ -910,7 +1012,7 @@
           "name": "Antigravity HUD",
           "version": "0.2.4",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 1440
+          "installs": 1442
         },
         {
           "type": "openvsx",
@@ -1080,38 +1182,6 @@
       "category": "user_applications"
     },
     {
-      "name": "yinwang-blog",
-      "full_name": "smallyunet/yinwang-blog",
-      "html_url": "https://github.com/smallyunet/yinwang-blog",
-      "description": "A comprehensive toolset to archive, preserve, and generate a readable static site for Wang Yin's blog.",
-      "language": "HTML",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "visibility": "public",
-      "updated_at": "2026-07-18T07:20:14Z",
-      "created_at": "2026-01-18T16:01:34Z",
-      "last_commit_date": "2026-07-18T07:19:38Z",
-      "latest_tag": null,
-      "latest_workflow_runs": [
-        {
-          "name": "pages build and deployment",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/yinwang-blog/actions/runs/29635548786",
-          "head_sha": "dfd49464b281aff3763cc76842a82a77a9a39b3c",
-          "created_at": "2026-07-18T07:19:52Z"
-        }
-      ],
-      "package_info": null,
-      "homepage": "https://smallyunet.github.io/yinwang-blog/",
-      "has_pages": true,
-      "commit_count": 30,
-      "topics": [],
-      "license": null,
-      "category": "user_applications"
-    },
-    {
       "name": "bitdoge",
       "full_name": "smallyunet/bitdoge",
       "html_url": "https://github.com/smallyunet/bitdoge",
@@ -1144,35 +1214,248 @@
       "category": "user_applications"
     },
     {
-      "name": "yinwang-weibo",
-      "full_name": "smallyunet/yinwang-weibo",
-      "html_url": "https://github.com/smallyunet/yinwang-weibo",
-      "description": "A comprehensive Weibo archiver that captures full-text content via browser automation and generates a modern, navigable static website.",
-      "language": "Python",
+      "name": "polymarket-leaderboard-x",
+      "full_name": "smallyunet/polymarket-leaderboard-x",
+      "html_url": "https://github.com/smallyunet/polymarket-leaderboard-x",
+      "description": null,
+      "language": "TypeScript",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2026-07-19T08:24:09Z",
-      "created_at": "2026-01-26T09:55:24Z",
-      "last_commit_date": "2026-07-19T08:23:58Z",
+      "updated_at": "2026-07-19T04:29:51Z",
+      "created_at": "2026-06-22T07:38:46Z",
+      "last_commit_date": "2026-07-19T04:29:05Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [
+        {
+          "name": "Collect and Deploy",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/polymarket-leaderboard-x/actions/runs/29673355409",
+          "head_sha": "40c0f915db46e1015660627c49632b79e914c34d",
+          "created_at": "2026-07-19T04:27:55Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "http://polyx.dark20.xyz/",
+      "has_pages": true,
+      "commit_count": 40,
+      "topics": [],
+      "license": null,
+      "category": "user_applications"
+    },
+    {
+      "name": "btc.wedding",
+      "full_name": "smallyunet/btc.wedding",
+      "html_url": "https://github.com/smallyunet/btc.wedding",
+      "description": null,
+      "language": "CSS",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-07-19T10:24:39Z",
+      "created_at": "2026-05-30T13:31:19Z",
+      "last_commit_date": "2026-07-14T08:34:50Z",
       "latest_tag": null,
       "latest_workflow_runs": [
         {
           "name": "pages build and deployment",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/yinwang-weibo/actions/runs/29679759029",
-          "head_sha": "d24c13ede1b21819d24d56e2ba7aada89f981a92",
-          "created_at": "2026-07-19T08:24:07Z"
+          "html_url": "https://github.com/smallyunet/btc.wedding/actions/runs/29318535160",
+          "head_sha": "ddf973fd3766b06effb4e029302ce539bbb6a951",
+          "created_at": "2026-07-14T08:34:53Z"
         }
       ],
       "package_info": null,
-      "homepage": "https://smallyunet.github.io/yinwang-weibo/",
+      "homepage": "http://btc.wedding/",
       "has_pages": true,
-      "commit_count": 103,
+      "commit_count": 34,
       "topics": [],
       "license": null,
+      "category": "user_applications"
+    },
+    {
+      "name": "poly-rewards",
+      "full_name": "smallyunet/poly-rewards",
+      "html_url": "https://github.com/smallyunet/poly-rewards",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-07-06T01:19:09Z",
+      "created_at": "2026-07-05T04:29:24Z",
+      "last_commit_date": "2026-07-06T01:19:02Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [],
+      "package_info": null,
+      "homepage": "https://r.dark20.xyz/",
+      "has_pages": false,
+      "commit_count": 26,
+      "topics": [],
+      "license": null,
+      "category": "user_applications"
+    },
+    {
+      "name": "poly-elon",
+      "full_name": "smallyunet/poly-elon",
+      "html_url": "https://github.com/smallyunet/poly-elon",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-07-12T02:52:21Z",
+      "created_at": "2026-06-16T07:42:32Z",
+      "last_commit_date": "2026-07-01T01:30:01Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [],
+      "package_info": null,
+      "homepage": null,
+      "has_pages": false,
+      "commit_count": 85,
+      "topics": [],
+      "license": null,
+      "category": "user_applications"
+    },
+    {
+      "name": "ai-notifier",
+      "full_name": "smallyunet/ai-notifier",
+      "html_url": "https://github.com/smallyunet/ai-notifier",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-07-19T13:12:39Z",
+      "created_at": "2026-06-16T06:58:10Z",
+      "last_commit_date": "2026-06-19T06:45:42Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [],
+      "package_info": null,
+      "homepage": null,
+      "has_pages": false,
+      "commit_count": 8,
+      "topics": [],
+      "license": null,
+      "category": "user_applications"
+    },
+    {
+      "name": "polymarket-builder",
+      "full_name": "smallyunet/polymarket-builder",
+      "html_url": "https://github.com/smallyunet/polymarket-builder",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-06-17T03:47:20Z",
+      "created_at": "2026-06-11T08:08:16Z",
+      "last_commit_date": "2026-06-17T03:47:13Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/polymarket-builder/actions/runs/27664408944",
+          "head_sha": "6999c33af01c459eb2108dec14270d756666586f",
+          "created_at": "2026-06-17T03:47:18Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "http://poly.dark20.xyz/",
+      "has_pages": true,
+      "commit_count": 23,
+      "topics": [],
+      "license": null,
+      "category": "user_applications"
+    },
+    {
+      "name": "hyper-funding",
+      "full_name": "smallyunet/hyper-funding",
+      "html_url": "https://github.com/smallyunet/hyper-funding",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-07-19T13:13:10Z",
+      "created_at": "2026-06-12T08:04:04Z",
+      "last_commit_date": "2026-06-12T11:05:44Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/hyper-funding/actions/runs/27411787694",
+          "head_sha": "2ee59bfa03e9baa8f4bc8de846b1f0e655296531",
+          "created_at": "2026-06-12T11:05:50Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "http://hyper.dark20.xyz/",
+      "has_pages": true,
+      "commit_count": 11,
+      "topics": [],
+      "license": null,
+      "category": "user_applications"
+    },
+    {
+      "name": "codex-notch",
+      "full_name": "smallyunet/codex-notch",
+      "html_url": "https://github.com/smallyunet/codex-notch",
+      "description": "Native macOS notch activity for ChatGPT Codex tasks and weekly quota",
+      "language": "Swift",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-07-19T15:48:29Z",
+      "created_at": "2026-07-19T14:18:06Z",
+      "last_commit_date": "2026-07-19T15:48:20Z",
+      "latest_tag": {
+        "name": "v0.4.0"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Release",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/codex-notch/actions/runs/29693623034",
+          "head_sha": "254274639808298b889ad5959be4678662ebe997",
+          "created_at": "2026-07-19T15:49:43Z"
+        },
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/codex-notch/actions/runs/29693581158",
+          "head_sha": "254274639808298b889ad5959be4678662ebe997",
+          "created_at": "2026-07-19T15:48:28Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": null,
+      "has_pages": false,
+      "commit_count": 102,
+      "topics": [],
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
       "category": "user_applications"
     }
   ]
