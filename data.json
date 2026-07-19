@@ -1,5 +1,5 @@
 {
-  "timestamp": 1784477523754,
+  "timestamp": 1784478648478,
   "repos": [
     {
       "name": "echoevm",
@@ -108,153 +108,6 @@
       "category": "infrastructure"
     },
     {
-      "name": "etherflow",
-      "full_name": "smallyunet/etherflow",
-      "html_url": "https://github.com/smallyunet/etherflow",
-      "description": "A lightweight, reorg-aware EVM data indexing framework for Go.",
-      "language": "Go",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "visibility": "public",
-      "updated_at": "2026-01-24T03:39:28Z",
-      "created_at": "2025-12-13T10:06:19Z",
-      "last_commit_date": "2026-01-24T03:39:21Z",
-      "latest_tag": {
-        "name": "v0.0.6"
-      },
-      "latest_workflow_runs": [
-        {
-          "name": "E2E Tests",
-          "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/etherflow/actions/runs/21308567768",
-          "head_sha": "756358e4332507cae4b74ab9e1ea5cfdbaabf2f9",
-          "created_at": "2026-01-24T03:39:26Z"
-        },
-        {
-          "name": "CI",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/etherflow/actions/runs/21308567764",
-          "head_sha": "756358e4332507cae4b74ab9e1ea5cfdbaabf2f9",
-          "created_at": "2026-01-24T03:39:26Z"
-        },
-        {
-          "name": "Publish Docs",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/etherflow/actions/runs/21308567759",
-          "head_sha": "756358e4332507cae4b74ab9e1ea5cfdbaabf2f9",
-          "created_at": "2026-01-24T03:39:26Z"
-        }
-      ],
-      "package_info": null,
-      "homepage": "https://smallyunet.github.io/etherflow/",
-      "has_pages": true,
-      "commit_count": 16,
-      "topics": [],
-      "license": null,
-      "category": "infrastructure"
-    },
-    {
-      "name": "go-cggmp-tss",
-      "full_name": "smallyunet/go-cggmp-tss",
-      "html_url": "https://github.com/smallyunet/go-cggmp-tss",
-      "description": "A pure Go implementation of the CGGMP21 Threshold Signature Scheme (TSS) protocol.",
-      "language": "Go",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "visibility": "public",
-      "updated_at": "2026-03-15T15:59:19Z",
-      "created_at": "2025-12-13T03:39:51Z",
-      "last_commit_date": "2026-03-15T15:59:13Z",
-      "latest_tag": {
-        "name": "v0.0.9"
-      },
-      "latest_workflow_runs": [
-        {
-          "name": "Benchmarks",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/23113933666",
-          "head_sha": "df25e97714c45a0e3789bc5017e7a77e5c5a055a",
-          "created_at": "2026-03-15T15:59:17Z"
-        },
-        {
-          "name": "CI",
-          "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/23113933658",
-          "head_sha": "df25e97714c45a0e3789bc5017e7a77e5c5a055a",
-          "created_at": "2026-03-15T15:59:17Z"
-        },
-        {
-          "name": "Publish docs via GitHub Pages",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/23113933653",
-          "head_sha": "df25e97714c45a0e3789bc5017e7a77e5c5a055a",
-          "created_at": "2026-03-15T15:59:17Z"
-        },
-        {
-          "name": "pages build and deployment",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/23113933497",
-          "head_sha": "df25e97714c45a0e3789bc5017e7a77e5c5a055a",
-          "created_at": "2026-03-15T15:59:17Z"
-        }
-      ],
-      "package_info": null,
-      "homepage": "https://smallyunet.github.io/go-cggmp-tss/",
-      "has_pages": true,
-      "commit_count": 25,
-      "topics": [],
-      "license": null,
-      "category": "infrastructure"
-    },
-    {
-      "name": "zabi-rs",
-      "full_name": "smallyunet/zabi-rs",
-      "html_url": "https://github.com/smallyunet/zabi-rs",
-      "description": "Zero-allocation, no_std EVM ABI decoder for high-performance Rust applications.",
-      "language": "Rust",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "visibility": "public",
-      "updated_at": "2026-03-15T15:53:28Z",
-      "created_at": "2025-12-16T15:24:29Z",
-      "last_commit_date": "2026-03-15T15:53:25Z",
-      "latest_tag": {
-        "name": "v0.0.13"
-      },
-      "latest_workflow_runs": [
-        {
-          "name": "Benchmark & Update README",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/23113829725",
-          "head_sha": "b82a02ff089a300d7af7aa1a061090c89ad0bce8",
-          "created_at": "2026-03-15T15:53:05Z"
-        }
-      ],
-      "package_info": {
-        "type": "crates",
-        "name": "zabi-rs",
-        "version": "0.0.13",
-        "url": "https://crates.io/crates/zabi-rs"
-      },
-      "homepage": "https://smallyunet.github.io/zabi-rs/",
-      "has_pages": true,
-      "commit_count": 64,
-      "topics": [],
-      "license": null,
-      "category": "infrastructure"
-    },
-    {
       "name": "prediction-market-indexer",
       "full_name": "smallyunet/prediction-market-indexer",
       "html_url": "https://github.com/smallyunet/prediction-market-indexer",
@@ -284,103 +137,6 @@
       "homepage": "https://smallyunet.github.io/prediction-market-indexer/",
       "has_pages": true,
       "commit_count": 12,
-      "topics": [],
-      "license": null,
-      "category": "infrastructure"
-    },
-    {
-      "name": "doge-hack",
-      "full_name": "smallyunet/doge-hack",
-      "html_url": "https://github.com/smallyunet/doge-hack",
-      "description": "Doge-Hack uses the standard rust-bitcoin library to create valid Dogecoin transactions, proving Doge is just Bitcoin in a yellow vest.",
-      "language": "Rust",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "visibility": "public",
-      "updated_at": "2026-01-23T12:02:09Z",
-      "created_at": "2025-12-31T14:32:38Z",
-      "last_commit_date": "2026-01-23T12:02:01Z",
-      "latest_tag": {
-        "name": "v0.0.3"
-      },
-      "latest_workflow_runs": [
-        {
-          "name": "Rust CI",
-          "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/doge-hack/actions/runs/21285455903",
-          "head_sha": "de41df692958409d730e14fda3cd568bdac0357b",
-          "created_at": "2026-01-23T12:02:06Z"
-        },
-        {
-          "name": "Deploy Docs (GitHub Pages)",
-          "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/doge-hack/actions/runs/21285455889",
-          "head_sha": "de41df692958409d730e14fda3cd568bdac0357b",
-          "created_at": "2026-01-23T12:02:06Z"
-        }
-      ],
-      "package_info": null,
-      "homepage": "",
-      "has_pages": true,
-      "commit_count": 6,
-      "topics": [],
-      "license": null,
-      "category": "infrastructure"
-    },
-    {
-      "name": "libdogecoin-rs",
-      "full_name": "smallyunet/libdogecoin-rs",
-      "html_url": "https://github.com/smallyunet/libdogecoin-rs",
-      "description": "libdogecoin-rs: A safe, idiomatic Rust wrapper for libdogecoin, abstracting away unsafe C FFI.",
-      "language": "Rust",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "open_issues_count": 0,
-      "visibility": "public",
-      "updated_at": "2026-01-24T03:00:00Z",
-      "created_at": "2025-12-31T14:33:11Z",
-      "last_commit_date": "2026-01-24T02:59:54Z",
-      "latest_tag": {
-        "name": "v0.0.4"
-      },
-      "latest_workflow_runs": [
-        {
-          "name": "Format (rustfmt)",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/libdogecoin-rs/actions/runs/21308051890",
-          "head_sha": "21b095a098fff16d429d9a0c87ce28cb1797a4af",
-          "created_at": "2026-01-24T02:59:58Z"
-        },
-        {
-          "name": "CI",
-          "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/libdogecoin-rs/actions/runs/21308051887",
-          "head_sha": "21b095a098fff16d429d9a0c87ce28cb1797a4af",
-          "created_at": "2026-01-24T02:59:58Z"
-        },
-        {
-          "name": "Deploy Documentation to GitHub Pages",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/libdogecoin-rs/actions/runs/21308051884",
-          "head_sha": "21b095a098fff16d429d9a0c87ce28cb1797a4af",
-          "created_at": "2026-01-24T02:59:58Z"
-        }
-      ],
-      "package_info": {
-        "type": "crates",
-        "name": "libdogecoin-rs",
-        "version": "0.0.4",
-        "url": "https://crates.io/crates/libdogecoin-rs"
-      },
-      "homepage": "https://smallyunet.github.io/libdogecoin-rs/",
-      "has_pages": true,
-      "commit_count": 13,
       "topics": [],
       "license": null,
       "category": "infrastructure"
@@ -448,46 +204,206 @@
       "category": "infrastructure"
     },
     {
-      "name": "the-trapper",
-      "full_name": "smallyunet/the-trapper",
-      "html_url": "https://github.com/smallyunet/the-trapper",
-      "description": "An educational collection of EVM honeypots designed to deceive and trap sophisticated attackers.",
-      "language": "Solidity",
+      "name": "etherflow",
+      "full_name": "smallyunet/etherflow",
+      "html_url": "https://github.com/smallyunet/etherflow",
+      "description": "A lightweight, reorg-aware EVM data indexing framework for Go.",
+      "language": "Go",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2026-01-26T05:22:27Z",
-      "created_at": "2025-12-18T16:24:19Z",
-      "last_commit_date": "2026-01-26T05:22:21Z",
+      "updated_at": "2026-01-24T03:39:28Z",
+      "created_at": "2025-12-13T10:06:19Z",
+      "last_commit_date": "2026-01-24T03:39:21Z",
       "latest_tag": {
-        "name": "v0.0.5"
+        "name": "v0.0.6"
       },
       "latest_workflow_runs": [
         {
-          "name": "Tests",
+          "name": "E2E Tests",
           "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/the-trapper/actions/runs/21347215129",
-          "head_sha": "6942e4ea803492c5b787cbd84cd1b0695f0d3075",
-          "created_at": "2026-01-26T05:22:26Z"
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/etherflow/actions/runs/21308567768",
+          "head_sha": "756358e4332507cae4b74ab9e1ea5cfdbaabf2f9",
+          "created_at": "2026-01-24T03:39:26Z"
         },
         {
-          "name": "Documentation",
+          "name": "CI",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/the-trapper/actions/runs/21347215127",
-          "head_sha": "6942e4ea803492c5b787cbd84cd1b0695f0d3075",
-          "created_at": "2026-01-26T05:22:26Z"
+          "html_url": "https://github.com/smallyunet/etherflow/actions/runs/21308567764",
+          "head_sha": "756358e4332507cae4b74ab9e1ea5cfdbaabf2f9",
+          "created_at": "2026-01-24T03:39:26Z"
+        },
+        {
+          "name": "Publish Docs",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/etherflow/actions/runs/21308567759",
+          "head_sha": "756358e4332507cae4b74ab9e1ea5cfdbaabf2f9",
+          "created_at": "2026-01-24T03:39:26Z"
         }
       ],
       "package_info": null,
-      "homepage": "https://smallyunet.github.io/the-trapper/",
+      "homepage": "https://smallyunet.github.io/etherflow/",
       "has_pages": true,
-      "commit_count": 19,
+      "commit_count": 16,
       "topics": [],
       "license": null,
-      "category": "components_sdk"
+      "category": "libraries_sdk"
+    },
+    {
+      "name": "go-cggmp-tss",
+      "full_name": "smallyunet/go-cggmp-tss",
+      "html_url": "https://github.com/smallyunet/go-cggmp-tss",
+      "description": "A pure Go implementation of the CGGMP21 Threshold Signature Scheme (TSS) protocol.",
+      "language": "Go",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-03-15T15:59:19Z",
+      "created_at": "2025-12-13T03:39:51Z",
+      "last_commit_date": "2026-03-15T15:59:13Z",
+      "latest_tag": {
+        "name": "v0.0.9"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Benchmarks",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/23113933666",
+          "head_sha": "df25e97714c45a0e3789bc5017e7a77e5c5a055a",
+          "created_at": "2026-03-15T15:59:17Z"
+        },
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/23113933658",
+          "head_sha": "df25e97714c45a0e3789bc5017e7a77e5c5a055a",
+          "created_at": "2026-03-15T15:59:17Z"
+        },
+        {
+          "name": "Publish docs via GitHub Pages",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/23113933653",
+          "head_sha": "df25e97714c45a0e3789bc5017e7a77e5c5a055a",
+          "created_at": "2026-03-15T15:59:17Z"
+        },
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/23113933497",
+          "head_sha": "df25e97714c45a0e3789bc5017e7a77e5c5a055a",
+          "created_at": "2026-03-15T15:59:17Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/go-cggmp-tss/",
+      "has_pages": true,
+      "commit_count": 25,
+      "topics": [],
+      "license": null,
+      "category": "libraries_sdk"
+    },
+    {
+      "name": "zabi-rs",
+      "full_name": "smallyunet/zabi-rs",
+      "html_url": "https://github.com/smallyunet/zabi-rs",
+      "description": "Zero-allocation, no_std EVM ABI decoder for high-performance Rust applications.",
+      "language": "Rust",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-03-15T15:53:28Z",
+      "created_at": "2025-12-16T15:24:29Z",
+      "last_commit_date": "2026-03-15T15:53:25Z",
+      "latest_tag": {
+        "name": "v0.0.13"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Benchmark & Update README",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/23113829725",
+          "head_sha": "b82a02ff089a300d7af7aa1a061090c89ad0bce8",
+          "created_at": "2026-03-15T15:53:05Z"
+        }
+      ],
+      "package_info": {
+        "type": "crates",
+        "name": "zabi-rs",
+        "version": "0.0.13",
+        "url": "https://crates.io/crates/zabi-rs"
+      },
+      "homepage": "https://smallyunet.github.io/zabi-rs/",
+      "has_pages": true,
+      "commit_count": 64,
+      "topics": [],
+      "license": null,
+      "category": "libraries_sdk"
+    },
+    {
+      "name": "libdogecoin-rs",
+      "full_name": "smallyunet/libdogecoin-rs",
+      "html_url": "https://github.com/smallyunet/libdogecoin-rs",
+      "description": "libdogecoin-rs: A safe, idiomatic Rust wrapper for libdogecoin, abstracting away unsafe C FFI.",
+      "language": "Rust",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-01-24T03:00:00Z",
+      "created_at": "2025-12-31T14:33:11Z",
+      "last_commit_date": "2026-01-24T02:59:54Z",
+      "latest_tag": {
+        "name": "v0.0.4"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Format (rustfmt)",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/libdogecoin-rs/actions/runs/21308051890",
+          "head_sha": "21b095a098fff16d429d9a0c87ce28cb1797a4af",
+          "created_at": "2026-01-24T02:59:58Z"
+        },
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/libdogecoin-rs/actions/runs/21308051887",
+          "head_sha": "21b095a098fff16d429d9a0c87ce28cb1797a4af",
+          "created_at": "2026-01-24T02:59:58Z"
+        },
+        {
+          "name": "Deploy Documentation to GitHub Pages",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/libdogecoin-rs/actions/runs/21308051884",
+          "head_sha": "21b095a098fff16d429d9a0c87ce28cb1797a4af",
+          "created_at": "2026-01-24T02:59:58Z"
+        }
+      ],
+      "package_info": {
+        "type": "crates",
+        "name": "libdogecoin-rs",
+        "version": "0.0.4",
+        "url": "https://crates.io/crates/libdogecoin-rs"
+      },
+      "homepage": "https://smallyunet.github.io/libdogecoin-rs/",
+      "has_pages": true,
+      "commit_count": 13,
+      "topics": [],
+      "license": null,
+      "category": "libraries_sdk"
     },
     {
       "name": "safe-kit",
@@ -548,7 +464,7 @@
         "url": "https://api.github.com/licenses/mit",
         "node_id": "MDc6TGljZW5zZTEz"
       },
-      "category": "components_sdk"
+      "category": "libraries_sdk"
     },
     {
       "name": "privy-wallet-kit",
@@ -617,7 +533,7 @@
         "url": "https://api.github.com/licenses/mit",
         "node_id": "MDc6TGljZW5zZTEz"
       },
-      "category": "components_sdk"
+      "category": "libraries_sdk"
     },
     {
       "name": "userop-validator",
@@ -680,7 +596,7 @@
       "commit_count": 22,
       "topics": [],
       "license": null,
-      "category": "components_sdk"
+      "category": "libraries_sdk"
     },
     {
       "name": "solana-tx-decoder",
@@ -757,7 +673,91 @@
         "url": "https://api.github.com/licenses/isc",
         "node_id": "MDc6TGljZW5zZTEw"
       },
-      "category": "components_sdk"
+      "category": "libraries_sdk"
+    },
+    {
+      "name": "doge-hack",
+      "full_name": "smallyunet/doge-hack",
+      "html_url": "https://github.com/smallyunet/doge-hack",
+      "description": "Doge-Hack uses the standard rust-bitcoin library to create valid Dogecoin transactions, proving Doge is just Bitcoin in a yellow vest.",
+      "language": "Rust",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-01-23T12:02:09Z",
+      "created_at": "2025-12-31T14:32:38Z",
+      "last_commit_date": "2026-01-23T12:02:01Z",
+      "latest_tag": {
+        "name": "v0.0.3"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Rust CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/doge-hack/actions/runs/21285455903",
+          "head_sha": "de41df692958409d730e14fda3cd568bdac0357b",
+          "created_at": "2026-01-23T12:02:06Z"
+        },
+        {
+          "name": "Deploy Docs (GitHub Pages)",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/doge-hack/actions/runs/21285455889",
+          "head_sha": "de41df692958409d730e14fda3cd568bdac0357b",
+          "created_at": "2026-01-23T12:02:06Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "",
+      "has_pages": true,
+      "commit_count": 6,
+      "topics": [],
+      "license": null,
+      "category": "developer_tools"
+    },
+    {
+      "name": "the-trapper",
+      "full_name": "smallyunet/the-trapper",
+      "html_url": "https://github.com/smallyunet/the-trapper",
+      "description": "An educational collection of EVM honeypots designed to deceive and trap sophisticated attackers.",
+      "language": "Solidity",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-01-26T05:22:27Z",
+      "created_at": "2025-12-18T16:24:19Z",
+      "last_commit_date": "2026-01-26T05:22:21Z",
+      "latest_tag": {
+        "name": "v0.0.5"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Tests",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/the-trapper/actions/runs/21347215129",
+          "head_sha": "6942e4ea803492c5b787cbd84cd1b0695f0d3075",
+          "created_at": "2026-01-26T05:22:26Z"
+        },
+        {
+          "name": "Documentation",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/the-trapper/actions/runs/21347215127",
+          "head_sha": "6942e4ea803492c5b787cbd84cd1b0695f0d3075",
+          "created_at": "2026-01-26T05:22:26Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/the-trapper/",
+      "has_pages": true,
+      "commit_count": 19,
+      "topics": [],
+      "license": null,
+      "category": "developer_tools"
     },
     {
       "name": "psbt-lens",
@@ -804,7 +804,7 @@
       "commit_count": 17,
       "topics": [],
       "license": null,
-      "category": "components_sdk"
+      "category": "developer_tools"
     },
     {
       "name": "erc20-multichain-deployer",
@@ -836,7 +836,7 @@
       "commit_count": 8,
       "topics": [],
       "license": null,
-      "category": "components_sdk"
+      "category": "developer_tools"
     },
     {
       "name": "defi-invariant-lab",
@@ -878,7 +878,7 @@
       "commit_count": 6,
       "topics": [],
       "license": null,
-      "category": "components_sdk"
+      "category": "developer_tools"
     },
     {
       "name": "finder-sight",
@@ -1012,14 +1012,14 @@
           "name": "Antigravity HUD",
           "version": "0.2.4",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 1442
+          "installs": 1443
         },
         {
           "type": "openvsx",
           "name": "Antigravity HUD",
           "version": "0.3.0",
           "url": "https://open-vsx.org/extension/smallyu/vscode-antigravity-hud",
-          "downloads": 6640
+          "downloads": 6644
         }
       ],
       "homepage": "",
