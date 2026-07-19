@@ -1,8 +1,9 @@
 name: Update Dashboard Data
 
 on:
-  # schedule:
-  #   - cron: '0 * * * *' # Run every hour
+  schedule:
+    # GitHub Actions cron uses UTC. Runs at 02:17, 08:17, 14:17, and 20:17 Beijing time.
+    - cron: '17 */6 * * *'
   workflow_dispatch:
   push:
     branches:
