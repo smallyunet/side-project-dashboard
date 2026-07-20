@@ -1,60 +1,325 @@
 {
-  "timestamp": 1784509134641,
+  "timestamp": 1784522315088,
   "repos": [
     {
       "name": "echoevm",
       "full_name": "smallyunet/echoevm",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/echoevm/releases?per_page=1: 503 Service Unavailable",
+      "html_url": "https://github.com/smallyunet/echoevm",
+      "description": "EchoEVM is a minimal, pedagogical Ethereum Virtual Machine (EVM) implementation in Go, designed for transparent bytecode execution and experimentation.",
+      "language": "Go",
+      "stargazers_count": 3,
+      "forks_count": 1,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-07-19T12:32:47Z",
+      "created_at": "2025-05-10T17:28:13Z",
+      "last_commit_date": "2026-07-19T12:32:27Z",
+      "latest_tag": {
+        "name": "v0.0.21"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Graph Update: go_modules in /. #1466528771",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/echoevm/actions/runs/29687190265",
+          "head_sha": "1ee921a16039d93cba7d686835b7b241bb37a5a7",
+          "created_at": "2026-07-19T12:32:48Z"
+        },
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/echoevm/actions/runs/29687188963",
+          "head_sha": "1ee921a16039d93cba7d686835b7b241bb37a5a7",
+          "created_at": "2026-07-19T12:32:45Z"
+        },
+        {
+          "name": "Deploy Documentation",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/echoevm/actions/runs/29687188961",
+          "head_sha": "1ee921a16039d93cba7d686835b7b241bb37a5a7",
+          "created_at": "2026-07-19T12:32:45Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/echoevm/",
+      "has_pages": true,
+      "commit_count": 93,
+      "topics": [
+        "evm"
+      ],
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
       "category": "infrastructure"
     },
     {
       "name": "ethbft",
       "full_name": "smallyunet/ethbft",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/ethbft/releases?per_page=1: 503 Service Unavailable",
+      "html_url": "https://github.com/smallyunet/ethbft",
+      "description": "A minimal Ethereum ↔ CometBFT bridge for Engine API orchestration and block production.",
+      "language": "Go",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-07-19T11:53:52Z",
+      "created_at": "2025-08-31T16:31:07Z",
+      "last_commit_date": "2026-07-19T11:53:18Z",
+      "latest_tag": {
+        "name": "v0.1.0"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Deploy Documentation",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/ethbft/actions/runs/29685969760",
+          "head_sha": "c0dc1e1d330cdf7ba5b3cd9a8ad35d37971dbc5a",
+          "created_at": "2026-07-19T11:53:41Z"
+        },
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/ethbft/actions/runs/29685969752",
+          "head_sha": "c0dc1e1d330cdf7ba5b3cd9a8ad35d37971dbc5a",
+          "created_at": "2026-07-19T11:53:41Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/ethbft/",
+      "has_pages": true,
+      "commit_count": 49,
+      "topics": [],
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
       "category": "infrastructure"
     },
     {
       "name": "prediction-market-indexer",
       "full_name": "smallyunet/prediction-market-indexer",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/prediction-market-indexer/releases?per_page=1: 503 Service Unavailable",
+      "html_url": "https://github.com/smallyunet/prediction-market-indexer",
+      "description": "A high-performance, SQL-based indexer and API for prediction market analytics, built with Ponder and Hono.",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-01-26T05:41:06Z",
+      "created_at": "2025-12-19T08:40:39Z",
+      "last_commit_date": "2026-01-26T05:41:00Z",
+      "latest_tag": {
+        "name": "v0.0.6"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Deploy Docs to GitHub Pages",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/prediction-market-indexer/actions/runs/21347538034",
+          "head_sha": "e533eb7b775c014f957181379909be34a165d1ca",
+          "created_at": "2026-01-26T05:41:04Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/prediction-market-indexer/",
+      "has_pages": true,
+      "commit_count": 12,
+      "topics": [],
+      "license": null,
       "category": "infrastructure"
     },
     {
       "name": "lightminer-rust",
       "full_name": "smallyunet/lightminer-rust",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/lightminer-rust/releases?per_page=1: 503 Service Unavailable",
-      "category": "infrastructure"
-    },
-    {
-      "name": "memory-mcp-server",
-      "full_name": "smallyunet/memory-mcp-server",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/memory-mcp-server/releases?per_page=1: 503 Service Unavailable",
+      "html_url": "https://github.com/smallyunet/lightminer-rust",
+      "description": "A lightweight, modular, and educational cryptocurrency mining client built in Rust from scratch to demonstrate the Stratum V1 protocol.",
+      "language": "Rust",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-01-25T07:48:11Z",
+      "created_at": "2025-12-31T15:16:19Z",
+      "last_commit_date": "2026-01-25T07:48:05Z",
+      "latest_tag": {
+        "name": "v0.0.8"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Deploy Documentation",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/lightminer-rust/actions/runs/21329185896",
+          "head_sha": "6df1a5c6d7213cb85efc9b6f6a53bfa41e378214",
+          "created_at": "2026-01-25T07:48:10Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/lightminer-rust/",
+      "has_pages": true,
+      "commit_count": 15,
+      "topics": [],
+      "license": null,
       "category": "infrastructure"
     },
     {
       "name": "etherflow",
       "full_name": "smallyunet/etherflow",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/etherflow/releases?per_page=1: 503 Service Unavailable",
+      "html_url": "https://github.com/smallyunet/etherflow",
+      "description": "A lightweight, reorg-aware EVM data indexing framework for Go.",
+      "language": "Go",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-01-24T03:39:28Z",
+      "created_at": "2025-12-13T10:06:19Z",
+      "last_commit_date": "2026-01-24T03:39:21Z",
+      "latest_tag": {
+        "name": "v0.0.6"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "E2E Tests",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/etherflow/actions/runs/21308567768",
+          "head_sha": "756358e4332507cae4b74ab9e1ea5cfdbaabf2f9",
+          "created_at": "2026-01-24T03:39:26Z"
+        },
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/etherflow/actions/runs/21308567764",
+          "head_sha": "756358e4332507cae4b74ab9e1ea5cfdbaabf2f9",
+          "created_at": "2026-01-24T03:39:26Z"
+        },
+        {
+          "name": "Publish Docs",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/etherflow/actions/runs/21308567759",
+          "head_sha": "756358e4332507cae4b74ab9e1ea5cfdbaabf2f9",
+          "created_at": "2026-01-24T03:39:26Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/etherflow/",
+      "has_pages": true,
+      "commit_count": 16,
+      "topics": [],
+      "license": null,
       "category": "libraries_sdk"
     },
     {
       "name": "go-cggmp-tss",
       "full_name": "smallyunet/go-cggmp-tss",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/go-cggmp-tss/releases?per_page=1: 503 Service Unavailable",
+      "html_url": "https://github.com/smallyunet/go-cggmp-tss",
+      "description": "A pure Go implementation of the CGGMP21 Threshold Signature Scheme (TSS) protocol.",
+      "language": "Go",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-03-15T15:59:19Z",
+      "created_at": "2025-12-13T03:39:51Z",
+      "last_commit_date": "2026-03-15T15:59:13Z",
+      "latest_tag": {
+        "name": "v0.0.9"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Benchmarks",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/23113933666",
+          "head_sha": "df25e97714c45a0e3789bc5017e7a77e5c5a055a",
+          "created_at": "2026-03-15T15:59:17Z"
+        },
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/23113933658",
+          "head_sha": "df25e97714c45a0e3789bc5017e7a77e5c5a055a",
+          "created_at": "2026-03-15T15:59:17Z"
+        },
+        {
+          "name": "Publish docs via GitHub Pages",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/23113933653",
+          "head_sha": "df25e97714c45a0e3789bc5017e7a77e5c5a055a",
+          "created_at": "2026-03-15T15:59:17Z"
+        },
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/23113933497",
+          "head_sha": "df25e97714c45a0e3789bc5017e7a77e5c5a055a",
+          "created_at": "2026-03-15T15:59:17Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/go-cggmp-tss/",
+      "has_pages": true,
+      "commit_count": 25,
+      "topics": [],
+      "license": null,
       "category": "libraries_sdk"
     },
     {
       "name": "zabi-rs",
       "full_name": "smallyunet/zabi-rs",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/zabi-rs/releases?per_page=1: 503 Service Unavailable",
+      "html_url": "https://github.com/smallyunet/zabi-rs",
+      "description": "Zero-allocation, no_std EVM ABI decoder for high-performance Rust applications.",
+      "language": "Rust",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-03-15T15:53:28Z",
+      "created_at": "2025-12-16T15:24:29Z",
+      "last_commit_date": "2026-03-15T15:53:25Z",
+      "latest_tag": {
+        "name": "v0.0.13"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Benchmark & Update README",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/zabi-rs/actions/runs/23113829725",
+          "head_sha": "b82a02ff089a300d7af7aa1a061090c89ad0bce8",
+          "created_at": "2026-03-15T15:53:05Z"
+        }
+      ],
+      "package_info": {
+        "type": "crates",
+        "name": "zabi-rs",
+        "version": "0.0.13",
+        "url": "https://crates.io/crates/zabi-rs"
+      },
+      "homepage": "https://smallyunet.github.io/zabi-rs/",
+      "has_pages": true,
+      "commit_count": 64,
+      "topics": [],
+      "license": null,
       "category": "libraries_sdk"
     },
     {
@@ -176,8 +441,70 @@
     {
       "name": "privy-wallet-kit",
       "full_name": "smallyunet/privy-wallet-kit",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/privy-wallet-kit/releases?per_page=1: 503 Service Unavailable",
+      "html_url": "https://github.com/smallyunet/privy-wallet-kit",
+      "description": "Privy Wallet Kit is an open-source React UI component library designed to provide drop-in components and headless hooks for Privy Embedded Wallets.",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-01-24T07:13:34Z",
+      "created_at": "2025-12-12T17:04:53Z",
+      "last_commit_date": "2026-01-24T07:13:29Z",
+      "latest_tag": {
+        "name": "v0.0.8"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Publish to NPM",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/privy-wallet-kit/actions/runs/21311285897",
+          "head_sha": "05e319a21a45bcda5b25179b3431bb3b2ee3112e",
+          "created_at": "2026-01-24T07:13:42Z"
+        },
+        {
+          "name": "Deploy Storybook to GitHub Pages",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/privy-wallet-kit/actions/runs/21311284087",
+          "head_sha": "05e319a21a45bcda5b25179b3431bb3b2ee3112e",
+          "created_at": "2026-01-24T07:13:32Z"
+        },
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/privy-wallet-kit/actions/runs/21311284083",
+          "head_sha": "05e319a21a45bcda5b25179b3431bb3b2ee3112e",
+          "created_at": "2026-01-24T07:13:32Z"
+        },
+        {
+          "name": "Format",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/privy-wallet-kit/actions/runs/21311284082",
+          "head_sha": "05e319a21a45bcda5b25179b3431bb3b2ee3112e",
+          "created_at": "2026-01-24T07:13:32Z"
+        }
+      ],
+      "package_info": {
+        "type": "npm",
+        "name": "privy-wallet-kit",
+        "version": "0.0.7",
+        "url": "https://www.npmjs.com/package/privy-wallet-kit"
+      },
+      "homepage": "https://smallyunet.github.io/privy-wallet-kit/",
+      "has_pages": true,
+      "commit_count": 37,
+      "topics": [],
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
       "category": "libraries_sdk"
     },
     {
@@ -323,15 +650,85 @@
     {
       "name": "doge-hack",
       "full_name": "smallyunet/doge-hack",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/doge-hack/releases?per_page=1: 504 Gateway Timeout",
+      "html_url": "https://github.com/smallyunet/doge-hack",
+      "description": "Doge-Hack uses the standard rust-bitcoin library to create valid Dogecoin transactions, proving Doge is just Bitcoin in a yellow vest.",
+      "language": "Rust",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-01-23T12:02:09Z",
+      "created_at": "2025-12-31T14:32:38Z",
+      "last_commit_date": "2026-01-23T12:02:01Z",
+      "latest_tag": {
+        "name": "v0.0.3"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Rust CI",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/doge-hack/actions/runs/21285455903",
+          "head_sha": "de41df692958409d730e14fda3cd568bdac0357b",
+          "created_at": "2026-01-23T12:02:06Z"
+        },
+        {
+          "name": "Deploy Docs (GitHub Pages)",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/doge-hack/actions/runs/21285455889",
+          "head_sha": "de41df692958409d730e14fda3cd568bdac0357b",
+          "created_at": "2026-01-23T12:02:06Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "",
+      "has_pages": true,
+      "commit_count": 6,
+      "topics": [],
+      "license": null,
       "category": "developer_tools"
     },
     {
       "name": "the-trapper",
       "full_name": "smallyunet/the-trapper",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/the-trapper/releases?per_page=1: 503 Service Unavailable",
+      "html_url": "https://github.com/smallyunet/the-trapper",
+      "description": "An educational collection of EVM honeypots designed to deceive and trap sophisticated attackers.",
+      "language": "Solidity",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-01-26T05:22:27Z",
+      "created_at": "2025-12-18T16:24:19Z",
+      "last_commit_date": "2026-01-26T05:22:21Z",
+      "latest_tag": {
+        "name": "v0.0.5"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Tests",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/the-trapper/actions/runs/21347215129",
+          "head_sha": "6942e4ea803492c5b787cbd84cd1b0695f0d3075",
+          "created_at": "2026-01-26T05:22:26Z"
+        },
+        {
+          "name": "Documentation",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/the-trapper/actions/runs/21347215127",
+          "head_sha": "6942e4ea803492c5b787cbd84cd1b0695f0d3075",
+          "created_at": "2026-01-26T05:22:26Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/the-trapper/",
+      "has_pages": true,
+      "commit_count": 19,
+      "topics": [],
+      "license": null,
       "category": "developer_tools"
     },
     {
@@ -382,87 +779,228 @@
       "category": "developer_tools"
     },
     {
-      "name": "erc20-multichain-deployer",
-      "full_name": "smallyunet/erc20-multichain-deployer",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/erc20-multichain-deployer/releases?per_page=1: 503 Service Unavailable",
-      "category": "developer_tools"
-    },
-    {
-      "name": "defi-invariant-lab",
-      "full_name": "smallyunet/defi-invariant-lab",
-      "html_url": "https://github.com/smallyunet/defi-invariant-lab",
-      "description": null,
-      "language": "Solidity",
-      "stargazers_count": 0,
+      "name": "finder-sight",
+      "full_name": "smallyunet/finder-sight",
+      "html_url": "https://github.com/smallyunet/finder-sight",
+      "description": "A macOS app for local reverse image search.",
+      "language": "Swift",
+      "stargazers_count": 1,
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2025-08-21T11:24:02Z",
-      "created_at": "2025-08-20T09:51:18Z",
-      "last_commit_date": "2025-08-21T11:23:56Z",
+      "updated_at": "2026-07-19T15:38:22Z",
+      "created_at": "2025-12-13T13:37:31Z",
+      "last_commit_date": "2026-07-19T15:38:09Z",
       "latest_tag": {
-        "name": "v0.0.4"
+        "name": "v0.2.0"
       },
       "latest_workflow_runs": [
         {
-          "name": "CI",
+          "name": "Build macOS App",
           "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/defi-invariant-lab/actions/runs/17125478788",
-          "head_sha": "acc4f15acad5d95d9ffab072886361154dc33c3d",
-          "created_at": "2025-08-21T11:24:13Z"
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/29693306570",
+          "head_sha": "b1ef5dcd271c58fe48fde7b19e832dbe26824211",
+          "created_at": "2026-07-19T15:40:10Z"
+        },
+        {
+          "name": "Build macOS App",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/29693244381",
+          "head_sha": "b1ef5dcd271c58fe48fde7b19e832dbe26824211",
+          "created_at": "2026-07-19T15:38:17Z"
         },
         {
           "name": "CI",
           "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/defi-invariant-lab/actions/runs/17125474784",
-          "head_sha": "acc4f15acad5d95d9ffab072886361154dc33c3d",
-          "created_at": "2025-08-21T11:24:01Z"
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/29693244375",
+          "head_sha": "b1ef5dcd271c58fe48fde7b19e832dbe26824211",
+          "created_at": "2026-07-19T15:38:17Z"
+        },
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/29693243999",
+          "head_sha": "b1ef5dcd271c58fe48fde7b19e832dbe26824211",
+          "created_at": "2026-07-19T15:38:17Z"
         }
       ],
       "package_info": null,
-      "homepage": null,
-      "has_pages": false,
-      "commit_count": 6,
+      "homepage": "https://smallyunet.github.io/finder-sight/",
+      "has_pages": true,
+      "commit_count": 68,
       "topics": [],
       "license": null,
-      "category": "developer_tools"
-    },
-    {
-      "name": "finder-sight",
-      "full_name": "smallyunet/finder-sight",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/finder-sight/releases?per_page=1: 503 Service Unavailable",
       "category": "user_applications"
     },
     {
       "name": "pbft-visualizer",
       "full_name": "smallyunet/pbft-visualizer",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/pbft-visualizer/releases?per_page=1: 503 Service Unavailable",
+      "html_url": "https://github.com/smallyunet/pbft-visualizer",
+      "description": "An interactive educational tool for visualizing the Practical Byzantine Fault Tolerance (PBFT) consensus protocol phases.",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-01-24T07:35:26Z",
+      "created_at": "2025-11-08T14:53:07Z",
+      "last_commit_date": "2026-01-24T07:35:19Z",
+      "latest_tag": {
+        "name": "v0.0.8"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Deploy to GitHub Pages",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/pbft-visualizer/actions/runs/21311569407",
+          "head_sha": "5cdeb6ab92c539c4e4ffbc103931dd7d346e05dc",
+          "created_at": "2026-01-24T07:35:23Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/pbft-visualizer/",
+      "has_pages": true,
+      "commit_count": 23,
+      "topics": [],
+      "license": null,
       "category": "user_applications"
     },
     {
       "name": "vscode-antigravity-hud",
       "full_name": "smallyunet/vscode-antigravity-hud",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/vscode-antigravity-hud/releases?per_page=1: 503 Service Unavailable",
+      "html_url": "https://github.com/smallyunet/vscode-antigravity-hud",
+      "description": "A lightweight VS Code extension for monitoring Google Antigravity AI IDE model usage quota.",
+      "language": "TypeScript",
+      "stargazers_count": 3,
+      "forks_count": 0,
+      "open_issues_count": 3,
+      "visibility": "public",
+      "updated_at": "2026-07-09T03:16:59Z",
+      "created_at": "2025-12-20T11:28:05Z",
+      "last_commit_date": "2026-03-27T04:17:04Z",
+      "latest_tag": {
+        "name": "v0.3.0"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Release",
+          "status": "completed",
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/vscode-antigravity-hud/actions/runs/23630922538",
+          "head_sha": "f9219885be5694cc3bbbadd8e4fdd7988d79c994",
+          "created_at": "2026-03-27T04:17:26Z"
+        },
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/vscode-antigravity-hud/actions/runs/23630917249",
+          "head_sha": "f9219885be5694cc3bbbadd8e4fdd7988d79c994",
+          "created_at": "2026-03-27T04:17:11Z"
+        }
+      ],
+      "package_info": [
+        {
+          "type": "vscode",
+          "name": "Antigravity HUD",
+          "version": "0.2.4",
+          "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
+          "installs": 1443
+        },
+        {
+          "type": "openvsx",
+          "name": "Antigravity HUD",
+          "version": "0.3.0",
+          "url": "https://open-vsx.org/extension/smallyu/vscode-antigravity-hud",
+          "downloads": 6656
+        }
+      ],
+      "homepage": "",
+      "has_pages": false,
+      "commit_count": 43,
+      "topics": [],
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
       "category": "user_applications"
     },
     {
       "name": "konachan-downloader",
       "full_name": "smallyunet/konachan-downloader",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/konachan-downloader/releases?per_page=1: 503 Service Unavailable",
+      "html_url": "https://github.com/smallyunet/konachan-downloader",
+      "description": "A professional, multi-threaded Python CLI tool to download images from konachan.",
+      "language": "Python",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2025-12-29T04:58:38Z",
+      "created_at": "2025-12-23T15:47:32Z",
+      "last_commit_date": "2025-12-29T04:58:31Z",
+      "latest_tag": {
+        "name": "v0.0.10"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Publish Docs",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/konachan-downloader/actions/runs/20565217134",
+          "head_sha": "f3ff612d79d93640c2ec80d10b401452c1ea8534",
+          "created_at": "2025-12-29T04:58:36Z"
+        }
+      ],
+      "package_info": {
+        "type": "pypi",
+        "name": "konachan-downloader",
+        "version": "0.0.10",
+        "url": "https://pypi.org/project/konachan-downloader/"
+      },
+      "homepage": "https://smallyunet.github.io/konachan-downloader/",
+      "has_pages": true,
+      "commit_count": 22,
+      "topics": [],
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
       "category": "user_applications"
     },
     {
       "name": "chatgpt-visualizer",
       "full_name": "smallyunet/chatgpt-visualizer",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/chatgpt-visualizer/releases?per_page=1: 503 Service Unavailable",
+      "html_url": "https://github.com/smallyunet/chatgpt-visualizer",
+      "description": "A privacy-first, local web tool for visualizing and exploring your exported ChatGPT conversation history.",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-01-24T08:02:33Z",
+      "created_at": "2025-12-28T07:56:13Z",
+      "last_commit_date": "2026-01-24T08:02:27Z",
+      "latest_tag": {
+        "name": "v0.0.4"
+      },
+      "latest_workflow_runs": [],
+      "package_info": null,
+      "homepage": "",
+      "has_pages": false,
+      "commit_count": 9,
+      "topics": [],
+      "license": null,
       "category": "user_applications"
     },
     {
@@ -544,8 +1082,33 @@
     {
       "name": "bitdoge",
       "full_name": "smallyunet/bitdoge",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/bitdoge/releases?per_page=1: 503 Service Unavailable",
+      "html_url": "https://github.com/smallyunet/bitdoge",
+      "description": "BitDoge mimics Bitcoin's supply curve on Ethereum.",
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-02-15T10:30:41Z",
+      "created_at": "2026-01-20T14:47:49Z",
+      "last_commit_date": "2026-02-15T10:30:33Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [
+        {
+          "name": "Deploy Web to GitHub Pages",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/bitdoge/actions/runs/22034115310",
+          "head_sha": "dfc758d0402d496ee09dc49d3d0c32e9647bc2eb",
+          "created_at": "2026-02-15T10:30:39Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "https://smallyunet.github.io/bitdoge/",
+      "has_pages": true,
+      "commit_count": 16,
+      "topics": [],
+      "license": null,
       "category": "user_applications"
     },
     {
@@ -566,10 +1129,10 @@
         {
           "name": "Collect and Deploy",
           "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/polymarket-leaderboard-x/actions/runs/29673355409",
-          "head_sha": "40c0f915db46e1015660627c49632b79e914c34d",
-          "created_at": "2026-07-19T04:27:55Z"
+          "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/polymarket-leaderboard-x/actions/runs/29717091570",
+          "head_sha": "0c66e23058b4a8682e8ac14c4cdab8b2969a4952",
+          "created_at": "2026-07-20T04:31:13Z"
         }
       ],
       "package_info": null,
@@ -583,50 +1146,191 @@
     {
       "name": "btc.wedding",
       "full_name": "smallyunet/btc.wedding",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/btc.wedding/releases?per_page=1: 503 Service Unavailable",
+      "html_url": "https://github.com/smallyunet/btc.wedding",
+      "description": null,
+      "language": "CSS",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-07-19T10:24:39Z",
+      "created_at": "2026-05-30T13:31:19Z",
+      "last_commit_date": "2026-07-14T08:34:50Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/btc.wedding/actions/runs/29318535160",
+          "head_sha": "ddf973fd3766b06effb4e029302ce539bbb6a951",
+          "created_at": "2026-07-14T08:34:53Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "http://btc.wedding/",
+      "has_pages": true,
+      "commit_count": 34,
+      "topics": [],
+      "license": null,
       "category": "user_applications"
     },
     {
       "name": "poly-rewards",
       "full_name": "smallyunet/poly-rewards",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/poly-rewards/releases?per_page=1: 503 Service Unavailable",
+      "html_url": "https://github.com/smallyunet/poly-rewards",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-07-06T01:19:09Z",
+      "created_at": "2026-07-05T04:29:24Z",
+      "last_commit_date": "2026-07-06T01:19:02Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [],
+      "package_info": null,
+      "homepage": "https://r.dark20.xyz/",
+      "has_pages": false,
+      "commit_count": 26,
+      "topics": [],
+      "license": null,
       "category": "user_applications"
     },
     {
       "name": "poly-elon",
       "full_name": "smallyunet/poly-elon",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/poly-elon/releases?per_page=1: 503 Service Unavailable",
-      "category": "user_applications"
-    },
-    {
-      "name": "ai-notifier",
-      "full_name": "smallyunet/ai-notifier",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/ai-notifier/releases?per_page=1: 503 Service Unavailable",
+      "html_url": "https://github.com/smallyunet/poly-elon",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-07-12T02:52:21Z",
+      "created_at": "2026-06-16T07:42:32Z",
+      "last_commit_date": "2026-07-01T01:30:01Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [],
+      "package_info": null,
+      "homepage": null,
+      "has_pages": false,
+      "commit_count": 85,
+      "topics": [],
+      "license": null,
       "category": "user_applications"
     },
     {
       "name": "polymarket-builder",
       "full_name": "smallyunet/polymarket-builder",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/polymarket-builder/releases?per_page=1: 503 Service Unavailable",
+      "html_url": "https://github.com/smallyunet/polymarket-builder",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-06-17T03:47:20Z",
+      "created_at": "2026-06-11T08:08:16Z",
+      "last_commit_date": "2026-06-17T03:47:13Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/polymarket-builder/actions/runs/27664408944",
+          "head_sha": "6999c33af01c459eb2108dec14270d756666586f",
+          "created_at": "2026-06-17T03:47:18Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "http://poly.dark20.xyz/",
+      "has_pages": true,
+      "commit_count": 23,
+      "topics": [],
+      "license": null,
       "category": "user_applications"
     },
     {
       "name": "hyper-funding",
       "full_name": "smallyunet/hyper-funding",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/hyper-funding/releases?per_page=1: 503 Service Unavailable",
+      "html_url": "https://github.com/smallyunet/hyper-funding",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-07-19T13:13:10Z",
+      "created_at": "2026-06-12T08:04:04Z",
+      "last_commit_date": "2026-06-12T11:05:44Z",
+      "latest_tag": null,
+      "latest_workflow_runs": [
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/hyper-funding/actions/runs/27411787694",
+          "head_sha": "2ee59bfa03e9baa8f4bc8de846b1f0e655296531",
+          "created_at": "2026-06-12T11:05:50Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": "http://hyper.dark20.xyz/",
+      "has_pages": true,
+      "commit_count": 11,
+      "topics": [],
+      "license": null,
       "category": "user_applications"
     },
     {
       "name": "codex-notch",
       "full_name": "smallyunet/codex-notch",
-      "error": true,
-      "error_message": "Failed to fetch https://api.github.com/repos/smallyunet/codex-notch/releases?per_page=1: 503 Service Unavailable",
+      "html_url": "https://github.com/smallyunet/codex-notch",
+      "description": "Native macOS notch activity for ChatGPT Codex tasks and weekly quota",
+      "language": "Swift",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "open_issues_count": 0,
+      "visibility": "public",
+      "updated_at": "2026-07-19T15:48:29Z",
+      "created_at": "2026-07-19T14:18:06Z",
+      "last_commit_date": "2026-07-19T15:48:20Z",
+      "latest_tag": {
+        "name": "v0.4.0"
+      },
+      "latest_workflow_runs": [
+        {
+          "name": "Release",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/codex-notch/actions/runs/29693623034",
+          "head_sha": "254274639808298b889ad5959be4678662ebe997",
+          "created_at": "2026-07-19T15:49:43Z"
+        },
+        {
+          "name": "CI",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/codex-notch/actions/runs/29693581158",
+          "head_sha": "254274639808298b889ad5959be4678662ebe997",
+          "created_at": "2026-07-19T15:48:28Z"
+        }
+      ],
+      "package_info": null,
+      "homepage": null,
+      "has_pages": false,
+      "commit_count": 102,
+      "topics": [],
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
       "category": "user_applications"
     }
   ]

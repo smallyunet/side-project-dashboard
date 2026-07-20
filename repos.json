@@ -3,8 +3,7 @@
         "smallyunet/echoevm",
         "smallyunet/ethbft",
         "smallyunet/prediction-market-indexer",
-        "smallyunet/lightminer-rust",
-        "smallyunet/memory-mcp-server"
+        "smallyunet/lightminer-rust"
     ],
     "libraries_sdk": [
         "smallyunet/etherflow",
@@ -19,9 +18,7 @@
     "developer_tools": [
         "smallyunet/doge-hack",
         "smallyunet/the-trapper",
-        "smallyunet/psbt-lens",
-        "smallyunet/erc20-multichain-deployer",
-        "smallyunet/defi-invariant-lab"
+        "smallyunet/psbt-lens"
     ],
     "user_applications": [
         "smallyunet/finder-sight",
@@ -36,7 +33,6 @@
         "smallyunet/btc.wedding",
         "smallyunet/poly-rewards",
         "smallyunet/poly-elon",
-        "smallyunet/ai-notifier",
         "smallyunet/polymarket-builder",
         "smallyunet/hyper-funding",
         "smallyunet/codex-notch"
