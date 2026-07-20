@@ -1298,3 +1298,415 @@ input[type="search"] {
         min-height: 44px;
     }
 }
+
+/* Dense workspace layout --------------------------------------------------- */
+
+@media (min-width: 761px) {
+    .site-shell {
+        width: min(100%, 1560px);
+        padding-inline: 24px;
+    }
+
+    .hero {
+        padding: 16px 0 24px;
+    }
+
+    .top-nav {
+        min-height: 44px;
+        margin-bottom: 24px;
+    }
+
+    .brand-mark {
+        width: 34px;
+        height: 34px;
+        border-radius: 9px;
+    }
+
+    .hero-grid {
+        grid-template-columns: minmax(300px, 0.72fr) minmax(620px, 1.28fr);
+        gap: clamp(28px, 4vw, 64px);
+        align-items: center;
+    }
+
+    .eyebrow-line {
+        width: 24px;
+    }
+
+    .hero h1 {
+        margin: 10px 0 8px;
+        font-size: clamp(34px, 3.4vw, 48px);
+        line-height: 1;
+    }
+
+    .hero-description {
+        max-width: 610px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .update-status {
+        margin-top: 12px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .stat-card {
+        min-height: 96px;
+        padding: 14px;
+        border-radius: 12px;
+        box-shadow: var(--shadow-sm);
+    }
+
+    .stat-card::before {
+        top: 12px;
+        bottom: 12px;
+        left: 0;
+        width: 3px;
+        height: auto;
+        border-radius: 0 3px 3px 0;
+    }
+
+    .stat-heading {
+        font-size: 10px;
+        letter-spacing: 0.05em;
+    }
+
+    .stat-heading i {
+        font-size: 12px;
+    }
+
+    .stat-value {
+        margin-top: 10px;
+        font-size: 28px;
+    }
+
+    .stat-detail {
+        margin-top: 4px;
+        font-size: 10px;
+        line-height: 1.2;
+    }
+
+    .project-index {
+        padding: 28px 0 48px;
+    }
+
+    .index-heading {
+        margin-bottom: 16px;
+    }
+
+    .index-heading h2 {
+        margin-top: 3px;
+        font-size: 27px;
+    }
+
+    .toolbar {
+        grid-template-columns: minmax(280px, 1fr) auto;
+        gap: 8px;
+        padding: 7px;
+        border-radius: 12px;
+    }
+
+    .search-field input {
+        min-height: 42px;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+
+    .sort-field {
+        min-height: 42px;
+    }
+
+    .category-filters {
+        gap: 6px;
+        margin: 10px 0 28px;
+    }
+
+    .filter-chip {
+        min-height: 36px;
+        padding-inline: 10px;
+        gap: 6px;
+        font-size: 12px;
+    }
+
+    .filter-count {
+        min-width: 20px;
+        height: 20px;
+        padding-inline: 5px;
+    }
+
+    .category-section {
+        margin-bottom: 38px;
+    }
+
+    .category-heading {
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+
+    .category-icon {
+        width: 34px;
+        height: 34px;
+        border-radius: 9px;
+        font-size: 12px;
+    }
+
+    .category-title-row h3 {
+        font-size: 16px;
+    }
+
+    .category-title-row > span {
+        min-width: 23px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .category-copy p {
+        margin-top: 2px;
+        font-size: 12px;
+        line-height: 1.35;
+    }
+
+    .repos-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .repo-card {
+        min-height: 286px;
+        border-radius: 10px;
+    }
+
+    .repo-card::before {
+        right: auto;
+        bottom: 0;
+        width: 3px;
+        height: auto;
+    }
+
+    .repo-card:hover {
+        box-shadow: var(--shadow-md);
+        transform: translateY(-2px);
+    }
+
+    .repo-card-top {
+        padding: 13px 13px 0 15px;
+    }
+
+    .repo-header {
+        gap: 8px;
+    }
+
+    .repo-title-group {
+        gap: 8px;
+    }
+
+    .repo-mark {
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        font-size: 11px;
+    }
+
+    .repo-name {
+        min-height: 18px;
+        font-size: 13px;
+    }
+
+    .repo-visibility {
+        margin-top: 0;
+        font-size: 9px;
+    }
+
+    .repo-website {
+        width: 34px;
+        height: 34px;
+        border-radius: 8px;
+        font-size: 11px;
+    }
+
+    .repo-description {
+        min-height: 38px;
+        margin: 10px 0 8px;
+        font-size: 12px;
+        line-height: 1.48;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+    }
+
+    .repo-topics {
+        gap: 4px;
+        margin: 0 0 8px;
+    }
+
+    .repo-topics span {
+        padding: 2px 5px;
+        font-size: 10px;
+    }
+
+    .repo-metrics {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 4px;
+    }
+
+    .repo-metrics > span {
+        justify-content: center;
+        min-height: 24px;
+        padding: 0 4px;
+        border-radius: 6px;
+        font-size: 10px;
+    }
+
+    .repo-metrics i {
+        font-size: 8px;
+    }
+
+    .repo-workflow {
+        grid-template-columns: auto minmax(0, 1fr);
+        gap: 7px;
+        margin-top: 9px;
+        padding-top: 8px;
+    }
+
+    .workflow-label {
+        padding-top: 3px;
+        font-size: 9px;
+    }
+
+    .workflow-link {
+        min-height: 22px;
+        padding: 1px 5px;
+        font-size: 10px;
+    }
+
+    .repo-versions {
+        gap: 4px;
+        margin-top: 8px;
+    }
+
+    .version-badge {
+        min-height: 22px;
+        padding: 0 6px;
+        font-size: 10px;
+    }
+
+    .repo-footer {
+        gap: 8px;
+        margin-top: 11px;
+        padding: 8px 13px 8px 15px;
+    }
+
+    .repo-meta {
+        gap: 5px 8px;
+        font-size: 10px;
+    }
+
+    .language-dot {
+        width: 6px;
+        height: 6px;
+    }
+
+    .repo-dates {
+        font-size: 9px;
+    }
+
+    .site-footer {
+        min-height: 68px;
+    }
+}
+
+@media (min-width: 761px) and (max-width: 1240px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .repos-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 761px) and (max-width: 940px) {
+    .repos-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 760px) {
+    .hero {
+        padding-bottom: 28px;
+    }
+
+    .top-nav {
+        margin-bottom: 30px;
+    }
+
+    .hero h1 {
+        margin: 14px 0 12px;
+        font-size: clamp(38px, 12vw, 50px);
+    }
+
+    .update-status {
+        margin-top: 16px;
+    }
+
+    .hero-grid {
+        gap: 28px;
+    }
+
+    .stat-card {
+        min-height: 106px;
+    }
+
+    .project-index {
+        padding-top: 30px;
+    }
+
+    .index-heading {
+        margin-bottom: 16px;
+    }
+
+    .category-filters {
+        margin-top: 10px;
+        margin-bottom: 28px;
+    }
+
+    .category-section {
+        margin-bottom: 40px;
+    }
+
+    .category-heading {
+        margin-bottom: 12px;
+        padding-bottom: 12px;
+    }
+
+    .repo-description {
+        min-height: auto;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+    }
+}
+
+@media (pointer: coarse) {
+    .filter-chip,
+    .repo-website,
+    .repo-name,
+    .workflow-link,
+    .version-badge,
+    .sort-field select {
+        min-height: 44px;
+    }
+
+    .repo-website {
+        width: 44px;
+    }
+}
