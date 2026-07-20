@@ -1,5 +1,5 @@
 {
-  "timestamp": 1784551306196,
+  "timestamp": 1784552302241,
   "repos": [
     {
       "name": "echoevm",
@@ -235,50 +235,50 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2026-07-20T08:28:56Z",
+      "updated_at": "2026-07-20T12:43:56Z",
       "created_at": "2025-12-13T03:39:51Z",
-      "last_commit_date": "2026-07-20T08:28:08Z",
+      "last_commit_date": "2026-07-20T12:41:55Z",
       "latest_tag": {
-        "name": "v0.0.10"
+        "name": "v0.0.11"
       },
       "latest_workflow_runs": [
         {
           "name": "Publish docs via GitHub Pages",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/29728003242",
-          "head_sha": "67b5352fcf5523263592361716904732a2327add",
-          "created_at": "2026-07-20T08:28:29Z"
+          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/29743213361",
+          "head_sha": "fec96a8d9e601fb870aaf40fbd2b0e9ab500ed1e",
+          "created_at": "2026-07-20T12:42:11Z"
         },
         {
           "name": "Benchmarks",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/29728003235",
-          "head_sha": "67b5352fcf5523263592361716904732a2327add",
-          "created_at": "2026-07-20T08:28:29Z"
+          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/29743213338",
+          "head_sha": "fec96a8d9e601fb870aaf40fbd2b0e9ab500ed1e",
+          "created_at": "2026-07-20T12:42:11Z"
         },
         {
           "name": "CI",
           "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/29728003191",
-          "head_sha": "67b5352fcf5523263592361716904732a2327add",
-          "created_at": "2026-07-20T08:28:29Z"
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/29743213318",
+          "head_sha": "fec96a8d9e601fb870aaf40fbd2b0e9ab500ed1e",
+          "created_at": "2026-07-20T12:42:11Z"
         },
         {
           "name": "pages build and deployment",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/29728002366",
-          "head_sha": "67b5352fcf5523263592361716904732a2327add",
-          "created_at": "2026-07-20T08:28:28Z"
+          "html_url": "https://github.com/smallyunet/go-cggmp-tss/actions/runs/29743212503",
+          "head_sha": "fec96a8d9e601fb870aaf40fbd2b0e9ab500ed1e",
+          "created_at": "2026-07-20T12:42:10Z"
         }
       ],
       "package_info": null,
       "homepage": "https://smallyunet.github.io/go-cggmp-tss/",
       "has_pages": true,
-      "commit_count": 26,
+      "commit_count": 27,
       "topics": [],
       "license": null,
       "category": "libraries_sdk"
