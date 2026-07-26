@@ -1,5 +1,5 @@
 {
-  "timestamp": 1785027526403,
+  "timestamp": 1785049812050,
   "repos": [
     {
       "name": "echoevm",
@@ -894,14 +894,14 @@
           "name": "Antigravity HUD",
           "version": "0.2.4",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 1468
+          "installs": 1470
         },
         {
           "type": "openvsx",
           "name": "Antigravity HUD",
           "version": "0.3.0",
           "url": "https://open-vsx.org/extension/smallyu/vscode-antigravity-hud",
-          "downloads": 6808
+          "downloads": 6812
         }
       ],
       "homepage": "",
@@ -1114,6 +1114,14 @@
           "name": "Collect and Deploy",
           "status": "completed",
           "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/polymarket-leaderboard-x/actions/runs/30187847925",
+          "head_sha": "0c66e23058b4a8682e8ac14c4cdab8b2969a4952",
+          "created_at": "2026-07-26T04:28:55Z"
+        },
+        {
+          "name": "Collect and Deploy",
+          "status": "completed",
+          "conclusion": "failure",
           "html_url": "https://github.com/smallyunet/polymarket-leaderboard-x/actions/runs/30143965399",
           "head_sha": "0c66e23058b4a8682e8ac14c4cdab8b2969a4952",
           "created_at": "2026-07-25T04:24:20Z"
@@ -1141,14 +1149,6 @@
           "html_url": "https://github.com/smallyunet/polymarket-leaderboard-x/actions/runs/29891078333",
           "head_sha": "0c66e23058b4a8682e8ac14c4cdab8b2969a4952",
           "created_at": "2026-07-22T04:26:45Z"
-        },
-        {
-          "name": "Collect and Deploy",
-          "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/polymarket-leaderboard-x/actions/runs/29801226385",
-          "head_sha": "0c66e23058b4a8682e8ac14c4cdab8b2969a4952",
-          "created_at": "2026-07-21T04:25:54Z"
         }
       ],
       "package_info": null,
