@@ -1,5 +1,5 @@
 {
-  "timestamp": 1785459346484,
+  "timestamp": 1785482154081,
   "repos": [
     {
       "name": "echoevm",
@@ -908,14 +908,14 @@
           "name": "Antigravity HUD",
           "version": "0.2.4",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 1491
+          "installs": 1496
         },
         {
           "type": "openvsx",
           "name": "Antigravity HUD",
           "version": "0.3.0",
           "url": "https://open-vsx.org/extension/smallyu/vscode-antigravity-hud",
-          "downloads": 6920
+          "downloads": 6928
         }
       ],
       "homepage": "",
@@ -1128,6 +1128,14 @@
           "name": "Collect and Deploy",
           "status": "completed",
           "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/polymarket-leaderboard-x/actions/runs/30604245354",
+          "head_sha": "0c66e23058b4a8682e8ac14c4cdab8b2969a4952",
+          "created_at": "2026-07-31T04:28:32Z"
+        },
+        {
+          "name": "Collect and Deploy",
+          "status": "completed",
+          "conclusion": "failure",
           "html_url": "https://github.com/smallyunet/polymarket-leaderboard-x/actions/runs/30513666911",
           "head_sha": "0c66e23058b4a8682e8ac14c4cdab8b2969a4952",
           "created_at": "2026-07-30T04:21:37Z"
@@ -1155,14 +1163,6 @@
           "html_url": "https://github.com/smallyunet/polymarket-leaderboard-x/actions/runs/30237332815",
           "head_sha": "0c66e23058b4a8682e8ac14c4cdab8b2969a4952",
           "created_at": "2026-07-27T04:31:18Z"
-        },
-        {
-          "name": "Collect and Deploy",
-          "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/polymarket-leaderboard-x/actions/runs/30187847925",
-          "head_sha": "0c66e23058b4a8682e8ac14c4cdab8b2969a4952",
-          "created_at": "2026-07-26T04:28:55Z"
         }
       ],
       "package_info": null,
@@ -1177,13 +1177,13 @@
       "name": "btc.wedding",
       "full_name": "smallyunet/btc.wedding",
       "html_url": "https://github.com/smallyunet/btc.wedding",
-      "description": "Bitcoin Vow Certificate",
+      "description": "A Bitcoin plan for two.",
       "language": "CSS",
       "stargazers_count": 0,
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2026-07-29T12:19:22Z",
+      "updated_at": "2026-07-31T01:58:17Z",
       "created_at": "2026-05-30T13:31:19Z",
       "last_commit_date": "2026-07-29T12:18:55Z",
       "latest_tag": null,
