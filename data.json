@@ -1,5 +1,5 @@
 {
-  "timestamp": 1785545784665,
+  "timestamp": 1785567990600,
   "repos": [
     {
       "name": "echoevm",
@@ -11,26 +11,26 @@
       "forks_count": 1,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2026-07-21T05:40:43Z",
+      "updated_at": "2026-08-01T03:17:26Z",
       "created_at": "2025-05-10T17:28:13Z",
-      "last_commit_date": "2026-07-21T05:40:18Z",
+      "last_commit_date": "2026-08-01T03:17:06Z",
       "latest_tag": {
-        "name": "v0.0.24"
+        "name": "v0.0.26"
       },
       "latest_workflow_runs": [
         {
           "name": "CI",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/echoevm/actions/runs/29804665081",
-          "head_sha": "4e0a7601ef8560ed3bca2f338c5bb3c54676913c",
-          "created_at": "2026-07-21T05:40:28Z"
+          "html_url": "https://github.com/smallyunet/echoevm/actions/runs/30681698650",
+          "head_sha": "fab613fb983755a8071026c140f8e5b2c38b77ee",
+          "created_at": "2026-08-01T03:17:09Z"
         }
       ],
       "package_info": null,
       "homepage": "https://smallyunet.github.io/echoevm/",
       "has_pages": true,
-      "commit_count": 101,
+      "commit_count": 105,
       "topics": [
         "evm"
       ],
@@ -780,6 +780,14 @@
       },
       "latest_workflow_runs": [
         {
+          "name": "OpenSSF Scorecard",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/30679803762",
+          "head_sha": "4bf2ec4e677256e099ca9c2460c2a82c041e43cf",
+          "created_at": "2026-08-01T02:20:26Z"
+        },
+        {
           "name": "CodeQL",
           "status": "completed",
           "conclusion": "success",
@@ -810,14 +818,6 @@
           "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/30430232434",
           "head_sha": "4bf2ec4e677256e099ca9c2460c2a82c041e43cf",
           "created_at": "2026-07-29T07:02:59Z"
-        },
-        {
-          "name": "pages build and deployment",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/30430230742",
-          "head_sha": "4bf2ec4e677256e099ca9c2460c2a82c041e43cf",
-          "created_at": "2026-07-29T07:02:58Z"
         }
       ],
       "package_info": null,
@@ -915,7 +915,7 @@
           "name": "Antigravity HUD",
           "version": "0.3.0",
           "url": "https://open-vsx.org/extension/smallyu/vscode-antigravity-hud",
-          "downloads": 6936
+          "downloads": 6940
         }
       ],
       "homepage": "",
@@ -1128,6 +1128,14 @@
           "name": "Collect and Deploy",
           "status": "completed",
           "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/polymarket-leaderboard-x/actions/runs/30683977588",
+          "head_sha": "0c66e23058b4a8682e8ac14c4cdab8b2969a4952",
+          "created_at": "2026-08-01T04:27:27Z"
+        },
+        {
+          "name": "Collect and Deploy",
+          "status": "completed",
+          "conclusion": "failure",
           "html_url": "https://github.com/smallyunet/polymarket-leaderboard-x/actions/runs/30604245354",
           "head_sha": "0c66e23058b4a8682e8ac14c4cdab8b2969a4952",
           "created_at": "2026-07-31T04:28:32Z"
@@ -1155,14 +1163,6 @@
           "html_url": "https://github.com/smallyunet/polymarket-leaderboard-x/actions/runs/30328654088",
           "head_sha": "0c66e23058b4a8682e8ac14c4cdab8b2969a4952",
           "created_at": "2026-07-28T04:24:18Z"
-        },
-        {
-          "name": "Collect and Deploy",
-          "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/polymarket-leaderboard-x/actions/runs/30237332815",
-          "head_sha": "0c66e23058b4a8682e8ac14c4cdab8b2969a4952",
-          "created_at": "2026-07-27T04:31:18Z"
         }
       ],
       "package_info": null,
