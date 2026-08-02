@@ -1,5 +1,5 @@
 {
-  "timestamp": 1785654523420,
+  "timestamp": 1785674241600,
   "repos": [
     {
       "name": "echoevm",
@@ -11,34 +11,34 @@
       "forks_count": 1,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2026-08-01T11:23:44Z",
+      "updated_at": "2026-08-02T11:36:10Z",
       "created_at": "2025-05-10T17:28:13Z",
-      "last_commit_date": "2026-08-01T11:21:51Z",
+      "last_commit_date": "2026-08-02T11:35:54Z",
       "latest_tag": {
-        "name": "v0.0.31"
+        "name": "v0.0.34"
       },
       "latest_workflow_runs": [
         {
-          "name": "Deploy Server",
+          "name": "Release",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/echoevm/actions/runs/30697612354",
-          "head_sha": "16ba2cca045cc59069a7d896816de1c8e66b211f",
-          "created_at": "2026-08-01T11:24:14Z"
+          "html_url": "https://github.com/smallyunet/echoevm/actions/runs/30746123852",
+          "head_sha": "0b0ece130104dbb26a253e69d8aa2c4966bfa9a5",
+          "created_at": "2026-08-02T11:37:29Z"
         },
         {
           "name": "CI",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/echoevm/actions/runs/30697594736",
-          "head_sha": "16ba2cca045cc59069a7d896816de1c8e66b211f",
-          "created_at": "2026-08-01T11:23:41Z"
+          "html_url": "https://github.com/smallyunet/echoevm/actions/runs/30746073630",
+          "head_sha": "0b0ece130104dbb26a253e69d8aa2c4966bfa9a5",
+          "created_at": "2026-08-02T11:35:57Z"
         }
       ],
       "package_info": null,
       "homepage": "https://r.dark20.xyz",
       "has_pages": false,
-      "commit_count": 111,
+      "commit_count": 118,
       "topics": [
         "evm"
       ],
@@ -916,14 +916,14 @@
           "name": "Antigravity HUD",
           "version": "0.2.4",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 1496
+          "installs": 1497
         },
         {
           "type": "openvsx",
           "name": "Antigravity HUD",
           "version": "0.3.0",
           "url": "https://open-vsx.org/extension/smallyu/vscode-antigravity-hud",
-          "downloads": 6956
+          "downloads": 6966
         }
       ],
       "homepage": "",
