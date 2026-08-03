@@ -1,5 +1,5 @@
 {
-  "timestamp": 1785695769338,
+  "timestamp": 1785718608285,
   "repos": [
     {
       "name": "echoevm",
@@ -780,44 +780,20 @@
       },
       "latest_workflow_runs": [
         {
-          "name": "OpenSSF Scorecard",
+          "name": "github_actions in / for actions/checkout, actions/download-artifact, softprops/action-gh-release, github/codeql-action/init, github/codeql-action/analyze, ossf/scorecard-action, github/codeql-action/upload-sarif - Update #1500643177",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/30679803762",
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/30762504489",
           "head_sha": "4bf2ec4e677256e099ca9c2460c2a82c041e43cf",
-          "created_at": "2026-08-01T02:20:26Z"
+          "created_at": "2026-08-02T19:03:09Z"
         },
         {
-          "name": "CodeQL",
+          "name": "github_actions in /. - Update #1500643067",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/30430233419",
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/30762503695",
           "head_sha": "4bf2ec4e677256e099ca9c2460c2a82c041e43cf",
-          "created_at": "2026-07-29T07:03:00Z"
-        },
-        {
-          "name": "CI",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/30430232730",
-          "head_sha": "4bf2ec4e677256e099ca9c2460c2a82c041e43cf",
-          "created_at": "2026-07-29T07:03:00Z"
-        },
-        {
-          "name": "OpenSSF Scorecard",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/30430232607",
-          "head_sha": "4bf2ec4e677256e099ca9c2460c2a82c041e43cf",
-          "created_at": "2026-07-29T07:03:00Z"
-        },
-        {
-          "name": "Build macOS App",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/30430232434",
-          "head_sha": "4bf2ec4e677256e099ca9c2460c2a82c041e43cf",
-          "created_at": "2026-07-29T07:02:59Z"
+          "created_at": "2026-08-02T19:03:08Z"
         }
       ],
       "package_info": null,
@@ -908,14 +884,14 @@
           "name": "Antigravity HUD",
           "version": "0.2.4",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 1499
+          "installs": 1500
         },
         {
           "type": "openvsx",
           "name": "Antigravity HUD",
           "version": "0.3.0",
           "url": "https://open-vsx.org/extension/smallyu/vscode-antigravity-hud",
-          "downloads": 6972
+          "downloads": 6976
         }
       ],
       "homepage": "",
