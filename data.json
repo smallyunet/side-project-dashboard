@@ -1,5 +1,5 @@
 {
-  "timestamp": 1785763136757,
+  "timestamp": 1785783211691,
   "repos": [
     {
       "name": "echoevm",
@@ -11,26 +11,34 @@
       "forks_count": 1,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2026-08-03T12:50:58Z",
+      "updated_at": "2026-08-03T13:36:53Z",
       "created_at": "2025-05-10T17:28:13Z",
-      "last_commit_date": "2026-08-03T12:49:52Z",
+      "last_commit_date": "2026-08-03T13:34:59Z",
       "latest_tag": {
-        "name": "v0.0.37"
+        "name": "v0.0.38"
       },
       "latest_workflow_runs": [
         {
+          "name": "Release",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/echoevm/actions/runs/30818786531",
+          "head_sha": "921c646aafe3eebc62bae802bb3f545283085134",
+          "created_at": "2026-08-03T13:37:10Z"
+        },
+        {
           "name": "CI",
           "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/echoevm/actions/runs/30815214744",
-          "head_sha": "293a6ff8c66c72e9a9f62c9c0950633b8e39a9fd",
-          "created_at": "2026-08-03T12:50:00Z"
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/echoevm/actions/runs/30818631783",
+          "head_sha": "921c646aafe3eebc62bae802bb3f545283085134",
+          "created_at": "2026-08-03T13:35:12Z"
         }
       ],
       "package_info": null,
       "homepage": "https://r.dark20.xyz",
       "has_pages": false,
-      "commit_count": 124,
+      "commit_count": 126,
       "topics": [
         "evm"
       ],
@@ -915,7 +923,7 @@
           "name": "Antigravity HUD",
           "version": "0.3.0",
           "url": "https://open-vsx.org/extension/smallyu/vscode-antigravity-hud",
-          "downloads": 6990
+          "downloads": 6996
         }
       ],
       "homepage": "",
