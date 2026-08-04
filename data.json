@@ -1,5 +1,5 @@
 {
-  "timestamp": 1785848156142,
+  "timestamp": 1785869346716,
   "repos": [
     {
       "name": "echoevm",
@@ -786,7 +786,7 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2026-08-03T01:39:08Z",
+      "updated_at": "2026-08-04T15:42:34Z",
       "created_at": "2025-12-13T13:37:31Z",
       "last_commit_date": "2026-08-03T01:39:04Z",
       "latest_tag": {
@@ -922,14 +922,14 @@
           "name": "Antigravity HUD",
           "version": "0.2.4",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 1505
+          "installs": 1506
         },
         {
           "type": "openvsx",
           "name": "Antigravity HUD",
           "version": "0.3.0",
           "url": "https://open-vsx.org/extension/smallyu/vscode-antigravity-hud",
-          "downloads": 7008
+          "downloads": 7012
         }
       ],
       "homepage": "",
@@ -1339,34 +1339,34 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2026-07-31T09:36:53Z",
+      "updated_at": "2026-08-04T13:42:07Z",
       "created_at": "2026-07-19T14:18:06Z",
-      "last_commit_date": "2026-07-31T09:35:47Z",
+      "last_commit_date": "2026-08-04T13:40:04Z",
       "latest_tag": {
-        "name": "v0.7.0"
+        "name": "v0.7.1"
       },
       "latest_workflow_runs": [
         {
           "name": "Release",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/codex-notch/actions/runs/30620580055",
-          "head_sha": "7900842cf6c7af690d61b881600f70162f7d1e4f",
-          "created_at": "2026-07-31T09:36:55Z"
+          "html_url": "https://github.com/smallyunet/codex-notch/actions/runs/30915055148",
+          "head_sha": "9cb6f9d918fda63690ddc82e54369a6fdc4444ef",
+          "created_at": "2026-08-04T13:41:14Z"
         },
         {
           "name": "CI",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/codex-notch/actions/runs/30620516986",
-          "head_sha": "7900842cf6c7af690d61b881600f70162f7d1e4f",
-          "created_at": "2026-07-31T09:35:51Z"
+          "html_url": "https://github.com/smallyunet/codex-notch/actions/runs/30914973125",
+          "head_sha": "9cb6f9d918fda63690ddc82e54369a6fdc4444ef",
+          "created_at": "2026-08-04T13:40:12Z"
         }
       ],
       "package_info": null,
       "homepage": null,
       "has_pages": false,
-      "commit_count": 105,
+      "commit_count": 106,
       "topics": [],
       "license": {
         "key": "mit",
