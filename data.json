@@ -1,5 +1,5 @@
 {
-  "timestamp": 1785977236300,
+  "timestamp": 1786000285877,
   "repos": [
     {
       "name": "echoevm",
@@ -11,26 +11,34 @@
       "forks_count": 1,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2026-08-05T06:51:29Z",
+      "updated_at": "2026-08-06T06:23:02Z",
       "created_at": "2025-05-10T17:28:13Z",
-      "last_commit_date": "2026-08-05T06:50:02Z",
+      "last_commit_date": "2026-08-06T06:21:36Z",
       "latest_tag": {
-        "name": "v0.0.38"
+        "name": "v0.0.39"
       },
       "latest_workflow_runs": [
+        {
+          "name": "Release",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/echoevm/actions/runs/31077047210",
+          "head_sha": "c00ffa7c6091217b809f8c12a93ee1b441e0c666",
+          "created_at": "2026-08-06T06:22:10Z"
+        },
         {
           "name": "CI",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/echoevm/actions/runs/30982733835",
-          "head_sha": "b16f85bf59c49f935bc6becc00fc46d10174bb10",
-          "created_at": "2026-08-05T06:50:10Z"
+          "html_url": "https://github.com/smallyunet/echoevm/actions/runs/31077031055",
+          "head_sha": "c00ffa7c6091217b809f8c12a93ee1b441e0c666",
+          "created_at": "2026-08-06T06:21:52Z"
         }
       ],
       "package_info": null,
       "homepage": "https://r.dark20.xyz",
       "has_pages": false,
-      "commit_count": 127,
+      "commit_count": 128,
       "topics": [
         "evm"
       ],
@@ -778,58 +786,58 @@
       "forks_count": 0,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2026-08-04T15:42:34Z",
+      "updated_at": "2026-08-06T01:37:46Z",
       "created_at": "2025-12-13T13:37:31Z",
-      "last_commit_date": "2026-08-03T01:39:04Z",
+      "last_commit_date": "2026-08-06T01:34:28Z",
       "latest_tag": {
         "name": "v0.3.0"
       },
       "latest_workflow_runs": [
         {
-          "name": "CodeQL",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/30784566032",
-          "head_sha": "a274bdc4088bf8384b2a7d3d007893bd855b9ed1",
-          "created_at": "2026-08-03T04:29:07Z"
-        },
-        {
           "name": "OpenSSF Scorecard",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/30777375509",
-          "head_sha": "a274bdc4088bf8384b2a7d3d007893bd855b9ed1",
-          "created_at": "2026-08-03T01:39:07Z"
-        },
-        {
-          "name": "CodeQL",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/30777375508",
-          "head_sha": "a274bdc4088bf8384b2a7d3d007893bd855b9ed1",
-          "created_at": "2026-08-03T01:39:07Z"
-        },
-        {
-          "name": "Build macOS App",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/30777375487",
-          "head_sha": "a274bdc4088bf8384b2a7d3d007893bd855b9ed1",
-          "created_at": "2026-08-03T01:39:07Z"
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/31063282863",
+          "head_sha": "c3aff6feb6e4702c95befedfacb247fac80a0e05",
+          "created_at": "2026-08-06T01:37:44Z"
         },
         {
           "name": "CI",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/30777375485",
-          "head_sha": "a274bdc4088bf8384b2a7d3d007893bd855b9ed1",
-          "created_at": "2026-08-03T01:39:07Z"
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/31063282824",
+          "head_sha": "c3aff6feb6e4702c95befedfacb247fac80a0e05",
+          "created_at": "2026-08-06T01:37:43Z"
+        },
+        {
+          "name": "Build macOS App",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/31063282807",
+          "head_sha": "c3aff6feb6e4702c95befedfacb247fac80a0e05",
+          "created_at": "2026-08-06T01:37:43Z"
+        },
+        {
+          "name": "CodeQL",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/31063282789",
+          "head_sha": "c3aff6feb6e4702c95befedfacb247fac80a0e05",
+          "created_at": "2026-08-06T01:37:43Z"
+        },
+        {
+          "name": "pages build and deployment",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/31063282478",
+          "head_sha": "c3aff6feb6e4702c95befedfacb247fac80a0e05",
+          "created_at": "2026-08-06T01:37:43Z"
         }
       ],
       "package_info": null,
       "homepage": "https://smallyunet.github.io/finder-sight/",
       "has_pages": true,
-      "commit_count": 75,
+      "commit_count": 76,
       "topics": [],
       "license": {
         "key": "mit",
@@ -914,14 +922,14 @@
           "name": "Antigravity HUD",
           "version": "0.2.4",
           "url": "https://marketplace.visualstudio.com/items?itemName=smallyu.vscode-antigravity-hud",
-          "installs": 1508
+          "installs": 1509
         },
         {
           "type": "openvsx",
           "name": "Antigravity HUD",
           "version": "0.3.0",
           "url": "https://open-vsx.org/extension/smallyu/vscode-antigravity-hud",
-          "downloads": 7024
+          "downloads": 7030
         }
       ],
       "homepage": "",
@@ -1134,6 +1142,14 @@
           "name": "Collect and Deploy",
           "status": "completed",
           "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/polymarket-leaderboard-x/actions/runs/31071204746",
+          "head_sha": "0c66e23058b4a8682e8ac14c4cdab8b2969a4952",
+          "created_at": "2026-08-06T04:25:23Z"
+        },
+        {
+          "name": "Collect and Deploy",
+          "status": "completed",
+          "conclusion": "failure",
           "html_url": "https://github.com/smallyunet/polymarket-leaderboard-x/actions/runs/30975063024",
           "head_sha": "0c66e23058b4a8682e8ac14c4cdab8b2969a4952",
           "created_at": "2026-08-05T04:24:52Z"
@@ -1161,14 +1177,6 @@
           "html_url": "https://github.com/smallyunet/polymarket-leaderboard-x/actions/runs/30732433927",
           "head_sha": "0c66e23058b4a8682e8ac14c4cdab8b2969a4952",
           "created_at": "2026-08-02T04:28:28Z"
-        },
-        {
-          "name": "Collect and Deploy",
-          "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/polymarket-leaderboard-x/actions/runs/30683977588",
-          "head_sha": "0c66e23058b4a8682e8ac14c4cdab8b2969a4952",
-          "created_at": "2026-08-01T04:27:27Z"
         }
       ],
       "package_info": null,
