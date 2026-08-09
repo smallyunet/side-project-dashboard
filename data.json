@@ -1,5 +1,5 @@
 {
-  "timestamp": 1786235605183,
+  "timestamp": 1786257023135,
   "repos": [
     {
       "name": "echoevm",
@@ -11,34 +11,26 @@
       "forks_count": 1,
       "open_issues_count": 0,
       "visibility": "public",
-      "updated_at": "2026-08-08T03:05:20Z",
+      "updated_at": "2026-08-09T03:41:53Z",
       "created_at": "2025-05-10T17:28:13Z",
-      "last_commit_date": "2026-08-08T03:05:07Z",
+      "last_commit_date": "2026-08-09T03:41:44Z",
       "latest_tag": {
-        "name": "v0.0.43"
+        "name": "v0.0.44"
       },
       "latest_workflow_runs": [
-        {
-          "name": "Release",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/echoevm/actions/runs/31236441406",
-          "head_sha": "b36633e2547887a33da4bf6ed121f94b1fe2fbf1",
-          "created_at": "2026-08-08T03:05:35Z"
-        },
         {
           "name": "CI",
           "status": "completed",
           "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/echoevm/actions/runs/31236431314",
-          "head_sha": "b36633e2547887a33da4bf6ed121f94b1fe2fbf1",
-          "created_at": "2026-08-08T03:05:18Z"
+          "html_url": "https://github.com/smallyunet/echoevm/actions/runs/31292964698",
+          "head_sha": "d2dec26c5eeb02d90c9f064532833b4343177247",
+          "created_at": "2026-08-09T03:41:51Z"
         }
       ],
       "package_info": null,
       "homepage": "https://r.dark20.xyz",
       "has_pages": false,
-      "commit_count": 134,
+      "commit_count": 136,
       "topics": [
         "evm"
       ],
@@ -1142,6 +1134,14 @@
           "name": "Collect and Deploy",
           "status": "completed",
           "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/polymarket-leaderboard-x/actions/runs/31293338585",
+          "head_sha": "0c66e23058b4a8682e8ac14c4cdab8b2969a4952",
+          "created_at": "2026-08-09T03:52:29Z"
+        },
+        {
+          "name": "Collect and Deploy",
+          "status": "completed",
+          "conclusion": "failure",
           "html_url": "https://github.com/smallyunet/polymarket-leaderboard-x/actions/runs/31237992862",
           "head_sha": "0c66e23058b4a8682e8ac14c4cdab8b2969a4952",
           "created_at": "2026-08-08T03:47:43Z"
@@ -1169,14 +1169,6 @@
           "html_url": "https://github.com/smallyunet/polymarket-leaderboard-x/actions/runs/30975063024",
           "head_sha": "0c66e23058b4a8682e8ac14c4cdab8b2969a4952",
           "created_at": "2026-08-05T04:24:52Z"
-        },
-        {
-          "name": "Collect and Deploy",
-          "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/polymarket-leaderboard-x/actions/runs/30877628078",
-          "head_sha": "0c66e23058b4a8682e8ac14c4cdab8b2969a4952",
-          "created_at": "2026-08-04T04:25:22Z"
         }
       ],
       "package_info": null,
