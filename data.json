@@ -1,5 +1,5 @@
 {
-  "timestamp": 1786753657259,
+  "timestamp": 1786775158844,
   "repos": [
     {
       "name": "echoevm",
@@ -786,6 +786,14 @@
       },
       "latest_workflow_runs": [
         {
+          "name": "OpenSSF Scorecard",
+          "status": "completed",
+          "conclusion": "success",
+          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/31858065664",
+          "head_sha": "8bdb0970d36c3dbfba829e37a4c497ce2c9fa6f3",
+          "created_at": "2026-08-15T02:01:06Z"
+        },
+        {
           "name": "Build macOS App",
           "status": "completed",
           "conclusion": "success",
@@ -814,14 +822,6 @@
           "status": "completed",
           "conclusion": "success",
           "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/31596614544",
-          "head_sha": "8bdb0970d36c3dbfba829e37a4c497ce2c9fa6f3",
-          "created_at": "2026-08-12T12:28:37Z"
-        },
-        {
-          "name": "OpenSSF Scorecard",
-          "status": "completed",
-          "conclusion": "success",
-          "html_url": "https://github.com/smallyunet/finder-sight/actions/runs/31596614524",
           "head_sha": "8bdb0970d36c3dbfba829e37a4c497ce2c9fa6f3",
           "created_at": "2026-08-12T12:28:37Z"
         }
@@ -1134,6 +1134,14 @@
           "name": "Collect and Deploy",
           "status": "completed",
           "conclusion": "failure",
+          "html_url": "https://github.com/smallyunet/polymarket-leaderboard-x/actions/runs/31862025181",
+          "head_sha": "0c66e23058b4a8682e8ac14c4cdab8b2969a4952",
+          "created_at": "2026-08-15T03:31:01Z"
+        },
+        {
+          "name": "Collect and Deploy",
+          "status": "completed",
+          "conclusion": "failure",
           "html_url": "https://github.com/smallyunet/polymarket-leaderboard-x/actions/runs/31768525922",
           "head_sha": "0c66e23058b4a8682e8ac14c4cdab8b2969a4952",
           "created_at": "2026-08-14T04:00:39Z"
@@ -1161,14 +1169,6 @@
           "html_url": "https://github.com/smallyunet/polymarket-leaderboard-x/actions/runs/31456758283",
           "head_sha": "0c66e23058b4a8682e8ac14c4cdab8b2969a4952",
           "created_at": "2026-08-11T03:53:22Z"
-        },
-        {
-          "name": "Collect and Deploy",
-          "status": "completed",
-          "conclusion": "failure",
-          "html_url": "https://github.com/smallyunet/polymarket-leaderboard-x/actions/runs/31354112677",
-          "head_sha": "0c66e23058b4a8682e8ac14c4cdab8b2969a4952",
-          "created_at": "2026-08-10T03:58:53Z"
         }
       ],
       "package_info": null,
